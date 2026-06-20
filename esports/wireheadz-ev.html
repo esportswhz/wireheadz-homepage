@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WireHeadZ e.V. – Verein · GAMeS Hub</title>
+  <meta name="description" content="WireHeadZ e.V. ist der eingetragene Verein hinter dem eSport-Programm der WHZ. Werde Mitglied und gestalte Gaming-Kultur aktiv mit." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WireHeadZ e.V. – Verein · GAMeS Hub" />
+  <meta property="og:description" content="WireHeadZ e.V. ist der eingetragene Verein hinter dem eSport-Programm der WHZ. Werde Mitglied und gestalte Gaming-Kultur aktiv mit." />
+  <meta property="og:image" content="../../assets/images/wireheadz-ev/hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WireHeadZ e.V. – Verein · GAMeS Hub" />
+  <meta name="twitter:description" content="WireHeadZ e.V. ist der eingetragene Verein hinter dem eSport-Programm der WHZ." />
+  <meta name="twitter:image" content="../../assets/images/wireheadz-ev/hero.png" />
+
+  <link rel="canonical" href="https://games-hub.whz.de/esports/wireheadz-ev.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="../styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="../styles/components.css?v=8" />
+  <link rel="stylesheet" href="../styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="../assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         1. HERO
+         ============================================ -->
+    <section class="wh-hero wh-hero--ev" aria-label="WireHeadZ e.V.">
+      <div class="container wh-hero__inner">
+        <div class="wh-hero__content">
+          <p class="wh-hero__claim"
+             data-de="Verein. Community. Zukunft."
+             data-en="Club. Community. Future.">Verein. Community. Zukunft.</p>
+          <p class="wh-hero__sub"
+             data-de="WireHeadZ e.V. ist ein eingetragener Verein für alle, die Gaming-Kultur aktiv mitgestalten wollen. Ob Studierende, Berufstätige oder einfach Spielbegeisterte, bei uns sind alle Altersgruppen und Berufsfelder willkommen."
+             data-en="WireHeadZ e.V. is a registered association for everyone who wants to actively shape gaming culture. Whether students, working professionals or simply gaming enthusiasts, all age groups and backgrounds are welcome."
+             data-ls-de="WireHeadZ e.V. ist ein eingetragener Verein. Alle können Mitglied werden. Studierende, Berufstätige und Spielbegeisterte sind willkommen."
+             data-ls-en="WireHeadZ e.V. is a registered club. Everyone can become a member. Students, workers and gaming fans are welcome.">WireHeadZ e.V. ist ein eingetragener Verein für alle, die Gaming-Kultur aktiv mitgestalten wollen. Ob Studierende, Berufstätige oder einfach Spielbegeisterte, bei uns sind alle Altersgruppen und Berufsfelder willkommen.</p>
+          <a href="#mitglied" class="btn btn--primary wh-hero__cta"
+             data-de="Mitglied werden"
+             data-en="Become a Member">Mitglied werden</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         2. TEAMS & KADER
+         ============================================ -->
+    <section class="section section--alt" id="teams" aria-labelledby="teams-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Unsere Spieltitel" data-en="Our Titles" data-ls-de="Unsere Spiele" data-ls-en="Our Games">Unsere Spieltitel</p>
+          <h2 id="teams-heading" data-de="Teams &amp; Kader" data-en="Teams &amp; Roster" data-ls-de="Teams und Spieler" data-ls-en="Teams and Players">Teams &amp; Kader</h2>
+        </div>
+
+        <div class="roster-cta">
+          <img src="../assets/images/shared/kader-hintergrund-ev.png" alt="" class="roster-cta__bg" aria-hidden="true"  loading="lazy"/>
+          <div class="roster-cta__overlay"></div>
+          <div class="roster-cta__content">
+            <span class="roster-cta__label" data-de="Mitmachen" data-en="Get Involved">Mitmachen</span>
+            <h3 class="roster-cta__title"
+                data-de="Dein Spiel ist nicht dabei?"
+                data-en="Your game isn't listed?">Dein Spiel ist nicht dabei?</h3>
+            <p class="roster-cta__desc"
+               data-de="Der WireHeadZ e.V. ist offen für neue Spieltitel und wächst durch seine Mitglieder. Wenn du ein Spiel vermisst oder eine neue Sektion gründen möchtest, freuen wir uns über deinen Vorschlag."
+               data-en="WireHeadZ e.V. is open to new game titles and grows through its members. If you're missing a game or want to found a new section, we'd love to hear your suggestion."
+               data-ls-de="Dein Spiel fehlt? Schlag es uns vor. Wir sind offen für neue Spiele und Sektionen."
+               data-ls-en="Your game is missing? Suggest it to us. We are open to new games and sections.">Der WireHeadZ e.V. ist offen für neue Spieltitel und wächst durch seine Mitglieder. Wenn du ein Spiel vermisst oder eine neue Sektion gründen möchtest, freuen wir uns über deinen Vorschlag.</p>
+            <a href="../kontakt.html?typ=spieler&spiel=neu&team=ev" class="btn btn--primary"
+               data-de="Spieltitel vorschlagen"
+               data-en="Suggest a Title">Spieltitel vorschlagen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         3. WETTKAMPFBEREICH
+         ============================================ -->
+    <section class="section section--alt" id="wettkampf" aria-labelledby="wettkampf-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Wettkampf" data-en="Competition">Wettkampf</p>
+          <h2 id="wettkampf-heading"
+              data-de="Turniere &amp; Ergebnisse"
+              data-en="Tournaments &amp; Results">Turniere &amp; Ergebnisse</h2>
+          <p class="section-sub"
+             data-de="Der Verein baut seinen Wettkampfbetrieb aktiv auf. Sobald Saisons und Ergebnisse vorliegen, werden sie hier gepflegt."
+             data-en="The club is actively building its competitive programme. Once seasons and results are available, they will be listed here."
+             data-ls-de="Wir bauen unseren Wettkampfbereich auf. Wenn Ergebnisse da sind, zeigen wir sie hier."
+             data-ls-en="We are building our competition area. When results are available, we show them here.">Der Verein baut seinen Wettkampfbetrieb aktiv auf. Sobald Saisons und Ergebnisse vorliegen, werden sie hier gepflegt.</p>
+        </div>
+
+        <div class="results-layout results-layout--single">
+
+          <div class="results-block">
+            <h3 class="results-block__title"
+                data-de="eSport Wettkämpfe" data-en="eSport Competitions">eSport Wettkämpfe</h3>
+            <table class="results-table" aria-label="eSport Turnierergebnisse">
+              <thead>
+                <tr>
+                  <th data-de="Saison" data-en="Season">Saison</th>
+                  <th data-de="Spieltitel" data-en="Game">Spieltitel</th>
+                  <th data-de="Ergebnis" data-en="Result">Ergebnis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3" style="text-align:center; color: var(--color-text-muted); padding: var(--space-md);"
+                      data-de="Wettkampfbetrieb im Aufbau – Ergebnisse folgen sobald Teams aktiv sind"
+                      data-en="Competitive programme in development – results to follow once teams are active"
+                      data-ls-de="Wir bauen unsere Teams auf. Ergebnisse kommen bald."
+                      data-ls-en="We are building our teams. Results will come soon.">Wettkampfbetrieb im Aufbau – Ergebnisse folgen sobald Teams aktiv sind</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. VEREINSSTRUKTUR (Organigramm Split-Panel)
+         ============================================ -->
+    <section class="section" id="vorstand" aria-labelledby="vorstand-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Vereinsstruktur" data-en="Association Structure" data-ls-de="Aufbau des Vereins" data-ls-en="Club Structure">Vereinsstruktur</p>
+          <h2 id="vorstand-heading" data-de="Vorstand &amp; Organisation" data-en="Board &amp; Organisation" data-ls-de="Vorstand und Aufgaben" data-ls-en="Board and Tasks">Vorstand &amp; Organisation</h2>
+        </div>
+
+        <div class="org-layout">
+
+          <!-- Links: Organigramm-Baum -->
+          <nav class="org-tree" aria-label="Vereinsorganigramm">
+
+            <!-- Vorsitz -->
+            <div class="org-tree__group">
+              <div class="org-tree__group-label">
+                <span class="org-label__title" data-de="Vorsitz" data-en="Chair">Vorsitz</span>
+                <span class="org-label__sub" data-de="Leitung &amp; Außenvertretung" data-en="Leadership &amp; Representation" data-ls-de="Leitung und Vertretung" data-ls-en="Leadership and Representation">Leitung &amp; Außenvertretung</span>
+              </div>
+
+              <button class="org-node" data-person="vorsitzende" aria-pressed="false">
+                <div class="org-node__photo" aria-hidden="true">
+                  <img src="https://www.whz.de/fileadmin/_processed_/6/f/csm_Sachse_37ec47ae78.jpg" alt="Prof. Dr. Manuela Sachse"  loading="lazy"/>
+                </div>
+                <div class="org-node__info">
+                  <span class="org-node__role" data-de="1. Vorsitzende" data-en="1st Chair">1. Vorsitzende</span>
+                  <span class="org-node__name">Prof. Dr. Manuela Sachse</span>
+                </div>
+                <svg class="org-node__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+
+            <!-- Verbinder -->
+            <div class="org-tree__connector" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+
+            <!-- Vorstand -->
+            <div class="org-tree__group">
+              <div class="org-tree__group-label">
+                <span class="org-label__title" data-de="Vorstand" data-en="Board">Vorstand</span>
+                <span class="org-label__sub" data-de="Organisation &amp; Verwaltung" data-en="Organisation &amp; Administration" data-ls-de="Organisation und Verwaltung" data-ls-en="Organisation and Administration">Organisation &amp; Verwaltung</span>
+              </div>
+
+              <button class="org-node" data-person="vorsitzende-2" aria-pressed="false">
+                <!-- TODO: Foto → assets/images/wireheadz/team/ev-vorsitzende-2.avif -->
+                <div class="org-node__photo" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                </div>
+                <div class="org-node__info">
+                  <span class="org-node__role" data-de="2. Vorsitzende" data-en="2nd Chair">2. Vorsitzende</span>
+                  <span class="org-node__name">Vorname Nachname</span>
+                </div>
+                <svg class="org-node__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+
+              <button class="org-node" data-person="kassiererin" aria-pressed="false">
+                <!-- TODO: Foto → assets/images/wireheadz/team/ev-kassiererin.avif -->
+                <div class="org-node__photo" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                </div>
+                <div class="org-node__info">
+                  <span class="org-node__role" data-de="Kassiererin" data-en="Treasurer">Kassiererin</span>
+                  <span class="org-node__name">Vorname Nachname</span>
+                </div>
+                <svg class="org-node__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+
+              <button class="org-node" data-person="schriftfuehrer" aria-pressed="false">
+                <!-- TODO: Foto → assets/images/wireheadz/team/ev-schriftfuehrer.avif -->
+                <div class="org-node__photo" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                </div>
+                <div class="org-node__info">
+                  <span class="org-node__role" data-de="Schriftführer" data-en="Secretary">Schriftführer</span>
+                  <span class="org-node__name">Vorname Nachname</span>
+                </div>
+                <svg class="org-node__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+
+            <!-- Verbinder -->
+            <div class="org-tree__connector" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+
+            <!-- Beisitz -->
+            <div class="org-tree__group">
+              <div class="org-tree__group-label">
+                <span class="org-label__title" data-de="Beisitz" data-en="Advisory">Beisitz</span>
+                <span class="org-label__sub" data-de="Beratung &amp; Unterstützung" data-en="Advisory &amp; Support" data-ls-de="Beratung und Unterstützung" data-ls-en="Advice and Support">Beratung &amp; Unterstützung</span>
+              </div>
+
+              <button class="org-node" data-person="beisitzer-1" aria-pressed="false">
+                <!-- TODO: Foto → assets/images/wireheadz/team/ev-beisitzer-1.avif -->
+                <div class="org-node__photo" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                </div>
+                <div class="org-node__info">
+                  <span class="org-node__role" data-de="Beisitzer" data-en="Advisor">Beisitzer</span>
+                  <span class="org-node__name">Vorname Nachname</span>
+                </div>
+                <svg class="org-node__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+
+              <button class="org-node" data-person="beisitzerin-2" aria-pressed="false">
+                <!-- TODO: Foto → assets/images/wireheadz/team/ev-beisitzerin-2.avif -->
+                <div class="org-node__photo" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                </div>
+                <div class="org-node__info">
+                  <span class="org-node__role" data-de="Beisitzerin" data-en="Advisor">Beisitzerin</span>
+                  <span class="org-node__name">Vorname Nachname</span>
+                </div>
+                <svg class="org-node__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+
+          </nav>
+
+          <!-- Rechts: Detailpanel (per JS befüllt) -->
+          <div class="org-detail" aria-live="polite">
+
+            <div class="org-detail__prompt" id="org-detail-prompt">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="opacity:0.35;">
+                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+              <p data-de="Person im Diagramm auswählen für mehr Details." data-en="Select a person in the diagram for more details." data-ls-de="Wähle eine Person aus. Du siehst dann mehr Informationen." data-ls-en="Select a person. You will then see more information.">Person im Diagramm auswählen für mehr Details.</p>
+            </div>
+
+            <div class="org-detail__card" id="org-detail-card" hidden>
+              <div class="org-detail__header">
+                <div class="org-detail__photo" id="org-detail-photo" aria-hidden="true">
+                  <!-- wird per JS befüllt: img oder SVG-Platzhalter -->
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                  </svg>
+                </div>
+                <div class="org-detail__titles">
+                  <p class="org-detail__role"></p>
+                  <h3 class="org-detail__name"></h3>
+                  <p class="org-detail__meta"></p>
+                </div>
+              </div>
+              <div class="org-detail__body">
+                <p class="org-detail__desc"></p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. MEILENSTEINE & ZAHLEN
+         ============================================ -->
+    <section class="section section--alt" id="meilensteine" aria-labelledby="meilensteine-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Geschichte" data-en="History">Geschichte</p>
+          <h2 id="meilensteine-heading" data-de="Meilensteine &amp; Zahlen" data-en="Milestones &amp; Numbers" data-ls-de="Wichtige Momente und Zahlen" data-ls-en="Milestones and Numbers">Meilensteine &amp; Zahlen</h2>
+        </div>
+
+        <div class="results-layout">
+
+          <div class="results-block">
+            <h3 class="results-block__title"
+                data-de="Vereinsgeschichte" data-en="Club History">Vereinsgeschichte</h3>
+            <table class="results-table" aria-label="Vereinsgeschichte">
+              <thead>
+                <tr>
+                  <th data-de="Jahr" data-en="Year">Jahr</th>
+                  <th data-de="Meilenstein" data-en="Milestone">Meilenstein</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2026</td>
+                  <td class="results-table__highlight"
+                      data-de="Gründung WireHeadZ e.V." data-en="Founded WireHeadZ e.V.">Gründung WireHeadZ e.V.</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align:center; color: var(--color-text-muted); padding: var(--space-md);"
+                      data-de="Weitere Meilensteine werden ergänzt"
+                      data-en="Further milestones will be added"
+                      data-ls-de="Wir fügen bald mehr Meilensteine ein."
+                      data-ls-en="We will add more milestones soon.">Weitere Meilensteine werden ergänzt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="results-block">
+            <h3 class="results-block__title"
+                data-de="Verein in Zahlen" data-en="Club in Numbers">Verein in Zahlen</h3>
+            <table class="results-table" aria-label="Vereinszahlen">
+              <thead>
+                <tr>
+                  <th data-de="Kennzahl" data-en="Key Figure">Kennzahl</th>
+                  <th data-de="Stand" data-en="Current">Stand</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-de="Gegründet" data-en="Founded">Gegründet</td>
+                  <td>2026</td>
+                </tr>
+                <tr>
+                  <td colspan="2" style="text-align:center; color: var(--color-text-muted); padding: var(--space-md);"
+                      data-de="Aktuelle Zahlen werden nach Vereinsstart gepflegt"
+                      data-en="Current figures will be maintained after the club launches"
+                      data-ls-de="Wir ergänzen die Zahlen nach dem Vereinsstart."
+                      data-ls-en="We will add the numbers after the club launches.">Aktuelle Zahlen werden nach Vereinsstart gepflegt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         5. MITGLIED WERDEN
+         ============================================ -->
+    <section class="section ev-training" id="mitglied" aria-labelledby="mitglied-heading">
+      <div class="container">
+        <div class="training-layout">
+
+          <p class="section-label ev-training__label"
+             data-de="Dein Engagement" data-en="Your Contribution" data-ls-de="Mach mit" data-ls-en="Get Involved">Dein Engagement</p>
+          <h2 id="mitglied-heading"
+              data-de="Mitglied werden"
+              data-en="Become a Member">Mitglied werden</h2>
+
+          <p class="training-layout__intro"
+             data-de="WireHeadZ e.V. steht allen offen, ob Studierende, Alumni oder Gaming-Begeisterte ohne Hochschulbezug. Werde Teil der Community und gestalte eSport-Kultur aktiv mit."
+             data-en="WireHeadZ e.V. is open to everyone, whether students, alumni or gaming enthusiasts without any university connection. Join the community and actively shape eSport culture."
+             data-ls-de="WireHeadZ e.V. ist für alle offen. Du brauchst keine Verbindung zur Hochschule. Werde Teil der Community."
+             data-ls-en="WireHeadZ e.V. is open to everyone. You do not need a university connection. Become part of the community.">WireHeadZ e.V. steht allen offen, ob Studierende, Alumni oder Gaming-Begeisterte ohne Hochschulbezug. Werde Teil der Community und gestalte eSport-Kultur aktiv mit.</p>
+
+          <div class="training-info">
+            <div class="training-info__block">
+              <div class="training-info__icon">
+                <i data-lucide="check-circle" style="width:22px;height:22px;" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4 data-de="Was wir erwarten" data-en="What We Expect">Was wir erwarten</h4>
+                <ul class="training-info__list">
+                  <li data-de="Interesse an Community und Events" data-en="Interest in community and events" data-ls-de="Du interessierst dich für Community und Events." data-ls-en="You are interested in community and events.">Interesse an Community und Events</li>
+                  <li data-de="Engagement und Zuverlässigkeit" data-en="Commitment and reliability" data-ls-de="Du bist engagiert und zuverlässig." data-ls-en="You are committed and reliable.">Engagement und Zuverlässigkeit</li>
+                  <li data-de="Jahresbeitrag: 10,00 € / Jahr" data-en="Annual fee: €10.00 / year" data-ls-de="Du zahlst 10 € pro Jahr als Beitrag." data-ls-en="You pay 10 € per year as a fee.">Jahresbeitrag: 10,00 € / Jahr</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="training-info__block">
+              <div class="training-info__icon">
+                <i data-lucide="users" style="width:22px;height:22px;" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4 data-de="Was du bekommst" data-en="What You Get">Was du bekommst</h4>
+                <ul class="training-info__list">
+                  <li data-de="Netzwerk aus Gleichgesinnten" data-en="Network of like-minded people" data-ls-de="Du triffst andere, die Gaming mögen." data-ls-en="You meet others who like gaming.">Netzwerk aus Gleichgesinnten</li>
+                  <li data-de="Mitspracherecht bei Vereinsentscheidungen" data-en="Say in club decisions" data-ls-de="Du kannst bei Entscheidungen mitbestimmen." data-ls-en="You can have a say in decisions.">Mitspracherecht bei Vereinsentscheidungen</li>
+                  <li data-de="Zugang zu Events und Partnerprogrammen" data-en="Access to events and partner programmes" data-ls-de="Du bekommst Zugang zu Events und Partnern." data-ls-en="You get access to events and partners.">Zugang zu Events und Partnerprogrammen</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap: var(--space-md); flex-wrap: wrap; margin-top: var(--space-md); justify-content: center;">
+            <a href="../kontakt.html?typ=mitglied" class="btn btn--surface"
+               data-de="Jetzt Mitglied werden" data-en="Become a Member Now">Jetzt Mitglied werden</a>
+            <a href="../assets/docs/satzung-wireheadz-ev.pdf" class="btn btn--ghost-light" target="_blank" rel="noopener"
+               data-de="Satzung herunterladen" data-en="Download Bylaws">Satzung herunterladen</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         6. EVENTS-TEASER
+         ============================================ -->
+    <section class="section" id="events" aria-labelledby="events-teaser-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Termine" data-en="Schedule">Termine</p>
+          <h2 id="events-teaser-heading" data-de="Kommende Events" data-en="Upcoming Events">Kommende Events</h2>
+        </div>
+
+        <div class="events-teaser-grid" data-events-teaser></div>
+        </div>
+
+        <div class="events-teaser-cta">
+          <a href="../events.html" class="btn btn--ghost"
+             data-de="Alle Events ansehen"
+             data-en="View All Events">Alle Events ansehen</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         GALERIE
+         ============================================ -->
+    <section class="section section--alt" id="galerie" aria-labelledby="galerie-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Galerie" data-en="Gallery" data-ls-de="Galerie" data-ls-en="Gallery">Galerie</p>
+          <h2 id="galerie-heading" data-de="Aus dem Vereinsleben" data-en="From the Club" data-ls-de="Aus dem Vereinsleben" data-ls-en="From the Club">Aus dem Vereinsleben</h2>
+        </div>
+        <div class="gallery-grid" data-gallery="../assets/images/wireheadz-ev/galerie/"></div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+
+  <script src="../main.js?v=12"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="72" viewBox="0 0 260 72" role="img" aria-label="Heinrich Schmid GmbH">
+  <!-- hs monogram box -->
+  <rect x="0" y="8" width="52" height="52" rx="4" fill="#003a6e"/>
+  <text x="26" y="43" font-family="'Arial Black', Arial, sans-serif" font-weight="900" font-size="26" fill="#e85d04" text-anchor="middle">hs</text>
+  <!-- Company name -->
+  <text x="62" y="35" font-family="'Arial', sans-serif" font-weight="700" font-size="13" fill="#003a6e" letter-spacing="0.2">heinrich schmid</text>
+  <text x="62" y="54" font-family="'Arial', sans-serif" font-weight="400" font-size="11" fill="#555" letter-spacing="0.3">GmbH &amp; Co. KG</text>
+</svg>

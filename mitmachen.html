@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitmachen – WHZ GAMeS Hub</title>
+  <meta name="description" content="Werde Teil der WireHeadZ-Community. Tritt unserem Discord bei, bewirb dich als Spieler oder werde Mitglied im WireHeadZ e.V." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mitmachen – WHZ GAMeS Hub" />
+  <meta property="og:description" content="Werde Teil der WireHeadZ-Community. Discord, eSport-Team oder Vereinsmitglied – hier ist dein Einstieg." />
+  <meta property="og:image" content="assets/images/games-hub/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mitmachen – WHZ GAMeS Hub" />
+  <meta name="twitter:image" content="assets/images/games-hub/og-image.png" />
+
+  <link rel="canonical" href="https://games-hub.whz.de/mitmachen.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="styles/components.css?v=8" />
+  <link rel="stylesheet" href="styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         1. HERO
+         ============================================ -->
+    <section class="page-hero page-hero--md" aria-label="Mitmachen">
+      <img class="page-hero__bg"
+           src="assets/images/mitmachen/hero.png"
+           alt=""
+           aria-hidden="true" />
+      <div class="container page-hero__inner">
+        <span class="page-hero__label"
+              data-de="WHZ GAMeS Hub" data-en="WHZ GAMeS Hub">WHZ GAMeS Hub</span>
+        <h1 class="page-hero__title"
+            data-de="Mitmachen"
+            data-en="Get Involved">Mitmachen</h1>
+        <p class="page-hero__sub"
+           data-de="Ob Spieler, Organisator oder einfach Gaming-Begeisterter: WireHeadZ hat Platz für alle. Starte auf Discord, werde Vereinsmitglied oder bewirb dich für das eSport-Team."
+           data-en="Whether player, organiser or simply a gaming enthusiast: WireHeadZ has room for everyone. Start on Discord, become a club member or apply for the eSport team."
+           data-ls-de="Bei WireHeadZ ist jeder willkommen. Du kannst im eSport-Team spielen. Du kannst Vereinsmitglied werden. Du kannst einfach auf Discord starten."
+           data-ls-en="Everyone is welcome at WireHeadZ. You can play in the eSport team. You can become a club member. You can simply start on Discord.">Ob Spieler, Organisator oder einfach Gaming-Begeisterter: WireHeadZ hat Platz für alle. Starte auf Discord, werde Vereinsmitglied oder bewirb dich für das eSport-Team.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         2. DISCORD
+         ============================================ -->
+    <section class="section" id="discord" aria-labelledby="discord-heading">
+      <div class="container">
+
+        <div class="discord-feature">
+
+          <div class="discord-feature__text">
+            <div class="section-header">
+              <p class="section-label"
+                 data-de="Community" data-en="Community">Community</p>
+              <h2 id="discord-heading"
+                  data-de="Alles startet auf Discord"
+                  data-en="Everything Starts on Discord"
+                  data-ls-de="Discord ist unser Treffpunkt"
+                  data-ls-en="Discord is our meeting point">Alles startet auf Discord</h2>
+              <p class="section-sub"
+                 data-de="Unser Discord ist der zentrale Treffpunkt für alle: Spieler, Helfer, Zuschauer und Neugierige. Hier werden Teams koordiniert, Events angekündigt und Matches gesucht."
+                 data-en="Our Discord is the central meeting point for everyone: players, helpers, spectators and curious newcomers. This is where teams coordinate, events are announced and matches are found."
+                 data-ls-de="Unser Discord ist für alle offen. Spieler, Helfer und Zuschauer sind willkommen. Hier erfährst du alles über Events und Teams."
+                 data-ls-en="Our Discord is open to everyone. Players, helpers and spectators are welcome. Here you learn everything about events and teams.">Unser Discord ist der zentrale Treffpunkt für alle: Spieler, Helfer, Zuschauer und Neugierige. Hier werden Teams koordiniert, Events angekündigt und Matches gesucht.</p>
+            </div>
+
+            <p class="discord-feature__desc"
+               data-de="Egal auf welchem Level du spielst oder ob du überhaupt spielst: Der Server ist offen für alle. Schau vorbei, stell dich kurz vor und such dir deinen Kanal."
+               data-en="No matter what level you play at, or whether you play at all: the server is open to everyone. Come by, introduce yourself and find your channel."
+               data-ls-de="Du musst nicht gut spielen. Der Server ist für alle offen. Schau einfach vorbei und stell dich vor."
+               data-ls-en="You do not need to be a good player. The server is open to everyone. Just stop by and introduce yourself.">Egal auf welchem Level du spielst oder ob du überhaupt spielst: Der Server ist offen für alle. Schau vorbei, stell dich kurz vor und such dir deinen Kanal.</p>
+
+            <div>
+              <p style="font-size: var(--text-sm); font-weight: 600; color: var(--color-text-muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: var(--space-sm);"
+                 data-de="Ausgewählte Kanäle" data-en="Selected Channels">Ausgewählte Kanäle</p>
+              <div class="discord-feature__channels">
+                <div class="discord-channel-tag">
+                  <span class="discord-channel-tag__hash">#</span>
+                  <span data-de="ankündigungen" data-en="announcements">ankündigungen</span>
+                </div>
+                <div class="discord-channel-tag">
+                  <span class="discord-channel-tag__hash">#</span>
+                  <span data-de="newcomer" data-en="newcomer">newcomer</span>
+                </div>
+                <div class="discord-channel-tag">
+                  <span class="discord-channel-tag__hash">#</span>
+                  <span data-de="valorant" data-en="valorant">valorant</span>
+                </div>
+                <div class="discord-channel-tag">
+                  <span class="discord-channel-tag__hash">#</span>
+                  <span data-de="rocket-league" data-en="rocket-league">rocket-league</span>
+                </div>
+                <div class="discord-channel-tag">
+                  <span class="discord-channel-tag__hash">#</span>
+                  <span data-de="events" data-en="events">events</span>
+                </div>
+                <div class="discord-channel-tag">
+                  <span class="discord-channel-tag__hash">#</span>
+                  <span data-de="gaming-allgemein" data-en="gaming-general">gaming-allgemein</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="discord-feature__cta-card">
+            <svg class="discord-feature__cta-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z"/>
+            </svg>
+            <h3 class="discord-feature__cta-title"
+                data-de="WireHeadZ Discord"
+                data-en="WireHeadZ Discord">WireHeadZ Discord</h3>
+            <p class="discord-feature__cta-stat"
+               data-de="Kostenlos · Offen für alle · Sofort beitreten"
+               data-en="Free · Open to everyone · Join instantly"
+               data-ls-de="Kostenlos · Für alle · Sofort beitreten"
+               data-ls-en="Free · For everyone · Join now">Kostenlos · Offen für alle · Sofort beitreten</p>
+            <a href="https://discord.gg/zs48PfpJJF"
+               target="_blank"
+               rel="noopener"
+               class="btn btn--white btn--lg"
+               data-de="Jetzt beitreten" data-en="Join Now">Jetzt beitreten</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         3. TEAM BEITRETEN
+         ============================================ -->
+    <section class="section section--alt" id="team-beitreten" aria-labelledby="team-beitreten-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label"
+             data-de="Dein Einstieg" data-en="Getting Started">Dein Einstieg</p>
+          <h2 id="team-beitreten-heading"
+              data-de="Zwei Wege, ein Ziel"
+              data-en="Two Paths, One Goal"
+              data-ls-de="2 Wege mitzumachen"
+              data-ls-en="2 Ways to Join">Zwei Wege, ein Ziel</h2>
+          <p class="section-sub"
+             data-de="Je nachdem ob du kompetitiv spielen oder den Verein aktiv mitgestalten willst, hier findest du deinen Einstieg in die WireHeadZ-Community."
+             data-en="Whether you want to play competitively or actively shape the club, here you'll find your entry point into the WireHeadZ community."
+             data-ls-de="Du kannst im eSport-Team spielen. Oder du wirst Vereinsmitglied. Beide Wege führen in die WireHeadZ-Community."
+             data-ls-en="You can play in the eSport team. Or you become a club member. Both paths lead to the WireHeadZ community.">Je nachdem ob du kompetitiv spielen oder den Verein aktiv mitgestalten willst, hier findest du deinen Einstieg in die WireHeadZ-Community.</p>
+        </div>
+
+        <div class="join-paths">
+
+          <!-- Weg 1: WireHeadZ eSport Team -->
+          <div class="join-path-card">
+            <span class="join-path-card__badge"
+                  data-de="eSport Team" data-en="eSport Team">eSport Team</span>
+            <h3 class="join-path-card__title"
+                data-de="Spieler werden"
+                data-en="Become a Player">Spieler werden</h3>
+            <p class="join-path-card__desc"
+               data-de="Das WireHeadZ-Team trainiert regelmäßig und nimmt an Turnieren teil. Wir suchen motivierte Spieler für Valorant und Rocket League, die gemeinsam wachsen und gewinnen wollen."
+               data-en="The WireHeadZ team trains regularly and takes part in tournaments. We are looking for motivated players for Valorant and Rocket League who want to grow and win together."
+               data-ls-de="Wir trainieren regelmäßig und spielen Turniere. Wir suchen Spieler für Valorant und Rocket League. Du solltest motiviert sein."
+               data-ls-en="We train regularly and play in tournaments. We are looking for players for Valorant and Rocket League. You should be motivated.">Das WireHeadZ-Team trainiert regelmäßig und nimmt an Turnieren teil. Wir suchen motivierte Spieler für Valorant und Rocket League, die gemeinsam wachsen und gewinnen wollen.</p>
+            <ul class="join-path-card__list">
+              <li data-de="Aktive Teams in Valorant und Rocket League" data-en="Active teams in Valorant and Rocket League" data-ls-de="Wir haben Teams in Valorant und Rocket League." data-ls-en="We have teams in Valorant and Rocket League.">Aktive Teams in Valorant und Rocket League</li>
+              <li data-de="Regelmäßiges Training und Team-Scrimmages" data-en="Regular training and team scrimmages" data-ls-de="Wir trainieren regelmäßig zusammen." data-ls-en="We train regularly together.">Regelmäßiges Training und Team-Scrimmages</li>
+              <li data-de="Teilnahme an Ligen und Turnieren" data-en="Participation in leagues and tournaments" data-ls-de="Wir spielen in Ligen und Turnieren." data-ls-en="We play in leagues and tournaments.">Teilnahme an Ligen und Turnieren</li>
+              <li data-de="Team-Support, Coaching und Entwicklung" data-en="Team support, coaching and development" data-ls-de="Du bekommst Unterstützung und Coaching." data-ls-en="You receive support and coaching.">Team-Support, Coaching und Entwicklung</li>
+              <li data-de="WHZ-Studierende bevorzugt, aber kein Muss" data-en="WHZ students preferred but not required" data-ls-de="WHZ-Studierende sind bevorzugt. Aber es ist kein Muss." data-ls-en="WHZ students are preferred. But it is not required.">WHZ-Studierende bevorzugt, aber kein Muss</li>
+            </ul>
+            <div class="join-path-card__cta">
+              <a href="https://discord.gg/zs48PfpJJF"
+                 target="_blank"
+                 rel="noopener"
+                 class="btn btn--primary"
+                 data-de="Bewerbung über Discord" data-en="Apply via Discord">Bewerbung über Discord</a>
+            </div>
+          </div>
+
+          <!-- Weg 2: WireHeadZ e.V. -->
+          <div class="join-path-card join-path-card--ev">
+            <span class="join-path-card__badge"
+                  data-de="WireHeadZ e.V." data-en="WireHeadZ e.V.">WireHeadZ e.V.</span>
+            <h3 class="join-path-card__title"
+                data-de="Vereinsmitglied werden"
+                data-en="Become a Club Member">Vereinsmitglied werden</h3>
+            <p class="join-path-card__desc"
+               data-de="Der WireHeadZ e.V. ist der eingetragene Verein hinter dem eSport-Programm. Die Mitgliedschaft steht allen offen, unabhängig von Alter, Hochschule oder Spielniveau."
+               data-en="WireHeadZ e.V. is the registered association behind the eSport programme. Membership is open to everyone, regardless of age, university or skill level."
+               data-ls-de="WireHeadZ e.V. ist der Verein hinter dem eSport-Programm. Alle können Mitglied werden. Alter und Spielniveau sind egal."
+               data-ls-en="WireHeadZ e.V. is the club behind the eSport programme. Everyone can become a member. Age and skill level do not matter.">Der WireHeadZ e.V. ist der eingetragene Verein hinter dem eSport-Programm. Die Mitgliedschaft steht allen offen, unabhängig von Alter, Hochschule oder Spielniveau.</p>
+            <ul class="join-path-card__list">
+              <li data-de="Jahresbeitrag: 10,00 € / Jahr" data-en="Annual membership fee: €10.00 / year" data-ls-de="Du zahlst 10 € pro Jahr als Beitrag." data-ls-en="You pay 10 € per year as a fee.">Jahresbeitrag: 10,00 € / Jahr</li>
+              <li data-de="Offen für alle – keine Immatrikulation nötig" data-en="Open to everyone – no enrolment required" data-ls-de="Für alle offen – kein Studium nötig." data-ls-en="Open to everyone – no enrolment required.">Offen für alle – keine Immatrikulation nötig</li>
+              <li data-de="Mitgestaltung des Vereinslebens und der Events" data-en="Help shape club activities and events" data-ls-de="Du kannst das Vereinsleben mitgestalten." data-ls-en="You can help shape the club's activities.">Mitgestaltung des Vereinslebens und der Events</li>
+              <li data-de="Zugang zu allen Vereinsveranstaltungen" data-en="Access to all club events" data-ls-de="Du gehst zu allen Vereinsveranstaltungen." data-ls-en="You can attend all club events.">Zugang zu allen Vereinsveranstaltungen</li>
+              <li data-de="Satzung und Details auf der Vereinsseite" data-en="Statutes and details on the club page" data-ls-de="Alle Details findest du auf der Vereinsseite." data-ls-en="You find all details on the club page.">Satzung und Details auf der Vereinsseite</li>
+            </ul>
+            <div class="join-path-card__cta">
+              <a href="esports/wireheadz-ev.html#mitglied"
+                 class="btn btn--secondary"
+                 data-de="Zum Verein" data-en="To the Club">Zum Verein</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. KONTAKT
+         ============================================ -->
+    <section class="section" id="kontakt" aria-labelledby="kontakt-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label"
+             data-de="Erreichbarkeit" data-en="Get in Touch" data-ls-de="Kontakt" data-ls-en="Contact">Erreichbarkeit</p>
+          <h2 id="kontakt-heading"
+              data-de="So erreichst du uns"
+              data-en="How to Reach Us"
+              data-ls-de="Wie du uns erreichst"
+              data-ls-en="How to reach us">So erreichst du uns</h2>
+          <p class="section-sub"
+             data-de="Fragen, Ideen oder eine Kooperationsanfrage? Wir sind per E-Mail, Discord und Social Media erreichbar. Die schnellste Antwort bekommst du über Discord."
+             data-en="Questions, ideas or a partnership enquiry? We are reachable by email, Discord and social media. The quickest response comes via Discord."
+             data-ls-de="Du kannst uns per E-Mail, Discord und Social Media erreichen. Auf Discord bekommst du die schnellste Antwort."
+             data-ls-en="You can reach us by email, Discord and social media. On Discord you get the fastest reply.">Fragen, Ideen oder eine Kooperationsanfrage? Wir sind per E-Mail, Discord und Social Media erreichbar. Die schnellste Antwort bekommst du über Discord.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- E-Mail -->
+          <div class="contact-card">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <p class="contact-card__label" data-de="E-Mail" data-en="Email">E-Mail</p>
+            <h3 class="contact-card__title">esports@whz.de</h3>
+            <p class="contact-card__desc"
+               data-de="Für Kooperationsanfragen, Events und allgemeine Fragen. Antwort in der Regel innerhalb von 2–3 Werktagen."
+               data-en="For partnership enquiries, events and general questions. Response usually within 2–3 working days."
+               data-ls-de="Schreib uns für Kooperationen, Events oder Fragen. Wir antworten in 2 bis 3 Werktagen."
+               data-ls-en="Write to us for partnerships, events or questions. We reply within 2 to 3 working days.">Für Kooperationsanfragen, Events und allgemeine Fragen. Antwort in der Regel innerhalb von 2–3 Werktagen.</p>
+            <a href="kontakt.html"
+               class="btn btn--secondary"
+               data-de="Formular öffnen" data-en="Open Form">Formular öffnen</a>
+          </div>
+
+          <!-- Discord -->
+          <div class="contact-card">
+            <div class="contact-card__icon" aria-hidden="true" style="background: #5865F2;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z"/>
+              </svg>
+            </div>
+            <p class="contact-card__label" data-de="Community" data-en="Community">Community</p>
+            <h3 class="contact-card__title"
+                data-de="Discord Server" data-en="Discord Server">Discord Server</h3>
+            <p class="contact-card__desc"
+               data-de="Der schnellste Weg, mit uns in Kontakt zu treten. Stelle dich im #newcomer-Kanal vor und finde sofort Ansprechpartner."
+               data-en="The quickest way to get in touch. Introduce yourself in the #newcomer channel and find the right contact straight away."
+               data-ls-de="Discord ist der schnellste Weg. Stell dich im #newcomer-Kanal vor. Du findest sofort Ansprechpartner."
+               data-ls-en="Discord is the fastest way. Introduce yourself in the #newcomer channel. You find contacts right away.">Der schnellste Weg, mit uns in Kontakt zu treten. Stelle dich im #newcomer-Kanal vor und finde sofort Ansprechpartner.</p>
+            <a href="https://discord.gg/zs48PfpJJF"
+               target="_blank"
+               rel="noopener"
+               class="btn btn--secondary"
+               data-de="Discord beitreten" data-en="Join Discord">Discord beitreten</a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="contact-card">
+            <div class="contact-card__icon" aria-hidden="true" style="background: linear-gradient(135deg, #E1306C, #F77737);">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </div>
+            <p class="contact-card__label" data-de="Social Media" data-en="Social Media">Social Media</p>
+            <h3 class="contact-card__title">@whz_esports</h3>
+            <p class="contact-card__desc"
+               data-de="Aktuelle News, Event-Rückblicke und Community-Highlights. Folge uns für regelmäßige Updates aus dem GAMeS Hub."
+               data-en="Current news, event recaps and community highlights. Follow us for regular updates from the GAMeS Hub."
+               data-ls-de="Hier gibt es News und Fotos von Events. Folge uns für Updates aus dem GAMeS Hub."
+               data-ls-en="Here you find news and photos from events. Follow us for updates from the GAMeS Hub.">Aktuelle News, Event-Rückblicke und Community-Highlights. Folge uns für regelmäßige Updates aus dem GAMeS Hub.</p>
+            <a href="https://www.instagram.com/whz_esports"
+               target="_blank"
+               rel="noopener"
+               class="btn btn--secondary"
+               data-de="Instagram öffnen" data-en="Open Instagram">Instagram öffnen</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         5. FAQ
+         ============================================ -->
+    <section class="section section--alt" id="faq" aria-labelledby="faq-heading">
+      <div class="container container--narrow">
+        <div class="section-header section-header--center">
+          <p class="section-label"
+             data-de="Häufige Fragen" data-en="Frequently Asked Questions">Häufige Fragen</p>
+          <h2 id="faq-heading"
+              data-de="FAQ"
+              data-en="FAQ">FAQ</h2>
+        </div>
+
+        <div class="faq-list" role="list">
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Muss ich an der WHZ studieren, um mitzumachen?"
+                    data-en="Do I need to study at WHZ to get involved?"
+                    data-ls-de="Muss ich an der WHZ studieren?"
+                    data-ls-en="Do I need to study at WHZ?">Muss ich an der WHZ studieren, um mitzumachen?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Um in den WHZ GAMeS Hub zu kommen musst du aktiv an der WHZ studieren, allerdings kann jeder dem WireHeadZ e.V. beitreten. Denn dieser ist offen für alle, unabhängig von Hochschule, Alter oder Wohnort."
+                 data-en="To join the WHZ GAMeS Hub you must be an active student at WHZ, however anyone can join WireHeadZ e.V. The association is open to everyone, regardless of university, age or location."
+                 data-ls-de="Für den GAMeS Hub musst du an der WHZ studieren. Dem WireHeadZ e.V. kann jeder beitreten. Alter und Wohnort sind egal."
+                 data-ls-en="For the GAMeS Hub you must study at WHZ. Anyone can join WireHeadZ e.V. Age and location do not matter.">Um in den WHZ GAMeS Hub zu kommen musst du aktiv an der WHZ studieren, allerdings kann jeder dem WireHeadZ e.V. beitreten. Denn dieser ist offen für alle, unabhängig von Hochschule, Alter oder Wohnort.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Was kostet die Mitgliedschaft im WireHeadZ e.V.?"
+                    data-en="How much does membership in WireHeadZ e.V. cost?"
+                    data-ls-de="Was kostet die Mitgliedschaft?"
+                    data-ls-en="What does membership cost?">Was kostet die Mitgliedschaft im WireHeadZ e.V.?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Die Mitgliedschaft kostet 10,00 € pro Jahr. Das ist bewusst niedrig gehalten, damit Gaming-Kultur für alle zugänglich bleibt. Weitere Details zur Mitgliedschaft findest du auf der <a href='esports/wireheadz-ev.html#mitglied'>Vereinsseite</a>."
+                 data-en="Membership costs €10.00 per year. This is kept deliberately low to ensure gaming culture remains accessible to everyone. More details about membership can be found on the <a href='esports/wireheadz-ev.html#mitglied'>club page</a>."
+                 data-ls-de="Die Mitgliedschaft kostet 10 € pro Jahr. Alle Details findest du auf der <a href='esports/wireheadz-ev.html#mitglied'>Vereinsseite</a>."
+                 data-ls-en="Membership costs 10 € per year. You find all details on the <a href='esports/wireheadz-ev.html#mitglied'>club page</a>.">Die Mitgliedschaft kostet 10,00 € pro Jahr. Das ist bewusst niedrig gehalten, damit Gaming-Kultur für alle zugänglich bleibt. Weitere Details zur Mitgliedschaft findest du auf der <a href="esports/wireheadz-ev.html#mitglied">Vereinsseite</a>.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Wie bewerbe ich mich als Spieler fürs eSport-Team?"
+                    data-en="How do I apply as a player for the eSport team?"
+                    data-ls-de="Wie bewerbe ich mich als Spieler?"
+                    data-ls-en="How do I apply as a player?">Wie bewerbe ich mich als Spieler fürs eSport-Team?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Der einfachste Weg ist über unseren Discord. Tritt dem Server bei, stell dich im #newcomer-Kanal vor und melde dein Interesse am eSport-Team an. Alternativ kannst du uns direkt per E-Mail kontaktieren. Wir koordinieren dann den weiteren Ablauf."
+                 data-en="The easiest way is via our Discord. Join the server, introduce yourself in the #newcomer channel and express your interest in the eSport team. Alternatively you can contact us directly by email. We will then coordinate the next steps."
+                 data-ls-de="Der einfachste Weg ist über Discord. Tritt dem Server bei. Stell dich im #newcomer-Kanal vor. Du kannst uns auch per E-Mail kontaktieren."
+                 data-ls-en="The easiest way is via Discord. Join the server. Introduce yourself in the #newcomer channel. You can also contact us by email.">Der einfachste Weg ist über unseren <a href="https://discord.gg/zs48PfpJJF" target="_blank" rel="noopener">Discord</a>. Tritt dem Server bei, stell dich im #newcomer-Kanal vor und melde dein Interesse am eSport-Team an. Alternativ kannst du uns direkt per E-Mail kontaktieren. Wir koordinieren dann den weiteren Ablauf.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Welche Spiele werden im eSport-Team gespielt?"
+                    data-en="Which games are played in the eSport team?">Welche Spiele werden im eSport-Team gespielt?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Aktuell gibt es aktive Teams in Valorant und Rocket League. Beide befinden sich im Aufbau und nehmen sukzessive an Ligen teil. Weitere Spieltitel sind geplant, sobald ausreichend Interesse und Kapazitäten vorhanden sind."
+                 data-en="There are currently active teams in Valorant and Rocket League. Both are in the process of being built up and are gradually taking part in leagues. Further game titles are planned once there is sufficient interest and capacity."
+                 data-ls-de="Wir haben aktive Teams in Valorant und Rocket League. Beide spielen in Ligen. Weitere Spiele sind geplant."
+                 data-ls-en="We have active teams in Valorant and Rocket League. Both play in leagues. More games are planned.">Aktuell gibt es aktive Teams in Valorant und Rocket League. Beide befinden sich im Aufbau und nehmen sukzessive an Ligen teil. Weitere Spieltitel sind geplant, sobald ausreichend Interesse und Kapazitäten vorhanden sind.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Kann ich ohne eSport-Erfahrung mitmachen?"
+                    data-en="Can I get involved without eSport experience?">Kann ich ohne eSport-Erfahrung mitmachen?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Absolut. Der GAMeS Hub bietet Casual Gaming für alle, die einfach Spaß am Spielen haben. Du kannst außerdem bei der Organisation von Events mithelfen, an Forschungsprojekten teilnehmen oder den Verein als Mitglied unterstützen. eSport-Erfahrung ist nur für das kompetitive Team relevant."
+                 data-en="Absolutely. The GAMeS Hub offers casual gaming for everyone who just enjoys playing. You can also help organise events, take part in research projects or support the club as a member. eSport experience is only relevant for the competitive team."
+                 data-ls-de="Ja. Der GAMeS Hub bietet Casual Gaming für alle. Du kannst auch bei Events helfen. eSport-Erfahrung brauchst du nur für das kompetitive Team."
+                 data-ls-en="Yes. The GAMeS Hub offers casual gaming for everyone. You can also help at events. eSport experience is only needed for the competitive team.">Absolut. Der GAMeS Hub bietet Casual Gaming für alle, die einfach Spaß am Spielen haben. Du kannst außerdem bei der Organisation von Events mithelfen, an Forschungsprojekten teilnehmen oder den Verein als Mitglied unterstützen. eSport-Erfahrung ist nur für das kompetitive Team relevant.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Was ist der Unterschied zwischen WireHeadZ und WireHeadZ e.V.?"
+                    data-en="What is the difference between WireHeadZ and WireHeadZ e.V.?">Was ist der Unterschied zwischen WireHeadZ und WireHeadZ e.V.?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="WireHeadZ ist das kompetitive eSport-Team, das an Turnieren und Ligen teilnimmt. WireHeadZ e.V. ist der dahinterstehende eingetragene Verein, der 2024 gegründet wurde und die organisatorische und rechtliche Basis bildet. Mitglied im e.V. zu sein ist unabhängig vom eSport-Team möglich."
+                 data-en="WireHeadZ is the competitive eSport team that takes part in tournaments and leagues. WireHeadZ e.V. is the registered association behind it, founded in 2024, which forms the organisational and legal foundation. Membership in the e.V. is possible independently of the eSport team."
+                 data-ls-de="WireHeadZ ist das eSport-Team. Es spielt in Turnieren und Ligen. WireHeadZ e.V. ist der Verein dahinter. Du kannst Mitglied werden, ohne im Team zu spielen."
+                 data-ls-en="WireHeadZ is the eSport team. It plays in tournaments and leagues. WireHeadZ e.V. is the club behind it. You can become a member without playing in the team.">WireHeadZ ist das kompetitive eSport-Team, das an Turnieren und Ligen teilnimmt. WireHeadZ e.V. ist der dahinterstehende eingetragene Verein, der 2024 gegründet wurde und die organisatorische und rechtliche Basis bildet. Mitglied im e.V. zu sein ist unabhängig vom eSport-Team möglich.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Wie oft finden Trainings und Treffen statt?"
+                    data-en="How often do training sessions and meetings take place?">Wie oft finden Trainings und Treffen statt?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Trainingszeiten und Spielabende werden über den Discord koordiniert und an den Zeitplänen der Beteiligten ausgerichtet. Tritt dem Server bei, um aktuelle Zeiten und Ankündigungen zu sehen."
+                 data-en="Training times and gaming evenings are coordinated via Discord and aligned with participants' schedules. Join the server to see current times and announcements."
+                 data-ls-de="Trainingszeiten und Spielabende werden auf Discord bekannt gegeben. Tritt dem Server bei, um aktuelle Zeiten zu sehen."
+                 data-ls-en="Training times and gaming evenings are announced on Discord. Join the server to see current times.">Trainingszeiten und Spielabende werden über den Discord koordiniert und an den Zeitplänen der Beteiligten ausgerichtet. Tritt dem <a href="https://discord.gg/zs48PfpJJF" target="_blank" rel="noopener">Discord</a> bei, um aktuelle Zeiten und Ankündigungen zu sehen.</div>
+          </details>
+
+          <details class="faq-item" role="listitem">
+            <summary>
+              <span data-de="Kann ich als Unternehmen mitmachen?"
+                    data-en="Can I get involved as a company?">Kann ich als Unternehmen mitmachen?</span>
+              <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-item__body"
+                 data-de="Ja. Über den WireHeadZ Business Club, Event-Kooperationen oder Sponsoring gibt es verschiedene Wege, wie Unternehmen Teil des Projekts werden können. Alle Details und Kontaktmöglichkeiten findest du auf der <a href='partner.html'>Partnerseite</a>."
+                 data-en="Yes. Through the WireHeadZ Business Club, event cooperations or sponsorship there are various ways companies can become part of the project. All details and contact options can be found on the <a href='partner.html'>partner page</a>."
+                 data-ls-de="Ja. Unternehmen können über den Business Club, Events oder Sponsoring mitmachen. Alle Details findest du auf der <a href='partner.html'>Partnerseite</a>."
+                 data-ls-en="Yes. Companies can join through the Business Club, events or sponsorship. You find all details on the <a href='partner.html'>partner page</a>.">Ja. Über den WireHeadZ Business Club, Event-Kooperationen oder Sponsoring gibt es verschiedene Wege, wie Unternehmen Teil des Projekts werden können. Alle Details und Kontaktmöglichkeiten findest du auf der <a href="partner.html">Partnerseite</a>.</div>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         6. CTA BANNER
+         ============================================ -->
+    <section class="cta-banner" aria-labelledby="mitmachen-cta-heading">
+      <div class="container">
+        <h2 class="cta-banner__title" id="mitmachen-cta-heading"
+            data-de="Bereit loszulegen?"
+            data-en="Ready to Get Started?"
+            data-ls-de="Fang jetzt an!"
+            data-ls-en="Start now!">Bereit loszulegen?</h2>
+        <p class="cta-banner__subtext"
+           data-de="Tritt unserem Discord bei und lerne die Community kennen. Der erste Schritt ist immer der einfachste."
+           data-en="Join our Discord and get to know the community. The first step is always the easiest."
+           data-ls-de="Tritt unserem Discord bei. Lerne die Community kennen. Der erste Schritt ist einfach."
+           data-ls-en="Join our Discord. Get to know the community. The first step is easy.">Tritt unserem Discord bei und lerne die Community kennen. Der erste Schritt ist immer der einfachste.</p>
+        <div class="cta-banner__actions">
+          <a href="https://discord.gg/zs48PfpJJF"
+             target="_blank"
+             rel="noopener"
+             class="btn btn--white btn--lg"
+             data-de="Discord beitreten" data-en="Join Discord">Discord beitreten</a>
+          <a href="kontakt.html"
+             class="btn btn--white-outline btn--lg"
+             data-de="Kontaktformular" data-en="Contact Form">Kontaktformular</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+  <script src="main.js?v=12"></script>
+
+</body>
+</html>

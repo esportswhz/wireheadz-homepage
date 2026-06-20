@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Seite nicht gefunden · WHZ GAMeS Hub</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="styles/components.css?v=8" />
+  <link rel="stylesheet" href="styles/layout.css?v=8" />
+
+  <style>
+    .error-page {
+      min-height: calc(100vh - 64px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-2xl) var(--page-margin);
+      background: var(--color-bg);
+    }
+
+    .error-page__inner {
+      text-align: center;
+      max-width: 560px;
+    }
+
+    .error-page__code {
+      font-size: clamp(6rem, 18vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      color: var(--color-wireheadz);
+      letter-spacing: -0.04em;
+      margin: 0;
+    }
+
+    .error-page__label {
+      display: inline-block;
+      font-size: var(--text-sm);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      margin-top: var(--space-sm);
+    }
+
+    .error-page__title {
+      font-size: var(--text-h2);
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: var(--leading-snug);
+      margin: var(--space-lg) 0 var(--space-md);
+    }
+
+    .error-page__desc {
+      font-size: var(--text-body-lg);
+      color: var(--color-text-secondary);
+      line-height: var(--leading-relaxed);
+      margin: 0 0 var(--space-2xl);
+    }
+
+    .error-page__actions {
+      display: flex;
+      gap: var(--space-md);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-page__links {
+      margin-top: var(--space-2xl);
+      padding-top: var(--space-xl);
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      gap: var(--space-lg);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-page__links a {
+      font-size: var(--text-sm);
+      color: var(--color-text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .error-page__links a:hover {
+      color: var(--color-wireheadz);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="error-page" role="main">
+      <div class="error-page__inner">
+
+        <p class="error-page__code" aria-hidden="true">404</p>
+        <span class="error-page__label"
+              data-de="Seite nicht gefunden" data-en="Page not found">Seite nicht gefunden</span>
+
+        <h1 class="error-page__title"
+            data-de="Dieser Respawn-Punkt existiert nicht."
+            data-en="This respawn point doesn't exist."
+            data-ls-de="Diese Seite gibt es nicht."
+            data-ls-en="This page does not exist.">Dieser Respawn-Punkt existiert nicht.</h1>
+
+        <p class="error-page__desc"
+           data-de="Die Seite, die du suchst, wurde verschoben, gelöscht oder war nie vorhanden. Kein Problem&nbsp;– hier sind deine Optionen."
+           data-en="The page you're looking for has been moved, deleted or never existed. No problem&nbsp;– here are your options."
+           data-ls-de="Die Seite wurde verschoben oder gelöscht. Hier sind deine Optionen."
+           data-ls-en="The page was moved or deleted. Here are your options.">Die Seite, die du suchst, wurde verschoben, gelöscht oder war nie vorhanden. Kein Problem&nbsp;– hier sind deine Optionen.</p>
+
+        <div class="error-page__actions">
+          <a href="index.html" class="btn btn--primary btn--lg"
+             data-de="Zur Startseite" data-en="Back to Home">Zur Startseite</a>
+          <a href="javascript:history.back()" class="btn btn--secondary btn--lg"
+             data-de="Zurück" data-en="Go Back">Zurück</a>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+  <script src="main.js?v=12"></script>
+
+</body>
+</html>

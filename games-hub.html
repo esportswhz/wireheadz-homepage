@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAMeS Hub – WireHeadZ</title>
+  <meta name="description" content="Von Casual Gaming bis angewandter Forschung: Der GAMeS Hub ist Lernort, Gemeinschaft und Innovationsplattform an der WHZ." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GAMeS Hub – WHZ Zwickau" />
+  <meta property="og:description" content="Von Casual Gaming bis angewandter Forschung: Lernort, Gemeinschaft und Innovationsplattform an der WHZ." />
+  <meta property="og:image" content="assets/images/games-hub/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GAMeS Hub – WHZ Zwickau" />
+  <meta name="twitter:image" content="assets/images/games-hub/og-image.png" />
+
+  <link rel="canonical" href="https://games-hub.whz.de/games-hub.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="styles/components.css?v=8" />
+  <link rel="stylesheet" href="styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION (identisch zu index.html)
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         1. TAB-HERO
+         ============================================ -->
+    <section class="tab-hero" aria-label="GAMeS Hub Bereiche">
+
+      <!-- Bildbereich mit Überschrift -->
+      <div class="tab-hero__visual">
+        <img src="assets/images/games-hub/hero.png" alt="GAMeS Hub Raum" class="tab-hero__bg" />
+        <div class="tab-hero__overlay" aria-hidden="true"></div>
+        <div class="tab-hero__content">
+          <p class="tab-hero__eyebrow"
+             data-de="Westsächsische Hochschule Zwickau"
+             data-en="West Saxon University of Applied Sciences Zwickau"
+             data-ls-de="Westsächsische Hochschule Zwickau"
+             data-ls-en="West Saxon University of Applied Sciences Zwickau">
+            Westsächsische Hochschule Zwickau
+          </p>
+          <h1 class="tab-hero__title"
+              data-de="Mehr als Spielen"
+              data-en="More Than Gaming"
+              data-ls-de="Mehr als Spielen"
+              data-ls-en="More Than Gaming">
+            Mehr als Spielen
+          </h1>
+          <p class="tab-hero__sub"
+             data-de="Von Casual Gaming bis angewandter Forschung: Der GAMeS Hub ist Lernort, Gemeinschaft und Innovationsplattform an der WHZ."
+             data-en="From casual gaming to applied research: the GAMeS Hub is a place to learn, connect and innovate at WHZ."
+             data-ls-de="Hier kann man spielen. Hier kann man lernen. Hier kann man forschen. Der GAMeS Hub ist für alle."
+             data-ls-en="Here you can play. Here you can learn. Here you can do research. The GAMeS Hub is for everyone.">
+            Von Casual Gaming bis angewandter Forschung: Der GAMeS Hub ist Lernort, Gemeinschaft und Innovationsplattform an der WHZ.
+          </p>
+        </div>
+      </div>
+
+      <!-- Tab-Leiste (unter dem Bild, weiß / inaktiv — Farbe aktiv per JS) -->
+      <div class="tab-hero__tabs" role="tablist" aria-label="Bereiche">
+        <button class="tab-hero__tab" role="tab" aria-selected="false"
+                data-tab="casual-gaming" data-color="#15803d">
+          <i data-lucide="gamepad-2" style="width:20px;height:20px;"></i>
+          <span data-de="Casual Gaming" data-en="Casual Gaming" data-ls-de="Casual Gaming" data-ls-en="Casual Gaming">Casual Gaming</span>
+        </button>
+        <button class="tab-hero__tab" role="tab" aria-selected="false"
+                data-tab="esportler" data-color="#b91c1c">
+          <i data-lucide="trophy" style="width:20px;height:20px;"></i>
+          <span data-de="eSportler" data-en="eSport Team" data-ls-de="eSportler" data-ls-en="eSport Team">eSportler</span>
+        </button>
+        <button class="tab-hero__tab" role="tab" aria-selected="false"
+                data-tab="projektorganisation" data-color="#4338ca">
+          <i data-lucide="layout-dashboard" style="width:20px;height:20px;"></i>
+          <span data-de="Projektorganisation" data-en="Project Organisation" data-ls-de="Projekte" data-ls-en="Projects">Projektorganisation</span>
+        </button>
+        <button class="tab-hero__tab" role="tab" aria-selected="false"
+                data-tab="lehre" data-color="#0f766e">
+          <i data-lucide="graduation-cap" style="width:20px;height:20px;"></i>
+          <span data-de="Lehre" data-en="Teaching" data-ls-de="Lernen" data-ls-en="Learning">Lehre</span>
+        </button>
+        <button class="tab-hero__tab" role="tab" aria-selected="false"
+                data-tab="forschung" data-color="#0e7490">
+          <i data-lucide="flask-conical" style="width:20px;height:20px;"></i>
+          <span data-de="Forschung" data-en="Research" data-ls-de="Forschung" data-ls-en="Research">Forschung</span>
+        </button>
+
+      </div>
+
+      <!-- Panels (farbig, unter der Tab-Leiste) -->
+      <div class="tab-hero__panels">
+
+        <div class="tab-hero__panel" id="panel-casual-gaming" role="tabpanel"
+             style="--panel-color: #15803d;">
+          <div class="container tab-hero__panel-inner">
+            <div class="tab-hero__panel-body">
+              <p class="tab-hero__panel-text"
+                 data-de="Täglich von 6 bis 21 Uhr für alle WHZ-Studierenden offen. Mit kurzer Einweisung einfach reinkommen und spielen."
+                 data-en="Open daily from 6 am to 9 pm for all WHZ students. A brief introduction gets you started right away."
+                 data-ls-de="Der Hub ist täglich geöffnet. Alle WHZ-Studierenden können kommen. Eine kurze Einweisung reicht."
+                 data-ls-en="The hub is open every day. All WHZ students can come. A brief introduction is enough.">
+                Täglich von 6 bis 21 Uhr für alle WHZ-Studierenden offen. Mit kurzer Einweisung einfach reinkommen und spielen.
+              </p>
+              <span class="tab-hero__panel-metric"
+                    data-de="9 Geräte · 5 Tage die Woche"
+                    data-en="9 devices · 5 days a week"
+                    data-ls-de="9 Geräte · 5 Tage die Woche"
+                    data-ls-en="9 devices · 5 days a week">9 Geräte · 5 Tage die Woche</span>
+            </div>
+            <a href="#casual-gaming" class="btn leistungen__cta-btn"
+               data-de="Mehr erfahren" data-en="Learn More" data-ls-de="Mehr erfahren" data-ls-en="Learn More">Mehr erfahren</a>
+          </div>
+        </div>
+
+        <div class="tab-hero__panel" id="panel-esportler" role="tabpanel"
+             style="--panel-color: #b91c1c;">
+          <div class="container tab-hero__panel-inner">
+            <div class="tab-hero__panel-body">
+              <p class="tab-hero__panel-text" data-esport-fill="tab-desc"
+                 data-de="Das kompetitive eSport-Team der WHZ. Aktiv in F1, League of Legends &amp; Rocket League: regelmäßiges Training und Turnierbetrieb."
+                 data-en="The competitive eSport team of WHZ. Active in F1, League of Legends &amp; Rocket League: regular training and tournament play."
+                 data-ls-de="Wir sind das eSport-Team der WHZ. Wir spielen F1, League of Legends und Rocket League. Wir trainieren regelmäßig."
+                 data-ls-en="We are the eSport team of WHZ. We play F1, League of Legends and Rocket League. We train regularly.">
+                Das kompetitive eSport-Team der WHZ. Aktiv in F1, League of Legends &amp; Rocket League: regelmäßiges Training und Turnierbetrieb.
+              </p>
+              <span class="tab-hero__panel-metric" data-esport-fill="tab-metric"
+                    data-de="3 aktive Teams · 12 Spieler"
+                    data-en="3 active teams · 12 players"
+                    data-ls-de="3 aktive Teams · 12 Spieler"
+                    data-ls-en="3 active teams · 12 players">3 aktive Teams · 12 Spieler</span>
+            </div>
+            <a href="esports/wireheadz.html" class="btn leistungen__cta-btn"
+               data-de="Zur Teamseite" data-en="Visit Team Page" data-ls-de="Zur Teamseite" data-ls-en="Visit Team Page">Zur Teamseite</a>
+          </div>
+        </div>
+
+        <div class="tab-hero__panel" id="panel-lehre" role="tabpanel"
+             style="--panel-color: #0f766e;">
+          <div class="container tab-hero__panel-inner">
+            <div class="tab-hero__panel-body">
+              <p class="tab-hero__panel-text"
+                 data-de="Gaming und Hochschullehre verbinden: Gamification, spielbasiertes Lernen und praxisnahe Lehrformate direkt an der WHZ."
+                 data-en="Combining gaming and university teaching: gamification, game-based learning and practical course formats right at WHZ."
+                 data-ls-de="Wir verbinden Gaming mit Lernen. Wir nutzen Gamification. Das macht Lernen einfacher."
+                 data-ls-en="We combine gaming with learning. We use gamification. This makes learning easier.">
+                Gaming und Hochschullehre verbinden: Gamification, spielbasiertes Lernen und praxisnahe Lehrformate direkt an der WHZ.
+              </p>
+              <span class="tab-hero__panel-metric"
+                    data-de="Mehrere Fachbereiche · Praxisnah"
+                    data-en="Multiple faculties · Hands-on"
+                    data-ls-de="Mehrere Fachbereiche · Praxisnah"
+                    data-ls-en="Multiple faculties · Hands-on">Mehrere Fachbereiche · Praxisnah</span>
+            </div>
+            <a href="#lehre" class="btn leistungen__cta-btn"
+               data-de="Mehr erfahren" data-en="Learn More" data-ls-de="Mehr erfahren" data-ls-en="Learn More">Mehr erfahren</a>
+          </div>
+        </div>
+
+        <div class="tab-hero__panel" id="panel-projektorganisation" role="tabpanel"
+             style="--panel-color: #4338ca;">
+          <div class="container tab-hero__panel-inner">
+            <div class="tab-hero__panel-body">
+              <p class="tab-hero__panel-text"
+                 data-de="Als Studienmodul belegbar und ECTS-anrechenbar. Echte Projekte, echte Verantwortung."
+                 data-en="Available as a university study module with credit points. Real projects, real responsibility."
+                 data-ls-de="Die Mitarbeit im Hub kann man als Studienleistung einbringen. Man bekommt ECTS-Punkte. Die Projekte sind echt."
+                 data-ls-en="Working in the hub counts as academic work. You get ECTS credit points. The projects are real.">
+                Als Studienmodul belegbar und ECTS-anrechenbar. Echte Projekte, echte Verantwortung.
+              </p>
+              <span class="tab-hero__panel-metric"
+                    data-de="Anrechenbar in allen Fachbereichen"
+                    data-en="Applicable across all faculties"
+                    data-ls-de="Anrechenbar in allen Fachbereichen"
+                    data-ls-en="Applicable across all faculties">Anrechenbar in allen Fachbereichen</span>
+            </div>
+            <a href="#projektorganisation" class="btn leistungen__cta-btn"
+               data-de="Mehr erfahren" data-en="Learn More" data-ls-de="Mehr erfahren" data-ls-en="Learn More">Mehr erfahren</a>
+          </div>
+        </div>
+
+        <div class="tab-hero__panel" id="panel-forschung" role="tabpanel"
+             style="--panel-color: #0e7490;">
+          <div class="container tab-hero__panel-inner">
+            <div class="tab-hero__panel-body">
+              <p class="tab-hero__panel-text"
+                 data-de="Seit 2024 aktive Forschung zu Gamification, eSport und Wellbeing. Erste Publikationen liegen vor."
+                 data-en="Active research since 2024 on gamification, eSport and wellbeing. First publications available."
+                 data-ls-de="Seit 2024 forschen wir. Wir forschen zu Gamification und eSport. Es gibt schon erste Veröffentlichungen."
+                 data-ls-en="Since 2024 we do research. We research gamification and eSport. There are already first publications.">
+                Seit 2024 aktive Forschung zu Gamification, eSport und Wellbeing. Erste Publikationen liegen vor.
+              </p>
+              <span class="tab-hero__panel-metric"
+                    data-de="Internationale Hochschulkontakte"
+                    data-en="International university partnerships"
+                    data-ls-de="Internationale Hochschulkontakte"
+                    data-ls-en="International university partnerships">Internationale Hochschulkontakte</span>
+            </div>
+            <a href="#forschung" class="btn leistungen__cta-btn"
+               data-de="Mehr erfahren" data-en="Learn More" data-ls-de="Mehr erfahren" data-ls-en="Learn More">Mehr erfahren</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         3. CASUAL GAMING
+         ============================================ -->
+    <section class="section" id="casual-gaming" aria-labelledby="casual-gaming-heading">
+      <div class="container">
+        <div class="games-hub-section">
+          <div class="games-hub-section__text">
+            <p class="section-label" data-de="Casual Gaming" data-en="Casual Gaming" data-ls-de="Casual Gaming" data-ls-en="Casual Gaming">Casual Gaming</p>
+            <h2 id="casual-gaming-heading"
+                data-de="Dein Spielzimmer an der Hochschule"
+                data-en="Your Gaming Room at University"
+                data-ls-de="Dein Spielzimmer an der Hochschule"
+                data-ls-en="Your Gaming Room at University">Dein Spielzimmer an der Hochschule</h2>
+            <p data-de="Der Hub ist täglich für alle WHZ-Studierenden offen. Keine Verpflichtung, einfach reinkommen und spielen. Fünf Gaming-PCs, zwei PS5, VR-Brillen und eine Nintendo Switch stehen bereit, ob Einzelspieler oder Gruppe. Der Raum ist entspannt, die Community freundlich."
+               data-en="The hub is open daily for all WHZ students. No commitment, just come in and play. Five gaming PCs, two PS5s, VR headsets and a Nintendo Switch are ready, whether you're playing solo or with a group. The atmosphere is relaxed and the community is welcoming."
+               data-ls-de="Der Hub ist täglich für alle WHZ-Studierenden offen. Es gibt 5 Gaming-PCs, 2 PS5, VR-Brillen und eine Nintendo Switch. Spielen allein oder in der Gruppe ist möglich."
+               data-ls-en="The hub is open daily for all WHZ students. There are 5 gaming PCs, 2 PS5s, VR headsets and a Nintendo Switch. Playing alone or in a group is possible.">Der Hub ist täglich für alle WHZ-Studierenden offen. Keine Verpflichtung, einfach reinkommen und spielen. Fünf Gaming-PCs, zwei PS5, VR-Brillen und eine Nintendo Switch stehen bereit, ob Einzelspieler oder Gruppe. Der Raum ist entspannt, die Community freundlich.</p>
+            <ul class="games-hub-section__list">
+              <li><i data-lucide="clock" style="width:16px;height:16px;"></i> <span data-de="Geöffnet Mo – Fr, 6:00 – 21:00 Uhr" data-en="Open Mon – Fri, 6 am – 9 pm" data-ls-de="Geöffnet Mo – Fr, 6:00 – 21:00 Uhr" data-ls-en="Open Mon – Fri, 6 am – 9 pm">Geöffnet Mo – Fr, 6:00 – 21:00 Uhr</span></li>
+              <li><i data-lucide="monitor" style="width:16px;height:16px;"></i> <span data-de="5 Gaming-PCs (240 Hz)" data-en="5 gaming PCs (240 Hz)" data-ls-de="5 Gaming-PCs (240 Hz)" data-ls-en="5 gaming PCs (240 Hz)">5 Gaming-PCs (240 Hz)</span></li>
+              <li><i data-lucide="gamepad-2" style="width:16px;height:16px;"></i> <span data-de="2x PS5, 2x VR, Nintendo Switch" data-en="2x PS5, 2x VR, Nintendo Switch" data-ls-de="2x PS5, 2x VR, Nintendo Switch" data-ls-en="2x PS5, 2x VR, Nintendo Switch">2x PS5, 2x VR, Nintendo Switch</span></li>
+              <li><i data-lucide="info" style="width:16px;height:16px;"></i> <span data-de="Kurze Einweisung beim ersten Besuch" data-en="Brief introduction on first visit" data-ls-de="Kurze Einweisung beim ersten Besuch" data-ls-en="Brief introduction on first visit">Kurze Einweisung beim ersten Besuch</span></li>
+            </ul>
+          </div>
+          <div class="games-hub-section__image">
+            <img src="assets/images/games-hub/casual-gaming.png" alt="Casual Gaming im Hub" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         3b. eSPORT
+         ============================================ -->
+    <section class="section section--alt" id="esport" aria-labelledby="esport-heading">
+      <div class="container">
+        <div class="games-hub-section games-hub-section--reverse">
+          <div class="games-hub-section__text">
+            <p class="section-label" data-de="eSport" data-en="eSport" data-ls-de="eSport" data-ls-en="eSport">eSport</p>
+            <h2 id="esport-heading"
+                data-de="Kompetitiv. Engagiert. WHZ."
+                data-en="Competitive. Committed. WHZ."
+                data-ls-de="Kompetitiv. Engagiert. WHZ."
+                data-ls-en="Competitive. Committed. WHZ.">Kompetitiv. Engagiert. WHZ.</h2>
+            <p data-esport-fill="section-desc"
+               data-de="WireHeadZ ist das kompetitive eSport-Team der WHZ. Aktiv in F1, League of Legends &amp; Rocket League treten wir in nationalen Uniligen an."
+               data-en="WireHeadZ is the competitive eSport team of WHZ. Active in F1, League of Legends &amp; Rocket League, we compete in national university leagues."
+               data-ls-de="WireHeadZ ist das eSport-Team der WHZ. Wir spielen F1, League of Legends und Rocket League. Wir treten in nationalen Ligen an."
+               data-ls-en="WireHeadZ is the eSport team of WHZ. We play F1, League of Legends and Rocket League. We compete in national leagues.">WireHeadZ ist das kompetitive eSport-Team der WHZ. Aktiv in F1, League of Legends &amp; Rocket League treten wir in nationalen Uniligen an.</p>
+            <ul class="games-hub-section__list">
+              <li><i data-lucide="trophy" style="width:16px;height:16px;"></i> <span data-esport-fill="team-count" data-de="3 aktive Teams: F1, League of Legends &amp; Rocket League" data-en="3 active teams: F1, League of Legends &amp; Rocket League" data-ls-de="3 aktive Teams: F1, League of Legends &amp; Rocket League" data-ls-en="3 active teams: F1, League of Legends &amp; Rocket League">3 aktive Teams: F1, League of Legends &amp; Rocket League</span></li>
+              <li><i data-lucide="users" style="width:16px;height:16px;"></i> <span data-esport-fill="player-count" data-de="12 Spieler, regelmäßiges Training" data-en="12 players, regular training" data-ls-de="12 Spieler, regelmäßiges Training" data-ls-en="12 players, regular training">12 Spieler, regelmäßiges Training</span></li>
+              <li><i data-lucide="medal" style="width:16px;height:16px;"></i> <span data-de="Platzierungen in der Uniliga Deutschland" data-en="Ranked in the Uniliga Deutschland" data-ls-de="Platzierungen in der Uniliga Deutschland" data-ls-en="Ranked in the Uniliga Deutschland">Platzierungen in der Uniliga Deutschland</span></li>
+            </ul>
+            <a href="esports/wireheadz.html" class="btn btn--primary"
+               data-de="Zum WireHeadZ Team"
+               data-en="Meet the WireHeadZ Team"
+               data-ls-de="Zum WireHeadZ Team"
+               data-ls-en="Meet the WireHeadZ Team">Zum WireHeadZ Team</a>
+          </div>
+          <div class="games-hub-section__image">
+            <img src="assets/images/wireheadz/hero.png" alt="WireHeadZ eSport Team" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. PROJEKTORGANISATION
+         ============================================ -->
+    <section class="section" id="projektorganisation" aria-labelledby="projektorg-heading">
+      <div class="container">
+        <div class="games-hub-section">
+          <div class="games-hub-section__text">
+            <p class="section-label" data-de="Projektorganisation" data-en="Project Organisation" data-ls-de="Projekte" data-ls-en="Projects">Projektorganisation</p>
+            <h2 id="projektorg-heading"
+                data-de="Echte Projekte, echte Verantwortung"
+                data-en="Real Projects, Real Responsibility"
+                data-ls-de="Echte Projekte, echte Verantwortung"
+                data-ls-en="Real Projects, Real Responsibility">Echte Projekte, echte Verantwortung</h2>
+            <p data-de="Wer an der WHZ studiert, kann die Mitarbeit im GAMeS Hub als Prüfungsleistung einbringen. Das Modul ist interdisziplinär: ob Management, Informatik oder Ingenieurwesen. Du übernimmst echte Aufgaben in Organisation, Kommunikation oder Entwicklung und sammelst Erfahrung, die auf dem Lebenslauf zählt. Studentische Hilfskraftstellen sind bei entsprechender Eignung möglich."
+               data-en="WHZ students can have their involvement in the GAMeS Hub recognised as graded academic work. The module is interdisciplinary: whether you study Management, Computer Science or Engineering. You take on real tasks in organisation, communication or development and gain experience that counts on your CV. Student assistant positions are available for suitable candidates."
+               data-ls-de="WHZ-Studierende können im GAMeS Hub mitarbeiten. Die Mitarbeit zählt als Studienleistung. Man bekommt ECTS-Punkte. Alle Fachrichtungen sind willkommen. SHK-Stellen sind möglich."
+               data-ls-en="WHZ students can work in the GAMeS Hub. The work counts as academic credit. You get ECTS credit points. All study programmes are welcome. Student assistant positions are available.">Wer an der WHZ studiert, kann die Mitarbeit im GAMeS Hub als Prüfungsleistung einbringen. Das Modul ist interdisziplinär: ob Management, Informatik oder Ingenieurwesen. Du übernimmst echte Aufgaben in Organisation, Kommunikation oder Entwicklung und sammelst Erfahrung, die auf dem Lebenslauf zählt. Studentische Hilfskraftstellen sind bei entsprechender Eignung möglich.</p>
+            <ul class="games-hub-section__list">
+              <li><i data-lucide="graduation-cap" style="width:16px;height:16px;"></i> <span data-de="Als Studienmodul belegbar" data-en="Available as a study module" data-ls-de="Als Studienmodul belegbar" data-ls-en="Available as a study module">Als Studienmodul belegbar</span></li>
+              <li><i data-lucide="award" style="width:16px;height:16px;"></i> <span data-de="ECTS-Punkte anrechenbar" data-en="ECTS credit points applicable" data-ls-de="ECTS-Punkte anrechenbar" data-ls-en="ECTS credit points applicable">ECTS-Punkte anrechenbar</span></li>
+              <li><i data-lucide="building-2" style="width:16px;height:16px;"></i> <span data-de="Alle Fachbereiche willkommen" data-en="All faculties welcome" data-ls-de="Alle Fachbereiche willkommen" data-ls-en="All faculties welcome">Alle Fachbereiche willkommen</span></li>
+              <li><i data-lucide="wallet" style="width:16px;height:16px;"></i> <span data-de="SHK-Stellen möglich" data-en="Student assistant positions available" data-ls-de="SHK-Stellen möglich" data-ls-en="Student assistant positions available">SHK-Stellen möglich</span></li>
+            </ul>
+            <a href="mitmachen.html" class="btn btn--primary"
+               data-de="Mitmachen"
+               data-en="Get Involved"
+               data-ls-de="Mitmachen"
+               data-ls-en="Get Involved">Mitmachen</a>
+          </div>
+          <div class="games-hub-section__image">
+            <img src="assets/images/games-hub/projektorganisation.png" alt="Team-Meeting im Hub" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         5. LEHRE
+         ============================================ -->
+    <section class="section section--alt" id="lehre" aria-labelledby="lehre-heading">
+      <div class="container">
+        <div class="games-hub-section games-hub-section--reverse">
+          <div class="games-hub-section__text">
+            <p class="section-label" data-de="Lehre" data-en="Teaching" data-ls-de="Lernen" data-ls-en="Learning">Lehre</p>
+            <h2 id="lehre-heading"
+                data-de="Lernen durch Gaming."
+                data-en="Learning Through Gaming."
+                data-ls-de="Lernen durch Gaming."
+                data-ls-en="Learning Through Gaming.">Lernen durch Gaming.</h2>
+            <p data-de="Der GAMeS Hub ist integraler Bestandteil der Hochschullehre an der WHZ. Gaming-Konzepte und Gamification werden in Lehrveranstaltungen verschiedener Fachbereiche eingesetzt, diese reichen von Medienwirtschaft bis Ingenieurwesen. Spielbasiertes Lernen fördert Motivation, Kollaboration und praktisches Problemlösen direkt im Studienalltag."
+               data-en="The GAMeS Hub is an integral part of university teaching at WHZ. Gaming concepts and gamification are used in courses across multiple faculties, ranging from media economics to engineering. Game-based learning boosts motivation, collaboration and hands-on problem-solving right in the study environment."
+               data-ls-de="Der GAMeS Hub gehört zur Hochschullehre der WHZ. Wir nutzen Gaming und Gamification in Lehrveranstaltungen. Das funktioniert in vielen Fachbereichen. Spielbasiertes Lernen macht mehr Spaß."
+               data-ls-en="The GAMeS Hub is part of teaching at WHZ. We use gaming and gamification in courses. This works in many faculties. Game-based learning is more fun.">Der GAMeS Hub ist integraler Bestandteil der Hochschullehre an der WHZ. Gaming-Konzepte und Gamification werden in Lehrveranstaltungen verschiedener Fachbereiche eingesetzt, diese reichen von Medienwirtschaft bis Ingenieurwesen. Spielbasiertes Lernen fördert Motivation, Kollaboration und praktisches Problemlösen direkt im Studienalltag.</p>
+            <ul class="games-hub-section__list">
+              <li><i data-lucide="book-open" style="width:16px;height:16px;"></i> <span data-de="Lehrveranstaltungen mit Gaming-Bezug" data-en="Courses with gaming content" data-ls-de="Lehrveranstaltungen mit Gaming-Bezug" data-ls-en="Courses with gaming content">Lehrveranstaltungen mit Gaming-Bezug</span></li>
+              <li><i data-lucide="lightbulb" style="width:16px;height:16px;"></i> <span data-de="Gamification als didaktisches Werkzeug" data-en="Gamification as a didactic tool" data-ls-de="Gamification als Lernwerkzeug" data-ls-en="Gamification as a learning tool">Gamification als didaktisches Werkzeug</span></li>
+              <li><i data-lucide="layers" style="width:16px;height:16px;"></i> <span data-de="Interdisziplinär in mehreren Fachbereichen" data-en="Interdisciplinary across multiple faculties" data-ls-de="In mehreren Fachbereichen" data-ls-en="Across multiple faculties">Interdisziplinär in mehreren Fachbereichen</span></li>
+              <li><i data-lucide="users" style="width:16px;height:16px;"></i> <span data-de="Praxisnahe Lehrformate und Workshops" data-en="Practical course formats and workshops" data-ls-de="Praxisnahe Lehrformate und Workshops" data-ls-en="Practical course formats and workshops">Praxisnahe Lehrformate und Workshops</span></li>
+            </ul>
+            <a href="kontakt.html" class="btn btn--primary"
+               data-de="Lehrkooperation anfragen"
+               data-en="Enquire About Teaching Collaboration"
+               data-ls-de="Lehrkooperation anfragen"
+               data-ls-en="Ask about teaching">Lehrkooperation anfragen</a>
+          </div>
+          <div class="games-hub-section__image">
+            <img src="assets/images/games-hub/lehre.png" alt="Lehrveranstaltung im GAMeS Hub" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         6. FORSCHUNG
+         ============================================ -->
+    <section class="section" id="forschung" aria-labelledby="forschung-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Forschung &amp; Gamification" data-en="Research &amp; Gamification" data-ls-de="Forschung &amp; Gamification" data-ls-en="Research &amp; Gamification">Forschung &amp; Gamification</p>
+          <h2 id="forschung-heading" data-de="Wo Spiel auf Wissenschaft trifft" data-en="Where Gaming Meets Science" data-ls-de="Gaming und Wissenschaft" data-ls-en="Gaming and Science">Wo Spiel auf Wissenschaft trifft</h2>
+          <p class="section-sub"
+             data-de="Seit 2024 forschen wir zu Gamification, eSport und Wellbeing. Erste Publikationen liegen vor, weitere sind in Vorbereitung."
+             data-en="Since 2024 we have been conducting research on gamification, eSport and wellbeing. First publications are available, more are in preparation."
+             data-ls-de="Seit 2024 forschen wir. Wir forschen zu Gamification, eSport und Gesundheit. Es gibt schon erste Veröffentlichungen."
+             data-ls-en="Since 2024 we do research. We research gamification, eSport and health. There are already first publications.">Seit 2024 forschen wir zu Gamification, eSport und Wellbeing. Erste Publikationen liegen vor, weitere sind in Vorbereitung.</p>
+        </div>
+        <div class="research-grid">
+          <div class="research-card">
+            <i data-lucide="users-round" style="width:24px;height:24px;" class="research-card__icon"></i>
+            <h3 data-de="HRM &amp; Fachkräfte" data-en="HRM &amp; Talent" data-ls-de="HRM &amp; Fachkräfte" data-ls-en="HRM &amp; Talent">HRM &amp; Fachkräfte</h3>
+            <p data-de="Gamification in der Personalentwicklung und Mitarbeitergewinnung." data-en="Gamification in human resource development and recruitment." data-ls-de="Wir erforschen Gamification für die Personalentwicklung." data-ls-en="We research gamification for human resource development.">Gamification in der Personalentwicklung und Mitarbeitergewinnung.</p>
+          </div>
+          <div class="research-card">
+            <i data-lucide="book-open" style="width:24px;height:24px;" class="research-card__icon"></i>
+            <h3 data-de="Bildung &amp; Wirtschaft" data-en="Education &amp; Business" data-ls-de="Bildung &amp; Wirtschaft" data-ls-en="Education &amp; Business">Bildung &amp; Wirtschaft</h3>
+            <p data-de="Spielbasiertes Lernen und digitale Transformation in Bildungseinrichtungen." data-en="Game-based learning and digital transformation in educational institutions." data-ls-de="Wir erforschen spielbasiertes Lernen und Digitalisierung." data-ls-en="We research game-based learning and digitalisation.">Spielbasiertes Lernen und digitale Transformation in Bildungseinrichtungen.</p>
+          </div>
+          <div class="research-card">
+            <i data-lucide="heart-pulse" style="width:24px;height:24px;" class="research-card__icon"></i>
+            <h3 data-de="eSport Health / Wellbeing" data-en="eSport Health / Wellbeing" data-ls-de="eSport Health / Wellbeing" data-ls-en="eSport Health / Wellbeing">eSport Health / Wellbeing</h3>
+            <p data-de="Körper, Geist und Leistung im kompetitiven Gaming. Wissenschaftlich untersucht." data-en="Body, mind and performance in competitive gaming. Studied scientifically." data-ls-de="Wir erforschen die Gesundheit von eSport-Spielenden." data-ls-en="We research the health of eSport players.">Körper, Geist und Leistung im kompetitiven Gaming. Wissenschaftlich untersucht.</p>
+          </div>
+          <div class="research-card">
+            <i data-lucide="cpu" style="width:24px;height:24px;" class="research-card__icon"></i>
+            <h3 data-de="Künstliche Intelligenz" data-en="Artificial Intelligence" data-ls-de="Künstliche Intelligenz" data-ls-en="Artificial Intelligence">Künstliche Intelligenz</h3>
+            <p data-de="KI-Anwendungen im Gaming-Kontext: von Balancing bis adaptive Lernumgebungen." data-en="AI applications in gaming: from game balancing to adaptive learning environments." data-ls-de="Wir erforschen KI im Gaming. KI kann beim Lernen helfen." data-ls-en="We research AI in gaming. AI can help with learning.">KI-Anwendungen im Gaming-Kontext: von Balancing bis adaptive Lernumgebungen.</p>
+          </div>
+        </div>
+        <!-- Nachwuchsforschergruppe Game Change -->
+        <div class="game-change-block">
+          <div class="game-change-block__content">
+            <p class="game-change-block__label"
+               data-de="Nachwuchsforschergruppe" data-en="Junior Research Group" data-ls-de="Nachwuchsforschergruppe" data-ls-en="Junior Research Group">Nachwuchsforschergruppe</p>
+            <h3 class="game-change-block__title"
+                data-de="Gaming als Motor f&#252;r Wandel" data-en="Gaming as a Driver for Change" data-ls-de="Gaming als Antrieb f&#252;r Ver&#228;nderung" data-ls-en="Gaming as a Driver for Change">Gaming als Motor f&#252;r Wandel</h3>
+            <p class="game-change-block__desc"
+               data-de="Die Nachwuchsforschergruppe &#8222;Game Change&#8220; erforscht an der WHZ, wie spielbasierte Ans&#228;tze technologische und gesellschaftliche Ver&#228;nderungen unterst&#252;tzen k&#246;nnen. Im Mittelpunkt stehen Fachkr&#228;fteentwicklung, Innovationsprozesse sowie nachhaltige L&#246;sungen f&#252;r Energie und Mobilit&#228;t. Durch den gezielten Einsatz von Gamification-Mechanismen wie Feedback, Motivation und Lernfortschritt werden komplexe Themen verst&#228;ndlicher und Lernprozesse wirksamer gestaltet. Die Forschung verbindet wirtschafts- und ingenieurwissenschaftliche Perspektiven und entwickelt praxisnahe Anwendungen f&#252;r die Herausforderungen von morgen."
+               data-en="The junior research group &#8222;Game Change&#8220; at WHZ investigates how game-based approaches can support technological and social change. The focus is on talent development, innovation processes and sustainable solutions in energy and mobility. Through targeted use of gamification mechanisms such as feedback, motivation and learning progress, complex topics become more accessible and learning processes more effective. The research connects economic and engineering perspectives to develop practical applications for tomorrow&#8217;s challenges."
+               data-ls-de="Die Gruppe &#8222;Game Change&#8220; forscht an der WHZ. Sie untersucht, wie Gaming die Gesellschaft verbessern kann. Wichtige Themen sind: Fachkr&#228;fte, neue Ideen und Nachhaltigkeit."
+               data-ls-en="The group &#8222;Game Change&#8220; does research at WHZ. It investigates how gaming can improve society. Key topics are: talent, innovation and sustainability.">
+              Die Nachwuchsforschergruppe &#8222;Game Change&#8220; erforscht an der WHZ, wie spielbasierte Ans&#228;tze technologische und gesellschaftliche Ver&#228;nderungen unterst&#252;tzen k&#246;nnen. Im Mittelpunkt stehen Fachkr&#228;fteentwicklung, Innovationsprozesse sowie nachhaltige L&#246;sungen f&#252;r Energie und Mobilit&#228;t. Durch den gezielten Einsatz von Gamification-Mechanismen wie Feedback, Motivation und Lernfortschritt werden komplexe Themen verst&#228;ndlicher und Lernprozesse wirksamer gestaltet. Die Forschung verbindet wirtschafts- und ingenieurwissenschaftliche Perspektiven und entwickelt praxisnahe Anwendungen f&#252;r die Herausforderungen von morgen.
+            </p>
+            <ul class="game-change-block__list">
+              <li data-de="Forschung zu Gamification und Transformation" data-en="Research on gamification and transformation" data-ls-de="Forschung zu Gamification und Ver&#228;nderung" data-ls-en="Research on gamification and change">Forschung zu Gamification und Transformation</li>
+              <li data-de="Fachkr&#228;fteentwicklung und Innovationsgestaltung" data-en="Talent development and innovation design" data-ls-de="Fachkr&#228;fteentwicklung und neue Ideen" data-ls-en="Talent development and new ideas">Fachkr&#228;fteentwicklung und Innovationsgestaltung</li>
+              <li data-de="Nachhaltige Anwendungen in Energie &amp; Mobilit&#228;t" data-en="Sustainable applications in energy &amp; mobility" data-ls-de="Nachhaltige L&#246;sungen in Energie &amp; Mobilit&#228;t" data-ls-en="Sustainable solutions in energy &amp; mobility">Nachhaltige Anwendungen in Energie &amp; Mobilit&#228;t</li>
+              <li data-de="Interdisziplin&#228;re Projekte mit Praxisbezug" data-en="Interdisciplinary projects with practical relevance" data-ls-de="Projekte mit Praxisbezug" data-ls-en="Projects with practical relevance">Interdisziplin&#228;re Projekte mit Praxisbezug</li>
+            </ul>
+          </div>
+          <div class="game-change-block__media">
+            <img src="assets/images/games-hub/forschung/game-change-1.png"
+                 alt="Nachwuchsforschergruppe Game Change &#8211; WHZ"
+                 class="game-change-block__img" loading="lazy" />
+            <div class="game-change-block__video-wrap">
+              <iframe src="https://www.youtube.com/embed/pEL-cUYConQ"
+                      title="Game Change &#8211; Nachwuchsforschergruppe WHZ"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-footer">
+          <p data-de="Wir kooperieren mit nationalen und internationalen Hochschulen, darunter Partner in Finnland. Forschungskooperationen mit Unternehmen sind ausdrücklich erwünscht."
+             data-en="We collaborate with national and international universities, including partners in Finland. Research partnerships with companies are actively welcomed."
+             data-ls-de="Wir arbeiten mit Hochschulen in Deutschland und anderen Ländern zusammen. Partner in Finnland gehören dazu. Firmen können ebenfalls Partner werden."
+             data-ls-en="We work with universities in Germany and other countries. Partners in Finland are included. Companies can also become partners.">Wir kooperieren mit nationalen und internationalen Hochschulen, darunter Partner in Finnland. Forschungskooperationen mit Unternehmen sind ausdrücklich erwünscht.</p>
+          <a href="kontakt.html?typ=partner&art=forschung" class="btn btn--primary"
+             data-de="Forschungskooperation anfragen"
+             data-en="Request Research Collaboration"
+             data-ls-de="Forschungskooperation anfragen"
+             data-ls-en="Request Research Collaboration">Forschungskooperation anfragen</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         STATS BLOCK — nach den Bereichs-Sections
+         ============================================ -->
+    <section class="stats-block" aria-label="Kennzahlen">
+      <div class="container">
+        <div class="stats-block__grid">
+          <div class="stats-block__item">
+            <span class="stats-block__number" data-stats-esport-players>12</span>
+            <span class="stats-block__label" data-de="Aktive Spieler" data-en="Active Players" data-ls-de="Aktive Spieler" data-ls-en="Active Players">Aktive Spieler</span>
+          </div>
+          <div class="stats-block__item">
+            <span class="stats-block__number" data-stats-esport-teams>3</span>
+            <span class="stats-block__label" data-de="eSport Teams" data-en="eSport Teams" data-ls-de="eSport Teams" data-ls-en="eSport Teams">eSport Teams</span>
+          </div>
+          <div class="stats-block__item">
+            <span class="stats-block__number">10+</span>
+            <span class="stats-block__label" data-de="Events organisiert" data-en="Events organised" data-ls-de="Events organisiert" data-ls-en="Events organised">Events organisiert</span>
+          </div>
+          <div class="stats-block__item">
+            <span class="stats-block__number">2020</span>
+            <span class="stats-block__label" data-de="Startjahr an der WHZ" data-en="Founded at WHZ" data-ls-de="Startjahr an der WHZ" data-ls-en="Founded at WHZ">Startjahr an der WHZ</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         7. VOLLSTÄNDIGE AUSSTATTUNG
+         ============================================ -->
+    <section class="section" id="ausstattung" aria-labelledby="ausstattung-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Ausstattung" data-en="Equipment" data-ls-de="Ausstattung" data-ls-en="Equipment">Ausstattung</p>
+          <h2 id="ausstattung-heading" data-de="Hardware auf Profi-Niveau" data-en="Professional-Grade Hardware" data-ls-de="Professionelle Hardware" data-ls-en="Professional Hardware">Hardware auf Profi-Niveau</h2>
+        </div>
+
+        <div class="specs-layout">
+          <div class="specs-cards">
+
+            <div class="spec-card">
+              <div class="spec-card__header">
+                <i data-lucide="monitor" style="width:20px;height:20px;"></i>
+                <h3 data-de="5x PC Workstation" data-en="5x PC Workstation" data-ls-de="5x PC Workstation" data-ls-en="5x PC Workstation">5x PC Workstation</h3>
+                <span class="spec-card__model">OMEN 30L GT13</span>
+              </div>
+              <ul class="spec-card__list">
+                <li><span>CPU</span><span>AMD Ryzen 7 5800X</span></li>
+                <li><span>GPU</span><span>NVIDIA RTX 3070</span></li>
+                <li><span>RAM</span><span>32 GB</span></li>
+                <li><span data-de="Monitor" data-en="Display" data-ls-de="Monitor" data-ls-en="Display">Monitor</span><span>OMEN X25f, 240 Hz</span></li>
+              </ul>
+            </div>
+
+            <div class="spec-card">
+              <div class="spec-card__header">
+                <i data-lucide="video" style="width:20px;height:20px;"></i>
+                <h3 data-de="Observer / Streaming PC" data-en="Observer / Streaming PC" data-ls-de="Observer / Streaming PC" data-ls-en="Observer / Streaming PC">Observer / Streaming PC</h3>
+                <span class="spec-card__model">Workstation</span>
+              </div>
+              <ul class="spec-card__list">
+                <li><span>CPU</span><span>AMD Threadripper PRO WX</span></li>
+                <li><span>GPU</span><span>NVIDIA RTX 3090</span></li>
+                <li><span>RAM</span><span>32 GB</span></li>
+                <li><span>Streaming</span><span data-de="Simultanes Streaming" data-en="Simultaneous streaming" data-ls-de="Gleichzeitiges Streaming" data-ls-en="Simultaneous streaming">Simultanes Streaming</span></li>
+              </ul>
+            </div>
+
+            <div class="spec-card">
+              <div class="spec-card__header">
+                <i data-lucide="gamepad-2" style="width:20px;height:20px;"></i>
+                <h3 data-de="Konsolen &amp; Sonstiges" data-en="Consoles &amp; Other" data-ls-de="Konsolen &amp; Sonstiges" data-ls-en="Consoles &amp; Other">Konsolen &amp; Sonstiges</h3>
+                <span class="spec-card__model">Hardware</span>
+              </div>
+              <ul class="spec-card__list">
+                <li><span>PlayStation</span><span>2x PS5</span></li>
+                <li><span>VR</span><span>2x VR-Headset</span></li>
+                <li><span>Nintendo</span><span>Nintendo Switch</span></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="specs-image">
+            <img src="assets/images/games-hub/ausstattung.png" alt="Gaming-Workstation Nahaufnahme" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         8. WER WIRD GEBRAUCHT?
+         ============================================ -->
+    <section class="section section--alt" id="mitmachen" aria-labelledby="rollen-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Mitmachen" data-en="Get Involved" data-ls-de="Mitmachen" data-ls-en="Get Involved">Mitmachen</p>
+          <h2 id="rollen-heading" data-de="Wer wird gebraucht?" data-en="Who Do We Need?" data-ls-de="Wen suchen wir?" data-ls-en="Who are we looking for?">Wer wird gebraucht?</h2>
+          <p class="section-sub"
+             data-de="Der Hub lebt von Menschen mit unterschiedlichen Talenten. Du musst kein Spieler sein."
+             data-en="The hub thrives on people with different talents. You don't have to be a player."
+             data-ls-de="Wir suchen Menschen mit verschiedenen Fähigkeiten. Spielen ist nicht Pflicht."
+             data-ls-en="We look for people with various skills. Playing is not required.">
+            Der Hub lebt von Menschen mit unterschiedlichen Talenten. Du musst kein Spieler sein.
+          </p>
+        </div>
+
+        <div class="roles-grid">
+          <div class="role-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="role-card__icon" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <h3 data-de="Social Media" data-en="Social Media" data-ls-de="Social Media" data-ls-en="Social Media">Social Media</h3>
+            <p data-de="Kuratiere und poste Inhalte: Events, Highlights, Community-Momente." data-en="Curate and publish content: events, highlights and community moments." data-ls-de="Du erstellst Inhalte für Social Media. Du postest Events und Highlights." data-ls-en="You create content for social media. You post events and highlights.">Kuratiere und poste Inhalte: Events, Highlights, Community-Momente.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="megaphone" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Marketing" data-en="Marketing" data-ls-de="Marketing" data-ls-en="Marketing">Marketing</h3>
+            <p data-de="Entwickle Kampagnen und bau die Sichtbarkeit des Hub weiter aus." data-en="Develop campaigns and grow the hub's visibility." data-ls-de="Du entwickelst Kampagnen. Du machst den Hub sichtbarer." data-ls-en="You develop campaigns. You make the hub more visible.">Entwickle Kampagnen und bau die Sichtbarkeit des Hub weiter aus.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="calendar" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Eventplanung" data-en="Event Planning" data-ls-de="Eventplanung" data-ls-en="Event Planning">Eventplanung</h3>
+            <p data-de="Plane und koordiniere Turniere, LAN-Partys und Unternehmensveranstaltungen." data-en="Plan and coordinate tournaments, LAN parties and corporate events." data-ls-de="Du planst Turniere, LAN-Partys und andere Veranstaltungen." data-ls-en="You plan tournaments, LAN parties and other events.">Plane und koordiniere Turniere, LAN-Partys und Unternehmensveranstaltungen.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="code" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Programmierung" data-en="Development" data-ls-de="Programmierung" data-ls-en="Development">Programmierung</h3>
+            <p data-de="Bau Tools, Dashboards oder Erweiterungen für den Hub." data-en="Build tools, dashboards or extensions for the hub." data-ls-de="Du baust Tools und Dashboards für den Hub." data-ls-en="You build tools and dashboards for the hub.">Bau Tools, Dashboards oder Erweiterungen für den Hub.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="palette" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Design" data-en="Design" data-ls-de="Design" data-ls-en="Design">Design</h3>
+            <p data-de="Erstelle visuelle Inhalte, Branding-Materialien und UX-Konzepte." data-en="Create visual content, branding materials and UX concepts." data-ls-de="Du erstellst Bilder, Logos und UX-Konzepte." data-ls-en="You create images, logos and UX concepts.">Erstelle visuelle Inhalte, Branding-Materialien und UX-Konzepte.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="video" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Content Creation" data-en="Content Creation" data-ls-de="Content Creation" data-ls-en="Content Creation">Content Creation</h3>
+            <p data-de="Produziere Videos, Streams oder Reportagen aus dem Hub-Alltag." data-en="Produce videos, streams or features from the hub's daily life." data-ls-de="Du produzierst Videos und Streams aus dem Hub." data-ls-en="You produce videos and streams from the hub.">Produziere Videos, Streams oder Reportagen aus dem Hub-Alltag.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="flask-conical" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Forschung" data-en="Research" data-ls-de="Forschung" data-ls-en="Research">Forschung</h3>
+            <p data-de="Arbeite an Projekten zu Gamification, eSport und digitaler Transformation." data-en="Work on projects in gamification, eSport and digital transformation." data-ls-de="Du arbeitest an Projekten zu Gamification und eSport." data-ls-en="You work on projects in gamification and eSport.">Arbeite an Projekten zu Gamification, eSport und digitaler Transformation.</p>
+          </div>
+          <div class="role-card">
+            <i data-lucide="shield" style="width:24px;height:24px;" class="role-card__icon"></i>
+            <h3 data-de="Teamleitung" data-en="Team Leadership" data-ls-de="Teamleitung" data-ls-en="Team Leadership">Teamleitung</h3>
+            <p data-de="Übernimm Verantwortung für Teams oder Bereiche im Hub." data-en="Take responsibility for teams or departments within the hub." data-ls-de="Du leitest ein Team oder einen Bereich im Hub." data-ls-en="You lead a team or department in the hub.">Übernimm Verantwortung für Teams oder Bereiche im Hub.</p>
+          </div>
+        </div>
+
+        <div class="section-cta">
+          <a href="mitmachen.html" class="btn btn--primary btn--lg"
+             data-de="Jetzt mitmachen"
+             data-en="Get Involved Now"
+             data-ls-de="Jetzt mitmachen"
+             data-ls-en="Get Involved Now">
+            Jetzt mitmachen
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         9. PARTNER / KOOPERATIONEN
+         ============================================ -->
+    <section class="section partners-dark" id="partner" aria-labelledby="partner-heading">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <p class="section-label section-label--light" data-de="Kooperationen" data-en="Cooperations" data-ls-de="Zusammenarbeit" data-ls-en="Partnerships">Kooperationen</p>
+          <h2 id="partner-heading" data-de="Unsere Partner" data-en="Our Partners" data-ls-de="Unsere Partner" data-ls-en="Our Partners">Unsere Partner</h2>
+        </div>
+        <div class="partners__logos" data-partner-logos></div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         10. TIMELINE V2
+         ============================================ -->
+    <section class="section" id="history" aria-labelledby="history-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Geschichte" data-en="History" data-ls-de="Geschichte" data-ls-en="History">Geschichte</p>
+          <h2 id="history-heading" data-de="Unsere Geschichte" data-en="Our Story" data-ls-de="Unsere Geschichte" data-ls-en="Our Story">Unsere Geschichte</h2>
+        </div>
+
+        <div class="timeline-v2">
+
+          <!-- 2020 -->
+          <div class="timeline-v2__entry">
+            <div class="timeline-v2__content">
+              <div class="timeline-v2__year">2020</div>
+              <p class="timeline-v2__tagline"
+                 data-de="Die ersten Schritte"
+                 data-en="First Steps"
+                 data-ls-de="Die ersten Schritte"
+                 data-ls-en="First Steps">Die ersten Schritte</p>
+              <ul class="timeline-v2__list">
+                <li data-de="Erstes FIFA-Turnier im GTZ Zwickau"
+                    data-en="First FIFA tournament at GTZ Zwickau"
+                    data-ls-de="1. FIFA-Turnier im GTZ Zwickau"
+                    data-ls-en="1st FIFA tournament at GTZ Zwickau">Erstes FIFA-Turnier im GTZ Zwickau</li>
+                <li data-de="Erste Unternehmenskooperation: Chemnitz Center"
+                    data-en="First corporate partnership: Chemnitz Center"
+                    data-ls-de="1. Unternehmenskooperation: Chemnitz Center"
+                    data-ls-en="1st corporate partnership: Chemnitz Center">Erste Unternehmenskooperation: Chemnitz Center</li>
+                <li data-de="Grundstein für ein dauerhaftes Hochschulprojekt gelegt"
+                    data-en="Foundation laid for a lasting university project"
+                    data-ls-de="Wir haben den Grundstein für unser Projekt gelegt."
+                    data-ls-en="We laid the foundation for our project.">Grundstein für ein dauerhaftes Hochschulprojekt gelegt</li>
+              </ul>
+            </div>
+            <div class="timeline-v2__image">
+              <img src="assets/images/games-hub/history/2020.png" alt="WireHeadZ 2020 – Erste Schritte" />
+            </div>
+          </div>
+
+          <!-- 2021 -->
+          <div class="timeline-v2__entry timeline-v2__entry--reverse">
+            <div class="timeline-v2__content">
+              <div class="timeline-v2__year">2021</div>
+              <p class="timeline-v2__tagline"
+                 data-de="Eine Idee entsteht"
+                 data-en="An Idea Takes Shape"
+                 data-ls-de="Eine Idee entsteht"
+                 data-ls-en="An Idea Takes Shape">Eine Idee entsteht</p>
+              <ul class="timeline-v2__list">
+                <li data-de="Konzeptionierung des eSport Lab an der WHZ"
+                    data-en="Concept development for the eSport Lab at WHZ"
+                    data-ls-de="Das eSport Lab wurde geplant."
+                    data-ls-en="The eSport Lab was planned.">Konzeptionierung des eSport Lab an der WHZ</li>
+                <li data-de="Zweite Kooperation: FSV Zwickau"
+                    data-en="Second partnership: FSV Zwickau"
+                    data-ls-de="2. Kooperation: FSV Zwickau"
+                    data-ls-en="2nd partnership: FSV Zwickau">Zweite Kooperation: FSV Zwickau</li>
+                <li data-de="Gaming als Brücke zu Vereinen und Unternehmen"
+                    data-en="Gaming as a bridge to clubs and companies"
+                    data-ls-de="Gaming verbindet Vereine und Unternehmen."
+                    data-ls-en="Gaming connects clubs and companies.">Gaming als Brücke zu Vereinen und Unternehmen</li>
+              </ul>
+            </div>
+            <div class="timeline-v2__image">
+              <img src="assets/images/games-hub/history/2021.png" alt="WireHeadZ 2021 – Konzeptphase" />
+            </div>
+          </div>
+
+          <!-- 2022 -->
+          <div class="timeline-v2__entry">
+            <div class="timeline-v2__content">
+              <div class="timeline-v2__year">2022</div>
+              <p class="timeline-v2__tagline"
+                 data-de="Gründung und Wachstum"
+                 data-en="Founded and Growing"
+                 data-ls-de="Gründung und Wachstum"
+                 data-ls-en="Founded and Growing">Gründung und Wachstum</p>
+              <ul class="timeline-v2__list">
+                <li data-de="eSport Lab offiziell gegründet"
+                    data-en="eSport Lab officially founded"
+                    data-ls-de="Das eSport Lab wurde offiziell gegründet."
+                    data-ls-en="The eSport Lab was officially founded.">eSport Lab offiziell gegründet</li>
+                <li data-de="Zweites FIFA-Turnier mit steigender Beteiligung"
+                    data-en="Second FIFA tournament with growing participation"
+                    data-ls-de="2. FIFA-Turnier mit mehr Teilnehmenden"
+                    data-ls-en="2nd FIFA tournament with more participants">Zweites FIFA-Turnier mit steigender Beteiligung</li>
+                <li data-de="Erstes eSport-Team gegründet: Rocket League"
+                    data-en="First eSport team founded: Rocket League"
+                    data-ls-de="1. eSport-Team gegründet: Rocket League"
+                    data-ls-en="1st eSport team founded: Rocket League">Erstes eSport-Team gegründet: Rocket League</li>
+              </ul>
+            </div>
+            <div class="timeline-v2__image">
+              <img src="assets/images/games-hub/history/2022.png" alt="WireHeadZ 2022 – Gründung" />
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="timeline-v2__entry timeline-v2__entry--reverse">
+            <div class="timeline-v2__content">
+              <div class="timeline-v2__year">2023</div>
+              <p class="timeline-v2__tagline"
+                 data-de="Struktur und neue Teams"
+                 data-en="Structure and New Teams"
+                 data-ls-de="Struktur und neue Teams"
+                 data-ls-en="Structure and New Teams">Struktur und neue Teams</p>
+              <ul class="timeline-v2__list">
+                <li data-de="Interne Teamleitung etabliert"
+                    data-en="Internal team leadership established"
+                    data-ls-de="Interne Teamleitung etabliert"
+                    data-ls-en="Internal team leadership established">Interne Teamleitung etabliert</li>
+                <li data-de="Zweites eSport-Team gegründet: League of Legends"
+                    data-en="Second eSport team founded: League of Legends"
+                    data-ls-de="2. eSport-Team gegründet: League of Legends"
+                    data-ls-en="2nd eSport team founded: League of Legends">Zweites eSport-Team gegründet: League of Legends</li>
+                <li data-de="Kooperation mit SOS Kinderdorf"
+                    data-en="Partnership with SOS Kinderdorf"
+                    data-ls-de="Kooperation mit SOS Kinderdorf"
+                    data-ls-en="Partnership with SOS Kinderdorf">Kooperation mit SOS Kinderdorf</li>
+              </ul>
+            </div>
+            <div class="timeline-v2__image">
+              <img src="assets/images/games-hub/history/2023.png" alt="WireHeadZ 2023 – Teamaufbau" />
+            </div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="timeline-v2__entry">
+            <div class="timeline-v2__content">
+              <div class="timeline-v2__year">2024</div>
+              <p class="timeline-v2__tagline"
+                 data-de="Rebranding und Forschung"
+                 data-en="Rebranding and Research"
+                 data-ls-de="Rebranding und Forschung"
+                 data-ls-en="Rebranding and Research">Rebranding und Forschung</p>
+              <ul class="timeline-v2__list">
+                <li data-de="Rebranding zu WHZ GAMeS Hub"
+                    data-en="Rebranding to WHZ GAMeS Hub"
+                    data-ls-de="Rebranding zu WHZ GAMeS Hub"
+                    data-ls-en="Rebranding to WHZ GAMeS Hub">Rebranding zu WHZ GAMeS Hub</li>
+                <li data-de="Forschungsprojekt gestartet, erste Publikation veröffentlicht"
+                    data-en="Research project launched, first publication released"
+                    data-ls-de="1. Forschungsprojekt gestartet. 1. Veröffentlichung erschienen."
+                    data-ls-en="1st research project started. 1st publication released.">Forschungsprojekt gestartet, erste Publikation veröffentlicht</li>
+                <li data-de="Neue Kooperationen: TAG24 und N+P Informationssysteme"
+                    data-en="New partnerships: TAG24 and N+P Informationssysteme"
+                    data-ls-de="Neue Kooperationen: TAG24 und N+P Informationssysteme"
+                    data-ls-en="New partnerships: TAG24 and N+P Informationssysteme">Neue Kooperationen: TAG24 und N+P Informationssysteme</li>
+              </ul>
+            </div>
+            <div class="timeline-v2__image">
+              <img src="assets/images/games-hub/history/2024.png" alt="WireHeadZ 2024 – Rebranding" />
+            </div>
+          </div>
+
+          <!-- 2025 -->
+          <div class="timeline-v2__entry timeline-v2__entry--reverse">
+            <div class="timeline-v2__content">
+              <div class="timeline-v2__year">2025</div>
+              <p class="timeline-v2__tagline"
+                 data-de="International und innovativ"
+                 data-en="International and Innovative"
+                 data-ls-de="International und innovativ"
+                 data-ls-en="International and Innovative">International und innovativ</p>
+              <ul class="timeline-v2__list">
+                <li data-de="Neue Unternehmenskooperation: Heinrich Schmid"
+                    data-en="New corporate partnership: Heinrich Schmid"
+                    data-ls-de="Neue Unternehmenskooperation: Heinrich Schmid"
+                    data-ls-en="New corporate partnership: Heinrich Schmid">Neue Unternehmenskooperation: Heinrich Schmid</li>
+                <li data-de="Weitere Publikationen in Vorbereitung"
+                    data-en="Further publications in preparation"
+                    data-ls-de="Weitere Veröffentlichungen folgen."
+                    data-ls-en="More publications will follow.">Weitere Publikationen in Vorbereitung</li>
+                <li data-de="Internationale Hochschulkontakte nach Finnland geknüpft"
+                    data-en="International university contacts established in Finland"
+                    data-ls-de="Wir haben Kontakte zu Hochschulen in Finnland."
+                    data-ls-en="We made contacts with universities in Finland.">Internationale Hochschulkontakte nach Finnland geknüpft</li>
+              </ul>
+            </div>
+            <div class="timeline-v2__image">
+              <img src="assets/images/games-hub/history/2025.png" alt="WireHeadZ 2025 – International" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         11. GALERIE
+         ============================================ -->
+    <section class="section section--alt" id="galerie" aria-labelledby="galerie-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Galerie" data-en="Gallery" data-ls-de="Galerie" data-ls-en="Gallery">Galerie</p>
+          <h2 id="galerie-heading" data-de="Aus dem Hub-Alltag" data-en="From the Hub" data-ls-de="Aus dem Hub-Alltag" data-ls-en="From the Hub">Aus dem Hub-Alltag</h2>
+        </div>
+        <div class="gallery-grid" data-gallery="assets/images/games-hub/galerie/"></div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+
+  <script src="main.js?v=12"></script>
+  <script src="games-hub.js"></script>
+</body>
+</html>

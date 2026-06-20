@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WireHeadZ – eSport Team · GAMeS Hub</title>
+  <meta name="description" content="Das eSport-Team der WHZ. WireHeadZ tritt in Valorant und Rocket League an – mit regelmäßigem Training und echten Wettkämpfen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WireHeadZ – eSport Team der WHZ" />
+  <meta property="og:description" content="Das eSport-Team der WHZ. Aktiv in Valorant und Rocket League – regelmäßiges Training und echte Wettkämpfe." />
+  <meta property="og:image" content="../../assets/images/wireheadz/hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WireHeadZ – eSport Team der WHZ" />
+  <meta name="twitter:image" content="../../assets/images/wireheadz/hero.png" />
+
+  <link rel="canonical" href="https://games-hub.whz.de/esports/wireheadz.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="../styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="../styles/components.css?v=8" />
+  <link rel="stylesheet" href="../styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="../assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         1. HERO
+         ============================================ -->
+    <section class="wh-hero wh-hero--wh" aria-label="WireHeadZ Team">
+      <div class="container wh-hero__inner">
+
+
+
+        <div class="wh-hero__content">
+          <p class="wh-hero__claim"
+             data-de="Spiel. Team. Erfolg."
+             data-en="Play. Team. Win.">Spiel. Team. Erfolg.</p>
+          <p class="wh-hero__sub"
+             data-de="Das eSport-Team der WHZ tritt in Rocket League, League of Legends und F1 an, mit regelmäßigem Training und echten Wettkämpfen."
+             data-en="The eSport team of WHZ competes in Rocket League, League of Legends and F1, with regular training and real tournament play."
+             data-ls-de="Das WireHeadZ-Team spielt eSport an der WHZ. Wir spielen Rocket League, League of Legends und F1. Wir trainieren regelmäßig."
+             data-ls-en="The WireHeadZ team plays eSport at WHZ. We play Rocket League, League of Legends and F1. We train regularly.">Das eSport-Team der WHZ tritt in Rocket League, League of Legends und F1 an, mit regelmäßigem Training und echten Wettkämpfen.</p>
+          <a href="#mitmachen" class="btn btn--primary wh-hero__cta"
+             data-de="Dem Team beitreten"
+             data-en="Join the Team">Dem Team beitreten</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         2+3. SPIELE & KADER (Accordion)
+         ============================================ -->
+    <section class="section section--alt" id="spiele" aria-labelledby="spiele-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Unsere Disziplinen" data-en="Our Disciplines" data-ls-de="Unsere Spiele" data-ls-en="Our Games">Unsere Disziplinen</p>
+          <h2 id="spiele-heading" data-de="Teams &amp; Kader" data-en="Teams &amp; Rosters" data-ls-de="Teams und Spieler" data-ls-en="Teams and Players">Teams &amp; Kader</h2>
+        </div>
+
+        <div class="game-accordion-list">
+
+          <!-- F1 -->
+          <details class="game-accordion game-accordion--formula1" id="formula1">
+            <summary class="game-accordion__summary">
+              <img class="game-accordion__bg" src="../assets/images/shared/games/formula1.png" alt="" aria-hidden="true" />
+              <div class="game-accordion__content">
+                <span class="game-overview__badge game-overview__badge--active"
+                      data-de="Aktiv · 3 Spieler" data-en="Active · 3 Players">Aktiv · 3 Spieler</span>
+                <h3 class="game-accordion__title">F1</h3>
+                <p class="game-overview__desc"
+                   data-de="Hochpräziser Rennsimulator. WireHeadZ tritt in der Uniliga Deutschland an."
+                   data-en="High-precision racing simulator. WireHeadZ competes in the Uniliga Deutschland."
+                   data-ls-de="F1 ist ein Renn-Spiel. WireHeadZ spielt in der Uniliga Deutschland."
+                   data-ls-en="F1 is a racing game. WireHeadZ plays in the Uniliga Deutschland.">Hochpräziser Rennsimulator. WireHeadZ tritt in der Uniliga Deutschland an.</p>
+              </div>
+              <div class="game-accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </summary>
+            <div class="game-accordion__roster">
+              <div class="player-grid">
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/formula1-erik.jpg" alt="Erik" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Erik</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Informatik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/formula1-jan.jpg" alt="Jan" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Jan</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Physikalische Technik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/formula1-jonah.jpg" alt="Jonah" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Jonah</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Data Science</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="game-accordion__join">
+                <a href="../kontakt.html?typ=spieler&spiel=F1&team=wireheadz" class="btn btn--primary"
+                   data-de="Dem Team beitreten" data-en="Join the Team">Dem Team beitreten</a>
+              </div>
+            </div>
+          </details>
+
+          <!-- League of Legends -->
+          <details class="game-accordion game-accordion--lol" id="league-of-legends">
+            <summary class="game-accordion__summary">
+              <img class="game-accordion__bg" src="../assets/images/shared/games/league-of-legends.png" alt="" aria-hidden="true" />
+              <div class="game-accordion__content">
+                <span class="game-overview__badge game-overview__badge--active"
+                      data-de="Aktiv · 5 Spieler" data-en="Active · 5 Players">Aktiv · 5 Spieler</span>
+                <h3 class="game-accordion__title">League of Legends</h3>
+                <p class="game-overview__desc"
+                   data-de="Strategisches 5v5 MOBA von Riot Games. WireHeadZ tritt in der Uniliga Deutschland an."
+                   data-en="Strategic 5v5 MOBA by Riot Games. WireHeadZ competes in the Uniliga Deutschland."
+                   data-ls-de="League of Legends ist ein Team-Spiel. 5 Spieler kämpfen gegen 5 andere. WireHeadZ spielt in der Uniliga Deutschland."
+                   data-ls-en="League of Legends is a team game. 5 players fight against 5 others. WireHeadZ plays in the Uniliga Deutschland.">Strategisches 5v5 MOBA von Riot Games. WireHeadZ tritt in der Uniliga Deutschland an.</p>
+              </div>
+              <div class="game-accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </summary>
+            <div class="game-accordion__roster">
+              <div class="player-grid">
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/leagueoflegends-leon.jpg" alt="Leon" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Leon</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Informatik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/leagueoflegends-lukas.jpg" alt="Lukas" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Lukas</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Informatik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/leagueoflegends-marvin.jpg" alt="Marvin" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Marvin</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Informatik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/leagueoflegends-patriece.jpg" alt="Patriece" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Patriece</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Informatik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/leagueoflegends-umut.jpg" alt="Umut" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Umut</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Informatik</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="game-accordion__join">
+                <a href="../kontakt.html?typ=spieler&spiel=League+of+Legends&team=wireheadz" class="btn btn--primary"
+                   data-de="Dem Team beitreten" data-en="Join the Team">Dem Team beitreten</a>
+              </div>
+            </div>
+          </details>
+
+          <!-- Rocket League -->
+          <details class="game-accordion game-accordion--rocket-league" id="rocket-league">
+            <summary class="game-accordion__summary">
+              <img class="game-accordion__bg" src="../assets/images/shared/games/rocket-league.png" alt="" aria-hidden="true" />
+              <div class="game-accordion__content">
+                <span class="game-overview__badge game-overview__badge--active"
+                      data-de="Aktiv · 4 Spieler" data-en="Active · 4 Players">Aktiv · 4 Spieler</span>
+                <h3 class="game-accordion__title">Rocket League</h3>
+                <p class="game-overview__desc"
+                   data-de="Schneller, präziser Fußball mit Autos. Seit 2022 unser erster kompetitiver Titel, mit Aufstieg bis in die 2. Uniliga."
+                   data-en="Fast and precise football with cars. Our first competitive title since 2022, with promotion up to the 2nd Uniliga."
+                   data-ls-de="Rocket League ist Fußball mit Autos. Das war unser 1. eSport-Spiel ab 2022. Wir sind in die 2. Uniliga aufgestiegen."
+                   data-ls-en="Rocket League is football with cars. This was our 1st eSport game from 2022. We rose to the 2nd Uniliga.">Schneller, präziser Fußball mit Autos. Seit 2022 unser erster kompetitiver Titel, mit Aufstieg bis in die 2. Uniliga.</p>
+              </div>
+              <div class="game-accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </summary>
+            <div class="game-accordion__roster">
+              <div class="player-grid">
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/rocketleague-jan.jpg" alt="Jan" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Jan</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Physikalische Technik</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/rocketleague-jonathan.jpg" alt="Jonathan" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Jonathan</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">International Business</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/rocketleague-julius.jpg" alt="Julius" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Julius</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Management</span>
+                  </div>
+                </div>
+
+                <div class="player-card">
+                  <img src="../assets/images/wireheadz/team/rocketleague-pascal.jpg" alt="Pascal" loading="lazy" class="player-card__bg" />
+                  <div class="player-card__overlay">
+                    <h3 class="player-card__name">Pascal</h3>
+                    <span class="player-card__role" data-de="Spieler" data-en="Player">Spieler</span>
+                    <span class="player-card__study">Elektrotechnik</span>
+                  </div>
+                </div>
+
+              </div>
+              <div class="game-accordion__join">
+                <a href="../kontakt.html?typ=spieler&spiel=Rocket+League&team=wireheadz" class="btn btn--primary"
+                   data-de="Dem Team beitreten" data-en="Join the Team">Dem Team beitreten</a>
+              </div>
+            </div>
+          </details>
+
+          <!-- Valorant (inaktiv — einfach game-accordion--hidden entfernen um wieder anzuzeigen) -->
+          <details class="game-accordion game-accordion--valorant game-accordion--hidden" id="valorant">
+            <summary class="game-accordion__summary">
+              <img class="game-accordion__bg" src="../assets/images/shared/games/valorant.png" alt="" aria-hidden="true" />
+              <div class="game-accordion__content">
+                <span class="game-overview__badge game-overview__badge--paused"
+                      data-de="Ehemals aktiv" data-en="Formerly Active">Ehemals aktiv</span>
+                <h3 class="game-accordion__title">Valorant</h3>
+                <p class="game-overview__desc"
+                   data-de="Taktischer 5v5 Shooter von Riot Games. WireHeadZ war in der Uniliga Deutschland aktiv. Die Ergebnisse bleiben Teil unserer Geschichte."
+                   data-en="Tactical 5v5 shooter by Riot Games. WireHeadZ competed in the Uniliga Deutschland. The results remain part of our history."
+                   data-ls-de="Valorant ist ein Shooter-Spiel. WireHeadZ hat früher Valorant gespielt. Wir sind nicht mehr aktiv."
+                   data-ls-en="Valorant is a shooter game. WireHeadZ used to play Valorant. We are no longer active.">Taktischer 5v5 Shooter von Riot Games. WireHeadZ war in der Uniliga Deutschland aktiv. Die Ergebnisse bleiben Teil unserer Geschichte.</p>
+              </div>
+              <div class="game-accordion__arrow" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+              </div>
+            </summary>
+            <div class="game-accordion__roster game-accordion__roster--paused">
+              <p data-de="Dieses Team ist nicht mehr aktiv. Die Turnierergebnisse sind weiter unten dokumentiert."
+                 data-en="This team is no longer active. Tournament results are documented below."
+                 data-ls-de="Dieses Team spielt nicht mehr. Die Ergebnisse findest du weiter unten."
+                 data-ls-en="This team no longer plays. You can find the results below.">Dieses Team ist nicht mehr aktiv. Die Turnierergebnisse sind weiter unten dokumentiert.</p>
+            </div>
+          </details>
+
+        </div>
+
+        <div class="roster-cta">
+          <img src="../assets/images/shared/kader-hintergrund.png" alt="" class="roster-cta__bg" aria-hidden="true" />
+          <div class="roster-cta__overlay"></div>
+          <div class="roster-cta__content">
+            <span class="roster-cta__label" data-de="Mitmachen" data-en="Get Involved">Mitmachen</span>
+            <h3 class="roster-cta__title"
+                data-de="Dein Spiel ist nicht dabei?"
+                data-en="Your game isn't listed?">Dein Spiel ist nicht dabei?</h3>
+            <p class="roster-cta__desc"
+               data-de="WireHeadZ wächst mit seinen Spielern. Wenn du einen Spieltitel vermisst oder ein neues Team aufbauen möchtest, freuen wir uns über deinen Vorschlag."
+               data-en="WireHeadZ grows with its players. If you're missing a game title or want to build a new team, we'd love to hear your suggestion."
+               data-ls-de="Dein Spiel fehlt in unserer Liste? Du kannst uns deinen Vorschlag schicken. Wir freuen uns über neue Ideen."
+               data-ls-en="Your game is not in our list? You can send us your suggestion. We are happy about new ideas.">WireHeadZ wächst mit seinen Spielern. Wenn du einen Spieltitel vermisst oder ein neues Team aufbauen möchtest, freuen wir uns über deinen Vorschlag.</p>
+            <a href="../kontakt.html?typ=spieler&spiel=neu&team=wireheadz" class="btn btn--primary"
+               data-de="Spieltitel vorschlagen"
+               data-en="Suggest a Title">Spieltitel vorschlagen</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. TURNIERE & ERGEBNISSE
+         ============================================ -->
+    <section class="section" id="ergebnisse" aria-labelledby="ergebnisse-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Wettkampf" data-en="Competition">Wettkampf</p>
+          <h2 id="ergebnisse-heading" data-de="Turniere &amp; Ergebnisse" data-en="Tournaments &amp; Results">Turniere &amp; Ergebnisse</h2>
+        </div>
+
+        <div class="results-layout">
+
+          <div class="results-block">
+            <h3 class="results-block__title">Valorant</h3>
+            <table class="results-table" aria-label="Valorant Ergebnisse">
+              <thead>
+                <tr>
+                  <th data-de="Saison" data-en="Season">Saison</th>
+                  <th data-de="Liga" data-en="League">Liga</th>
+                  <th data-de="Ergebnis" data-en="Result">Ergebnis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-de="WiSe 2023/24" data-en="WS 2023/24">WiSe 2023/24</td>
+                  <td>2. Uniliga</td>
+                  <td>Platz 17 / 45 Teams</td>
+                </tr>
+                <tr>
+                  <td data-de="WiSe 2023/24" data-en="WS 2023/24">WiSe 2023/24</td>
+                  <td>1. Uniliga</td>
+                  <td data-de="2. Playoff-Runde erreicht" data-en="Reached 2nd Playoff Round">2. Playoff-Runde erreicht</td>
+                </tr>
+                <tr>
+                  <td data-de="SoSe 2024" data-en="SS 2024">SoSe 2024</td>
+                  <td>2. Uniliga</td>
+                  <td>Platz 17 / 33 Teams</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="results-block">
+            <h3 class="results-block__title">Rocket League</h3>
+            <table class="results-table" aria-label="Rocket League Ergebnisse">
+              <thead>
+                <tr>
+                  <th data-de="Saison" data-en="Season">Saison</th>
+                  <th data-de="Liga" data-en="League">Liga</th>
+                  <th data-de="Ergebnis" data-en="Result">Ergebnis</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-de="SoSe 2023" data-en="SS 2023">SoSe 2023</td>
+                  <td>4. Uniliga</td>
+                  <td class="results-table__highlight"
+                      data-de="1. Platz – Aufstieg in 3. Uniliga"
+                      data-en="1st Place – Promoted to 3rd Uniliga"
+                      data-ls-de="1. Platz – wir stiegen in die 3. Uniliga auf"
+                      data-ls-en="1st place – promoted to 3rd Uniliga">1. Platz – Aufstieg in 3. Uniliga</td>
+                </tr>
+                <tr>
+                  <td data-de="WiSe 2023/24" data-en="WS 2023/24">WiSe 2023/24</td>
+                  <td>3. Uniliga</td>
+                  <td data-de="8. Platz – Klassenerhalt" data-en="8th Place – Retained Division" data-ls-de="8. Platz – wir blieben in der Liga" data-ls-en="8th place – we stayed in the league">8. Platz – Klassenerhalt</td>
+                </tr>
+                <tr>
+                  <td data-de="SoSe 2024" data-en="SS 2024">SoSe 2024</td>
+                  <td>3. Uniliga</td>
+                  <td class="results-table__highlight"
+                      data-de="5. Platz – Aufstieg in 2. Uniliga"
+                      data-en="5th Place – Promoted to 2nd Uniliga"
+                      data-ls-de="5. Platz – wir stiegen in die 2. Uniliga auf"
+                      data-ls-en="5th place – promoted to 2nd Uniliga">5. Platz – Aufstieg in 2. Uniliga</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         5. TRAINING & MITMACHEN
+         ============================================ -->
+    <section class="section wh-training" id="mitmachen" aria-labelledby="training-heading">
+      <div class="container">
+        <div class="training-layout">
+
+          <p class="section-label wh-training__label"
+             data-de="Dein Einstieg" data-en="Your Path In">Dein Einstieg</p>
+          <h2 id="training-heading"
+              data-de="Training &amp; Mitmachen"
+              data-en="Training &amp; Joining">Training &amp; Mitmachen</h2>
+
+          <p class="training-layout__intro"
+             data-de="Training findet regelmäßig statt, teils online, teils direkt im Hub. Neue Spieler durchlaufen eine kurze Probezeit, bevor sie fest ins Team aufgenommen werden."
+             data-en="Training takes place regularly, partly online, partly in the hub. New players go through a short trial period before being officially accepted into the team."
+             data-ls-de="Wir trainieren regelmäßig. Das Training ist online und im Hub. Neue Spieler machen zuerst eine Probezeit."
+             data-ls-en="We train regularly. Training is online and in the hub. New players first do a trial period.">Training findet regelmäßig statt, teils online, teils direkt im Hub. Neue Spieler durchlaufen eine kurze Probezeit, bevor sie fest ins Team aufgenommen werden.</p>
+
+          <div class="training-info">
+            <div class="training-info__block">
+              <div class="training-info__icon">
+                <i data-lucide="check-circle" style="width:22px;height:22px;" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4 data-de="Was wir erwarten" data-en="What We Expect">Was wir erwarten</h4>
+                <ul class="training-info__list">
+                  <li data-de="WHZ-Immatrikulation" data-en="WHZ enrollment" data-ls-de="Du musst an der WHZ studieren." data-ls-en="You must be enrolled at WHZ.">WHZ-Immatrikulation</li>
+                  <li data-de="Nachgewiesene Erfahrung im jeweiligen Spiel" data-en="Demonstrated experience in the relevant game" data-ls-de="Du musst Erfahrung im Spiel haben." data-ls-en="You must have experience in the game.">Nachgewiesene Erfahrung im jeweiligen Spiel</li>
+                  <li data-de="Teamfähigkeit und Zuverlässigkeit" data-en="Teamwork and reliability" data-ls-de="Du musst teamfähig und zuverlässig sein." data-ls-en="You must be a team player and reliable.">Teamfähigkeit und Zuverlässigkeit</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="training-info__block">
+              <div class="training-info__icon">
+                <i data-lucide="trophy" style="width:22px;height:22px;" aria-hidden="true"></i>
+              </div>
+              <div>
+                <h4 data-de="Was du bekommst" data-en="What You Get">Was du bekommst</h4>
+                <ul class="training-info__list">
+                  <li data-de="Kompetitives Umfeld und regelmäßige Matches" data-en="Competitive environment and regular matches" data-ls-de="Du spielst in echter Konkurrenz und in Matches." data-ls-en="You play in real competition and in matches.">Kompetitives Umfeld und regelmäßige Matches</li>
+                  <li data-de="Echter Teamgeist und Zusammenhalt" data-en="Genuine team spirit and cohesion" data-ls-de="Du bist Teil eines echten Teams." data-ls-en="You are part of a real team.">Echter Teamgeist und Zusammenhalt</li>
+                  <li data-de="Gaming als offiziellen Teil deines Studienalltags" data-en="Gaming as an official part of your university life" data-ls-de="Gaming wird offiziell Teil deines Studiums." data-ls-en="Gaming becomes an official part of your studies.">Gaming als offiziellen Teil deines Studienalltags</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <a href="../kontakt.html?typ=spieler" class="btn btn--surface"
+             data-de="Jetzt bewerben" data-en="Apply Now">Jetzt bewerben</a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         6. EVENTS-TEASER
+         ============================================ -->
+    <section class="section" id="events" aria-labelledby="events-teaser-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Termine" data-en="Schedule">Termine</p>
+          <h2 id="events-teaser-heading" data-de="Kommende Events" data-en="Upcoming Events">Kommende Events</h2>
+        </div>
+
+        <div class="events-teaser-grid" data-events-teaser></div>
+        </div>
+
+        <div class="events-teaser-cta">
+          <a href="../events.html" class="btn btn--ghost"
+             data-de="Alle Events ansehen"
+             data-en="View All Events">Alle Events ansehen</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         GALERIE
+         ============================================ -->
+    <section class="section section--alt" id="galerie" aria-labelledby="galerie-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Galerie" data-en="Gallery" data-ls-de="Galerie" data-ls-en="Gallery">Galerie</p>
+          <h2 id="galerie-heading" data-de="Aus dem Team-Alltag" data-en="From the Team" data-ls-de="Aus dem Team-Alltag" data-ls-en="From the Team">Aus dem Team-Alltag</h2>
+        </div>
+        <div class="gallery-grid" data-gallery="../assets/images/wireheadz/galerie/"></div>
+      </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+  <script src="../main.js?v=12"></script>
+  <script>
+    (function () {
+      function openFromHash() {
+        var hash = window.location.hash.slice(1);
+        if (!hash) return;
+        var el = document.getElementById(hash);
+        if (el && el.tagName === 'DETAILS') {
+          el.open = true;
+          setTimeout(function () {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 80);
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', openFromHash);
+      } else {
+        openFromHash();
+      }
+    }());
+  </script>
+</body>
+</html>

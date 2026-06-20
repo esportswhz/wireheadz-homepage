@@ -1,0 +1,797 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events – WHZ GAMeS Hub</title>
+  <meta name="description" content="Kommende und vergangene Events des WHZ GAMeS Hub: Turniere, Community-Events und Kooperationsveranstaltungen an der WHZ und in der Region." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Events – WHZ GAMeS Hub" />
+  <meta property="og:description" content="Kommende und vergangene Events: Turniere, Community-Events und Kooperationsveranstaltungen an der WHZ." />
+  <meta property="og:image" content="assets/images/events/lange-nacht-technik-2026-1.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Events – WHZ GAMeS Hub" />
+  <meta name="twitter:image" content="assets/images/events/lange-nacht-technik-2026-1.png" />
+
+  <link rel="canonical" href="https://games-hub.whz.de/events.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="styles/components.css?v=8" />
+  <link rel="stylesheet" href="styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         1. PAGE HERO
+         ============================================ -->
+    <section class="page-hero page-hero--lg" aria-label="Events">
+      <img class="page-hero__bg"
+           src="assets/images/events/hero.png"
+           alt=""
+           aria-hidden="true" />
+      <div class="container page-hero__inner">
+        <span class="page-hero__label" data-de="WHZ GAMeS Hub" data-en="WHZ GAMeS Hub">WHZ GAMeS Hub</span>
+        <h1 class="page-hero__title" data-de="Events" data-en="Events">Events</h1>
+        <p class="page-hero__sub"
+           data-de="Turniere, Community-Abende und Kooperationsveranstaltungen. Hier findest du alle kommenden und vergangenen Events rund um den GAMeS Hub."
+           data-en="Tournaments, community evenings and cooperative events. Here you'll find all upcoming and past events around the GAMeS Hub."
+           data-ls-de="Hier findest du alle unsere Events. Es gibt Turniere und Community-Abende. Es gibt Kooperations-Veranstaltungen."
+           data-ls-en="Here you find all our events. There are tournaments and community evenings. There are cooperation events.">Turniere, Community-Abende und Kooperationsveranstaltungen. Hier findest du alle kommenden und vergangenen Events rund um den GAMeS Hub.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         2. KOMMENDE EVENTS
+         ============================================ -->
+    <section class="section" id="kommende-events" aria-labelledby="upcoming-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Termine" data-en="Schedule">Termine</p>
+          <h2 id="upcoming-heading" data-de="Kommende Veranstaltungen" data-en="Upcoming Events" data-ls-de="Nächste Events" data-ls-en="Upcoming Events">Kommende Veranstaltungen</h2>
+        </div>
+
+        <div class="events-grid events-grid--single">
+
+          <!-- Lange Nacht der Technik 2026 -->
+          <article class="event-card" data-event="lange-nacht-technik-2026" data-event-date="2026-06-19T18:00:00">
+            <div class="event-card__img">
+              <img src="assets/images/events/lange-nacht-technik-2026-1.png" alt="Lange Nacht der Technik 2026" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--category" data-de="Forschung" data-en="Research">Forschung</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Technologie" data-en="Technology">Technologie</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date">19.06.2026 <span class="event-card__time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 18:00 Uhr</span></p>
+              <div class="event-card__countdown"></div>
+              <h3 class="event-card__title" data-de="Lange Nacht der Technik 2026" data-en="Long Night of Technology 2026">Lange Nacht der Technik 2026</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Westsächsische Hochschule Zwickau</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Die Nachwuchsforschergruppe „Game Change” präsentiert aktuelle Projekte zu Gamification, Fachkräfteentwicklung und nachhaltiger Transformation. Mit E-Racing-Simulator und Austausch mit Forschenden."
+                 data-en="The junior research group 'Game Change' presents current projects on gamification, talent development and sustainable transformation. Featuring an e-racing simulator and exchange with researchers."
+                 data-ls-de="Die Gruppe „Game Change” zeigt ihre Forschungs-Projekte. Es geht um Gamification und Fachkräfte. Es gibt einen E-Racing-Simulator."
+                 data-ls-en="The 'Game Change' group shows their research projects. The topics are gamification and talent. There is an e-racing simulator.">Die Nachwuchsforschergruppe „Game Change” präsentiert aktuelle Projekte zu Gamification, Fachkräfteentwicklung und nachhaltiger Transformation. Mit E-Racing-Simulator und Austausch mit Forschenden.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         3. VERGANGENE EVENTS
+         ============================================ -->
+    <section class="section section--alt" id="archiv" aria-labelledby="archive-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label" data-de="Rückblick" data-en="Archive">Rückblick</p>
+          <h2 id="archive-heading" data-de="Vergangene Veranstaltungen" data-en="Past Events" data-ls-de="Vergangene Events" data-ls-en="Past Events">Vergangene Veranstaltungen</h2>
+        </div>
+
+        <div class="events-grid">
+
+          <!-- 1. Viele Wege Festival 2026 -->
+          <article class="event-card event-card--archive" data-event="viele-wege-festival-2026">
+            <div class="event-card__img">
+              <img src="assets/images/events/viele-wege-festival-2026-1.jpg" alt="Viele Wege Festival 2026" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Community" data-en="Community">Community</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">30.05.2026</p>
+              <h3 class="event-card__title" data-de="Viele Wege Festival 2026" data-en="Viele Wege Festival 2026">Viele Wege Festival 2026</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Innenstadt Zwickau</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Der GAMeS Hub der WHZ präsentierte sich mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum und machte die Potenziale von Gaming für Bildung und Innovation erlebbar."
+                 data-en="GAMeS Hub WHZ presented interactive gaming and research activities to a wide audience, making the potential of gaming for education and innovation tangible."
+                 data-ls-de="Der GAMeS Hub war beim Viele Wege Festival. Viele Menschen konnten Gaming ausprobieren. Wir haben gezeigt: Gaming hilft beim Lernen."
+                 data-ls-en="The GAMeS Hub was at the Viele Wege Festival. Many people could try gaming. We showed: gaming helps with learning.">Der GAMeS Hub der WHZ präsentierte sich mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum und machte die Potenziale von Gaming für Bildung und Innovation erlebbar.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 2. Hochschulinformationstag 2026 -->
+          <article class="event-card event-card--archive" data-event="hochschulinformationstag-2026">
+            <div class="event-card__img">
+              <img src="assets/images/events/hochschulinformationstag-2026-1.jpg" alt="Hochschulinformationstag 2026" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Lehre" data-en="Teaching">Lehre</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Forschung" data-en="Research">Forschung</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">15.03.2026</p>
+              <h3 class="event-card__title" data-de="Hochschulinformationstag 2026" data-en="University Open Day 2026">Hochschulinformationstag 2026</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Westsächsische Hochschule Zwickau</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Studieninteressierte erhielten Einblicke in Gaming, Esports und angewandte Forschung an der WHZ. Mit Gaming-Stationen, Simulatoren und Vorstellung der Forschungsgruppe „Game Change”."
+                 data-en="Prospective students gained insights into gaming, eSports and applied research at WHZ. Featuring gaming stations, simulators and a presentation of the 'Game Change' research group."
+                 data-ls-de="Schüler konnten die WHZ besuchen. Sie haben Gaming und eSport kennengelernt. Die Gruppe „Game Change” hat sich vorgestellt."
+                 data-ls-en="Students could visit WHZ. They learned about gaming and eSport. The 'Game Change' group presented itself.">Studieninteressierte erhielten Einblicke in Gaming, Esports und angewandte Forschung an der WHZ. Mit Gaming-Stationen, Simulatoren und Vorstellung der Forschungsgruppe „Game Change”.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 3. TAG24 Talentgame 2025 -->
+          <article class="event-card event-card--archive" data-event="tag24-2025">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/aA-b7_IqRLdaBrTe_Screenshot2024-09-15211516.png?auto=format%2Ccompress&fit=max&w=800" alt="TAG24 Talentgame 2025" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Kooperation" data-en="Partnership">Kooperation</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Turnier" data-en="Tournament">Turnier</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">18.10.2025</p>
+              <h3 class="event-card__title" data-de="TAG24 Talentgame 2025" data-en="TAG24 Talentgame 2025">TAG24 Talentgame 2025</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Cinestar Roter Turm, Chemnitz</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Die 2. Auflage des Talentgames in Kooperation mit TAG24. Turnier mit Firmenpräsenzen, Gaming-Wettkampf und Networking im Cinestar Chemnitz."
+                 data-en="The 2nd edition of the Talentgame in partnership with TAG24. Tournament with company booths, gaming competition and networking at Cinestar Chemnitz."
+                 data-ls-de="Das war das 2. TAG24 Talentgame. Es gab ein Turnier und viele Firmen. Das Event war im Cinestar Chemnitz."
+                 data-ls-en="This was the 2nd TAG24 Talentgame. There was a tournament and many companies. The event was at Cinestar Chemnitz.">Die 2. Auflage des Talentgames in Kooperation mit TAG24. Turnier mit Firmenpräsenzen, Gaming-Wettkampf und Networking im Cinestar Chemnitz.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 2. FC25 Community Turnier im CFC Stadion -->
+          <article class="event-card event-card--archive" data-event="fc25-cfc">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=800" alt="FC25 Community Turnier im CFC Stadion" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Community" data-en="Community">Community</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Turnier" data-en="Tournament">Turnier</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">06.09.2025</p>
+              <h3 class="event-card__title" data-de="FC25 Community Turnier im CFC Stadion" data-en="FC25 Community Tournament at CFC Stadium">FC25 Community Turnier im CFC Stadion</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>CFC Stadion, Chemnitz</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Gaming trifft Fußball-Atmosphäre: FC25 Community-Turnier direkt im Stadion des Chemnitzer FC mit echtem Stadion-Flair."
+                 data-en="Gaming meets football atmosphere: FC25 community tournament directly in Chemnitzer FC stadium with real stadium vibes."
+                 data-ls-de="Wir haben FC25 im Fußball-Stadion gespielt. Das Stadion gehört dem Chemnitzer FC. Es war ein Community-Turnier."
+                 data-ls-en="We played FC25 in a football stadium. The stadium belongs to Chemnitzer FC. It was a community tournament.">Gaming trifft Fußball-Atmosphäre: FC25 Community-Turnier direkt im Stadion des Chemnitzer FC mit echtem Stadion-Flair.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 3. Gaming trifft Mittelstand -->
+          <article class="event-card event-card--archive" data-event="gaming-mittelstand">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/aA-IQPIqRLdaBrDQ_b5852097-5107-4a7b-b6fe-eaac850e4383.webp?auto=format%2Ccompress&fit=max&w=800" alt="Gaming trifft Mittelstand" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Business" data-en="Business">Business</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">06.11.2024</p>
+              <h3 class="event-card__title" data-de="Gaming trifft Mittelstand" data-en="Gaming Meets SMEs" data-ls-de="Gaming und Unternehmen" data-ls-en="Gaming and Companies">Gaming trifft Mittelstand</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Ubineum, Zwickau</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Gamification und eSport als Fachkräfteinstrument. Mit Expertenvorträgen, eSport-Livestream und Gründung des WireHeadZ Business Clubs."
+                 data-en="Gamification and eSport as a talent tool. With expert talks, an eSport livestream and the founding of the WireHeadZ Business Club."
+                 data-ls-de="Experten haben über Gaming für Unternehmen gesprochen. Wir haben den WireHeadZ Business Club gegründet. Es gab einen Live-eSport-Wettkampf."
+                 data-ls-en="Experts talked about gaming for companies. We founded the WireHeadZ Business Club. There was a live eSport match.">Gamification und eSport als Fachkräfteinstrument. Mit Expertenvorträgen, eSport-Livestream und Gründung des WireHeadZ Business Clubs.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 4. Demonstrationsevent eSport – Sporty 2024 -->
+          <article class="event-card event-card--archive" data-event="sporty-2024">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=800" alt="Demonstrationsevent eSport Sporty 2024" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Community" data-en="Community">Community</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">07.09.2024</p>
+              <h3 class="event-card__title" data-de="Demonstrationsevent eSport – Sporty 2024" data-en="eSport Demo Event – Sporty 2024">Demonstrationsevent eSport – Sporty 2024</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>CFC Stadion, Chemnitz</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="EA FC24 und Rocket League zum Sporty 2024 im CFC Stadion – digitale und analoge Spielerlebnisse vereint, eSport live erlebbar."
+                 data-en="EA FC24 and Rocket League at Sporty 2024 in CFC Stadium – digital and analogue gaming combined, eSport made tangible."
+                 data-ls-de="Wir haben eSport im CFC Stadion gezeigt. Wir haben EA FC24 und Rocket League gespielt. eSport war live zu sehen."
+                 data-ls-en="We showed eSport at CFC Stadium. We played EA FC24 and Rocket League. eSport was live to watch.">EA FC24 und Rocket League zum Sporty 2024 im CFC Stadion – digitale und analoge Spielerlebnisse vereint, eSport live erlebbar.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 5. TAG24 Talentgame 2024 -->
+          <article class="event-card event-card--archive" data-event="tag24-2024">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/Z912OjxkOkZ2kInd_1728465079572.jpeg?auto=format%2Ccompress&fit=max&w=800" alt="TAG24 Talentgame 2024" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Kooperation" data-en="Partnership">Kooperation</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Turnier" data-en="Tournament">Turnier</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">31.08.2024</p>
+              <h3 class="event-card__title" data-de="TAG24 Talentgame 2024" data-en="TAG24 Talentgame 2024">TAG24 Talentgame 2024</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Cinestar Roter Turm, Chemnitz</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Das erste TAG24 Talentgame: 64 Spieler im FC24-Turnier, 15 Firmenstände mit Event-Quests. Der Auftakt einer erfolgreichen Kooperation."
+                 data-en="The first TAG24 Talentgame: 64 players in the FC24 tournament, 15 company booths with event quests. The start of a successful partnership."
+                 data-ls-de="Das war das 1. TAG24 Talentgame. 64 Spieler haben FC24 gespielt. 15 Firmen waren dabei."
+                 data-ls-en="This was the 1st TAG24 Talentgame. 64 players played FC24. 15 companies took part.">Das erste TAG24 Talentgame: 64 Spieler im FC24-Turnier, 15 Firmenstände mit Event-Quests. Der Auftakt einer erfolgreichen Kooperation.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 6. WireHeadZ x Gamescom 2024 -->
+          <article class="event-card event-card--archive" data-event="gamescom-2024">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/aBTr4PIqRLdaB1Es_Screenshot2025-05-02174239.png?auto=format%2Ccompress&fit=max&w=800" alt="WireHeadZ x Gamescom 2024" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Messe" data-en="Expo">Messe</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">21.–23.08.2024</p>
+              <h3 class="event-card__title" data-de="WireHeadZ x Gamescom 2024" data-en="WireHeadZ x Gamescom 2024">WireHeadZ x Gamescom 2024</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Koelnmesse, Köln</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Das WireHeadZ-Team auf Europas größter Gaming-Messe. Einblicke in die internationale Gaming-Branche und Kontakte für die Zukunft des Hubs."
+                 data-en="The WireHeadZ team at Europe's largest gaming expo. Insights into the international gaming industry and contacts for the future of the hub."
+                 data-ls-de="WireHeadZ war auf der Gamescom in Köln. Die Gamescom ist die größte Gaming-Messe in Europa. Wir haben viele Kontakte gemacht."
+                 data-ls-en="WireHeadZ was at Gamescom in Cologne. Gamescom is the largest gaming expo in Europe. We made many contacts.">Das WireHeadZ-Team auf Europas größter Gaming-Messe. Einblicke in die internationale Gaming-Branche und Kontakte für die Zukunft des Hubs.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 7. FC24 Community Turnier -->
+          <article class="event-card event-card--archive" data-event="fc24-community">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/Z-2RyndAxsiBwPfy_1723445785713.jpeg?auto=format%2Ccompress&fit=max&w=800" alt="FC24 Community Turnier" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Community" data-en="Community">Community</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Turnier" data-en="Tournament">Turnier</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">11.08.2024</p>
+              <h3 class="event-card__title" data-de="FC24 Community Turnier" data-en="FC24 Community Tournament">FC24 Community Turnier</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Espitas Chillybeach, Chemnitz</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Community-Turnier im Rahmen des TAG24-Sommerkinos. FC24 unter freiem Himmel – Gaming trifft Sommerstimmung."
+                 data-en="Community tournament as part of the TAG24 summer cinema. FC24 in the open air – gaming meets summer vibes."
+                 data-ls-de="Wir haben ein FC24-Turnier gespielt. Das war beim TAG24-Sommerkino. Wir haben draußen gespielt."
+                 data-ls-en="We played an FC24 tournament. It was at the TAG24 summer cinema. We played outdoors.">Community-Turnier im Rahmen des TAG24-Sommerkinos. FC24 unter freiem Himmel – Gaming trifft Sommerstimmung.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 8. Fortnite Turnier zum Kindertag -->
+          <article class="event-card event-card--archive" data-event="fortnite-2024">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/Z-2Qu3dAxsiBwPfP_0bac933f-6c1c-4c76-8f94-e398e3f38e2f.avif?auto=format%2Ccompress&fit=max&w=800" alt="Fortnite Turnier zum Kindertag" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Turnier" data-en="Tournament">Turnier</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">01.06.2024</p>
+              <h3 class="event-card__title" data-de="Fortnite Turnier zum Kindertag" data-en="Fortnite Tournament for Children's Day">Fortnite Turnier zum Kindertag</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Schüler-Lab der WHZ, Zwickau</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Fortnite-Turnier im Schüler-Lab der WHZ zum Kindertag. Gaming als Erlebnis für eine jüngere Zielgruppe direkt auf dem Campus."
+                 data-en="Fortnite tournament in the WHZ student lab for Children's Day. Gaming as an experience for a younger audience right on campus."
+                 data-ls-de="Wir haben ein Fortnite-Turnier zum Kindertag gemacht. Kinder und Jugendliche haben mitgespielt. Das Event war an der WHZ."
+                 data-ls-en="We held a Fortnite tournament for Children's Day. Children and young people took part. The event was at WHZ.">Fortnite-Turnier im Schüler-Lab der WHZ zum Kindertag. Gaming als Erlebnis für eine jüngere Zielgruppe direkt auf dem Campus.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+          <!-- 9. Gaming-Weihnacht -->
+          <article class="event-card event-card--archive" data-event="gaming-weihnacht">
+            <div class="event-card__img">
+              <img src="https://images.prismic.io/wireheadz/Z-2RX3dAxsiBwPfc_707eb631-5f61-420c-ac5b-8fcf4346cb1e.avif?auto=format%2Ccompress&fit=max&w=800" alt="Gaming-Weihnacht" loading="lazy" />
+              <div class="event-card__badges">
+                <span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>
+                <span class="event-card__badge event-card__badge--category" data-de="Community" data-en="Community">Community</span>
+              </div>
+            </div>
+            <div class="event-card__body">
+              <p class="event-card__date event-card__date--archive">13.12.2022</p>
+              <h3 class="event-card__title" data-de="Gaming-Weihnacht" data-en="Gaming Christmas">Gaming-Weihnacht</h3>
+              <p class="event-card__location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>WHZ, Zwickau</span>
+              </p>
+              <p class="event-card__desc"
+                 data-de="Gaming-Weihnachtsfeier des Hochschul-eSport-Teams. Der erste gesellschaftliche Event des WireHeadZ-Teams an der WHZ."
+                 data-en="Gaming Christmas celebration of the university eSport team. The first social event of the WireHeadZ team at WHZ."
+                 data-ls-de="Wir haben eine Gaming-Weihnachtsfeier gemacht. Das war das 1. gesellschaftliche Event von WireHeadZ. Alle von der WHZ waren eingeladen."
+                 data-ls-en="We held a gaming Christmas party. That was the 1st social event of WireHeadZ. Everyone from WHZ was invited.">Gaming-Weihnachtsfeier des Hochschul-eSport-Teams. Der erste gesellschaftliche Event des WireHeadZ-Teams an der WHZ.</p>
+            </div>
+            <div class="event-card__footer">
+              <span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. KOOPERATION / KONTAKT
+         ============================================ -->
+    <section class="section event-coop" id="kooperation" aria-labelledby="coop-heading">
+      <div class="container">
+        <div class="event-coop__inner">
+
+          <div class="event-coop__icon" aria-hidden="true">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+
+          <div class="event-coop__text">
+            <span class="event-coop__label"
+                  data-de="Partnerschaften" data-en="Partnerships">Partnerschaften</span>
+            <h2 id="coop-heading" class="event-coop__heading"
+                data-de="Gemeinsam Events gestalten"
+                data-en="Shaping Events Together"
+                data-ls-de="Events gemeinsam planen"
+                data-ls-en="Plan Events Together">Gemeinsam Events gestalten</h2>
+            <p class="event-coop__desc"
+               data-de="Du planst eine Veranstaltung und suchst einen starken Partner mit Gaming-Expertise, einem Netzwerk an Studierenden und Profis sowie Erfahrung in der Eventorganisation? Wir sind dabei."
+               data-en="Are you planning an event and looking for a strong partner with gaming expertise, a network of students and professionals, and experience in event organisation? We're in."
+               data-ls-de="Du planst ein Event? Wir helfen dir. Wir kennen Gaming und haben ein großes Netzwerk. Schreib uns einfach an."
+               data-ls-en="Are you planning an event? We can help. We know gaming and have a big network. Just contact us.">Du planst eine Veranstaltung und suchst einen starken Partner mit Gaming-Expertise, einem Netzwerk an Studierenden und Profis sowie Erfahrung in der Eventorganisation? Wir sind dabei.</p>
+            <div class="event-coop__actions">
+              <a href="kontakt.html?typ=partner&art=event" class="btn btn--surface"
+                 data-de="Kooperation anfragen" data-en="Request Partnership">Kooperation anfragen</a>
+              <a href="partner.html" class="btn btn--ghost-light"
+                 data-de="Partner werden" data-en="Become a Partner">Partner werden</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ============================================
+       EVENT MODAL
+       ============================================ -->
+  <div id="event-modal" class="event-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="event-modal__panel">
+
+      <!-- Close -->
+      <button class="event-modal__close" id="modal-close" aria-label="Schließen">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+
+      <!-- Gallery -->
+      <div class="event-modal__gallery">
+        <div class="event-modal__gallery-track" id="modal-gallery-track"></div>
+        <button class="event-modal__gallery-nav event-modal__gallery-nav--prev" id="modal-prev" aria-label="Vorheriges Bild">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="event-modal__gallery-nav event-modal__gallery-nav--next" id="modal-next" aria-label="Nächstes Bild">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <div class="event-modal__dots" id="modal-dots"></div>
+      </div>
+
+      <!-- Detail panel -->
+      <div class="event-modal__detail" id="modal-detail">
+        <div>
+          <p class="event-modal__date-loc" id="modal-date"></p>
+          <h2 class="event-modal__title" id="modal-title"></h2>
+          <p class="event-modal__loc-row" id="modal-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="modal-location-text"></span>
+          </p>
+        </div>
+        <div class="event-modal__badges-row" id="modal-badges"></div>
+        <p class="event-modal__desc" id="modal-desc"></p>
+        <div class="event-modal__section" id="modal-highlights-block">
+          <p class="event-modal__section-label" data-de="Highlights" data-en="Highlights">Highlights</p>
+          <ul class="event-modal__highlights" id="modal-highlights"></ul>
+        </div>
+        <div class="event-modal__section" id="modal-partners-block">
+          <p class="event-modal__section-label" data-de="Partner" data-en="Partners">Partner</p>
+          <div class="event-modal__partner-list" id="modal-partners"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+
+  <script src="main.js?v=12"></script>
+  <script>
+  /* ---- Event Modal ---- */
+  const eventData = {
+    'lange-nacht-technik-2026': {
+      images: ['assets/images/events/lange-nacht-technik-2026-1.png'],
+      de: { title: 'Lange Nacht der Technik 2026', date: '19.06.2026', location: 'Westsächsische Hochschule Zwickau', badges: ['Forschung', 'Technologie'], desc: 'Zur Langen Nacht der Technik präsentiert die Nachwuchsforschergruppe „Game Change“ ihre aktuellen Forschungsprojekte rund um Gamification, Fachkräfteentwicklung und nachhaltige Transformation. Besucherinnen und Besucher erhalten praxisnahe Einblicke, wie spielbasierte Ansätze Innovationen fördern und komplexe Veränderungen verständlicher machen können.', highlights: ['Vorstellung der Forschungsgruppe „Game Change“', 'Einblicke in aktuelle Forschungsprojekte', 'E-Racing-Simulator für energieeffizientes Fahren', 'Gamification für Lernen und Transformation', 'Austausch mit Forschenden und Studierenden'], partners: [] },
+      en: { title: 'Long Night of Technology 2026', date: '19.06.2026', location: 'West Saxon University of Applied Sciences Zwickau', badges: ['Research', 'Technology'], desc: 'At the Long Night of Technology, the junior research group "Game Change" presents its current research projects on gamification, talent development and sustainable transformation. Visitors receive hands-on insights into how game-based approaches drive innovation and make complex change more understandable.', highlights: ['Presentation of the "Game Change" research group', 'Insights into current research projects', 'E-racing simulator for energy-efficient driving', 'Gamification for learning and transformation', 'Exchange with researchers and students'], partners: [] }
+    },
+    'viele-wege-festival-2026': {
+      images: ['assets/images/events/viele-wege-festival-2026-1.jpg', 'assets/images/events/viele-wege-festival-2026-2.jpg'],
+      de: { title: 'Viele Wege Festival 2026', date: '30.05.2026', location: 'Innenstadt Zwickau', badges: ['Community'], desc: 'Beim Viele Wege Festival präsentierte sich das GAMeS Hub der WHZ mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum. Ziel war es, die Potenziale von Gaming für Bildung, Innovation und gesellschaftlichen Wandel erlebbar zu machen und mit Besucherinnen und Besuchern ins Gespräch zu kommen.', highlights: ['Interaktive Gaming-Stationen', 'Präsentation von Forschungsprojekten', 'Einblicke in Gamification und Esports', 'Mitmachangebote für alle Altersgruppen', 'Austausch mit der Zwickauer Community'], partners: [] },
+      en: { title: 'Viele Wege Festival 2026', date: '30.05.2026', location: 'Zwickau City Centre', badges: ['Community'], desc: 'At the Viele Wege Festival, GAMeS Hub WHZ presented interactive gaming and research activities to a wide audience. The aim was to make the potential of gaming for education, innovation and social change tangible and to engage with visitors.', highlights: ['Interactive gaming stations', 'Presentation of research projects', 'Insights into gamification and eSports', 'Activities for all age groups', 'Exchange with the Zwickau community'], partners: [] }
+    },
+    'hochschulinformationstag-2026': {
+      images: ['assets/images/events/hochschulinformationstag-2026-1.jpg', 'assets/images/events/hochschulinformationstag-2026-2.jpg', 'assets/images/events/hochschulinformationstag-2026-3.png'],
+      de: { title: 'Hochschulinformationstag 2026', date: '15.03.2026', location: 'Westsächsische Hochschule Zwickau', badges: ['Lehre', 'Forschung'], desc: 'Der Hochschulinformationstag bot Studieninteressierten spannende Einblicke in die Welt von Gaming, Esports und angewandter Forschung an der WHZ. Besucherinnen und Besucher konnten moderne Gaming-Technologien ausprobieren und sich über die Verbindung von Lehre, Forschung und digitalen Innovationen informieren.', highlights: ['Gaming- und Simulationsstationen', 'Einblicke in das GAMeS Hub', 'Vorstellung der Forschungsgruppe „Game Change“', 'Austausch mit Studierenden und Forschenden', 'Informationen zu Studiengängen der WHZ'], partners: [] },
+      en: { title: 'University Open Day 2026', date: '15.03.2026', location: 'West Saxon University of Applied Sciences Zwickau', badges: ['Teaching', 'Research'], desc: 'The university open day offered prospective students exciting insights into the world of gaming, eSports and applied research at WHZ. Visitors could try modern gaming technologies and learn about the connection between teaching, research and digital innovation.', highlights: ['Gaming and simulation stations', 'Insights into the GAMeS Hub', 'Presentation of the "Game Change" research group', 'Exchange with students and researchers', 'Information on WHZ degree programmes'], partners: [] }
+    },
+    'tag24-2025': {
+      images: [
+        'https://images.prismic.io/wireheadz/aA-b7_IqRLdaBrTe_Screenshot2024-09-15211516.png?auto=format%2Ccompress&fit=max&w=1920'
+      ],
+      de: { title: 'TAG24 Talentgame 2025', date: '18.10.2025', location: 'Cinestar Roter Turm, Chemnitz', badges: ['Kooperation', 'Turnier'], desc: 'Die 2. Auflage des Talentgames in Kooperation mit TAG24. 20 Aussteller präsentierten sich im Cinestar Roter Turm in Chemnitz. Neben einem Rocket-League-Turnier und Super-Mario-Runden gab es ein Freispielareal in den Kinosälen sowie Gewinnspiele.', highlights: ['20 Aussteller', 'Rocket League Turnier', 'Super Mario Gaming', 'Freispielareal in Kinosälen', 'Gewinnspiele'], partners: ['TAG24'] },
+      en: { title: 'TAG24 Talentgame 2025', date: '18.10.2025', location: 'Cinestar Roter Turm, Chemnitz', badges: ['Partnership', 'Tournament'], desc: 'The 2nd edition of the Talentgame in partnership with TAG24. 20 exhibitors presented themselves at Cinestar Roter Turm in Chemnitz. Alongside a Rocket League tournament and Super Mario rounds, there was a free-play area in the cinema halls plus prize giveaways.', highlights: ['20 exhibitors', 'Rocket League tournament', 'Super Mario gaming', 'Free-play area in cinema halls', 'Prize giveaways'], partners: ['TAG24'] }
+    },
+    'fc25-cfc': {
+      images: [
+        'https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=1920'
+      ],
+      de: { title: 'FC25 Community Turnier im CFC Stadion', date: '06.09.2025', location: 'CFC Stadion, Chemnitz', badges: ['Community', 'Turnier'], desc: 'WireHeadZ und Sports United Chemnitz luden zum FC25 Community-Turnier direkt im CFC Stadion ein. Anmeldung über den Sporty2025-Discord-Server. Gaming trifft Fußball-Atmosphäre im echten Profistadion.', highlights: ['Gaming im echten Fußballstadion', 'Community-Turnier', 'Anmeldung via Discord (Sporty2025)'], partners: ['Sports United Chemnitz', 'Chemnitzer FC'] },
+      en: { title: 'FC25 Community Tournament at CFC Stadium', date: '06.09.2025', location: 'CFC Stadium, Chemnitz', badges: ['Community', 'Tournament'], desc: 'WireHeadZ and Sports United Chemnitz hosted the FC25 community tournament directly at CFC Stadium. Registration via the Sporty2025 Discord server. Gaming meets football atmosphere in a real professional stadium.', highlights: ['Gaming in a real football stadium', 'Community tournament', 'Registration via Discord (Sporty2025)'], partners: ['Sports United Chemnitz', 'Chemnitzer FC'] }
+    },
+    'gaming-mittelstand': {
+      images: [
+        'https://images.prismic.io/wireheadz/aA-IQPIqRLdaBrDQ_b5852097-5107-4a7b-b6fe-eaac850e4383.webp?auto=format%2Ccompress&fit=max&w=1920',
+        'https://images.prismic.io/wireheadz/aA-IP_IqRLdaBrDO_d3e99d58-f2ab-4bf4-9273-014f8af854ab.webp?auto=format,compress',
+        'https://images.prismic.io/wireheadz/aA-IP_IqRLdaBrDP_fafd5539-2e64-4a86-81a4-5d0267afd3be.webp?auto=format,compress',
+        'https://images.prismic.io/wireheadz/aA-IQfIqRLdaBrDR_840c5e5c-aaf5-49ce-979a-562c284fec69.webp?auto=format,compress'
+      ],
+      de: { title: 'Gaming trifft Mittelstand', date: '06.11.2024', location: 'Ubineum, Zwickau', badges: ['Business'], desc: 'Im Rahmen des Forschungsprojekts „Wandel durch Gamification und eSport" zeigten V.-Prof. Dr. Manuela Sachse und Prof. Dr. Paul Goldmann, wie KMU Gamification und eSport für Marketing und Personalgewinnung nutzen können. Höhepunkt: die offizielle Gründung des WireHeadZ Business Clubs.', highlights: ['Expertenvorträge: Prof. Dr. Sachse & Prof. Dr. Goldmann', 'Live Rocket League Match', 'Gründung des WireHeadZ Business Clubs', 'Kooperation mit Fachkräfteallianz Landkreis Zwickau'], partners: ['N+P Informationssysteme GmbH', 'FSV Zwickau eSport', 'TAG24 NEWS Deutschland GmbH', 'Marketing Club Zwickau e.V.'] },
+      en: { title: 'Gaming Meets SMEs', date: '06.11.2024', location: 'Ubineum, Zwickau', badges: ['Business'], desc: 'As part of the research project "Change through Gamification and eSport," Prof. Dr. Sachse and Prof. Dr. Goldmann showed how SMEs can use gamification and eSport for marketing and talent acquisition. Highlight: the official founding of the WireHeadZ Business Club.', highlights: ['Expert talks: Prof. Dr. Sachse & Prof. Dr. Goldmann', 'Live Rocket League match', 'Founding of the WireHeadZ Business Club', 'Partnership with Fachkräfteallianz Landkreis Zwickau'], partners: ['N+P Informationssysteme GmbH', 'FSV Zwickau eSport', 'TAG24 NEWS Deutschland GmbH', 'Marketing Club Zwickau e.V.'] }
+    },
+    'sporty-2024': {
+      images: [
+        'https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=1920',
+        'https://images.prismic.io/wireheadz/aA-YzPIqRLdaBrQy_1728466014146.jpg?auto=format,compress',
+        'https://images.prismic.io/wireheadz/aA-YqPIqRLdaBrQr_1728466009174.jpg?auto=format,compress'
+      ],
+      de: { title: 'Demonstrationsevent eSport – Sporty 2024', date: '07.09.2024', location: 'CFC Stadion, Chemnitz', badges: ['Community'], desc: 'Im Rahmen von SPORTS UNITED 2024 zeigte WireHeadZ beim „Sporty" im CFC Stadion, dass eSport mehr ist als Gaming. EA FC24 und Rocket League wurden live präsentiert – Teil des Programms von Chemnitz als Europäische Kulturhauptstadt 2025.', highlights: ['EA FC24 Live-Demo', 'Rocket League Showcase', 'Teil von Chemnitz Kulturhauptstadt 2025', 'Digitale und analoge Spielerlebnisse vereint'], partners: ['Sports United Chemnitz', 'Chemnitzer FC'] },
+      en: { title: 'eSport Demo Event – Sporty 2024', date: '07.09.2024', location: 'CFC Stadium, Chemnitz', badges: ['Community'], desc: 'As part of SPORTS UNITED 2024, WireHeadZ demonstrated at "Sporty" in CFC Stadium that eSport is more than gaming. EA FC24 and Rocket League were presented live – part of Chemnitz European Capital of Culture 2025 programme.', highlights: ['EA FC24 live demo', 'Rocket League showcase', 'Part of Chemnitz European Capital of Culture 2025', 'Digital and analogue gaming experiences combined'], partners: ['Sports United Chemnitz', 'Chemnitzer FC'] }
+    },
+    'tag24-2024': {
+      images: [
+        'https://images.prismic.io/wireheadz/Z912OjxkOkZ2kInd_1728465079572.jpeg?auto=format%2Ccompress&fit=max&w=1920'
+      ],
+      de: { title: 'TAG24 Talentgame 2024', date: '31.08.2024', location: 'Cinestar Roter Turm, Chemnitz', badges: ['Kooperation', 'Turnier'], desc: 'Die erfolgreiche Premiere der ersten Ausbildungs- und Recruitingmesse mit TAG24. 64 Spieler traten im FC24-Turnier auf der großen Kinoleinwand an, 15 Unternehmen präsentierten sich mit interaktiven Firmenständen und Event-Quests.', highlights: ['64 Spieler im FC24-Turnier', '15 Firmenstände mit Event-Quests', 'FC24 auf der Kinoleinwand', 'Auftakt einer langfristigen Partnerschaft'], partners: ['TAG24'] },
+      en: { title: 'TAG24 Talentgame 2024', date: '31.08.2024', location: 'Cinestar Roter Turm, Chemnitz', badges: ['Partnership', 'Tournament'], desc: 'The successful premiere of the first training and recruiting fair with TAG24. 64 players competed in the FC24 tournament on the big cinema screen, while 15 companies presented themselves with interactive booths and event quests.', highlights: ['64 players in FC24 tournament', '15 company booths with event quests', 'FC24 on the cinema screen', 'Start of a long-term partnership'], partners: ['TAG24'] }
+    },
+    'gamescom-2024': {
+      images: [
+        'https://images.prismic.io/wireheadz/aBTr4PIqRLdaB1Es_Screenshot2025-05-02174239.png?auto=format%2Ccompress&fit=max&w=1920'
+      ],
+      de: { title: 'WireHeadZ x Gamescom 2024', date: '21.–23.08.2024', location: 'Koelnmesse, Köln', badges: ['Messe'], desc: 'WireHeadZ debütierte auf der Gamescom 2024 – Europas größter Gaming-Messe. Das Team repräsentierte die WHZ mit einem eigenen Stand, führte Interviews und Gaming-Sessions durch. Besonderes Highlight: Vizekanzler Robert Habeck besuchte den Stand persönlich.', highlights: ['Besuch von Vizekanzler Robert Habeck', 'Treffen mit Creatorn Zarbex, Max Schradin & Rewinside', 'Eigener WHZ-Stand auf der Gamescom', '"Gaming muss ernstzunehmender Teil von Bildung werden!"'], partners: ['Westsächsische Hochschule Zwickau'] },
+      en: { title: 'WireHeadZ x Gamescom 2024', date: '21–23.08.2024', location: 'Koelnmesse, Cologne', badges: ['Expo'], desc: 'WireHeadZ made their Gamescom debut in 2024 – Europe\'s largest gaming expo. The team represented WHZ with their own booth, conducting interviews and gaming sessions. Special highlight: Vice Chancellor Robert Habeck visited the stand personally.', highlights: ['Visit by Vice Chancellor Robert Habeck', 'Meetings with creators Zarbex, Max Schradin & Rewinside', 'Own WHZ booth at Gamescom', '"Gaming must become a serious part of education!"'], partners: ['Westsächsische Hochschule Zwickau'] }
+    },
+    'fc24-community': {
+      images: [
+        'https://images.prismic.io/wireheadz/Z-2RyndAxsiBwPfy_1723445785713.jpeg?auto=format%2Ccompress&fit=max&w=1920'
+      ],
+      de: { title: 'FC24 Community Turnier', date: '11.08.2024', location: 'Espitas Chillybeach, Zwickau', badges: ['Community', 'Turnier'], desc: 'Das Finale des Zwickauer Arcaden FC24 Community-Turniers am Espitas Chillybeach – entspannte Atmosphäre mit Pool, Sand und Erfrischungen. Gaming auf der großen Leinwand, Sonne im Rücken.', highlights: ['Sieger: Sascha Hendel (FSV Zwickau eSport, sahexfc24)', 'Gaming auf großer Leinwand', 'Beach-Atmosphäre mit Pool & Erfrischungen'], partners: ['TAG24 NEWS Deutschland GmbH', 'Zwickauer Arcaden'] },
+      en: { title: 'FC24 Community Tournament', date: '11.08.2024', location: 'Espitas Chillybeach, Zwickau', badges: ['Community', 'Tournament'], desc: 'The final of the Zwickauer Arcaden FC24 Community Tournament at Espitas Chillybeach – relaxed atmosphere with pool, sand and refreshments. Gaming on a large screen, sun in the background.', highlights: ['Winner: Sascha Hendel (FSV Zwickau eSport, sahexfc24)', 'Gaming on large screen', 'Beach atmosphere with pool & refreshments'], partners: ['TAG24 NEWS Deutschland GmbH', 'Zwickauer Arcaden'] }
+    },
+    'fortnite-2024': {
+      images: [
+        'https://images.prismic.io/wireheadz/Z-2Qu3dAxsiBwPfP_0bac933f-6c1c-4c76-8f94-e398e3f38e2f.avif?auto=format%2Ccompress&fit=max&w=1920'
+      ],
+      de: { title: 'Fortnite Turnier zum Kindertag', date: '01.06.2024', location: 'Schüler-Lab der WHZ, Zwickau', badges: ['Turnier'], desc: 'Das erste offizielle Kindertag-Fortnite-Turnier mit pädagogischem Fokus: 24 Teilnehmer zwischen 12 und 20 Jahren traten an – begleitet von Mario Kart, 3D-Druck-Demos und dem Serious Game „Path Out". Eltern wurden aktiv in Gespräche über Gaming-Chancen und -Risiken eingebunden.', highlights: ['24 Teilnehmer (12–20 Jahre)', 'Begleitprogramm: Mario Kart & 3D-Druck', 'Serious Game „Path Out" (Alter Gasometer)', 'Elterngespräche zu Gaming-Risiken & -Chancen'], partners: ['Alter Gasometer', 'Spinnwebe Zwickau'] },
+      en: { title: 'Fortnite Tournament for Children\'s Day', date: '01.06.2024', location: 'WHZ Student Lab, Zwickau', badges: ['Tournament'], desc: 'The first official Children\'s Day Fortnite tournament with an educational focus: 24 participants aged 12–20 competed, accompanied by Mario Kart, 3D printing demos and the serious game "Path Out". Parents were actively engaged in discussions about gaming risks and opportunities.', highlights: ['24 participants (ages 12–20)', 'Side programme: Mario Kart & 3D printing', 'Serious game "Path Out" (Alter Gasometer)', 'Parent discussions on gaming risks & opportunities'], partners: ['Alter Gasometer', 'Spinnwebe Zwickau'] }
+    },
+    'gaming-weihnacht': {
+      images: [
+        'https://images.prismic.io/wireheadz/Z-2RX3dAxsiBwPfc_707eb631-5f61-420c-ac5b-8fcf4346cb1e.avif?auto=format%2Ccompress&fit=max&w=1080'
+      ],
+      de: { title: 'Gaming-Weihnacht', date: '13.12.2022', location: 'WHZ, Zwickau', badges: ['Community'], desc: 'Das WHZ-eSport-Team lud alle Hochschulangehörigen zur Gaming-Weihnachtsfeier ein. Besucherinnen und Besucher konnten den eigenen eSport-Teams (Rocket League und Valorant) über die Schulter schauen und natürlich selbst mitspielen.', highlights: ['WHZ Rocket League Team live', 'WHZ Valorant Team live', 'Offen für alle Hochschulangehörigen', 'Erster gesellschaftlicher Event des WireHeadZ-Teams'], partners: ['Westsächsische Hochschule Zwickau'] },
+      en: { title: 'Gaming Christmas', date: '13.12.2022', location: 'WHZ, Zwickau', badges: ['Community'], desc: 'The WHZ eSport team invited all university members to a gaming Christmas celebration. Visitors could watch the university\'s Rocket League and Valorant teams in action – and join in themselves.', highlights: ['WHZ Rocket League team live', 'WHZ Valorant team live', 'Open to all university members', 'First social event of the WireHeadZ team'], partners: ['Westsächsische Hochschule Zwickau'] }
+    }
+  };
+
+  (function () {
+    const modal      = document.getElementById('event-modal');
+    const panel      = modal.querySelector('.event-modal__panel');
+    const btnClose   = document.getElementById('modal-close');
+    const track      = document.getElementById('modal-gallery-track');
+    const btnPrev    = document.getElementById('modal-prev');
+    const btnNext    = document.getElementById('modal-next');
+    const dotsWrap   = document.getElementById('modal-dots');
+    const elDate     = document.getElementById('modal-date');
+    const elTitle    = document.getElementById('modal-title');
+    const elLocText  = document.getElementById('modal-location-text');
+    const elBadges   = document.getElementById('modal-badges');
+    const elDesc     = document.getElementById('modal-desc');
+    const elHlBlock  = document.getElementById('modal-highlights-block');
+    const elHlList   = document.getElementById('modal-highlights');
+    const elPaBlock  = document.getElementById('modal-partners-block');
+    const elPaList   = document.getElementById('modal-partners');
+
+    let activeId = null;
+    let slide = 0;
+    let total = 0;
+
+    function getLang() {
+      return document.documentElement.lang || localStorage.getItem('lang') || 'de';
+    }
+
+    function renderModal(id) {
+      const ev = eventData[id];
+      if (!ev) return;
+      const lang = getLang();
+      const d = ev[lang] || ev['de'];
+
+      elDate.textContent    = d.date;
+      elTitle.textContent   = d.title;
+      elLocText.textContent = d.location;
+      elDesc.textContent    = d.desc;
+
+      // Badges
+      elBadges.innerHTML = d.badges.map(b =>
+        `<span class="event-card__badge event-card__badge--category">${b}</span>`
+      ).join('');
+
+      // Highlights
+      if (d.highlights && d.highlights.length) {
+        elHlList.innerHTML = d.highlights.map(h => `<li>${h}</li>`).join('');
+        elHlBlock.hidden = false;
+        const label = elHlBlock.querySelector('.event-modal__section-label');
+        if (label) label.textContent = lang === 'en' ? 'Highlights' : 'Highlights';
+      } else {
+        elHlBlock.hidden = true;
+      }
+
+      // Partners
+      if (d.partners && d.partners.length) {
+        elPaList.innerHTML = d.partners.map(p =>
+          `<span class="event-modal__partner-tag">${p}</span>`
+        ).join('');
+        elPaBlock.hidden = false;
+        const label = elPaBlock.querySelector('.event-modal__section-label');
+        if (label) label.textContent = lang === 'en' ? 'Partners' : 'Partner';
+      } else {
+        elPaBlock.hidden = true;
+      }
+
+      // Gallery
+      track.innerHTML = '';
+      dotsWrap.innerHTML = '';
+      ev.images.forEach((url, i) => {
+        const s = document.createElement('div');
+        s.className = 'event-modal__gallery-slide';
+        const img = document.createElement('img');
+        img.src = url;
+        img.alt = d.title;
+        img.loading = i === 0 ? 'eager' : 'lazy';
+        s.appendChild(img);
+        track.appendChild(s);
+
+        const dot = document.createElement('button');
+        dot.className = 'event-modal__dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Bild ' + (i + 1));
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+      });
+
+      total = ev.images.length;
+      slide = 0;
+      updateGallery();
+
+      const singleImg = total <= 1;
+      btnPrev.style.display = singleImg ? 'none' : '';
+      btnNext.style.display = singleImg ? 'none' : '';
+      dotsWrap.style.display = singleImg ? 'none' : '';
+    }
+
+    function goTo(n) {
+      slide = (n + total) % total;
+      updateGallery();
+    }
+
+    function updateGallery() {
+      track.style.transform = `translateX(-${slide * 100}%)`;
+      dotsWrap.querySelectorAll('.event-modal__dot').forEach((d, i) => {
+        d.classList.toggle('active', i === slide);
+      });
+    }
+
+    function openModal(id) {
+      activeId = id;
+      renderModal(id);
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      btnClose.focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+      activeId = null;
+    }
+
+    btnClose.addEventListener('click', closeModal);
+    btnPrev.addEventListener('click', () => goTo(slide - 1));
+    btnNext.addEventListener('click', () => goTo(slide + 1));
+
+    // Close on backdrop click
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+    // Keyboard: ESC + arrow keys
+    document.addEventListener('keydown', e => {
+      if (!modal.classList.contains('open')) return;
+      if (e.key === 'Escape')      closeModal();
+      if (e.key === 'ArrowLeft')   goTo(slide - 1);
+      if (e.key === 'ArrowRight')  goTo(slide + 1);
+    });
+
+    // Language sync: re-render if modal is open
+    ['lang-toggle', 'lang-toggle-mobile'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) btn.addEventListener('click', () => {
+        if (modal.classList.contains('open') && activeId) {
+          setTimeout(() => renderModal(activeId), 0); // after applyLang ran
+        }
+      });
+    });
+
+    // Card click handlers
+    document.querySelectorAll('.event-card[data-event]').forEach(card => {
+      card.addEventListener('click', e => {
+        // Don't open modal when clicking links/buttons inside the card
+        if (e.target.closest('a, button')) return;
+        openModal(card.dataset.event);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

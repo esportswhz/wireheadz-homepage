@@ -1,0 +1,950 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt – WHZ GAMeS Hub</title>
+  <meta name="description" content="Schreib uns: Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage – alles vorausgefüllt in einem Schritt." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kontakt – WHZ GAMeS Hub" />
+  <meta property="og:description" content="Schreib uns: Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage." />
+  <meta property="og:image" content="assets/images/kontakt/hero.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kontakt – WHZ GAMeS Hub" />
+  <meta name="twitter:description" content="Schreib uns: Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage." />
+  <meta name="twitter:image" content="assets/images/kontakt/hero.png" />
+
+  <link rel="canonical" href="https://games-hub.whz.de/kontakt.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <link rel="stylesheet" href="styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="styles/components.css?v=8" />
+  <link rel="stylesheet" href="styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         HERO
+         ============================================ -->
+    <section class="page-hero page-hero--md" aria-label="Kontakt">
+      <img class="page-hero__bg" src="assets/images/kontakt/hero.png" alt="" loading="eager">
+      <div class="container page-hero__inner">
+        <span class="page-hero__label"
+              data-de="Schreib uns" data-en="Contact Us">Schreib uns</span>
+        <h1 class="page-hero__title"
+            data-de="Kontakt"
+            data-en="Contact">Kontakt</h1>
+        <p class="page-hero__sub"
+           data-de="Wähle dein Anliegen aus, füll die Felder aus – wir bereiten die E-Mail fertig vor. Du sendest sie ab, wenn alles stimmt."
+           data-en="Select your topic, fill in the fields – we prepare the email for you. You send it when everything looks good."
+           data-ls-de="Wähle dein Anliegen aus. Füll die Felder aus. Wir bereiten die E-Mail vor. Du sendest sie dann ab."
+           data-ls-en="Select your topic. Fill in the fields. We prepare the email. You then send it.">Wähle dein Anliegen aus, füll die Felder aus – wir bereiten die E-Mail fertig vor. Du sendest sie ab, wenn alles stimmt.</p>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         FORMULAR
+         ============================================ -->
+    <section class="section" aria-labelledby="kontakt-form-heading">
+      <div class="container container--narrow">
+
+        <h2 id="kontakt-form-heading" class="visually-hidden"
+            data-de="Kontaktformular" data-en="Contact Form">Kontaktformular</h2>
+
+        <form id="kontakt-form" novalidate>
+
+          <!-- Kategorie-Auswahl -->
+          <div class="form-categories" role="group" aria-label="Anliegen auswählen">
+            <button type="button" class="form-category-btn" data-typ="spieler"
+                    aria-pressed="false"
+                    data-de="Spieler werden" data-en="Become a Player">Spieler werden</button>
+            <button type="button" class="form-category-btn" data-typ="mitglied"
+                    aria-pressed="false"
+                    data-de="Vereinsmitglied" data-en="Club Membership">Vereinsmitglied</button>
+            <button type="button" class="form-category-btn" data-typ="partner"
+                    aria-pressed="false"
+                    data-de="Partnerschaft" data-en="Partnership">Partnerschaft</button>
+            <button type="button" class="form-category-btn" data-typ="recruiting"
+                    aria-pressed="false"
+                    data-de="Recruiting / Talentgame" data-en="Recruiting / Talentgame">Recruiting / Talentgame</button>
+            <button type="button" class="form-category-btn" data-typ="allgemein"
+                    aria-pressed="false"
+                    data-de="Allgemeine Anfrage" data-en="General Enquiry">Allgemeine Anfrage</button>
+          </div>
+
+
+          <div class="form-section">
+
+            <!-- ---- Felder: Spieler werden ---- -->
+            <div class="form-fields-group" data-typ="spieler" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Bewerbung als eSport-Spieler"
+                  data-en="Application as eSport Player"
+                  data-ls-de="Bewerbung als Spieler"
+                  data-ls-en="Apply as a Player">Bewerbung als eSport-Spieler</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="spieler-name">Name<span class="form-required">*</span></label>
+                    <input type="text" id="spieler-name" name="name"
+                           autocomplete="name"
+                           data-placeholder-de="Vor- und Nachname"
+                           data-placeholder-en="First and last name"
+                           placeholder="Vor- und Nachname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="spieler-email">E-Mail<span class="form-required">*</span></label>
+                    <input type="email" id="spieler-email" name="email"
+                           autocomplete="email"
+                           data-placeholder-de="deine@email.de"
+                           data-placeholder-en="your@email.com"
+                           placeholder="deine@email.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="spieler-team">
+                    <span data-de="Team" data-en="Team">Team</span><span class="form-required">*</span>
+                  </label>
+                  <select id="spieler-team" name="team">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
+                    <option value="WireHeadZ" data-de="WireHeadZ (GAMeS Hub, WHZ)" data-en="WireHeadZ (GAMeS Hub, WHZ)">WireHeadZ (GAMeS Hub, WHZ)</option>
+                    <option value="WireHeadZ e.V." data-de="WireHeadZ e.V. (eingetragener Verein)" data-en="WireHeadZ e.V. (registered association)">WireHeadZ e.V. (eingetragener Verein)</option>
+                  </select>
+                </div>
+
+                <!-- Hinweis: e.V.-Mitgliedschaft erforderlich -->
+                <div class="form-callout" id="spieler-ev-hinweis" style="display:none">
+                  <div class="form-callout__icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </div>
+                  <div>
+                    <p data-de="Um eSport-Spieler beim WireHeadZ e.V. zu werden, ist eine Vereinsmitgliedschaft Voraussetzung."
+                       data-en="To become an eSport player at WireHeadZ e.V., club membership is required."
+                       data-ls-de="Für den WireHeadZ e.V. musst du zuerst Mitglied werden."
+                       data-ls-en="For WireHeadZ e.V. you must first become a member.">Um eSport-Spieler beim WireHeadZ e.V. zu werden, ist eine Vereinsmitgliedschaft Voraussetzung.</p>
+                    <a href="kontakt.html?typ=mitglied" class="form-callout__link"
+                       data-de="Jetzt Mitglied werden →" data-en="Become a member now →">Jetzt Mitglied werden →</a>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="spieler-spiel">
+                    <span data-de="Spieltitel" data-en="Game Title">Spieltitel</span><span class="form-required">*</span>
+                  </label>
+                  <select id="spieler-spiel" name="spiel">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
+                    <option value="F1">F1</option>
+                    <option value="League of Legends">League of Legends</option>
+                    <option value="Rocket League">Rocket League</option>
+                    <option value="Valorant">Valorant</option>
+                    <option value="neu"
+                            data-de="Neues Spiel / Kader vorschlagen"
+                            data-en="Propose New Game / Roster">Neues Spiel / Kader vorschlagen</option>
+                  </select>
+                </div>
+
+                <!-- Nur sichtbar wenn "Neues Spiel" gewählt -->
+                <div class="form-group" id="spieler-spiel-neu-group" style="display:none">
+                  <label for="spieler-spiel-neu">
+                    <span data-de="Welches Spiel möchtest du einbringen?" data-en="Which game would you like to propose?" data-ls-de="Welches Spiel schlägst du vor?" data-ls-en="Which game do you suggest?">Welches Spiel möchtest du einbringen?</span><span class="form-required">*</span>
+                  </label>
+                  <input type="text" id="spieler-spiel-neu" name="spiel-neu"
+                         data-placeholder-de="z.B. Counter-Strike 2, League of Legends, ..."
+                         data-placeholder-en="e.g. Counter-Strike 2, League of Legends, ..."
+                         placeholder="z.B. Counter-Strike 2, League of Legends, ..." />
+                </div>
+
+                <div class="form-group">
+                  <label for="spieler-rank">
+                    <span data-de="Spielniveau / Rank" data-en="Skill Level / Rank">Spielniveau / Rank</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <input type="text" id="spieler-rank" name="rank"
+                         data-placeholder-de="z.B. Gold 2 · Platin · 1.200 MMR"
+                         data-placeholder-en="e.g. Gold 2 · Platinum · 1,200 MMR"
+                         placeholder="z.B. Gold 2 · Platin · 1.200 MMR" />
+                </div>
+
+                <div class="form-group">
+                  <label for="spieler-info">
+                    <span data-de="Über mich" data-en="About Me">Über mich</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="spieler-info" name="info"
+                            data-placeholder-de="Kurze Vorstellung: Wie lange spielst du? Was sind deine Stärken? Was motiviert dich?"
+                            data-placeholder-en="Brief introduction: How long have you been playing? What are your strengths? What motivates you?"
+                            placeholder="Kurze Vorstellung: Wie lange spielst du? Was sind deine Stärken? Was motiviert dich?"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="spieler-bemerkungen">
+                    <span data-de="Bemerkungen" data-en="Notes">Bemerkungen</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="spieler-bemerkungen" name="bemerkungen"
+                            style="min-height:80px;"
+                            data-placeholder-de="Weitere Informationen, Fragen oder Anmerkungen"
+                            data-placeholder-en="Additional information, questions or comments"
+                            placeholder="Weitere Informationen, Fragen oder Anmerkungen"></textarea>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- ---- Felder: Vereinsmitglied ---- -->
+            <div class="form-fields-group" data-typ="mitglied" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Mitgliedschaft im WireHeadZ e.V."
+                  data-en="Membership in WireHeadZ e.V.">Mitgliedschaft im WireHeadZ e.V.</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="mitglied-name">Name<span class="form-required">*</span></label>
+                    <input type="text" id="mitglied-name" name="name"
+                           autocomplete="name"
+                           data-placeholder-de="Vor- und Nachname"
+                           data-placeholder-en="First and last name"
+                           placeholder="Vor- und Nachname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="mitglied-email">E-Mail<span class="form-required">*</span></label>
+                    <input type="email" id="mitglied-email" name="email"
+                           autocomplete="email"
+                           data-placeholder-de="deine@email.de"
+                           data-placeholder-en="your@email.com"
+                           placeholder="deine@email.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="mitglied-aufmerksam">
+                    <span data-de="Wie bist du auf WireHeadZ aufmerksam geworden?" data-en="How did you hear about WireHeadZ?" data-ls-de="Wie hast du WireHeadZ kennengelernt?" data-ls-en="How did you find out about WireHeadZ?">Wie bist du auf WireHeadZ aufmerksam geworden?</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <select id="mitglied-aufmerksam" name="aufmerksam">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
+                    <option value="Discord">Discord</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Event / Veranstaltung" data-de="Event / Veranstaltung" data-en="Event">Event / Veranstaltung</option>
+                    <option value="Hochschule / WHZ" data-de="Hochschule / WHZ" data-en="University / WHZ">Hochschule / WHZ</option>
+                    <option value="Freunde / Bekannte" data-de="Freunde / Bekannte" data-en="Friends / Acquaintances">Freunde / Bekannte</option>
+                    <option value="Sonstiges" data-de="Sonstiges" data-en="Other">Sonstiges</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mitglied-bemerkungen">
+                    <span data-de="Bemerkungen" data-en="Notes">Bemerkungen</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="mitglied-bemerkungen" name="bemerkungen"
+                            style="min-height:80px;"
+                            data-placeholder-de="Fragen zur Mitgliedschaft, Satzung oder Vereinsleben"
+                            data-placeholder-en="Questions about membership, bylaws or club life"
+                            placeholder="Fragen zur Mitgliedschaft, Satzung oder Vereinsleben"></textarea>
+                </div>
+
+                <p class="form-hint"
+                   data-de="Der Jahresbeitrag beträgt 10,00 € / Jahr. Die Mitgliedschaft ist offen für alle, eine Immatrikulation an der WHZ ist nicht erforderlich."
+                   data-en="The annual membership fee is €10.00 / year. Membership is open to everyone, enrolment at WHZ is not required."
+                   data-ls-de="Der Beitrag kostet 10 € pro Jahr. Alle können Mitglied werden. Du musst nicht an der WHZ studieren."
+                   data-ls-en="The fee costs 10 € per year. Everyone can become a member. You do not need to study at WHZ.">Der Jahresbeitrag beträgt 10,00 € / Jahr. Die Mitgliedschaft ist offen für alle, eine Immatrikulation an der WHZ ist nicht erforderlich.</p>
+
+              </div>
+            </div>
+
+
+            <!-- ---- Felder: Partnerschaft ---- -->
+            <div class="form-fields-group" data-typ="partner" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Partnerschaftsanfrage"
+                  data-en="Partnership Enquiry">Partnerschaftsanfrage</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="partner-name">
+                      <span data-de="Ansprechpartner" data-en="Contact Person">Ansprechpartner</span><span class="form-required">*</span>
+                    </label>
+                    <input type="text" id="partner-name" name="name"
+                           autocomplete="name"
+                           data-placeholder-de="Vor- und Nachname"
+                           data-placeholder-en="First and last name"
+                           placeholder="Vor- und Nachname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="partner-email">E-Mail<span class="form-required">*</span></label>
+                    <input type="email" id="partner-email" name="email"
+                           autocomplete="email"
+                           data-placeholder-de="kontakt@unternehmen.de"
+                           data-placeholder-en="contact@company.com"
+                           placeholder="kontakt@unternehmen.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="partner-org">
+                    <span data-de="Unternehmen / Organisation" data-en="Company / Organisation">Unternehmen / Organisation</span><span class="form-required">*</span>
+                  </label>
+                  <input type="text" id="partner-org" name="org"
+                         autocomplete="organization"
+                         data-placeholder-de="Name deines Unternehmens oder Vereins"
+                         data-placeholder-en="Name of your company or organisation"
+                         placeholder="Name deines Unternehmens oder Vereins" />
+                </div>
+
+                <div class="form-group">
+                  <label for="partner-art">
+                    <span data-de="Art der Kooperation" data-en="Type of Cooperation">Art der Kooperation</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <select id="partner-art" name="art">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
+                    <option value="Event-Kooperation" data-de="Event-Kooperation" data-en="Event Cooperation">Event-Kooperation</option>
+                    <option value="Forschungspartnerschaft" data-de="Forschungspartnerschaft" data-en="Research Partnership">Forschungspartnerschaft</option>
+                    <option value="Sponsoring">Sponsoring</option>
+                    <option value="Business Club">Business Club</option>
+                    <option value="Recruiting / Talentgame">Recruiting / Talentgame</option>
+                    <option value="Community &amp; Soziales" data-de="Community &amp; Soziales" data-en="Community &amp; Social Impact">Community &amp; Soziales</option>
+                    <option value="Sonstiges" data-de="Sonstiges" data-en="Other">Sonstiges</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="partner-beschreibung">
+                    <span data-de="Kurzbeschreibung" data-en="Brief Description">Kurzbeschreibung</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="partner-beschreibung" name="beschreibung"
+                            data-placeholder-de="Was schwebt dir vor? Gibt es schon konkrete Ideen oder Formate?"
+                            data-placeholder-en="What do you have in mind? Do you already have specific ideas or formats?"
+                            placeholder="Was schwebt dir vor? Gibt es schon konkrete Ideen oder Formate?"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="partner-bemerkungen">
+                    <span data-de="Bemerkungen" data-en="Notes">Bemerkungen</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="partner-bemerkungen" name="bemerkungen"
+                            style="min-height:80px;"
+                            data-placeholder-de="Weitere Informationen oder Fragen"
+                            data-placeholder-en="Additional information or questions"
+                            placeholder="Weitere Informationen oder Fragen"></textarea>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- ---- Felder: Recruiting / Talentgame ---- -->
+            <div class="form-fields-group" data-typ="recruiting" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Recruiting über das Talentgame"
+                  data-en="Recruiting via Talentgame"
+                  data-ls-de="Recruiting beim Talentgame"
+                  data-ls-en="Recruiting at Talentgame">Recruiting über das Talentgame</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="recruiting-name">
+                      <span data-de="Ansprechpartner" data-en="Contact Person">Ansprechpartner</span><span class="form-required">*</span>
+                    </label>
+                    <input type="text" id="recruiting-name" name="name"
+                           autocomplete="name"
+                           data-placeholder-de="Vor- und Nachname"
+                           data-placeholder-en="First and last name"
+                           placeholder="Vor- und Nachname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="recruiting-email">E-Mail<span class="form-required">*</span></label>
+                    <input type="email" id="recruiting-email" name="email"
+                           autocomplete="email"
+                           data-placeholder-de="kontakt@unternehmen.de"
+                           data-placeholder-en="contact@company.com"
+                           placeholder="kontakt@unternehmen.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="recruiting-org">
+                    <span data-de="Unternehmen" data-en="Company">Unternehmen</span><span class="form-required">*</span>
+                  </label>
+                  <input type="text" id="recruiting-org" name="org"
+                         autocomplete="organization"
+                         data-placeholder-de="Name deines Unternehmens"
+                         data-placeholder-en="Name of your company"
+                         placeholder="Name deines Unternehmens" />
+                </div>
+
+                <div class="form-group">
+                  <label for="recruiting-interesse">
+                    <span data-de="Interesse an" data-en="Interest in">Interesse an</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <select id="recruiting-interesse" name="interesse">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
+                    <option value="Standplatz beim Talentgame" data-de="Standplatz beim Talentgame" data-en="Booth at Talentgame">Standplatz beim Talentgame</option>
+                    <option value="Sponsoring-Paket" data-de="Sponsoring-Paket" data-en="Sponsoring Package">Sponsoring-Paket</option>
+                    <option value="Standplatz und Sponsoring" data-de="Standplatz und Sponsoring" data-en="Booth and Sponsoring">Standplatz und Sponsoring</option>
+                    <option value="Informationen / Erstgespräch" data-de="Informationen / Erstgespräch" data-en="Information / Initial Meeting">Informationen / Erstgespräch</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="recruiting-bemerkungen">
+                    <span data-de="Bemerkungen" data-en="Notes">Bemerkungen</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="recruiting-bemerkungen" name="bemerkungen"
+                            style="min-height:80px;"
+                            data-placeholder-de="Offene Fragen, besondere Anforderungen oder Zeitrahmen"
+                            data-placeholder-en="Open questions, special requirements or timeline"
+                            placeholder="Offene Fragen, besondere Anforderungen oder Zeitrahmen"></textarea>
+                </div>
+
+                <p class="form-hint"
+                   data-de="Standplätze und Sponsoring-Pakete sind begrenzt. Frühzeitige Anfragen haben Vorrang."
+                   data-en="Booth spaces and sponsoring packages are limited. Early enquiries take priority."
+                   data-ls-de="Standplätze und Pakete sind begrenzt. Früh anfragen lohnt sich."
+                   data-ls-en="Booth spaces and packages are limited. Asking early is worth it.">Standplätze und Sponsoring-Pakete sind begrenzt. Frühzeitige Anfragen haben Vorrang.</p>
+
+              </div>
+            </div>
+
+
+            <!-- ---- Felder: Allgemeine Anfrage ---- -->
+            <div class="form-fields-group" data-typ="allgemein" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Allgemeine Anfrage"
+                  data-en="General Enquiry">Allgemeine Anfrage</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="allgemein-name">Name<span class="form-required">*</span></label>
+                    <input type="text" id="allgemein-name" name="name"
+                           autocomplete="name"
+                           data-placeholder-de="Vor- und Nachname"
+                           data-placeholder-en="First and last name"
+                           placeholder="Vor- und Nachname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="allgemein-email">E-Mail<span class="form-required">*</span></label>
+                    <input type="email" id="allgemein-email" name="email"
+                           autocomplete="email"
+                           data-placeholder-de="deine@email.de"
+                           data-placeholder-en="your@email.com"
+                           placeholder="deine@email.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="allgemein-betreff">
+                    <span data-de="Betreff" data-en="Subject">Betreff</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <input type="text" id="allgemein-betreff" name="betreff"
+                         data-placeholder-de="Worum geht es?"
+                         data-placeholder-en="What is it about?"
+                         placeholder="Worum geht es?" />
+                </div>
+
+                <div class="form-group">
+                  <label for="allgemein-nachricht">
+                    <span data-de="Nachricht" data-en="Message">Nachricht</span><span class="form-required">*</span>
+                  </label>
+                  <textarea id="allgemein-nachricht" name="nachricht"
+                            data-placeholder-de="Deine Anfrage, Idee oder Feedback"
+                            data-placeholder-en="Your enquiry, idea or feedback"
+                            placeholder="Deine Anfrage, Idee oder Feedback"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="allgemein-bemerkungen">
+                    <span data-de="Bemerkungen" data-en="Notes">Bemerkungen</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="allgemein-bemerkungen" name="bemerkungen"
+                            style="min-height:80px;"
+                            data-placeholder-de="Weitere Ergänzungen"
+                            data-placeholder-en="Additional notes"
+                            placeholder="Weitere Ergänzungen"></textarea>
+                </div>
+
+              </div>
+            </div>
+
+
+            <!-- ---- Absenden ---- -->
+            <div class="form-submit">
+              <div>
+                <p class="form-submit__note" style="margin:0 0 2px;"
+                   data-de="Dein E-Mail-Client öffnet sich mit allem vorausgefüllt."
+                   data-en="Your email client opens with everything pre-filled."
+                   data-ls-de="Dein E-Mail-Programm öffnet sich. Alles ist schon ausgefüllt."
+                   data-ls-en="Your email program opens. Everything is already filled in.">Dein E-Mail-Client öffnet sich mit allem vorausgefüllt.</p>
+                <p class="form-submit__note" style="margin:0;"
+                   data-de="Du kannst noch Änderungen vornehmen, bevor du absendest."
+                   data-en="You can still make changes before sending."
+                   data-ls-de="Du kannst noch Änderungen machen. Dann sendest du ab."
+                   data-ls-en="You can still make changes. Then you send it.">Du kannst noch Änderungen vornehmen, bevor du absendest.</p>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg"
+                      data-de="E-Mail vorbereiten" data-en="Prepare Email"
+                      data-ls-de="E-Mail vorbereiten" data-ls-en="Prepare Email">E-Mail vorbereiten</button>
+            </div>
+
+          </div><!-- /.form-section -->
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+  <script src="main.js?v=12"></script>
+
+  <!-- ============================================
+       KONTAKT-FORMULAR LOGIK
+       ============================================ -->
+  <script>
+  (function () {
+    'use strict';
+
+    var EMAIL = 'esports@whz.de';
+
+    // URL-Parameter lesen
+    var params     = new URLSearchParams(window.location.search);
+    var typParam   = params.get('typ')   || 'allgemein';
+    var artParam   = params.get('art')   || '';
+    var spielParam = params.get('spiel') || '';
+    var teamParam  = params.get('team')  || '';
+
+    // Normalisierung: URL-Wert → Select-Option-Wert
+    var spielMap = {
+      'f1':                 'F1',
+      'F1':                 'F1',
+      'formula1':           'F1',
+      'lol':                'League of Legends',
+      'league-of-legends':  'League of Legends',
+      'League of Legends':  'League of Legends',
+      'rocket-league':      'Rocket League',
+      'Rocket League':      'Rocket League',
+      'valorant':           'Valorant',
+      'Valorant':           'Valorant',
+      'neu':                'neu'
+    };
+
+    var validTypes = ['spieler', 'mitglied', 'partner', 'recruiting', 'allgemein'];
+
+    // Mapping: URL-Wert -> Select-Option-Wert
+    var artMap = {
+      'business-club': 'Business Club',
+      'event':         'Event-Kooperation',
+      'forschung':     'Forschungspartnerschaft',
+      'sponsoring':    'Sponsoring',
+      'recruiting':    'Recruiting / Talentgame',
+      'soziales':      'Community & Soziales'
+    };
+
+    // ---- Sprach-Sync für Platzhalter ----
+    function updateFormLang(lang) {
+      var isEn = lang === 'en';
+      document.querySelectorAll('[data-placeholder-de], [data-placeholder-en]').forEach(function (el) {
+        el.placeholder = isEn
+          ? (el.dataset.placeholderEn || el.placeholder)
+          : (el.dataset.placeholderDe || el.placeholder);
+      });
+    }
+
+    // Init: aktuelle Sprache übernehmen
+    updateFormLang(document.documentElement.lang);
+
+    // Sprach-Wechsel über html[lang]-Attribut beobachten
+    new MutationObserver(function (mutations) {
+      mutations.forEach(function (m) {
+        if (m.attributeName === 'lang') updateFormLang(document.documentElement.lang);
+      });
+    }).observe(document.documentElement, { attributes: true });
+
+    // ---- Kategorie aktivieren ----
+    function activateCategory(typ) {
+      document.querySelectorAll('.form-category-btn').forEach(function (btn) {
+        var active = btn.dataset.typ === typ;
+        btn.classList.toggle('active', active);
+        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+      });
+      document.querySelectorAll('.form-fields-group').forEach(function (group) {
+        group.hidden = group.dataset.typ !== typ;
+      });
+      // Neues-Spiel-Feld immer mit Select-Zustand synchronisieren
+      var neuGrp = document.getElementById('spieler-spiel-neu-group');
+      var spSel  = document.getElementById('spieler-spiel');
+      if (neuGrp && spSel) {
+        neuGrp.style.display = spSel.value === 'neu' ? '' : 'none';
+      }
+    }
+
+    // Init
+    var startType = validTypes.includes(typParam) ? typParam : 'allgemein';
+    activateCategory(startType);
+
+    // Art-Parameter vorausfüllen (nur bei Partnerschaft)
+    if (artParam && startType === 'partner') {
+      var artSelect = document.getElementById('partner-art');
+      if (artSelect && artMap[artParam]) {
+        artSelect.value = artMap[artParam];
+      }
+    }
+
+    // Spieltitel vorausfüllen
+    if (spielParam && startType === 'spieler') {
+      var spSel = document.getElementById('spieler-spiel');
+      var mappedSpiel = spielMap[spielParam] || spielParam;
+      if (spSel && mappedSpiel) {
+        spSel.value = mappedSpiel;
+        if (mappedSpiel === 'neu') {
+          var neuGrpInit = document.getElementById('spieler-spiel-neu-group');
+          if (neuGrpInit) neuGrpInit.style.display = '';
+        }
+      }
+    }
+
+    // Team vorausfüllen + ggf. e.V.-Hinweis zeigen
+    if (teamParam && startType === 'spieler') {
+      var teamSel = document.getElementById('spieler-team');
+      var evBox   = document.getElementById('spieler-ev-hinweis');
+      if (teamSel) {
+        if (teamParam === 'wireheadz') teamSel.value = 'WireHeadZ';
+        else if (teamParam === 'ev')   teamSel.value = 'WireHeadZ e.V.';
+        if (evBox) evBox.style.display = teamSel.value === 'WireHeadZ e.V.' ? '' : 'none';
+      }
+    }
+
+    // Kategorie-Buttons
+    document.querySelectorAll('.form-category-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        activateCategory(btn.dataset.typ);
+      });
+    });
+
+    // ---- Team-Select: e.V.-Hinweis anzeigen/verstecken ----
+    var teamSelect = document.getElementById('spieler-team');
+    var evHinweis  = document.getElementById('spieler-ev-hinweis');
+    if (teamSelect && evHinweis) {
+      teamSelect.addEventListener('change', function () {
+        evHinweis.style.display = this.value === 'WireHeadZ e.V.' ? '' : 'none';
+      });
+    }
+
+    // ---- Neues Spiel: Zusatzfeld anzeigen/verstecken ----
+    var spielSelect  = document.getElementById('spieler-spiel');
+    var spielNeuGrp  = document.getElementById('spieler-spiel-neu-group');
+    if (spielSelect && spielNeuGrp) {
+      spielSelect.addEventListener('change', function () {
+        spielNeuGrp.style.display = this.value === 'neu' ? '' : 'none';
+        if (this.value === 'neu') {
+          document.getElementById('spieler-spiel-neu').focus();
+        }
+      });
+    }
+
+    // ---- Hilfsfunktionen ----
+    function val(id) {
+      var el = document.getElementById(id);
+      return el ? el.value.trim() : '';
+    }
+
+    function line(label, value) {
+      return value ? label + ': ' + value : '';
+    }
+
+    function block(lines) {
+      return lines.filter(Boolean).join('\n');
+    }
+
+    // ---- E-Mail zusammenbauen ----
+    function buildEmail(typ) {
+      var subject, body;
+
+      if (typ === 'spieler') {
+        var name    = val('spieler-name');
+        var email   = val('spieler-email');
+        var team    = val('spieler-team');
+        var spRaw   = document.getElementById('spieler-spiel').value.trim();
+        var isNeu   = spRaw === 'neu';
+        var spiel   = isNeu ? val('spieler-spiel-neu') : spRaw;
+        var rank    = val('spieler-rank');
+        var info    = val('spieler-info');
+        var bem     = val('spieler-bemerkungen');
+
+        if (isNeu) {
+          subject = 'Neuer Kader / Spieltitel – ' + spiel + ' – ' + name;
+          body = [
+            'Hallo WireHeadZ-Team,',
+            '',
+            'ich möchte einen neuen Kader für ' + spiel + ' vorschlagen und wäre beim Aufbau aktiv dabei.',
+            '',
+            '—— Meine Angaben ——',
+            block([
+              line('Team', team),
+              line('Name', name),
+              line('E-Mail', email),
+              line('Vorgeschlagenes Spiel', spiel),
+              line('Spielniveau / Rank', rank)
+            ]),
+            info ? '\nÜber mich:\n' + info  : '',
+            bem  ? '\n—— Bemerkungen ——\n' + bem : '',
+            '',
+            'Mit freundlichen Grüßen',
+            name
+          ].join('\n');
+        } else {
+          subject = 'Bewerbung eSport-Team (' + (team || 'WireHeadZ') + ') – ' + spiel + ' – ' + name;
+          body = [
+            'Hallo WireHeadZ-Team,',
+            '',
+            'ich möchte mich als Spieler für das ' + (team || 'WireHeadZ') + ' Team bewerben.',
+            '',
+            '—— Meine Angaben ——',
+            block([
+              line('Team', team),
+              line('Name', name),
+              line('E-Mail', email),
+              line('Spieltitel', spiel),
+              line('Spielniveau / Rank', rank)
+            ]),
+            info ? '\nÜber mich:\n' + info  : '',
+            bem  ? '\n—— Bemerkungen ——\n' + bem : '',
+            '',
+            'Mit freundlichen Grüßen',
+            name
+          ].join('\n');
+        }
+
+      } else if (typ === 'mitglied') {
+        var name  = val('mitglied-name');
+        var email = val('mitglied-email');
+        var auf   = val('mitglied-aufmerksam');
+        var bem   = val('mitglied-bemerkungen');
+
+        subject = 'Mitgliedschaftsanfrage WireHeadZ e.V. – ' + name;
+        body = [
+          'Hallo WireHeadZ-Team,',
+          '',
+          'ich möchte Mitglied im WireHeadZ e.V. werden.',
+          '',
+          '—— Meine Angaben ——',
+          block([
+            line('Name', name),
+            line('E-Mail', email),
+            line('Wie ich auf WireHeadZ aufmerksam wurde', auf)
+          ]),
+          bem ? '\n—— Bemerkungen ——\n' + bem : '',
+          '',
+          'Mit freundlichen Grüßen',
+          name
+        ].join('\n');
+
+      } else if (typ === 'partner') {
+        var name   = val('partner-name');
+        var email  = val('partner-email');
+        var org    = val('partner-org');
+        var art    = val('partner-art');
+        var beschr = val('partner-beschreibung');
+        var bem    = val('partner-bemerkungen');
+
+        subject = 'Partnerschaftsanfrage – ' + (art || 'Kooperation') + ' – ' + org;
+        body = [
+          'Hallo WireHeadZ-Team,',
+          '',
+          'wir möchten eine Kooperation mit dem WHZ GAMeS Hub anfragen.',
+          '',
+          '—— Unsere Angaben ——',
+          block([
+            line('Ansprechpartner', name),
+            line('Unternehmen / Organisation', org),
+            line('E-Mail', email),
+            line('Art der Kooperation', art)
+          ]),
+          beschr ? '\nBeschreibung:\n' + beschr : '',
+          bem    ? '\n—— Bemerkungen ——\n' + bem : '',
+          '',
+          'Mit freundlichen Grüßen',
+          name,
+          org
+        ].join('\n');
+
+      } else if (typ === 'recruiting') {
+        var name  = val('recruiting-name');
+        var email = val('recruiting-email');
+        var org   = val('recruiting-org');
+        var int_  = val('recruiting-interesse');
+        var bem   = val('recruiting-bemerkungen');
+
+        subject = 'Recruiting-Anfrage Talentgame – ' + org;
+        body = [
+          'Hallo WireHeadZ-Team,',
+          '',
+          'wir möchten am WireHeadZ Talentgame teilnehmen.',
+          '',
+          '—— Unsere Angaben ——',
+          block([
+            line('Ansprechpartner', name),
+            line('Unternehmen', org),
+            line('E-Mail', email),
+            line('Interesse an', int_)
+          ]),
+          bem ? '\n—— Bemerkungen ——\n' + bem : '',
+          '',
+          'Mit freundlichen Grüßen',
+          name,
+          org
+        ].join('\n');
+
+      } else { // allgemein
+        var name      = val('allgemein-name');
+        var email     = val('allgemein-email');
+        var betreff   = val('allgemein-betreff');
+        var nachricht = val('allgemein-nachricht');
+        var bem       = val('allgemein-bemerkungen');
+
+        subject = betreff
+          ? 'Anfrage – ' + betreff + ' – ' + name
+          : 'Anfrage von ' + name;
+        body = [
+          'Hallo WireHeadZ-Team,',
+          '',
+          '—— Meine Angaben ——',
+          block([
+            line('Name', name),
+            line('E-Mail', email),
+            line('Betreff', betreff)
+          ]),
+          '\nNachricht:\n' + nachricht,
+          bem ? '\n—— Bemerkungen ——\n' + bem : '',
+          '',
+          'Mit freundlichen Grüßen',
+          name
+        ].join('\n');
+      }
+
+      return { subject: subject, body: body };
+    }
+
+    // ---- Validierung ----
+    var required = {
+      spieler:    ['spieler-team', 'spieler-name', 'spieler-email', 'spieler-spiel'],
+      mitglied:   ['mitglied-name',   'mitglied-email'],
+      partner:    ['partner-name',    'partner-email',    'partner-org'],
+      recruiting: ['recruiting-name', 'recruiting-email', 'recruiting-org'],
+      allgemein:  ['allgemein-name',  'allgemein-email',  'allgemein-nachricht']
+    };
+
+    function validate(typ) {
+      document.querySelectorAll('.form-group.has-error').forEach(function (g) {
+        g.classList.remove('has-error');
+      });
+      var fields = required[typ] || [];
+      var ok = true;
+      fields.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && !el.value.trim()) {
+          el.closest('.form-group').classList.add('has-error');
+          ok = false;
+        }
+      });
+
+      // Zusatz: bei "Neues Spiel" das Freitextfeld prüfen
+      if (typ === 'spieler') {
+        var sp = document.getElementById('spieler-spiel');
+        if (sp && sp.value === 'neu') {
+          var neu = document.getElementById('spieler-spiel-neu');
+          if (neu && !neu.value.trim()) {
+            neu.closest('.form-group').classList.add('has-error');
+            ok = false;
+          }
+        }
+      }
+
+      if (!ok) {
+        var first = document.querySelector('.form-group.has-error input, .form-group.has-error select, .form-group.has-error textarea');
+        if (first) first.focus();
+      }
+      return ok;
+    }
+
+    // Fehler bei Eingabe entfernen
+    document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(function (el) {
+      el.addEventListener('input', function () {
+        var grp = el.closest('.form-group');
+        if (grp) grp.classList.remove('has-error');
+      });
+    });
+
+    // ---- Absenden ----
+    document.getElementById('kontakt-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var activeBtn = document.querySelector('.form-category-btn.active');
+      var typ = activeBtn ? activeBtn.dataset.typ : 'allgemein';
+      if (!validate(typ)) return;
+      var result = buildEmail(typ);
+      window.location.href =
+        'mailto:' + EMAIL +
+        '?subject=' + encodeURIComponent(result.subject) +
+        '&body='    + encodeURIComponent(result.body);
+    });
+
+  }());
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,665 @@
+﻿<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WHZ GAMeS Hub</title>
+  <meta name="description" content="Ein interdisziplinärer Hub an der Westsächsischen Hochschule Zwickau. Für alle, die Gaming ernst nehmen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WHZ GAMeS Hub" />
+  <meta property="og:description" content="Lernort, Spielraum und Innovationsplattform an der WHZ Zwickau. Offen für alle: von Casual Gaming bis angewandter Forschung." />
+  <meta property="og:image" content="assets/images/games-hub/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WHZ GAMeS Hub" />
+  <meta name="twitter:description" content="Lernort, Spielraum und Innovationsplattform an der WHZ Zwickau." />
+  <meta name="twitter:image" content="assets/images/games-hub/og-image.png" />
+
+  <!-- Inter Font -->
+  <link rel="canonical" href="https://games-hub.whz.de/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/tokens.css?v=8" />
+  <link rel="stylesheet" href="styles/components.css?v=8" />
+  <link rel="stylesheet" href="styles/layout.css?v=8" />
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <header class="nav" role="banner">
+    <div class="nav__inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Hauptnavigation">
+        <ul class="nav__links" data-nav-desktop></ul>
+      </nav>
+
+      <!-- Controls -->
+      <div class="nav__controls">
+        <button class="nav__lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" id="theme-toggle" aria-label="Darkmode umschalten">
+          <i id="theme-icon" data-lucide="moon" style="width:18px;height:18px;"></i>
+        </button>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile Navigation">
+      <ul class="nav__mobile-links" data-nav-mobile-links></ul>
+
+      <div class="nav__mobile-controls">
+        <button class="nav__lang-toggle" id="lang-toggle-mobile" aria-label="Sprache wechseln">DE</button>
+        <button class="nav__theme-toggle" aria-label="Darkmode umschalten" style="width:auto;padding:0 12px;border-radius:6px;">
+          Dark Mode
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ============================================
+         1. SHOWCASE — Was wir sind
+         ============================================ -->
+    <section class="showcase" aria-label="Was wir sind" id="showcase">
+
+      <div class="showcase__track">
+
+        <!-- Slide 0: GAMeS Hub -->
+        <div class="showcase__slide showcase__slide--active" data-slide="0">
+          <img src="assets/images/games-hub/og-image.png" alt="" class="showcase__bg" aria-hidden="true" />
+          <div class="showcase__content">
+            <div class="container">
+              <span class="showcase__label" data-de="Initiative · WHZ Zwickau" data-en="Initiative · WHZ Zwickau" data-ls-de="Initiative · WHZ Zwickau" data-ls-en="Initiative · WHZ Zwickau">Initiative · WHZ Zwickau</span>
+              <h2 class="showcase__title" data-de="WHZ GAMeS Hub" data-en="WHZ GAMeS Hub" data-ls-de="WHZ GAMeS Hub" data-ls-en="WHZ GAMeS Hub">WHZ GAMeS Hub</h2>
+              <p class="showcase__text" data-de="Lernort, Spielraum und Innovationsplattform an der Westsächsischen Hochschule Zwickau. Offen für alle: von Casual Gaming bis angewandter Forschung." data-en="A place to learn, play and innovate at West Saxon University Zwickau. Open to all: from casual gaming to applied research." data-ls-de="Hier kann man spielen. Hier kann man lernen. Hier kann man forschen. Alle Studierenden der Hochschule Zwickau sind willkommen." data-ls-en="Here you can play. Here you can learn. Here you can do research. All students at Zwickau University are welcome.">Lernort, Spielraum und Innovationsplattform an der Westsächsischen Hochschule Zwickau. Offen für alle: von Casual Gaming bis angewandter Forschung.</p>
+              <a href="games-hub.html" class="btn btn--white btn--lg" data-de="Zum GAMeS Hub" data-en="Explore GAMeS Hub" data-ls-de="Zum GAMeS Hub" data-ls-en="Explore GAMeS Hub">Zum GAMeS Hub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1: Unternehmen -->
+        <div class="showcase__slide" data-slide="1">
+          <img src="assets/images/partner/hero.png" alt="" class="showcase__bg" aria-hidden="true" loading="lazy" />
+          <div class="showcase__content">
+            <div class="container">
+              <span class="showcase__label" data-de="Für Unternehmen" data-en="For Companies" data-ls-de="Für Unternehmen" data-ls-en="For Companies">Für Unternehmen</span>
+              <h2 class="showcase__title" data-de="Partner &amp; Business Club" data-en="Partners &amp; Business Club" data-ls-de="Partner &amp; Business Club" data-ls-en="Partners &amp; Business Club">Partner &amp; Business Club</h2>
+              <p class="showcase__text" data-de="Kooperationen in Events, Forschung und gesellschaftlichem Engagement. Werden Sie Teil des WHZ GAMeS Hub-Netzwerks." data-en="Partnerships in events, research and social engagement. Become part of the WHZ GAMeS Hub network." data-ls-de="Wir arbeiten mit Firmen zusammen. Wir machen Events. Wir forschen. Werden Sie Partner des WHZ GAMeS Hub." data-ls-en="We work with companies. We organise events. We do research. Become a partner of WHZ GAMeS Hub.">Kooperationen in Events, Forschung und gesellschaftlichem Engagement. Werden Sie Teil des WHZ GAMeS Hub-Netzwerks.</p>
+              <a href="partner.html" class="btn btn--white btn--lg" data-de="Partnerschaft anfragen" data-en="Request Partnership" data-ls-de="Partnerschaft anfragen" data-ls-en="Request Partnership">Partnerschaft anfragen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: Kommende Events (JS befüllt bg + Inhalt) -->
+        <div class="showcase__slide" data-slide="2">
+          <div class="showcase__bg showcase__bg--event" aria-hidden="true"></div>
+          <div class="showcase__content">
+            <div class="container">
+              <span class="showcase__label" data-de="Nächstes Event" data-en="Next Event" data-ls-de="Nächstes Event" data-ls-en="Next Event">Nächstes Event</span>
+              <h2 class="showcase__title showcase__event-title"></h2>
+              <p class="showcase__text showcase__event-date"></p>
+              <div class="showcase__countdown"></div>
+              <a href="events.html" class="btn btn--white btn--lg" data-de="Alle Events ansehen" data-en="View All Events" data-ls-de="Alle Events ansehen" data-ls-en="View All Events">Alle Events ansehen</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: WireHeadZ -->
+        <div class="showcase__slide" data-slide="3">
+          <img src="assets/images/wireheadz/hero.png" alt="" class="showcase__bg" aria-hidden="true" loading="lazy" />
+          <div class="showcase__content">
+            <div class="container">
+              <span class="showcase__label" data-de="Hochschul eSport-Team" data-en="University eSport Team" data-ls-de="Hochschul eSport-Team" data-ls-en="University eSport Team">Hochschul eSport-Team</span>
+              <h2 class="showcase__title" data-de="WireHeadZ" data-en="WireHeadZ" data-ls-de="WireHeadZ" data-ls-en="WireHeadZ">WireHeadZ</h2>
+              <p class="showcase__text" data-de="Das kompetitive eSport-Team der WHZ. Wir spielen Valorant, Rocket League und mehr und vertreten die Hochschule auf Turnieren und in Ligen." data-en="The competitive eSport team of WHZ. We play Valorant, Rocket League and more, representing the university in tournaments and leagues." data-ls-de="Wir sind das eSport-Team der Hochschule. Wir spielen Valorant und Rocket League. Wir nehmen an Turnieren teil." data-ls-en="We are the eSport team of the university. We play Valorant and Rocket League. We take part in tournaments.">Das kompetitive eSport-Team der WHZ. Wir spielen Valorant, Rocket League und mehr und vertreten die Hochschule auf Turnieren und in Ligen.</p>
+              <a href="esports/wireheadz.html" class="btn btn--white btn--lg" data-de="Zum Team" data-en="Meet the Team" data-ls-de="Zum Team" data-ls-en="Meet the Team">Zum Team</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: WireHeadZ e.V. -->
+        <div class="showcase__slide" data-slide="4">
+          <img src="assets/images/wireheadz-ev/hero.png" alt="" class="showcase__bg" aria-hidden="true" loading="lazy" />
+          <div class="showcase__content">
+            <div class="container">
+              <span class="showcase__label" data-de="Gemeinnütziger Verein" data-en="Non-Profit Club" data-ls-de="Gemeinnütziger Verein" data-ls-en="Non-Profit Club">Gemeinnütziger Verein</span>
+              <h2 class="showcase__title" data-de="WireHeadZ e.V." data-en="WireHeadZ e.V." data-ls-de="WireHeadZ e.V." data-ls-en="WireHeadZ e.V.">WireHeadZ e.V.</h2>
+              <p class="showcase__text" data-de="Der gemeinnützige Verein hinter dem Hub. Offen für Studierende, Alumni und alle Gaming-Begeisterten in der Region Zwickau." data-en="The non-profit association behind the hub. Open to students, alumni and all gaming enthusiasts in the Zwickau region." data-ls-de="Der WireHeadZ e.V. ist ein Verein. Studierende können Mitglied werden. Auch ehemalige Studierende sind willkommen. Der Verein ist in Zwickau." data-ls-en="WireHeadZ e.V. is an association. Students can become members. Alumni are also welcome. The association is based in Zwickau.">Der gemeinnützige Verein hinter dem Hub. Offen für Studierende, Alumni und alle Gaming-Begeisterten in der Region Zwickau.</p>
+              <a href="esports/wireheadz-ev.html" class="btn btn--white btn--lg" data-de="Zum Verein" data-en="Meet the Club" data-ls-de="Zum Verein" data-ls-en="Meet the Club">Zum Verein</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pfeile -->
+      <button class="showcase__arrow showcase__arrow--prev" id="showcase-prev" aria-label="Vorheriger Bereich">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="showcase__arrow showcase__arrow--next" id="showcase-next" aria-label="Nächster Bereich">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Dots -->
+      <div class="showcase__dots" id="showcase-dots" aria-hidden="true">
+        <button class="showcase__dot showcase__dot--active" data-target="0"></button>
+        <button class="showcase__dot" data-target="1"></button>
+        <button class="showcase__dot" data-target="2"></button>
+        <button class="showcase__dot" data-target="3"></button>
+        <button class="showcase__dot" data-target="4"></button>
+      </div>
+
+    </section>
+
+
+    <!-- ============================================
+         2. MISSION STATEMENT — Wer wir sind
+         ============================================ -->
+    <section class="mission section" aria-labelledby="mission-heading">
+      <div class="container">
+        <h2 class="mission__heading" id="mission-heading"
+            data-de="Wer wir sind"
+            data-en="Who We Are"
+            data-ls-de="Wer wir sind"
+            data-ls-en="Who We Are">
+          Wer wir sind
+        </h2>
+        <div class="mission__body">
+          <div class="mission__text">
+            <p data-de="Der WHZ GAMeS Hub ist eine studentische Initiative an der Westsächsischen Hochschule Zwickau. Wir verbinden Gaming-Kultur, eSport und angewandte Forschung als offener Ort zum Spielen, Lernen und Vernetzen."
+               data-en="WHZ GAMeS Hub is a student initiative at West Saxon University of Applied Sciences Zwickau. We bring together gaming culture, eSport and applied research as an open space for playing, learning and connecting."
+               data-ls-de="Der WHZ GAMeS Hub ist eine Initiative von Studierenden. Wir sind an der Hochschule Zwickau. Hier kann man spielen. Hier kann man lernen. Hier kann man forschen."
+               data-ls-en="WHZ GAMeS Hub is a student initiative. We are at West Saxon University Zwickau. Here you can play. Here you can learn. Here you can do research.">
+              Der WHZ GAMeS Hub ist eine studentische Initiative an der Westsächsischen Hochschule Zwickau. Wir verbinden Gaming-Kultur, eSport und angewandte Forschung als offener Ort zum Spielen, Lernen und Vernetzen.
+            </p>
+            <p data-de="Gegründet aus einer Idee, gewachsen durch ein engagiertes Team. Wer hier mitmacht, gestaltet die Zukunft des eSport an der Hochschule aktiv mit."
+               data-en="Founded from one idea, grown through a dedicated team. Those who get involved here actively shape the future of eSport at the university."
+               data-ls-de="Wir haben mit einer Idee angefangen. Heute sind wir ein großes Team. Alle können mitmachen. Zusammen gestalten wir die Zukunft."
+               data-ls-en="We started with one idea. Today we are a big team. Everyone can get involved. Together we shape the future.">
+              Gegründet aus einer Idee, gewachsen durch ein engagiertes Team. Wer hier mitmacht, gestaltet die Zukunft des eSport an der Hochschule aktiv mit.
+            </p>
+          </div>
+          <div class="video-embed">
+            <iframe
+              src="https://www.youtube.com/embed/FuL4vLI6DvY"
+              data-src-de="https://www.youtube.com/embed/FuL4vLI6DvY"
+              data-src-en="https://www.youtube.com/embed/ongtMECMTdM"
+              title="WHZ GAMeS Hub"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         3. DIE DREI BEREICHE
+         ============================================ -->
+    <section class="areas section" id="bereiche" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Unsere Bereiche</p>
+          <h2 id="areas-heading"
+              data-de="Drei Bereiche. Eine Community."
+              data-en="Three Areas. One Community."
+              data-ls-de="3 Bereiche. Eine Community."
+              data-ls-en="3 Areas. One Community.">
+            Drei Bereiche. Eine Community.
+          </h2>
+        </div>
+
+        <div class="areas__grid">
+
+          <!-- WireHeadZ -->
+          <div class="area-card area-card--wireheadz">
+            <div class="area-card__top">
+              <img src="assets/logos/logo-wireheadz.png" alt="WireHeadZ" class="area-card__logo" />
+              <span class="area-card__label" data-de="Hochschul eSport-Team" data-en="University eSport Team" data-ls-de="Hochschul eSport-Team" data-ls-en="University eSport Team">Hochschul eSport-Team</span>
+            </div>
+            <div>
+              <h3 class="area-card__title"
+                  data-de="WireHeadZ"
+                  data-en="WireHeadZ"
+                  data-ls-de="WireHeadZ"
+                  data-ls-en="WireHeadZ">
+                WireHeadZ
+              </h3>
+              <p class="area-card__body"
+                 data-de="Das kompetitive eSport-Team der WHZ. Wir spielen Valorant und Rocket League und vertreten die Hochschule auf Turnieren und in Ligen."
+                 data-en="The competitive eSport team of WHZ. We play Valorant and Rocket League, representing the university in tournaments and leagues."
+                 data-ls-de="Wir sind das eSport-Team der Hochschule. Wir spielen Valorant und Rocket League. Wir nehmen an Turnieren teil."
+                 data-ls-en="We are the university eSport team. We play Valorant and Rocket League. We take part in tournaments.">
+                Das kompetitive eSport-Team der WHZ. Wir spielen Valorant und Rocket League und vertreten die Hochschule auf Turnieren und in Ligen.
+              </p>
+            </div>
+            <a href="esports/wireheadz.html" class="area-card__link"
+               data-de="Zum Team" data-en="Meet the Team" data-ls-de="Zum Team" data-ls-en="Meet the Team">
+              Zum Team
+            </a>
+          </div>
+
+          <!-- GAMeS Hub -->
+          <div class="area-card area-card--games-hub">
+            <div class="area-card__top">
+              <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" class="area-card__logo" />
+              <span class="area-card__label" data-de="Initiative" data-en="Initiative" data-ls-de="Initiative" data-ls-en="Initiative">Initiative</span>
+            </div>
+            <div>
+              <h3 class="area-card__title"
+                  data-de="WHZ GAMeS Hub"
+                  data-en="WHZ GAMeS Hub"
+                  data-ls-de="WHZ GAMeS Hub"
+                  data-ls-en="WHZ GAMeS Hub">
+                WHZ GAMeS Hub
+              </h3>
+              <p class="area-card__body"
+                 data-de="Lernort, Spielraum und Innovationsplattform. Offen für alle WHZ-Studierenden, von Casual Gaming bis angewandter Forschung."
+                 data-en="A place to learn, play and innovate. Open to all WHZ students, from casual gaming to applied research."
+                 data-ls-de="Hier kann man spielen und lernen. Alle Studierenden der WHZ können kommen. Gaming und Forschung sind willkommen."
+                 data-ls-en="Here you can play and learn. All WHZ students can come. Gaming and research are welcome.">
+                Lernort, Spielraum und Innovationsplattform. Offen für alle WHZ-Studierenden, von Casual Gaming bis angewandter Forschung.
+              </p>
+            </div>
+            <a href="games-hub.html" class="area-card__link"
+               data-de="Mehr erfahren" data-en="Learn More" data-ls-de="Mehr erfahren" data-ls-en="Learn More">
+              Mehr erfahren
+            </a>
+          </div>
+
+          <!-- WireHeadZ e.V. -->
+          <div class="area-card area-card--ev">
+            <div class="area-card__top">
+              <img src="assets/logos/logo-wireheadz-ev.png" alt="WireHeadZ e.V." class="area-card__logo" />
+              <span class="area-card__label" data-de="Verein" data-en="Club" data-ls-de="Verein" data-ls-en="Club">Verein</span>
+            </div>
+            <div>
+              <h3 class="area-card__title"
+                  data-de="WireHeadZ e.V."
+                  data-en="WireHeadZ e.V."
+                  data-ls-de="WireHeadZ e.V."
+                  data-ls-en="WireHeadZ e.V.">
+                WireHeadZ e.V.
+              </h3>
+              <p class="area-card__body"
+                 data-de="Der gemeinnützige Verein hinter dem Hub. Offen für Studierende, Alumni und alle Gaming-Begeisterten."
+                 data-en="The non-profit association behind the hub. Open to students, alumni and all gaming enthusiasts."
+                 data-ls-de="Der WireHeadZ e.V. ist ein Verein. Studierende können Mitglied werden. Auch ehemalige Studierende sind willkommen."
+                 data-ls-en="WireHeadZ e.V. is an association. Students can become members. Alumni are also welcome.">
+                Der gemeinnützige Verein hinter dem Hub. Offen für Studierende, Alumni und alle Gaming-Begeisterten.
+              </p>
+            </div>
+            <a href="esports/wireheadz-ev.html" class="area-card__link"
+               data-de="Zum Verein" data-en="Meet the Club" data-ls-de="Zum Verein" data-ls-en="Meet the Club">
+              Zum Verein
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         4. eSport HIGHLIGHTS
+         ============================================ -->
+    <section class="esports-highlights section" aria-labelledby="esports-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">eSport</p>
+          <h2 id="esports-heading"
+              data-de="Unsere Teams"
+              data-en="Our Teams"
+              data-ls-de="Unsere Teams"
+              data-ls-en="Our Teams">
+            Unsere Teams
+          </h2>
+          <p data-de="Aktive Kader, die die WHZ auf Turnieren und in Ligen vertreten."
+             data-en="Active rosters representing WHZ in tournaments and leagues."
+             data-ls-de="Diese Teams spielen für die Hochschule WHZ."
+             data-ls-en="These teams play for WHZ university.">
+            Aktive Kader, die die WHZ auf Turnieren und in Ligen vertreten.
+          </p>
+        </div>
+
+        <!-- Karten werden aus TEAMS (main.js) generiert -->
+        <div class="esports-highlights__grid" id="esports-highlights__grid"></div>
+
+        <!-- Mitmachen: beide Organisationen in einem zusammenhängenden Bereich -->
+        <div class="esports-join">
+          <div class="esports-join__half esports-join__half--wireheadz">
+            <img src="assets/images/shared/kader-hintergrund.png" alt="" class="esports-join__bg" aria-hidden="true" />
+            <div class="esports-join__overlay"></div>
+            <div class="esports-join__content">
+              <span class="esports-join__org" data-de="WireHeadZ" data-en="WireHeadZ" data-ls-de="WireHeadZ" data-ls-en="WireHeadZ">WireHeadZ</span>
+              <h3 class="esports-join__title"
+                  data-de="Dein Spiel ist nicht dabei?"
+                  data-en="Your game isn't listed?"
+                  data-ls-de="Dein Lieblingsspiel fehlt?"
+                  data-ls-en="Your game is missing?">Dein Spiel ist nicht dabei?</h3>
+              <p class="esports-join__desc"
+                 data-de="WireHeadZ wächst mit seinen Spielern. Wenn du einen Spieltitel vermisst oder ein neues Team aufbauen möchtest, freuen wir uns über deinen Vorschlag."
+                 data-en="WireHeadZ grows with its players. If you're missing a game or want to build a new team, we'd love to hear your suggestion."
+                 data-ls-de="WireHeadZ möchte wachsen. Fehlt ein Spiel? Schreib uns. Wir freuen uns auf neue Ideen."
+                 data-ls-en="WireHeadZ wants to grow. Is a game missing? Write to us. We look forward to new ideas.">WireHeadZ wächst mit seinen Spielern. Wenn du einen Spieltitel vermisst oder ein neues Team aufbauen möchtest, freuen wir uns über deinen Vorschlag.</p>
+              <a href="kontakt.html?typ=spieler&amp;spiel=neu&amp;team=wireheadz" class="btn btn--primary"
+                 data-de="Spieltitel vorschlagen" data-en="Suggest a Title" data-ls-de="Spieltitel vorschlagen" data-ls-en="Suggest a Title">Spieltitel vorschlagen</a>
+            </div>
+          </div>
+          <div class="esports-join__half esports-join__half--ev">
+            <img src="assets/images/shared/kader-hintergrund-ev.png" alt="" class="esports-join__bg" aria-hidden="true" />
+            <div class="esports-join__overlay"></div>
+            <div class="esports-join__content">
+              <span class="esports-join__org esports-join__org--ev" data-de="WireHeadZ e.V." data-en="WireHeadZ e.V." data-ls-de="WireHeadZ e.V." data-ls-en="WireHeadZ e.V.">WireHeadZ e.V.</span>
+              <h3 class="esports-join__title"
+                  data-de="Dein Spiel ist nicht dabei?"
+                  data-en="Your game isn't listed?"
+                  data-ls-de="Dein Lieblingsspiel fehlt?"
+                  data-ls-en="Your game is missing?">Dein Spiel ist nicht dabei?</h3>
+              <p class="esports-join__desc"
+                 data-de="Der WireHeadZ e.V. ist offen für neue Spieltitel und wächst durch seine Mitglieder. Wenn du ein Spiel vermisst oder eine neue Sektion gründen möchtest, freuen wir uns über deinen Vorschlag."
+                 data-en="WireHeadZ e.V. is open to new game titles and grows through its members. If you're missing a game or want to found a new section, we'd love to hear your suggestion."
+                 data-ls-de="Der WireHeadZ e.V. ist offen für neue Spiele. Wir wachsen durch Mitglieder. Fehlt ein Spiel? Schreib uns."
+                 data-ls-en="WireHeadZ e.V. is open to new games. We grow through members. Is a game missing? Write to us.">Der WireHeadZ e.V. ist offen für neue Spieltitel und wächst durch seine Mitglieder. Wenn du ein Spiel vermisst oder eine neue Sektion gründen möchtest, freuen wir uns über deinen Vorschlag.</p>
+              <a href="kontakt.html?typ=spieler&amp;spiel=neu&amp;team=ev" class="btn btn--primary"
+                 data-de="Spieltitel vorschlagen" data-en="Suggest a Title" data-ls-de="Spieltitel vorschlagen" data-ls-en="Suggest a Title">Spieltitel vorschlagen</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         5. COMMUNITY & EVENTS
+         ============================================ -->
+    <section class="community section" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-label">Community &amp; Events</p>
+          <h2 id="community-heading"
+              data-de="Was gerade passiert"
+              data-en="What's happening"
+              data-ls-de="Was passiert gerade?"
+              data-ls-en="What is happening?">
+            Was gerade passiert
+          </h2>
+        </div>
+
+        <div class="community__grid">
+
+          <!-- Events Preview -->
+          <div>
+            <h3 style="font-size: var(--text-h4); font-weight: var(--weight-semibold); color: var(--color-text); margin-bottom: var(--space-md);"
+                data-de="Aktuelle Events" data-en="Latest Events" data-ls-de="Aktuelle Events" data-ls-en="Latest Events">
+              Aktuelle Events
+            </h3>
+            <div class="events-preview__grid" data-events-preview></div>
+            <a href="events.html" class="btn btn--ghost" style="margin-top: var(--space-md); padding-left: 0;"
+               data-de="Alle Events ansehen →" data-en="View all events →" data-ls-de="Alle Events ansehen →" data-ls-en="View all events →">
+              Alle Events ansehen →
+            </a>
+          </div>
+
+          <!-- Discord CTA -->
+          <div class="discord-cta">
+            <svg class="discord-cta__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z"/>
+            </svg>
+            <h3 class="discord-cta__title"
+                data-de="Werde Teil der Community"
+                data-en="Join the Community"
+                data-ls-de="Werde Teil unserer Community."
+                data-ls-en="Join our community.">
+              Werde Teil der Community
+            </h3>
+            <p class="discord-cta__body"
+               data-de="Tausch dich aus, spiel mit und bleib auf dem Laufenden. Alles passiert auf unserem Discord."
+               data-en="Connect, play together and stay up to date. Find everything on our Discord."
+               data-ls-de="Auf unserem Discord kann man schreiben. Dort kann man mitspielen. Dort gibt es alle Neuigkeiten."
+               data-ls-en="On our Discord you can chat. You can play together there. You find all news there.">
+              Tausch dich aus, spiel mit und bleib auf dem Laufenden. Alles passiert auf unserem Discord.
+            </p>
+            <a href="https://discord.gg/zs48PfpJJF" target="_blank" rel="noopener" class="btn btn--white"
+               data-de="Discord beitreten" data-en="Join Discord" data-ls-de="Discord beitreten" data-ls-en="Join Discord">
+              Discord beitreten
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         6. HISTORIE TEASER
+         ============================================ -->
+    <section class="history-teaser section" aria-labelledby="history-heading">
+      <div class="container">
+        <div class="history-teaser__inner">
+
+          <div class="history-teaser__header">
+            <p class="section-label">Unsere Geschichte</p>
+            <h2 id="history-heading"
+                data-de="Von einer Idee zur Hochschul-Initiative"
+                data-en="From One Idea to a University Initiative"
+                data-ls-de="Wir haben 2020 mit einer Idee begonnen."
+                data-ls-en="We started with one idea in 2020.">
+              Von einer Idee zur Hochschul-Initiative
+            </h2>
+            <p data-de="Seit 2020 wächst der WHZ GAMeS Hub. Aus einem einzelnen Turnier entstand eine der aktivsten studentischen Initiativen an der WHZ."
+               data-en="Since 2020, WHZ GAMeS Hub has grown. From a single tournament into one of the most active student initiatives at WHZ."
+               data-ls-de="Seit 2020 wächst der WHZ GAMeS Hub. Aus 1 Turnier wurde eine große Initiative."
+               data-ls-en="Since 2020, WHZ GAMeS Hub has grown. 1 tournament became a big student initiative.">
+              Seit 2020 wächst der WHZ GAMeS Hub. Aus einem einzelnen Turnier entstand eine der aktivsten studentischen Initiativen an der WHZ.
+            </p>
+            <a href="games-hub.html#history" class="btn btn--secondary" style="margin-top: var(--space-lg);"
+               data-de="Unsere Geschichte" data-en="Our Story" data-ls-de="Unsere Geschichte" data-ls-en="Our Story">
+              Unsere Geschichte
+            </a>
+          </div>
+
+          <div class="timeline" role="list">
+
+            <div class="timeline__item" role="listitem">
+              <div class="timeline__bg" aria-hidden="true" style="background-image: url('assets/images/games-hub/history/2020.png')"></div>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <p class="timeline__year">2020</p>
+              <p class="timeline__text"
+                 data-de="Erstes FIFA-Turnier am GTZ. Die Idee nimmt Form an."
+                 data-en="First FIFA tournament at GTZ. The idea takes shape."
+                 data-ls-de="Wir haben unser 1. FIFA-Turnier gemacht. Die Idee begann."
+                 data-ls-en="We held our 1st FIFA tournament. The idea began.">
+                Erstes FIFA-Turnier am GTZ. Die Idee nimmt Form an.
+              </p>
+              <div class="timeline__extra">
+                <div class="timeline__extra-inner">
+                  <p class="timeline__detail"
+                     data-de="Erste Kooperation mit dem Chemnitz Center. Das Fundament für zukünftige Events wird gelegt."
+                     data-en="First cooperation with Chemnitz Center. The foundation for future events is laid."
+                     data-ls-de="Wir haben mit dem Chemnitz Center zusammengearbeitet. Daraus entstanden mehr Events."
+                     data-ls-en="We worked with Chemnitz Center. This led to more events.">
+                    Erste Kooperation mit dem Chemnitz Center. Das Fundament für zukünftige Events wird gelegt.
+                  </p>
+                  <a href="games-hub.html" class="timeline__link"
+                     data-de="Zur Geschichte" data-en="Read More" data-ls-de="Zur Geschichte" data-ls-en="Read More">
+                    Zur Geschichte
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item" role="listitem">
+              <div class="timeline__bg" aria-hidden="true" style="background-image: url('assets/images/games-hub/history/2022.png')"></div>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <p class="timeline__year">2022</p>
+              <p class="timeline__text"
+                 data-de="Gründung des eSport Labs. Erstes kompetitives Team: Rocket League."
+                 data-en="eSport Lab founded. First competitive team: Rocket League."
+                 data-ls-de="Wir haben das eSport Lab gegründet. Das 1. Team spielt Rocket League."
+                 data-ls-en="We founded the eSport Lab. The 1st team plays Rocket League.">
+                Gründung des eSport Labs. Erstes kompetitives Team: Rocket League.
+              </p>
+              <div class="timeline__extra">
+                <div class="timeline__extra-inner">
+                  <p class="timeline__detail"
+                     data-de="Zweites FIFA-Turnier, erstes Rocket-League-Team gegründet. Der Hub bekommt eine feste Heimat und Struktur."
+                     data-en="Second FIFA tournament, first Rocket League team founded. The hub gets a permanent home and structure."
+                     data-ls-de="Wir haben unser 2. FIFA-Turnier gemacht. Das 1. Rocket-League-Team wurde gegründet. Der Hub hat jetzt eine feste Heimat."
+                     data-ls-en="We held our 2nd FIFA tournament. The 1st Rocket League team was founded. The hub now has a permanent home.">
+                    Zweites FIFA-Turnier, erstes Rocket-League-Team gegründet. Der Hub bekommt eine feste Heimat und Struktur.
+                  </p>
+                  <a href="games-hub.html" class="timeline__link"
+                     data-de="Zur Geschichte" data-en="Read More" data-ls-de="Zur Geschichte" data-ls-en="Read More">
+                    Zur Geschichte
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item" role="listitem">
+              <div class="timeline__bg" aria-hidden="true" style="background-image: url('assets/images/games-hub/history/2024.png')"></div>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <p class="timeline__year">2024</p>
+              <p class="timeline__text"
+                 data-de="Rebranding zu WHZ GAMeS Hub. Erstes Forschungsprojekt, Kooperation TAG24."
+                 data-en="Rebranding to WHZ GAMeS Hub. First research project, partnership with TAG24."
+                 data-ls-de="Wir haben uns in WHZ GAMeS Hub umbenannt. Wir haben das 1. Forschungsprojekt gestartet."
+                 data-ls-en="We renamed ourselves to WHZ GAMeS Hub. We started the 1st research project.">
+                Rebranding zu WHZ GAMeS Hub. Erstes Forschungsprojekt, Kooperation TAG24.
+              </p>
+              <div class="timeline__extra">
+                <div class="timeline__extra-inner">
+                  <p class="timeline__detail"
+                     data-de="Kooperation mit N+P Informationssysteme, erste wissenschaftliche Publikation im Bereich Gamification und eSport."
+                     data-en="Partnership with N+P Informationssysteme, first academic publication in gamification and eSport."
+                     data-ls-de="Wir haben mit N+P zusammengearbeitet. Wir haben die 1. Publikation über Gamification und eSport veröffentlicht."
+                     data-ls-en="We worked with N+P. We published the 1st paper on gamification and eSport.">
+                    Kooperation mit N+P Informationssysteme, erste wissenschaftliche Publikation im Bereich Gamification und eSport.
+                  </p>
+                  <a href="games-hub.html" class="timeline__link"
+                     data-de="Zur Geschichte" data-en="Read More" data-ls-de="Zur Geschichte" data-ls-en="Read More">
+                    Zur Geschichte
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline__item" role="listitem">
+              <div class="timeline__bg" aria-hidden="true" style="background-image: url('assets/images/games-hub/history/2025.png')"></div>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <p class="timeline__year">2025</p>
+              <p class="timeline__text"
+                 data-de="Internationale Hochschulkontakte (Finnland). Weitere Publikationen geplant."
+                 data-en="International university contacts (Finland). Further publications planned."
+                 data-ls-de="Wir haben Kontakte zu Hochschulen in Finnland. Weitere Publikationen folgen."
+                 data-ls-en="We have contacts to universities in Finland. More publications will follow.">
+                Internationale Hochschulkontakte (Finnland). Weitere Publikationen geplant.
+              </p>
+              <div class="timeline__extra">
+                <div class="timeline__extra-inner">
+                  <p class="timeline__detail"
+                     data-de="Kooperation mit Heinrich Schmid. Der Hub wächst über die Hochschulregion hinaus."
+                     data-en="Partnership with Heinrich Schmid. The hub grows beyond the university region."
+                     data-ls-de="Wir arbeiten mit Heinrich Schmid zusammen. Der Hub wächst über Zwickau hinaus."
+                     data-ls-en="We work with Heinrich Schmid. The hub is growing beyond Zwickau.">
+                    Kooperation mit Heinrich Schmid. Der Hub wächst über die Hochschulregion hinaus.
+                  </p>
+                  <a href="games-hub.html" class="timeline__link"
+                     data-de="Zur Geschichte" data-en="Read More" data-ls-de="Zur Geschichte" data-ls-en="Read More">
+                    Zur Geschichte
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         7. PARTNER
+         ============================================ -->
+    <section class="partners" aria-label="Partner und Kooperationen">
+      <div class="container">
+        <p class="partners__label"
+           data-de="Partner &amp; Kooperationen"
+           data-en="Partners &amp; Cooperations"
+           data-ls-de="Partner &amp; Zusammenarbeit"
+           data-ls-en="Partners &amp; Cooperation">
+          Partner &amp; Kooperationen
+        </p>
+        <div class="partners__logos" data-partner-logos></div>
+      </div>
+    </section>
+
+
+    <!-- ============================================
+         8. CTA BANNER
+         ============================================ -->
+    <section class="cta-banner cta-banner--light" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 class="cta-banner__title" id="cta-heading"
+            data-de="Werde Teil von WireHeadZ"
+            data-en="Become Part of WireHeadZ"
+            data-ls-de="Mach bei WireHeadZ mit!"
+            data-ls-en="Join WireHeadZ!">
+          Werde Teil von WireHeadZ
+        </h2>
+        <p class="cta-banner__subtext"
+           data-de="Ob du spielen, organisieren, forschen oder einfach dazugehören willst: Hier ist dein Einstieg."
+           data-en="Whether you want to play, organise, research or simply belong: this is your starting point."
+           data-ls-de="Du kannst spielen. Du kannst organisieren. Du kannst forschen. Du kannst einfach dabei sein."
+           data-ls-en="You can play. You can organise. You can do research. You can simply be part of it.">
+          Ob du spielen, organisieren, forschen oder einfach dazugehören willst: Hier ist dein Einstieg.
+        </p>
+        <div class="cta-banner__actions">
+          <a href="https://discord.gg/zs48PfpJJF" target="_blank" rel="noopener" class="btn btn--primary btn--lg"
+             data-de="Jetzt mitmachen" data-en="Get Involved" data-ls-de="Jetzt mitmachen" data-ls-en="Get Involved">
+            Jetzt mitmachen
+          </a>
+          <a href="kontakt.html" class="btn btn--secondary btn--lg"
+             data-de="Kontakt aufnehmen" data-en="Get in Touch" data-ls-de="Kontakt aufnehmen" data-ls-en="Get in Touch">
+            Kontakt aufnehmen
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__grid" data-footer-grid></div>
+
+    <div class="footer__bottom" data-footer-bottom></div>
+  </footer>
+
+  <script src="main.js?v=12"></script>
+</body>
+</html>
