@@ -858,8 +858,8 @@ html[lang="de"] .lang-en { display: none; }
   padding: var(--space-2xl) var(--page-margin);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: var(--space-md);
 }
 
@@ -3278,7 +3278,8 @@ html[lang="de"] .lang-en { display: none; }
 .page-hero__inner {
   position: relative;
   z-index: 2;
-  padding: var(--space-2xl) 0;
+  padding-top: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
   width: 100%;
 }
 
@@ -3625,7 +3626,7 @@ html[lang="de"] .lang-en { display: none; }
 
   .research-grid { grid-template-columns: 1fr; }
   .game-change-block { padding: var(--space-lg); }
-  .roles-grid { grid-template-columns: 1fr 1fr; }
+  .roles-grid { grid-template-columns: 1fr; }
 
   .showcase { height: calc(480px + var(--nav-h, 64px)); }
   .showcase__arrow { display: none; }

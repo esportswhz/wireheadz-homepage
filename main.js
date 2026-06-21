@@ -32,100 +32,260 @@ function _gameList(lang) {
    entscheidet anhand des heutigen Datums
    automatisch: Datum in der Zukunft → kommend,
    Datum in der Vergangenheit → vergangen.
-   Format:
-   {
-     date_de: 'TT.MM.JJJJ',        // auch Bereiche: '21.–23.08.2024'
-     date_en: 'DD.MM.YYYY',
-     title_de: 'Titel',
-     title_en: 'Title',
-     img: 'assets/images/events/dateiname.jpg'  // Pfad ab Root oder https://
-   }
    ============================================= */
 var EVENTS = [
   {
-    date_de: '19.06.2026',
-    date_en: '19.06.2026',
-    isoDate: '2026-06-19T18:00:00',
-    title_de: 'Lange Nacht der Technik 2026',
-    title_en: 'Long Night of Technology 2026',
-    img: 'assets/images/events/lange-nacht-technik-2026-1.png'
+    slug:          'lange-nacht-technik-2026',
+    date_de:       '19.06.2026',
+    date_en:       '19.06.2026',
+    isoDate:       '2026-06-19T18:00:00',
+    title_de:      'Lange Nacht der Technik 2026',
+    title_en:      'Long Night of Technology 2026',
+    img:           'assets/images/events/lange-nacht-technik-2026-1.png',
+    images:        ['assets/images/events/lange-nacht-technik-2026-1.png'],
+    location_de:   'Westsächsische Hochschule Zwickau',
+    location_en:   'West Saxon University of Applied Sciences Zwickau',
+    categories:    [{de:'Forschung', en:'Research'}, {de:'Technologie', en:'Technology'}],
+    desc_de:       'Die Nachwuchsforschergruppe „Game Change“ präsentiert aktuelle Projekte zu Gamification, Fachkräfteentwicklung und nachhaltiger Transformation. Mit E-Racing-Simulator und Austausch mit Forschenden.',
+    desc_en:       "The junior research group 'Game Change' presents current projects on gamification, talent development and sustainable transformation. Featuring an e-racing simulator and exchange with researchers.",
+    desc_ls_de:    'Die Gruppe „Game Change“ zeigt ihre Forschungs-Projekte. Es geht um Gamification und Fachkräfte. Es gibt einen E-Racing-Simulator.',
+    desc_ls_en:    "The 'Game Change' group shows their research projects. The topics are gamification and talent. There is an e-racing simulator.",
+    modal_desc_de: 'Zur Langen Nacht der Technik präsentiert die Nachwuchsforschergruppe „Game Change“ ihre aktuellen Forschungsprojekte rund um Gamification, Fachkräfteentwicklung und nachhaltige Transformation. Besucherinnen und Besucher erhalten praxisnahe Einblicke, wie spielbasierte Ansätze Innovationen fördern und komplexe Veränderungen verständlicher machen können.',
+    modal_desc_en: 'At the Long Night of Technology, the junior research group "Game Change" presents its current research projects on gamification, talent development and sustainable transformation. Visitors receive hands-on insights into how game-based approaches drive innovation and make complex change more understandable.',
+    highlights_de: ['Vorstellung der Forschungsgruppe „Game Change“', 'Einblicke in aktuelle Forschungsprojekte', 'E-Racing-Simulator für energieeffizientes Fahren', 'Gamification für Lernen und Transformation', 'Austausch mit Forschenden und Studierenden'],
+    highlights_en: ['Presentation of the "Game Change" research group', 'Insights into current research projects', 'E-racing simulator for energy-efficient driving', 'Gamification for learning and transformation', 'Exchange with researchers and students'],
+    partners:      []
   },
   {
-    date_de: '30.05.2026',
-    date_en: '30.05.2026',
-    title_de: 'Viele Wege Festival 2026',
-    title_en: 'Viele Wege Festival 2026',
-    img: 'assets/images/events/viele-wege-festival-2026-1.jpg'
+    slug:          'viele-wege-festival-2026',
+    date_de:       '30.05.2026',
+    date_en:       '30.05.2026',
+    title_de:      'Viele Wege Festival 2026',
+    title_en:      'Viele Wege Festival 2026',
+    img:           'assets/images/events/viele-wege-festival-2026-1.jpg',
+    images:        ['assets/images/events/viele-wege-festival-2026-1.jpg', 'assets/images/events/viele-wege-festival-2026-2.jpg'],
+    location_de:   'Innenstadt Zwickau',
+    location_en:   'Zwickau City Centre',
+    categories:    [{de:'Community', en:'Community'}],
+    desc_de:       'Der GAMeS Hub der WHZ präsentierte sich mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum und machte die Potenziale von Gaming für Bildung und Innovation erlebbar.',
+    desc_en:       'GAMeS Hub WHZ presented interactive gaming and research activities to a wide audience, making the potential of gaming for education and innovation tangible.',
+    desc_ls_de:    'Der GAMeS Hub war beim Viele Wege Festival. Viele Menschen konnten Gaming ausprobieren. Wir haben gezeigt: Gaming hilft beim Lernen.',
+    desc_ls_en:    'The GAMeS Hub was at the Viele Wege Festival. Many people could try gaming. We showed: gaming helps with learning.',
+    modal_desc_de: 'Beim Viele Wege Festival präsentierte sich das GAMeS Hub der WHZ mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum. Ziel war es, die Potenziale von Gaming für Bildung, Innovation und gesellschaftlichen Wandel erlebbar zu machen und mit Besucherinnen und Besuchern ins Gespräch zu kommen.',
+    modal_desc_en: 'At the Viele Wege Festival, GAMeS Hub WHZ presented interactive gaming and research activities to a wide audience. The aim was to make the potential of gaming for education, innovation and social change tangible and to engage with visitors.',
+    highlights_de: ['Interaktive Gaming-Stationen', 'Präsentation von Forschungsprojekten', 'Einblicke in Gamification und Esports', 'Mitmachangebote für alle Altersgruppen', 'Austausch mit der Zwickauer Community'],
+    highlights_en: ['Interactive gaming stations', 'Presentation of research projects', 'Insights into gamification and eSports', 'Activities for all age groups', 'Exchange with the Zwickau community'],
+    partners:      []
   },
   {
-    date_de: '15.03.2026',
-    date_en: '15.03.2026',
-    title_de: 'Hochschulinformationstag 2026',
-    title_en: 'University Open Day 2026',
-    img: 'assets/images/events/hochschulinformationstag-2026-1.jpg'
+    slug:          'hochschulinformationstag-2026',
+    date_de:       '15.03.2026',
+    date_en:       '15.03.2026',
+    title_de:      'Hochschulinformationstag 2026',
+    title_en:      'University Open Day 2026',
+    img:           'assets/images/events/hochschulinformationstag-2026-1.jpg',
+    images:        ['assets/images/events/hochschulinformationstag-2026-1.jpg', 'assets/images/events/hochschulinformationstag-2026-2.jpg', 'assets/images/events/hochschulinformationstag-2026-3.png'],
+    location_de:   'Westsächsische Hochschule Zwickau',
+    location_en:   'West Saxon University of Applied Sciences Zwickau',
+    categories:    [{de:'Lehre', en:'Teaching'}, {de:'Forschung', en:'Research'}],
+    desc_de:       'Studieninteressierte erhielten Einblicke in Gaming, Esports und angewandte Forschung an der WHZ. Mit Gaming-Stationen, Simulatoren und Vorstellung der Forschungsgruppe „Game Change“.',
+    desc_en:       "Prospective students gained insights into gaming, eSports and applied research at WHZ. Featuring gaming stations, simulators and a presentation of the 'Game Change' research group.",
+    desc_ls_de:    'Schüler konnten die WHZ besuchen. Sie haben Gaming und eSport kennengelernt. Die Gruppe „Game Change“ hat sich vorgestellt.',
+    desc_ls_en:    "Students could visit WHZ. They learned about gaming and eSport. The 'Game Change' group presented itself.",
+    modal_desc_de: 'Der Hochschulinformationstag bot Studieninteressierten spannende Einblicke in die Welt von Gaming, Esports und angewandter Forschung an der WHZ. Besucherinnen und Besucher konnten moderne Gaming-Technologien ausprobieren und sich über die Verbindung von Lehre, Forschung und digitalen Innovationen informieren.',
+    modal_desc_en: 'The university open day offered prospective students exciting insights into the world of gaming, eSports and applied research at WHZ. Visitors could try modern gaming technologies and learn about the connection between teaching, research and digital innovation.',
+    highlights_de: ['Gaming- und Simulationsstationen', 'Einblicke in das GAMeS Hub', 'Vorstellung der Forschungsgruppe „Game Change“', 'Austausch mit Studierenden und Forschenden', 'Informationen zu Studiengängen der WHZ'],
+    highlights_en: ['Gaming and simulation stations', 'Insights into the GAMeS Hub', 'Presentation of the "Game Change" research group', 'Exchange with students and researchers', 'Information on WHZ degree programmes'],
+    partners:      []
   },
   {
-    date_de: '18.10.2025',
-    date_en: '18.10.2025',
-    title_de: 'TAG24 Talentgame 2025',
-    title_en: 'TAG24 Talentgame 2025',
-    img: 'https://images.prismic.io/wireheadz/aA-b7_IqRLdaBrTe_Screenshot2024-09-15211516.png?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'tag24-2025',
+    date_de:       '18.10.2025',
+    date_en:       '18.10.2025',
+    title_de:      'TAG24 Talentgame 2025',
+    title_en:      'TAG24 Talentgame 2025',
+    img:           'https://images.prismic.io/wireheadz/aA-b7_IqRLdaBrTe_Screenshot2024-09-15211516.png?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/aA-b7_IqRLdaBrTe_Screenshot2024-09-15211516.png?auto=format%2Ccompress&fit=max&w=1920'],
+    location_de:   'Cinestar Roter Turm, Chemnitz',
+    location_en:   'Cinestar Roter Turm, Chemnitz',
+    categories:    [{de:'Kooperation', en:'Partnership'}, {de:'Turnier', en:'Tournament'}],
+    desc_de:       'Die 2. Auflage des Talentgames in Kooperation mit TAG24. Turnier mit Firmenpräsenzen, Gaming-Wettkampf und Networking im Cinestar Chemnitz.',
+    desc_en:       'The 2nd edition of the Talentgame in partnership with TAG24. Tournament with company booths, gaming competition and networking at Cinestar Chemnitz.',
+    desc_ls_de:    'Das war das 2. TAG24 Talentgame. Es gab ein Turnier und viele Firmen. Das Event war im Cinestar Chemnitz.',
+    desc_ls_en:    'This was the 2nd TAG24 Talentgame. There was a tournament and many companies. The event was at Cinestar Chemnitz.',
+    modal_desc_de: 'Die 2. Auflage des Talentgames in Kooperation mit TAG24. 20 Aussteller präsentierten sich im Cinestar Roter Turm in Chemnitz. Neben einem Rocket-League-Turnier und Super-Mario-Runden gab es ein Freispielareal in den Kinosälen sowie Gewinnspiele.',
+    modal_desc_en: 'The 2nd edition of the Talentgame in partnership with TAG24. 20 exhibitors presented themselves at Cinestar Roter Turm in Chemnitz. Alongside a Rocket League tournament and Super Mario rounds, there was a free-play area in the cinema halls plus prize giveaways.',
+    highlights_de: ['20 Aussteller', 'Rocket League Turnier', 'Super Mario Gaming', 'Freispielareal in Kinosälen', 'Gewinnspiele'],
+    highlights_en: ['20 exhibitors', 'Rocket League tournament', 'Super Mario gaming', 'Free-play area in cinema halls', 'Prize giveaways'],
+    partners:      ['TAG24']
   },
   {
-    date_de: '06.09.2025',
-    date_en: '06.09.2025',
-    title_de: 'FC25 Community Turnier im CFC Stadion',
-    title_en: 'FC25 Community Tournament at CFC Stadium',
-    img: 'https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'fc25-cfc',
+    date_de:       '06.09.2025',
+    date_en:       '06.09.2025',
+    title_de:      'FC25 Community Turnier im CFC Stadion',
+    title_en:      'FC25 Community Tournament at CFC Stadium',
+    img:           'https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=1920'],
+    location_de:   'CFC Stadion, Chemnitz',
+    location_en:   'CFC Stadium, Chemnitz',
+    categories:    [{de:'Community', en:'Community'}, {de:'Turnier', en:'Tournament'}],
+    desc_de:       'Gaming trifft Fußball-Atmosphäre: FC25 Community-Turnier direkt im Stadion des Chemnitzer FC mit echtem Stadion-Flair.',
+    desc_en:       'Gaming meets football atmosphere: FC25 community tournament directly in Chemnitzer FC stadium with real stadium vibes.',
+    desc_ls_de:    'Wir haben FC25 im Fußball-Stadion gespielt. Das Stadion gehört dem Chemnitzer FC. Es war ein Community-Turnier.',
+    desc_ls_en:    'We played FC25 in a football stadium. The stadium belongs to Chemnitzer FC. It was a community tournament.',
+    modal_desc_de: 'WireHeadZ und Sports United Chemnitz luden zum FC25 Community-Turnier direkt im CFC Stadion ein. Anmeldung über den Sporty2025-Discord-Server. Gaming trifft Fußball-Atmosphäre im echten Profistadion.',
+    modal_desc_en: 'WireHeadZ and Sports United Chemnitz hosted the FC25 community tournament directly at CFC Stadium. Registration via the Sporty2025 Discord server. Gaming meets football atmosphere in a real professional stadium.',
+    highlights_de: ['Gaming im echten Fußballstadion', 'Community-Turnier', 'Anmeldung via Discord (Sporty2025)'],
+    highlights_en: ['Gaming in a real football stadium', 'Community tournament', 'Registration via Discord (Sporty2025)'],
+    partners:      ['Sports United Chemnitz', 'Chemnitzer FC']
   },
   {
-    date_de: '06.11.2024',
-    date_en: '06.11.2024',
-    title_de: 'Gaming trifft Mittelstand',
-    title_en: 'Gaming Meets SMEs',
-    img: 'https://images.prismic.io/wireheadz/aA-IQPIqRLdaBrDQ_b5852097-5107-4a7b-b6fe-eaac850e4383.webp?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'gaming-mittelstand',
+    date_de:       '06.11.2024',
+    date_en:       '06.11.2024',
+    title_de:      'Gaming trifft Mittelstand',
+    title_en:      'Gaming Meets SMEs',
+    img:           'https://images.prismic.io/wireheadz/aA-IQPIqRLdaBrDQ_b5852097-5107-4a7b-b6fe-eaac850e4383.webp?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/aA-IQPIqRLdaBrDQ_b5852097-5107-4a7b-b6fe-eaac850e4383.webp?auto=format%2Ccompress&fit=max&w=1920', 'https://images.prismic.io/wireheadz/aA-IP_IqRLdaBrDO_d3e99d58-f2ab-4bf4-9273-014f8af854ab.webp?auto=format,compress', 'https://images.prismic.io/wireheadz/aA-IP_IqRLdaBrDP_fafd5539-2e64-4a86-81a4-5d0267afd3be.webp?auto=format,compress', 'https://images.prismic.io/wireheadz/aA-IQfIqRLdaBrDR_840c5e5c-aaf5-49ce-979a-562c284fec69.webp?auto=format,compress'],
+    location_de:   'Ubineum, Zwickau',
+    location_en:   'Ubineum, Zwickau',
+    categories:    [{de:'Business', en:'Business'}],
+    desc_de:       'Gamification und eSport als Fachkräfteinstrument. Mit Expertenvorträgen, eSport-Livestream und Gründung des WireHeadZ Business Clubs.',
+    desc_en:       'Gamification and eSport as a talent tool. With expert talks, an eSport livestream and the founding of the WireHeadZ Business Club.',
+    desc_ls_de:    'Experten haben über Gaming für Unternehmen gesprochen. Wir haben den WireHeadZ Business Club gegründet. Es gab einen Live-eSport-Wettkampf.',
+    desc_ls_en:    'Experts talked about gaming for companies. We founded the WireHeadZ Business Club. There was a live eSport match.',
+    modal_desc_de: 'Im Rahmen des Forschungsprojekts „Wandel durch Gamification und eSport" zeigten V.-Prof. Dr. Manuela Sachse und Prof. Dr. Paul Goldmann, wie KMU Gamification und eSport für Marketing und Personalgewinnung nutzen können. Höhepunkt: die offizielle Gründung des WireHeadZ Business Clubs.',
+    modal_desc_en: 'As part of the research project "Change through Gamification and eSport," Prof. Dr. Sachse and Prof. Dr. Goldmann showed how SMEs can use gamification and eSport for marketing and talent acquisition. Highlight: the official founding of the WireHeadZ Business Club.',
+    highlights_de: ['Expertenvorträge: Prof. Dr. Sachse & Prof. Dr. Goldmann', 'Live Rocket League Match', 'Gründung des WireHeadZ Business Clubs', 'Kooperation mit Fachkräfteallianz Landkreis Zwickau'],
+    highlights_en: ['Expert talks: Prof. Dr. Sachse & Prof. Dr. Goldmann', 'Live Rocket League match', 'Founding of the WireHeadZ Business Club', 'Partnership with Fachkräfteallianz Landkreis Zwickau'],
+    partners:      ['N+P Informationssysteme GmbH', 'FSV Zwickau eSport', 'TAG24 NEWS Deutschland GmbH', 'Marketing Club Zwickau e.V.']
   },
   {
-    date_de: '07.09.2024',
-    date_en: '07.09.2024',
-    title_de: 'Demonstrationsevent eSport – Sporty 2024',
-    title_en: 'eSport Demo Event – Sporty 2024',
-    img: 'https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'sporty-2024',
+    date_de:       '07.09.2024',
+    date_en:       '07.09.2024',
+    title_de:      'Demonstrationsevent eSport – Sporty 2024',
+    title_en:      'eSport Demo Event – Sporty 2024',
+    img:           'https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/aA-Yc_IqRLdaBrQj_0b8a6cbb-eb95-4ade-b6a0-b20b158f7744.png?auto=format%2Ccompress&fit=max&w=1920', 'https://images.prismic.io/wireheadz/aA-YzPIqRLdaBrQy_1728466014146.jpg?auto=format,compress', 'https://images.prismic.io/wireheadz/aA-YqPIqRLdaBrQr_1728466009174.jpg?auto=format,compress'],
+    location_de:   'CFC Stadion, Chemnitz',
+    location_en:   'CFC Stadium, Chemnitz',
+    categories:    [{de:'Community', en:'Community'}],
+    desc_de:       'EA FC24 und Rocket League zum Sporty 2024 im CFC Stadion – digitale und analoge Spielerlebnisse vereint, eSport live erlebbar.',
+    desc_en:       'EA FC24 and Rocket League at Sporty 2024 in CFC Stadium – digital and analogue gaming combined, eSport made tangible.',
+    desc_ls_de:    'Wir haben eSport im CFC Stadion gezeigt. Wir haben EA FC24 und Rocket League gespielt. eSport war live zu sehen.',
+    desc_ls_en:    'We showed eSport at CFC Stadium. We played EA FC24 and Rocket League. eSport was live to watch.',
+    modal_desc_de: 'Im Rahmen von SPORTS UNITED 2024 zeigte WireHeadZ beim „Sporty“ im CFC Stadion, dass eSport mehr ist als Gaming. EA FC24 und Rocket League wurden live präsentiert – Teil des Programms von Chemnitz als Europäische Kulturhauptstadt 2025.',
+    modal_desc_en: 'As part of SPORTS UNITED 2024, WireHeadZ demonstrated at “Sporty” in CFC Stadium that eSport is more than gaming. EA FC24 and Rocket League were presented live – part of Chemnitz European Capital of Culture 2025 programme.',
+    highlights_de: ['EA FC24 Live-Demo', 'Rocket League Showcase', 'Teil von Chemnitz Kulturhauptstadt 2025', 'Digitale und analoge Spielerlebnisse vereint'],
+    highlights_en: ['EA FC24 live demo', 'Rocket League showcase', 'Part of Chemnitz European Capital of Culture 2025', 'Digital and analogue gaming experiences combined'],
+    partners:      ['Sports United Chemnitz', 'Chemnitzer FC']
   },
   {
-    date_de: '31.08.2024',
-    date_en: '31.08.2024',
-    title_de: 'TAG24 Talentgame 2024',
-    title_en: 'TAG24 Talentgame 2024',
-    img: 'https://images.prismic.io/wireheadz/Z912OjxkOkZ2kInd_1728465079572.jpeg?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'tag24-2024',
+    date_de:       '31.08.2024',
+    date_en:       '31.08.2024',
+    title_de:      'TAG24 Talentgame 2024',
+    title_en:      'TAG24 Talentgame 2024',
+    img:           'https://images.prismic.io/wireheadz/Z912OjxkOkZ2kInd_1728465079572.jpeg?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/Z912OjxkOkZ2kInd_1728465079572.jpeg?auto=format%2Ccompress&fit=max&w=1920'],
+    location_de:   'Cinestar Roter Turm, Chemnitz',
+    location_en:   'Cinestar Roter Turm, Chemnitz',
+    categories:    [{de:'Kooperation', en:'Partnership'}, {de:'Turnier', en:'Tournament'}],
+    desc_de:       'Das erste TAG24 Talentgame: 64 Spieler im FC24-Turnier, 15 Firmenstände mit Event-Quests. Der Auftakt einer erfolgreichen Kooperation.',
+    desc_en:       'The first TAG24 Talentgame: 64 players in the FC24 tournament, 15 company booths with event quests. The start of a successful partnership.',
+    desc_ls_de:    'Das war das 1. TAG24 Talentgame. 64 Spieler haben FC24 gespielt. 15 Firmen waren dabei.',
+    desc_ls_en:    'This was the 1st TAG24 Talentgame. 64 players played FC24. 15 companies took part.',
+    modal_desc_de: 'Die erfolgreiche Premiere der ersten Ausbildungs- und Recruitingmesse mit TAG24. 64 Spieler traten im FC24-Turnier auf der großen Kinoleinwand an, 15 Unternehmen präsentierten sich mit interaktiven Firmenständen und Event-Quests.',
+    modal_desc_en: 'The successful premiere of the first training and recruiting fair with TAG24. 64 players competed in the FC24 tournament on the big cinema screen, while 15 companies presented themselves with interactive booths and event quests.',
+    highlights_de: ['64 Spieler im FC24-Turnier', '15 Firmenstände mit Event-Quests', 'FC24 auf der Kinoleinwand', 'Auftakt einer langfristigen Partnerschaft'],
+    highlights_en: ['64 players in FC24 tournament', '15 company booths with event quests', 'FC24 on the cinema screen', 'Start of a long-term partnership'],
+    partners:      ['TAG24']
   },
   {
-    date_de: '21.–23.08.2024',
-    date_en: '21.–23.08.2024',
-    title_de: 'WireHeadZ x Gamescom 2024',
-    title_en: 'WireHeadZ x Gamescom 2024',
-    img: 'https://images.prismic.io/wireheadz/aBTr4PIqRLdaB1Es_Screenshot2025-05-02174239.png?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'gamescom-2024',
+    date_de:       '21.–23.08.2024',
+    date_en:       '21.–23.08.2024',
+    title_de:      'WireHeadZ x Gamescom 2024',
+    title_en:      'WireHeadZ x Gamescom 2024',
+    img:           'https://images.prismic.io/wireheadz/aBTr4PIqRLdaB1Es_Screenshot2025-05-02174239.png?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/aBTr4PIqRLdaB1Es_Screenshot2025-05-02174239.png?auto=format%2Ccompress&fit=max&w=1920'],
+    location_de:   'Koelnmesse, Köln',
+    location_en:   'Koelnmesse, Cologne',
+    categories:    [{de:'Messe', en:'Expo'}],
+    desc_de:       'Das WireHeadZ-Team auf Europas größter Gaming-Messe. Einblicke in die internationale Gaming-Branche und Kontakte für die Zukunft des Hubs.',
+    desc_en:       "The WireHeadZ team at Europe's largest gaming expo. Insights into the international gaming industry and contacts for the future of the hub.",
+    desc_ls_de:    'WireHeadZ war auf der Gamescom in Köln. Die Gamescom ist die größte Gaming-Messe in Europa. Wir haben viele Kontakte gemacht.',
+    desc_ls_en:    'WireHeadZ was at Gamescom in Cologne. Gamescom is the largest gaming expo in Europe. We made many contacts.',
+    modal_desc_de: 'WireHeadZ debütierte auf der Gamescom 2024 – Europas größter Gaming-Messe. Das Team repräsentierte die WHZ mit einem eigenen Stand, führte Interviews und Gaming-Sessions durch. Besonderes Highlight: Vizekanzler Robert Habeck besuchte den Stand persönlich.',
+    modal_desc_en: "WireHeadZ made their Gamescom debut in 2024 – Europe's largest gaming expo. The team represented WHZ with their own booth, conducting interviews and gaming sessions. Special highlight: Vice Chancellor Robert Habeck visited the stand personally.",
+    highlights_de: ['Besuch von Vizekanzler Robert Habeck', 'Treffen mit Creatorn Zarbex, Max Schradin & Rewinside', 'Eigener WHZ-Stand auf der Gamescom', '"Gaming muss ernstzunehmender Teil von Bildung werden!"'],
+    highlights_en: ['Visit by Vice Chancellor Robert Habeck', 'Meetings with creators Zarbex, Max Schradin & Rewinside', 'Own WHZ booth at Gamescom', '"Gaming must become a serious part of education!"'],
+    partners:      ['Westsächsische Hochschule Zwickau']
   },
   {
-    date_de: '11.08.2024',
-    date_en: '11.08.2024',
-    title_de: 'FC24 Community Turnier',
-    title_en: 'FC24 Community Tournament',
-    img: 'https://images.prismic.io/wireheadz/Z-2RyndAxsiBwPfy_1723445785713.jpeg?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'fc24-community',
+    date_de:       '11.08.2024',
+    date_en:       '11.08.2024',
+    title_de:      'FC24 Community Turnier',
+    title_en:      'FC24 Community Tournament',
+    img:           'https://images.prismic.io/wireheadz/Z-2RyndAxsiBwPfy_1723445785713.jpeg?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/Z-2RyndAxsiBwPfy_1723445785713.jpeg?auto=format%2Ccompress&fit=max&w=1920'],
+    location_de:   'Espitas Chillybeach, Zwickau',
+    location_en:   'Espitas Chillybeach, Zwickau',
+    categories:    [{de:'Community', en:'Community'}, {de:'Turnier', en:'Tournament'}],
+    desc_de:       'Community-Turnier im Rahmen des TAG24-Sommerkinos. FC24 unter freiem Himmel – Gaming trifft Sommerstimmung.',
+    desc_en:       'Community tournament as part of the TAG24 summer cinema. FC24 in the open air – gaming meets summer vibes.',
+    desc_ls_de:    'Wir haben ein FC24-Turnier gespielt. Das war beim TAG24-Sommerkino. Wir haben draußen gespielt.',
+    desc_ls_en:    'We played an FC24 tournament. It was at the TAG24 summer cinema. We played outdoors.',
+    modal_desc_de: 'Das Finale des Zwickauer Arcaden FC24 Community-Turniers am Espitas Chillybeach – entspannte Atmosphäre mit Pool, Sand und Erfrischungen. Gaming auf der großen Leinwand, Sonne im Rücken.',
+    modal_desc_en: 'The final of the Zwickauer Arcaden FC24 Community Tournament at Espitas Chillybeach – relaxed atmosphere with pool, sand and refreshments. Gaming on a large screen, sun in the background.',
+    highlights_de: ['Sieger: Sascha Hendel (FSV Zwickau eSport, sahexfc24)', 'Gaming auf großer Leinwand', 'Beach-Atmosphäre mit Pool & Erfrischungen'],
+    highlights_en: ['Winner: Sascha Hendel (FSV Zwickau eSport, sahexfc24)', 'Gaming on large screen', 'Beach atmosphere with pool & refreshments'],
+    partners:      ['TAG24 NEWS Deutschland GmbH', 'Zwickauer Arcaden']
   },
   {
-    date_de: '01.06.2024',
-    date_en: '01.06.2024',
-    title_de: 'Fortnite Turnier zum Kindertag',
-    title_en: 'Fortnite Tournament for Children\'s Day',
-    img: 'https://images.prismic.io/wireheadz/Z-2Qu3dAxsiBwPfP_0bac933f-6c1c-4c76-8f94-e398e3f38e2f.avif?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'fortnite-2024',
+    date_de:       '01.06.2024',
+    date_en:       '01.06.2024',
+    title_de:      'Fortnite Turnier zum Kindertag',
+    title_en:      "Fortnite Tournament for Children's Day",
+    img:           'https://images.prismic.io/wireheadz/Z-2Qu3dAxsiBwPfP_0bac933f-6c1c-4c76-8f94-e398e3f38e2f.avif?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/Z-2Qu3dAxsiBwPfP_0bac933f-6c1c-4c76-8f94-e398e3f38e2f.avif?auto=format%2Ccompress&fit=max&w=1920'],
+    location_de:   'Schüler-Lab der WHZ, Zwickau',
+    location_en:   'WHZ Student Lab, Zwickau',
+    categories:    [{de:'Turnier', en:'Tournament'}],
+    desc_de:       'Fortnite-Turnier im Schüler-Lab der WHZ zum Kindertag. Gaming als Erlebnis für eine jüngere Zielgruppe direkt auf dem Campus.',
+    desc_en:       "Fortnite tournament in the WHZ student lab for Children's Day. Gaming as an experience for a younger audience right on campus.",
+    desc_ls_de:    'Wir haben ein Fortnite-Turnier zum Kindertag gemacht. Kinder und Jugendliche haben mitgespielt. Das Event war an der WHZ.',
+    desc_ls_en:    "We held a Fortnite tournament for Children's Day. Children and young people took part. The event was at WHZ.",
+    modal_desc_de: 'Das erste offizielle Kindertag-Fortnite-Turnier mit pädagogischem Fokus: 24 Teilnehmer zwischen 12 und 20 Jahren traten an – begleitet von Mario Kart, 3D-Druck-Demos und dem Serious Game „Path Out”. Eltern wurden aktiv in Gespräche über Gaming-Chancen und -Risiken eingebunden.',
+    modal_desc_en: "The first official Children's Day Fortnite tournament with an educational focus: 24 participants aged 12–20 competed, accompanied by Mario Kart, 3D printing demos and the serious game \"Path Out\". Parents were actively engaged in discussions about gaming risks and opportunities.",
+    highlights_de: ['24 Teilnehmer (12–20 Jahre)', 'Begleitprogramm: Mario Kart & 3D-Druck', 'Serious Game „Path Out“ (Alter Gasometer)', 'Elterngespräche zu Gaming-Risiken & -Chancen'],
+    highlights_en: ['24 participants (ages 12–20)', 'Side programme: Mario Kart & 3D printing', 'Serious game "Path Out" (Alter Gasometer)', 'Parent discussions on gaming risks & opportunities'],
+    partners:      ['Alter Gasometer', 'Spinnwebe Zwickau']
   },
   {
-    date_de: '13.12.2022',
-    date_en: '13.12.2022',
-    title_de: 'Gaming-Weihnacht',
-    title_en: 'Gaming Christmas',
-    img: 'https://images.prismic.io/wireheadz/Z-2RX3dAxsiBwPfc_707eb631-5f61-420c-ac5b-8fcf4346cb1e.avif?auto=format%2Ccompress&fit=max&w=400'
+    slug:          'gaming-weihnacht',
+    date_de:       '13.12.2022',
+    date_en:       '13.12.2022',
+    title_de:      'Gaming-Weihnacht',
+    title_en:      'Gaming Christmas',
+    img:           'https://images.prismic.io/wireheadz/Z-2RX3dAxsiBwPfc_707eb631-5f61-420c-ac5b-8fcf4346cb1e.avif?auto=format%2Ccompress&fit=max&w=400',
+    images:        ['https://images.prismic.io/wireheadz/Z-2RX3dAxsiBwPfc_707eb631-5f61-420c-ac5b-8fcf4346cb1e.avif?auto=format%2Ccompress&fit=max&w=1080'],
+    location_de:   'WHZ, Zwickau',
+    location_en:   'WHZ, Zwickau',
+    categories:    [{de:'Community', en:'Community'}],
+    desc_de:       'Gaming-Weihnachtsfeier des Hochschul-eSport-Teams. Der erste gesellschaftliche Event des WireHeadZ-Teams an der WHZ.',
+    desc_en:       'Gaming Christmas celebration of the university eSport team. The first social event of the WireHeadZ team at WHZ.',
+    desc_ls_de:    'Wir haben eine Gaming-Weihnachtsfeier gemacht. Das war das 1. gesellschaftliche Event von WireHeadZ. Alle von der WHZ waren eingeladen.',
+    desc_ls_en:    'We held a gaming Christmas party. That was the 1st social event of WireHeadZ. Everyone from WHZ was invited.',
+    modal_desc_de: 'Das WHZ-eSport-Team lud alle Hochschulangehörigen zur Gaming-Weihnachtsfeier ein. Besucherinnen und Besucher konnten den eigenen eSport-Teams (Rocket League und Valorant) über die Schulter schauen und natürlich selbst mitspielen.',
+    modal_desc_en: "The WHZ eSport team invited all university members to a gaming Christmas celebration. Visitors could watch the university's Rocket League and Valorant teams in action – and join in themselves.",
+    highlights_de: ['WHZ Rocket League Team live', 'WHZ Valorant Team live', 'Offen für alle Hochschulangehörigen', 'Erster gesellschaftlicher Event des WireHeadZ-Teams'],
+    highlights_en: ['WHZ Rocket League team live', 'WHZ Valorant team live', 'Open to all university members', 'First social event of the WireHeadZ team'],
+    partners:      ['Westsächsische Hochschule Zwickau']
   }
 ];
 
@@ -335,6 +495,199 @@ document.addEventListener('DOMContentLoaded', () => {
         '</a>'
       );
     }).join('');
+  })();
+
+  /* ---- Events-Seite: Karten dynamisch aus EVENTS rendern ---- */
+  (function () {
+    var upcomingGrid = document.querySelector('#kommende-events .events-grid');
+    var archiveGrid  = document.querySelector('#archiv .events-grid');
+    if (!upcomingGrid || !archiveGrid) return;
+
+    var CLOCK_SVG = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
+    var PIN_SVG   = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+
+    function fmtTime(iso) {
+      if (!iso) return '';
+      var m = /T(\d{2}):(\d{2})/.exec(iso);
+      if (!m || (m[1] === '00' && m[2] === '00')) return '';
+      return m[1] + ':' + m[2];
+    }
+
+    function renderCard(ev, isArchive) {
+      var t        = fmtTime(ev.isoDate);
+      var dateAttr = ev.isoDate ? ' data-event-date="' + ev.isoDate + '"' : '';
+      var timePart = t ? '<span class="event-card__time">' + CLOCK_SVG + ' ' + t + ' Uhr</span>' : '';
+      var dateCls  = isArchive ? ' event-card__date--archive' : '';
+      var cardCls  = isArchive ? 'event-card event-card--archive' : 'event-card';
+      var badgeHtml = (isArchive ? '<span class="event-card__badge event-card__badge--archive" data-de="Archiv" data-en="Archive">Archiv</span>' : '');
+      (ev.categories || []).forEach(function (c) {
+        badgeHtml += '<span class="event-card__badge event-card__badge--category" data-de="' + c.de + '" data-en="' + c.en + '">' + c.de + '</span>';
+      });
+      return (
+        '<article class="' + cardCls + '" data-event="' + (ev.slug || '') + '"' + dateAttr + '>' +
+          '<div class="event-card__img">' +
+            '<img src="' + ev.img + '" alt="' + ev.title_de + '" loading="lazy" />' +
+            '<div class="event-card__badges">' + badgeHtml + '</div>' +
+          '</div>' +
+          '<div class="event-card__body">' +
+            '<p class="event-card__date' + dateCls + '">' + ev.date_de + timePart + '</p>' +
+            (isArchive ? '' : '<div class="event-card__countdown"></div>') +
+            '<h3 class="event-card__title" data-de="' + ev.title_de + '" data-en="' + ev.title_en + '">' + ev.title_de + '</h3>' +
+            '<p class="event-card__location">' + PIN_SVG +
+              '<span data-de="' + (ev.location_de || '') + '" data-en="' + (ev.location_en || '') + '">' + (ev.location_de || '') + '</span>' +
+            '</p>' +
+            '<p class="event-card__desc"' +
+              ' data-de="' + (ev.desc_de || '').replace(/"/g, '&quot;') + '"' +
+              ' data-en="' + (ev.desc_en || '').replace(/"/g, '&quot;') + '"' +
+              ' data-ls-de="' + (ev.desc_ls_de || '').replace(/"/g, '&quot;') + '"' +
+              ' data-ls-en="' + (ev.desc_ls_en || '').replace(/"/g, '&quot;') + '">' +
+              (ev.desc_de || '') +
+            '</p>' +
+          '</div>' +
+          '<div class="event-card__footer">' +
+            '<span class="event-card__details-link" data-de="Details anzeigen" data-en="Show details">Details anzeigen</span>' +
+          '</div>' +
+        '</article>'
+      );
+    }
+
+    /* Upcoming: chronologisch aufsteigend */
+    var upcoming = UPCOMING_EVENTS.slice().sort(function (a, b) {
+      return _parseEventDate(a.date_de) - _parseEventDate(b.date_de);
+    });
+    if (upcoming.length === 0) {
+      upcomingGrid.innerHTML =
+        '<p style="color:var(--color-text-secondary);padding:var(--space-lg) 0;"' +
+        ' data-de="Derzeit sind keine kommenden Events geplant. Schau bald wieder vorbei."' +
+        ' data-en="No upcoming events planned right now. Check back soon.">' +
+        'Derzeit sind keine kommenden Events geplant. Schau bald wieder vorbei.</p>';
+    } else {
+      upcomingGrid.className = upcoming.length === 1 ? 'events-grid events-grid--single' : 'events-grid';
+      upcomingGrid.innerHTML = upcoming.map(function (ev) { return renderCard(ev, false); }).join('');
+    }
+
+    /* Archiv: chronologisch absteigend */
+    var past = PAST_EVENTS.slice().sort(function (a, b) {
+      return _parseEventDate(b.date_de) - _parseEventDate(a.date_de);
+    });
+    archiveGrid.innerHTML = past.map(function (ev) { return renderCard(ev, true); }).join('');
+
+    /* Modal-Logik ---- */
+    var modal    = document.getElementById('event-modal');
+    if (!modal) return;
+    var panel    = modal.querySelector('.event-modal__panel');
+    var btnClose = document.getElementById('modal-close');
+    var track    = document.getElementById('modal-gallery-track');
+    var btnPrev  = document.getElementById('modal-prev');
+    var btnNext  = document.getElementById('modal-next');
+    var dotsWrap = document.getElementById('modal-dots');
+    var elDate   = document.getElementById('modal-date');
+    var elTitle  = document.getElementById('modal-title');
+    var elLocTxt = document.getElementById('modal-location-text');
+    var elBadges = document.getElementById('modal-badges');
+    var elDesc   = document.getElementById('modal-desc');
+    var elHlBlk  = document.getElementById('modal-highlights-block');
+    var elHlList = document.getElementById('modal-highlights');
+    var elPaBlk  = document.getElementById('modal-partners-block');
+    var elPaList = document.getElementById('modal-partners');
+
+    var activeSlug = null;
+    var slide = 0;
+    var total = 0;
+
+    function getLang() {
+      return document.documentElement.lang || localStorage.getItem('lang') || 'de';
+    }
+
+    function renderModal(slug) {
+      var ev = EVENTS.filter(function (e) { return e.slug === slug; })[0];
+      if (!ev) return;
+      var lang   = getLang();
+      var isEN   = lang === 'en';
+      elDate.textContent    = isEN ? ev.date_en   : ev.date_de;
+      elTitle.textContent   = isEN ? ev.title_en  : ev.title_de;
+      elLocTxt.textContent  = isEN ? (ev.location_en || '') : (ev.location_de || '');
+      elDesc.textContent    = isEN ? (ev.modal_desc_en || ev.desc_en || '') : (ev.modal_desc_de || ev.desc_de || '');
+      elBadges.innerHTML    = (ev.categories || []).map(function (c) {
+        return '<span class="event-card__badge event-card__badge--category">' + (isEN ? c.en : c.de) + '</span>';
+      }).join('');
+      var hl = isEN ? (ev.highlights_en || []) : (ev.highlights_de || []);
+      if (hl.length) {
+        elHlList.innerHTML = hl.map(function (h) { return '<li>' + h + '</li>'; }).join('');
+        elHlBlk.hidden = false;
+      } else { elHlBlk.hidden = true; }
+      if (ev.partners && ev.partners.length) {
+        elPaList.innerHTML = ev.partners.map(function (p) {
+          return '<span class="event-modal__partner-tag">' + p + '</span>';
+        }).join('');
+        elPaBlk.hidden = false;
+        var paLabel = elPaBlk.querySelector('.event-modal__section-label');
+        if (paLabel) paLabel.textContent = isEN ? 'Partners' : 'Partner';
+      } else { elPaBlk.hidden = true; }
+      track.innerHTML = '';
+      dotsWrap.innerHTML = '';
+      (ev.images || [ev.img]).forEach(function (url, i) {
+        var s   = document.createElement('div');
+        s.className = 'event-modal__gallery-slide';
+        var img = document.createElement('img');
+        img.src = url; img.alt = isEN ? ev.title_en : ev.title_de;
+        img.loading = i === 0 ? 'eager' : 'lazy';
+        s.appendChild(img); track.appendChild(s);
+        var dot = document.createElement('button');
+        dot.className = 'event-modal__dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Bild ' + (i + 1));
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsWrap.appendChild(dot);
+      });
+      total = (ev.images || [ev.img]).length;
+      slide = 0; updateGallery();
+      btnPrev.style.display = total <= 1 ? 'none' : '';
+      btnNext.style.display = total <= 1 ? 'none' : '';
+      dotsWrap.style.display = total <= 1 ? 'none' : '';
+    }
+
+    function goTo(n) { slide = (n + total) % total; updateGallery(); }
+    function updateGallery() {
+      track.style.transform = 'translateX(-' + (slide * 100) + '%)';
+      Array.prototype.slice.call(dotsWrap.querySelectorAll('.event-modal__dot')).forEach(function (d, i) {
+        d.classList.toggle('active', i === slide);
+      });
+    }
+    function openModal(slug) {
+      activeSlug = slug; renderModal(slug);
+      modal.classList.add('open'); document.body.style.overflow = 'hidden';
+      if (btnClose) btnClose.focus();
+    }
+    function closeModal() {
+      modal.classList.remove('open'); document.body.style.overflow = ''; activeSlug = null;
+    }
+
+    if (btnClose) btnClose.addEventListener('click', closeModal);
+    if (btnPrev)  btnPrev.addEventListener('click', function () { goTo(slide - 1); });
+    if (btnNext)  btnNext.addEventListener('click', function () { goTo(slide + 1); });
+    modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', function (e) {
+      if (!modal.classList.contains('open')) return;
+      if (e.key === 'Escape')     closeModal();
+      if (e.key === 'ArrowLeft')  goTo(slide - 1);
+      if (e.key === 'ArrowRight') goTo(slide + 1);
+    });
+
+    /* Sprach-Neurendering wenn Modal offen */
+    ['lang-toggle', 'lang-toggle-mobile'].forEach(function (id) {
+      var btn = document.getElementById(id);
+      if (btn) btn.addEventListener('click', function () {
+        if (modal.classList.contains('open') && activeSlug) setTimeout(function () { renderModal(activeSlug); }, 0);
+      });
+    });
+
+    /* Klick-Handler für Karten (delegiert, da Karten dynamisch gerendert) */
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('a, button')) {
+        var card = e.target.closest('.event-card[data-event]');
+        if (card && card.closest('#kommende-events, #archiv')) openModal(card.dataset.event);
+      }
+    });
   })();
 
   /* ---- Partner-Logo-Strip Injection ---- */
@@ -1281,6 +1634,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Showcase Event-Dot "Neu"-Indikator ---- */
   (function () {
+    /* Nur anzeigen wenn der Event-Slide noch existiert (sonst wurden Dots umnummeriert) */
+    if (UPCOMING_EVENTS.length === 0) return;
     var eventDot = document.querySelector('.showcase__dot[data-target="2"]');
     if (!eventDot) return;
     var badge = document.createElement('span');
@@ -1371,11 +1726,11 @@ document.addEventListener('DOMContentLoaded', () => {
     section.addEventListener('mouseleave', function () { section.classList.remove('showcase--paused'); });
   }());
 
-  /* ---- Dynamische Galerien — jede [data-gallery] scannt ihren EIGENEN Ordner ----
-     Pfad steht im data-gallery-Attribut (relativ zur Seite). Bilder werden per
-     Directory-Listing automatisch gefunden, natürlich sortiert (1,2,…,10 sowie
-     01_/02_-Präfixe) — Reihenfolge also einfach über die Dateinamen steuerbar.
-     Erstes Bild wird breit (--wide). Leerer/fehlender Ordner → Section ausblenden. */
+  /* ---- Dynamische Galerien — jede [data-gallery] liest images.json im Ordner ----
+     Pfad steht im data-gallery-Attribut (relativ zur Seite).
+     Bilder werden aus images.json geladen (Array von Dateinamen, z.B. ["1.png","2.jpg"]).
+     Reihenfolge = Reihenfolge in der JSON. Erstes Bild wird breit (--wide).
+     Fehlende/leere JSON → Section ausblenden. */
   (function () {
     var grids = document.querySelectorAll('[data-gallery]');
     if (!grids.length) return;
@@ -1389,25 +1744,13 @@ document.addEventListener('DOMContentLoaded', () => {
       var base = grid.getAttribute('data-gallery') || '';
       if (base && base.charAt(base.length - 1) !== '/') base += '/';
 
-      fetch(base)
-        .then(function (r) { return r.text(); })
-        .then(function (html) {
-          var doc = new DOMParser().parseFromString(html, 'text/html');
-          var files = Array.prototype.slice.call(doc.querySelectorAll('a[href]'))
-            .map(function (a) {
-              var h = a.getAttribute('href') || '';
-              try { h = decodeURIComponent(h); } catch (e) {}
-              return h.split('?')[0].split('#')[0].split('/').pop();   // nur Dateiname
-            })
-            .filter(function (h) { return /\.(png|jpe?g|webp|gif|avif)$/i.test(h); });
-
-          // Duplikate raus + natürliche Sortierung (numerisch)
-          files = files.filter(function (v, i, a) { return a.indexOf(v) === i; });
-          files.sort(function (a, b) {
-            return a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' });
-          });
-
-          if (!files.length) { hide(grid); return; }
+      fetch(base + 'images.json')
+        .then(function (r) {
+          if (!r.ok) throw new Error('images.json not found');
+          return r.json();
+        })
+        .then(function (files) {
+          if (!Array.isArray(files) || !files.length) { hide(grid); return; }
 
           var frag = document.createDocumentFragment();
           files.forEach(function (file, i) {
