@@ -41,8 +41,8 @@ var EVENTS = [
     isoDate:       '2026-06-19T18:00:00',
     title_de:      'Lange Nacht der Technik 2026',
     title_en:      'Long Night of Technology 2026',
-    img:           'assets/images/events/lange-nacht-technik-2026-1.png',
-    images:        ['assets/images/events/lange-nacht-technik-2026-1.png'],
+    img:           'assets/images/events/lange-nacht-technik-2026-1.jpg',
+    images:        ['assets/images/events/lange-nacht-technik-2026-1.jpg'],
     location_de:   'Westsächsische Hochschule Zwickau',
     location_en:   'West Saxon University of Applied Sciences Zwickau',
     categories:    [{de:'Forschung', en:'Research'}, {de:'Technologie', en:'Technology'}],
@@ -84,7 +84,7 @@ var EVENTS = [
     title_de:      'Hochschulinformationstag 2026',
     title_en:      'University Open Day 2026',
     img:           'assets/images/events/hochschulinformationstag-2026-1.jpg',
-    images:        ['assets/images/events/hochschulinformationstag-2026-1.jpg', 'assets/images/events/hochschulinformationstag-2026-2.jpg', 'assets/images/events/hochschulinformationstag-2026-3.png'],
+    images:        ['assets/images/events/hochschulinformationstag-2026-1.jpg', 'assets/images/events/hochschulinformationstag-2026-2.jpg', 'assets/images/events/hochschulinformationstag-2026-3.jpg'],
     location_de:   'Westsächsische Hochschule Zwickau',
     location_en:   'West Saxon University of Applied Sciences Zwickau',
     categories:    [{de:'Lehre', en:'Teaching'}, {de:'Forschung', en:'Research'}],
@@ -1788,14 +1788,20 @@ document.addEventListener('DOMContentLoaded', () => {
       '<button class="lightbox__close" aria-label="Schließen"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>' +
       '<button class="lightbox__nav lightbox__nav--prev" aria-label="Vorheriges Bild"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
       '<img class="lightbox__img" src="" alt="" />' +
-      '<button class="lightbox__nav lightbox__nav--next" aria-label="Nächstes Bild"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>';
+      '<button class="lightbox__nav lightbox__nav--next" aria-label="Nächstes Bild"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
+      '<div class="lightbox__nav-bar">' +
+        '<button class="lightbox__bar-btn lightbox__bar-prev" aria-label="Vorheriges Bild"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>' +
+        '<button class="lightbox__bar-btn lightbox__bar-next" aria-label="Nächstes Bild"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>' +
+      '</div>';
     document.body.appendChild(lb);
 
-    var lbImg   = lb.querySelector('.lightbox__img');
-    var btnPrev = lb.querySelector('.lightbox__nav--prev');
-    var btnNext = lb.querySelector('.lightbox__nav--next');
+    var lbImg    = lb.querySelector('.lightbox__img');
+    var btnPrev  = lb.querySelector('.lightbox__nav--prev');
+    var btnNext  = lb.querySelector('.lightbox__nav--next');
+    var barPrev  = lb.querySelector('.lightbox__bar-prev');
+    var barNext  = lb.querySelector('.lightbox__bar-next');
     var btnClose = lb.querySelector('.lightbox__close');
-    var overlay = lb.querySelector('.lightbox__overlay');
+    var overlay  = lb.querySelector('.lightbox__overlay');
 
     var items = [];
     var idx = 0;
@@ -1808,6 +1814,8 @@ document.addEventListener('DOMContentLoaded', () => {
       var multi = items.length > 1;
       btnPrev.style.display = multi ? '' : 'none';
       btnNext.style.display = multi ? '' : 'none';
+      barPrev.style.visibility = multi ? '' : 'hidden';
+      barNext.style.visibility = multi ? '' : 'hidden';
     }
     function openFrom(img) {
       var grid = img.closest('.gallery-grid');
@@ -1842,6 +1850,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btnPrev.addEventListener('click', function () { go(-1); });
     btnNext.addEventListener('click', function () { go(1); });
+    barPrev.addEventListener('click', function () { go(-1); });
+    barNext.addEventListener('click', function () { go(1); });
     btnClose.addEventListener('click', close);
     overlay.addEventListener('click', close);
     document.addEventListener('keydown', function (e) {
@@ -1849,6 +1859,19 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e.key === 'Escape') close();
       else if (e.key === 'ArrowLeft') go(-1);
       else if (e.key === 'ArrowRight') go(1);
+    });
+
+    var touchStartX = 0;
+    var touchPointers = 0;
+    lb.addEventListener('touchstart', function (e) {
+      touchPointers = e.touches.length;
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (touchPointers > 1) return;
+      if (window.visualViewport && window.visualViewport.scale > 1.05) return;
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1);
     });
   }());
 

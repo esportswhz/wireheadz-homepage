@@ -645,19 +645,19 @@ a { color: inherit; text-decoration: none; }
   background-position: center;
 }
 .game-card--valorant .game-card__bg {
-  background-image: url('../assets/images/shared/games/valorant.png'),
+  background-image: url('../assets/images/shared/games/valorant.jpg'),
                     linear-gradient(160deg, #FF4655 0%, #7b1a24 40%, #0F1923 100%);
 }
 .game-card--rocket-league .game-card__bg {
-  background-image: url('../assets/images/shared/games/rocket-league.png'),
+  background-image: url('../assets/images/shared/games/rocket-league.jpg'),
                     linear-gradient(160deg, #F77F00 0%, #c45500 40%, #0a1a5c 100%);
 }
 .game-card--formula1 .game-card__bg {
-  background-image: url('../assets/images/shared/games/formula1.png'),
+  background-image: url('../assets/images/shared/games/formula1.jpg'),
                     linear-gradient(160deg, #CC0000 0%, #7a0000 40%, #0d0d0d 100%);
 }
 .game-card--league-of-legends .game-card__bg {
-  background-image: url('../assets/images/shared/games/league-of-legends.png'),
+  background-image: url('../assets/images/shared/games/league-of-legends.jpg'),
                     linear-gradient(160deg, #c89b3c 0%, #8a6914 40%, #0a0a14 100%);
 }
 

@@ -1624,6 +1624,62 @@ html[lang="de"] .lang-en { display: none; }
 .lightbox__nav--prev { left: var(--space-xl); }
 .lightbox__nav--next { right: var(--space-xl); }
 
+/* Nav-Bar (Buttons unterhalb des Bildes) – nur Hochformat Mobile sichtbar */
+.lightbox__nav-bar { display: none; }
+
+.lightbox__bar-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.lightbox__bar-btn:hover { background: rgba(255,255,255,0.28); }
+
+/* Mobile: Bild füllt immer den gesamten Bildschirm (contain = kein Crop, kein Verzerren) */
+@media (max-width: 767px) {
+  .lightbox__img {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+}
+
+/* Hochformat Mobile: seitliche Buttons weg, Nav-Leiste unten als Overlay */
+@media (orientation: portrait) and (max-width: 767px) {
+  .lightbox__nav { display: none; }
+  .lightbox__nav-bar {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    position: absolute;
+    bottom: var(--space-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    padding: 10px 2rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+}
+
+/* Querformat Mobile: seitliche Buttons kleiner und näher am Rand */
+@media (orientation: landscape) and (max-height: 600px) {
+  .lightbox__close { top: var(--space-sm); right: var(--space-sm); }
+  .lightbox__nav--prev { left: var(--space-sm); }
+  .lightbox__nav--next { right: var(--space-sm); }
+}
+
 
 /* ---- Timeline V2 ---- */
 .timeline-v2 {
@@ -2851,7 +2907,7 @@ html[lang="de"] .lang-en { display: none; }
 /* ---- WireHeadZ Teambild rechts im Hero ---- */
 .wh-hero--wh {
   background:
-    url('../assets/images/wireheadz/hero.png') right center / auto 100% no-repeat,
+    url('../assets/images/wireheadz/hero.jpg') right center / auto 100% no-repeat,
     linear-gradient(to right, var(--color-wireheadz) 0%, #000 55%);
   min-height: 620px;
 }
@@ -2861,7 +2917,7 @@ html[lang="de"] .lang-en { display: none; }
 /* ---- WireHeadZ e.V. Vereinsbild rechts im Hero ---- */
 .wh-hero--ev {
   background:
-    url('../assets/images/wireheadz-ev/hero.png') right center / auto 100% no-repeat,
+    url('../assets/images/wireheadz-ev/hero.jpg') right center / auto 100% no-repeat,
     linear-gradient(to right, var(--color-ev) 0%, #0e0a1a 55%);
   min-height: 620px;
 }
