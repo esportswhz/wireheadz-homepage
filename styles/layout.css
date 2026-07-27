@@ -2569,6 +2569,16 @@ html[lang="de"] .lang-en { display: none; }
   color: #fff;
 }
 
+.player-card__role--manager {
+  background: rgba(30,120,200,0.7);
+  color: #fff;
+}
+
+.player-card__role--coach {
+  background: rgba(30,160,90,0.7);
+  color: #fff;
+}
+
 .player-card__study {
   font-size: 10px;
   color: rgba(255,255,255,0.55);
