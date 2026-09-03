@@ -700,7 +700,7 @@ a { color: inherit; text-decoration: none; }
   gap: var(--space-sm);
 }
 
-/* Brand-Label (WireHeadZ / WireHeadZ e.V.) */
+/* Brand-Label (WireHeadZ / Wireheadz Verein) */
 .game-card__brand {
   font-size: var(--text-label);
   font-weight: var(--weight-semibold);

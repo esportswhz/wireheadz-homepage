@@ -2924,7 +2924,7 @@ html[lang="de"] .lang-en { display: none; }
 
 .wh-hero--wh::before { background: none; }
 
-/* ---- WireHeadZ e.V. Vereinsbild rechts im Hero ---- */
+/* ---- Wireheadz Verein Vereinsbild rechts im Hero ---- */
 .wh-hero--ev {
   background:
     url('../assets/images/wireheadz-ev/hero.jpg') right center / auto 100% no-repeat,
@@ -2934,7 +2934,7 @@ html[lang="de"] .lang-en { display: none; }
 
 .wh-hero--ev::before { background: none; }
 
-/* ---- WireHeadZ e.V. Farb-Overrides ---- */
+/* ---- Wireheadz Verein Farb-Overrides ---- */
 .wh-hero--ev::before {
   background: linear-gradient(135deg, rgba(233,30,140,0.18) 0%, transparent 60%);
 }
