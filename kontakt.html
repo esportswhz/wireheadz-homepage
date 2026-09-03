@@ -156,20 +156,20 @@
                   <select id="spieler-team" name="team">
                     <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
                     <option value="WireHeadZ" data-de="WireHeadZ (GAMeS Hub, WHZ)" data-en="WireHeadZ (GAMeS Hub, WHZ)">WireHeadZ (GAMeS Hub, WHZ)</option>
-                    <option value="WireHeadZ e.V." data-de="WireHeadZ e.V. (eingetragener Verein)" data-en="WireHeadZ e.V. (registered association)">WireHeadZ e.V. (eingetragener Verein)</option>
+                    <option value="Wireheadz Verein" data-de="Wireheadz Verein" data-en="Wireheadz Verein">Wireheadz Verein</option>
                   </select>
                 </div>
 
-                <!-- Hinweis: e.V.-Mitgliedschaft erforderlich -->
+                <!-- Hinweis: Vereinsmitgliedschaft erforderlich -->
                 <div class="form-callout" id="spieler-ev-hinweis" style="display:none">
                   <div class="form-callout__icon" aria-hidden="true">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
                   </div>
                   <div>
-                    <p data-de="Um eSport-Spieler beim WireHeadZ e.V. zu werden, ist eine Vereinsmitgliedschaft Voraussetzung."
-                       data-en="To become an eSport player at WireHeadZ e.V., club membership is required."
-                       data-ls-de="Für den WireHeadZ e.V. musst du zuerst Mitglied werden."
-                       data-ls-en="For WireHeadZ e.V. you must first become a member.">Um eSport-Spieler beim WireHeadZ e.V. zu werden, ist eine Vereinsmitgliedschaft Voraussetzung.</p>
+                    <p data-de="Um eSport-Spieler beim Wireheadz Verein zu werden, ist eine Vereinsmitgliedschaft Voraussetzung."
+                       data-en="To become an eSport player at Wireheadz Verein, club membership is required."
+                       data-ls-de="Für den Wireheadz Verein musst du zuerst Mitglied werden."
+                       data-ls-en="For Wireheadz Verein you must first become a member.">Um eSport-Spieler beim Wireheadz Verein zu werden, ist eine Vereinsmitgliedschaft Voraussetzung.</p>
                     <a href="kontakt.html?typ=mitglied" class="form-callout__link"
                        data-de="Jetzt Mitglied werden →" data-en="Become a member now →">Jetzt Mitglied werden →</a>
                   </div>
@@ -240,8 +240,8 @@
             <!-- ---- Felder: Vereinsmitglied ---- -->
             <div class="form-fields-group" data-typ="mitglied" hidden>
               <h3 class="form-section__heading"
-                  data-de="Mitgliedschaft im WireHeadZ e.V."
-                  data-en="Membership in WireHeadZ e.V.">Mitgliedschaft im WireHeadZ e.V.</h3>
+                  data-de="Mitgliedschaft im Wireheadz Verein"
+                  data-en="Membership in Wireheadz Verein">Mitgliedschaft im Wireheadz Verein</h3>
               <div class="form-fields-inner">
 
                 <div class="form-grid">
@@ -661,14 +661,14 @@
       }
     }
 
-    // Team vorausfüllen + ggf. e.V.-Hinweis zeigen
+    // Team vorausfüllen + ggf. Vereinshinweis zeigen
     if (teamParam && startType === 'spieler') {
       var teamSel = document.getElementById('spieler-team');
       var evBox   = document.getElementById('spieler-ev-hinweis');
       if (teamSel) {
         if (teamParam === 'wireheadz') teamSel.value = 'WireHeadZ';
-        else if (teamParam === 'ev')   teamSel.value = 'WireHeadZ e.V.';
-        if (evBox) evBox.style.display = teamSel.value === 'WireHeadZ e.V.' ? '' : 'none';
+        else if (teamParam === 'ev')   teamSel.value = 'Wireheadz Verein';
+        if (evBox) evBox.style.display = teamSel.value === 'Wireheadz Verein' ? '' : 'none';
       }
     }
 
@@ -679,12 +679,12 @@
       });
     });
 
-    // ---- Team-Select: e.V.-Hinweis anzeigen/verstecken ----
+    // ---- Team-Select: Vereinshinweis anzeigen/verstecken ----
     var teamSelect = document.getElementById('spieler-team');
     var evHinweis  = document.getElementById('spieler-ev-hinweis');
     if (teamSelect && evHinweis) {
       teamSelect.addEventListener('change', function () {
-        evHinweis.style.display = this.value === 'WireHeadZ e.V.' ? '' : 'none';
+        evHinweis.style.display = this.value === 'Wireheadz Verein' ? '' : 'none';
       });
     }
 
@@ -779,11 +779,11 @@
         var auf   = val('mitglied-aufmerksam');
         var bem   = val('mitglied-bemerkungen');
 
-        subject = 'Mitgliedschaftsanfrage WireHeadZ e.V. – ' + name;
+        subject = 'Mitgliedschaftsanfrage Wireheadz Verein – ' + name;
         body = [
           'Hallo WireHeadZ-Team,',
           '',
-          'ich möchte Mitglied im WireHeadZ e.V. werden.',
+          'ich möchte Mitglied im Wireheadz Verein werden.',
           '',
           '—— Meine Angaben ——',
           block([

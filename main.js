@@ -1140,7 +1140,7 @@ document.addEventListener('DOMContentLoaded', () => {
     _activeTeams.forEach(function (t) {
       var org = t.org || 'wireheadz';
       var orgClass = org === 'ev' ? 'wireheadz-ev' : 'wireheadz';
-      var brandDe = org === 'ev' ? 'WireHeadZ e.V.' : 'WireHeadZ';
+      var brandDe = org === 'ev' ? 'Wireheadz Verein' : 'WireHeadZ';
       var brandEn = brandDe;
       var teamPage = 'esports/' + (org === 'ev' ? 'wireheadz-ev' : 'wireheadz') + '.html#' + t.id;
 
@@ -1349,7 +1349,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })();
 
 
-  /* ---- Organigramm (WireHeadZ e.V.) ---- */
+  /* ---- Organigramm (Wireheadz Verein) ---- */
   const orgNodes = document.querySelectorAll('.org-node');
   const orgPrompt = document.getElementById('org-detail-prompt');
   const orgCard   = document.getElementById('org-detail-card');
