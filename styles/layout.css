@@ -2924,7 +2924,7 @@ html[lang="de"] .lang-en { display: none; }
 
 .wh-hero--wh::before { background: none; }
 
-/* ---- Wireheadz Verein Vereinsbild rechts im Hero ---- */
+/* ---- Wireheadz Verein: Vereinsbild rechts im Hero ---- */
 .wh-hero--ev {
   background:
     url('../assets/images/wireheadz-ev/hero.jpg') right center / auto 100% no-repeat,
@@ -2934,7 +2934,7 @@ html[lang="de"] .lang-en { display: none; }
 
 .wh-hero--ev::before { background: none; }
 
-/* ---- Wireheadz Verein Farb-Overrides ---- */
+/* ---- Wireheadz Verein: Farb-Overrides ---- */
 .wh-hero--ev::before {
   background: linear-gradient(135deg, rgba(233,30,140,0.18) 0%, transparent 60%);
 }
@@ -3177,6 +3177,48 @@ html[lang="de"] .lang-en { display: none; }
   position: absolute;
   left: 0;
   color: rgba(255,255,255,0.5);
+}
+
+/* ---- Vorteile der Vereinsmitgliedschaft ---- */
+.why-join {
+  background: var(--color-bg);
+}
+
+.why-join__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.why-join-card {
+  min-width: 0;
+  padding: var(--space-xl);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-ev);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out);
+}
+
+.why-join-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.why-join-card h3 {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-ev);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-snug);
+}
+
+.why-join-card p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-body);
+  line-height: var(--leading-relaxed);
 }
 
 
@@ -3664,6 +3706,7 @@ html[lang="de"] .lang-en { display: none; }
   .game-accordion__summary { min-height: 180px; }
   .player-grid { grid-template-columns: repeat(3, 1fr); }
   .results-layout { grid-template-columns: 1fr; gap: var(--space-xl); }
+  .why-join__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .training-info { max-width: 100%; }
   .events-teaser-grid { grid-template-columns: repeat(2, 1fr); }
   .join-cta__inner { flex-direction: column; text-align: center; align-items: center; }
@@ -3746,6 +3789,7 @@ html[lang="de"] .lang-en { display: none; }
   .game-accordion__title { font-size: var(--text-h3); }
   .game-accordion__arrow { bottom: var(--space-lg); right: var(--space-lg); }
   .player-grid { grid-template-columns: repeat(2, 1fr); }
+  .why-join__grid { grid-template-columns: 1fr; }
   .training-info { grid-template-columns: 1fr; }
   .events-teaser-grid { grid-template-columns: 1fr; }
   .join-cta__actions { flex-direction: column; width: 100%; }

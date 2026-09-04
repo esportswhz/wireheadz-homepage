@@ -2,11 +2,11 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/esports/wireheadz-ev", "destination": "/esports/wireheadz-verein", "permanent": true }
+    { "source": "/esports/wireheadz-verein", "destination": "/esports/wireheadz-ev", "permanent": true }
   ],
   "rewrites": [
     { "source": "/esports/wireheadz", "destination": "/esports/wireheadz.html" },
-    { "source": "/esports/wireheadz-verein", "destination": "/esports/wireheadz-ev.html" }
+    { "source": "/esports/wireheadz-ev", "destination": "/esports/wireheadz-ev.html" }
   ],
   "headers": [
     {

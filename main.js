@@ -340,7 +340,7 @@ document.addEventListener('DOMContentLoaded', () => {
   (function() {
     var isSubpage = window.location.pathname.indexOf('/esports/') !== -1;
     var pre = isSubpage ? '../' : '';
-    var vereinHref = isSubpage ? 'wireheadz-ev.html' : 'esports/wireheadz-ev.html';
+    var vereinHref = '/esports/wireheadz-ev';
     var path = window.location.pathname;
 
     function activeClass(filename) {
@@ -374,7 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '<a href="' + pre + 'partner.html#sponsoren" role="menuitem" data-de="Sponsoren" data-en="Sponsors" data-ls-de="Sponsoren" data-ls-en="Sponsors">Sponsoren</a>' +
         '</div>' +
       '</li>' +
-      '<li class="nav__item' + activeClass('wireheadz-ev.html') + '">' +
+      '<li class="nav__item' + activeClass('wireheadz-ev') + '">' +
         '<a href="' + vereinHref + '" data-de="Verein" data-en="Club" data-ls-de="Verein" data-ls-en="Club">Verein</a>' +
       '</li>' +
       '<li class="nav__item' + activeClass('events.html') + '">' +
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '<li><a href="' + pre + 'partner.html#sponsoren" data-de="Sponsoren" data-en="Sponsors" data-ls-de="Sponsoren" data-ls-en="Sponsors">Sponsoren</a></li>' +
         '</ul>' +
       '</li>' +
-      '<li class="nav__mobile-item' + mobileActiveClass('wireheadz-ev.html') + '">' +
+      '<li class="nav__mobile-item' + mobileActiveClass('wireheadz-ev') + '">' +
         '<a href="' + vereinHref + '" data-de="Verein" data-en="Club" data-ls-de="Verein" data-ls-en="Club">Verein</a>' +
       '</li>' +
       '<li class="nav__mobile-item' + mobileActiveClass('events.html') + '">' +
@@ -733,7 +733,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!el) return;
     var isSubpage = window.location.pathname.indexOf('/esports/') !== -1;
     var pre = isSubpage ? '../' : '';
-    var vereinHref = isSubpage ? 'wireheadz-ev.html' : 'esports/wireheadz-ev.html';
+    var vereinHref = '/esports/wireheadz-ev';
 
     el.innerHTML =
 
@@ -1142,7 +1142,9 @@ document.addEventListener('DOMContentLoaded', () => {
       var orgClass = org === 'ev' ? 'wireheadz-ev' : 'wireheadz';
       var brandDe = org === 'ev' ? 'Wireheadz Verein' : 'WireHeadZ';
       var brandEn = brandDe;
-      var teamPage = 'esports/' + (org === 'ev' ? 'wireheadz-ev' : 'wireheadz') + '.html#' + t.id;
+      var teamPage = org === 'ev'
+        ? '/esports/wireheadz-ev#' + t.id
+        : 'esports/wireheadz.html#' + t.id;
 
       var card = document.createElement('div');
       card.className = 'game-card game-card--' + orgClass + ' game-card--' + t.id;
