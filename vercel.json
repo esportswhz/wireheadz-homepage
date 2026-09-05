@@ -5,6 +5,10 @@
     { "source": "/esports/wireheadz-verein", "destination": "/esports/wireheadz-ev", "permanent": true }
   ],
   "rewrites": [
+    {
+      "source": "/assets/:path*",
+      "destination": "https://raw.githubusercontent.com/esportswhz/wireheadz-homepage/4adba3e107e5a3df9d6f40295854427346a78950/assets/:path*"
+    },
     { "source": "/esports/wireheadz", "destination": "/esports/wireheadz.html" },
     { "source": "/esports/wireheadz-ev", "destination": "/esports/wireheadz-ev.html" }
   ],
