@@ -41,8 +41,8 @@ var EVENTS = [
     isoDate:       '2026-06-19T18:00:00',
     title_de:      'Lange Nacht der Technik 2026',
     title_en:      'Long Night of Technology 2026',
-    img:           'assets/images/events/lange-nacht-technik-2026-1.jpg',
-    images:        ['assets/images/events/lange-nacht-technik-2026-1.jpg'],
+    img:           'site-assets-v2/images/events/lange-nacht-technik-2026-1.jpg',
+    images:        ['site-assets-v2/images/events/lange-nacht-technik-2026-1.jpg'],
     location_de:   'Westsächsische Hochschule Zwickau',
     location_en:   'West Saxon University of Applied Sciences Zwickau',
     categories:    [{de:'Forschung', en:'Research'}, {de:'Technologie', en:'Technology'}],
@@ -62,8 +62,8 @@ var EVENTS = [
     date_en:       '30.05.2026',
     title_de:      'Viele Wege Festival 2026',
     title_en:      'Viele Wege Festival 2026',
-    img:           'assets/images/events/viele-wege-festival-2026-1.jpg',
-    images:        ['assets/images/events/viele-wege-festival-2026-1.jpg', 'assets/images/events/viele-wege-festival-2026-2.jpg'],
+    img:           'site-assets-v2/images/events/viele-wege-festival-2026-1.jpg',
+    images:        ['site-assets-v2/images/events/viele-wege-festival-2026-1.jpg', 'site-assets-v2/images/events/viele-wege-festival-2026-2.jpg'],
     location_de:   'Innenstadt Zwickau',
     location_en:   'Zwickau City Centre',
     categories:    [{de:'Community', en:'Community'}],
@@ -83,8 +83,8 @@ var EVENTS = [
     date_en:       '15.03.2026',
     title_de:      'Hochschulinformationstag 2026',
     title_en:      'University Open Day 2026',
-    img:           'assets/images/events/hochschulinformationstag-2026-1.jpg',
-    images:        ['assets/images/events/hochschulinformationstag-2026-1.jpg', 'assets/images/events/hochschulinformationstag-2026-2.jpg', 'assets/images/events/hochschulinformationstag-2026-3.jpg'],
+    img:           'site-assets-v2/images/events/hochschulinformationstag-2026-1.jpg',
+    images:        ['site-assets-v2/images/events/hochschulinformationstag-2026-1.jpg', 'site-assets-v2/images/events/hochschulinformationstag-2026-2.jpg', 'site-assets-v2/images/events/hochschulinformationstag-2026-3.jpg'],
     location_de:   'Westsächsische Hochschule Zwickau',
     location_en:   'West Saxon University of Applied Sciences Zwickau',
     categories:    [{de:'Lehre', en:'Teaching'}, {de:'Forschung', en:'Research'}],
@@ -104,8 +104,8 @@ var EVENTS = [
     date_en:       '01.03.2025',
     title_de:      'AAA Esports Championship 2025',
     title_en:      'AAA Esports Championship 2025',
-    img:           'assets/images/events/aaa2025-1.png',
-    images:        ['assets/images/events/aaa2025-1.png','assets/images/events/aaa2025-2.png','assets/images/events/aaa2025-3.jpg','assets/images/events/aaa2025-4.jpg'],
+    img:           'site-assets-v2/images/events/aaa2025-1.png',
+    images:        ['site-assets-v2/images/events/aaa2025-1.png','site-assets-v2/images/events/aaa2025-2.png','site-assets-v2/images/events/aaa2025-3.jpg','site-assets-v2/images/events/aaa2025-4.jpg'],
     location_de:   'Mittweida',
     location_en:   'Mittweida',
     categories:    [{de:'Turnier', en:'Tournament'}, {de:'International', en:'International'}],
@@ -125,8 +125,8 @@ var EVENTS = [
     date_en:       '18.10.2025',
     title_de:      'TAG24 Talentgame 2025',
     title_en:      'TAG24 Talentgame 2025',
-    img:           'assets/images/events/talentgame-2025-1.jpg',
-    images:        ['assets/images/events/talentgame-2025-1.jpg','assets/images/events/talentgame-2025-2.jpg','assets/images/events/talentgame-2025-3.jpg','assets/images/events/talentgame-2025-4.jpg','assets/images/events/talentgame-2025-5.jpg'],
+    img:           'site-assets-v2/images/events/talentgame-2025-1.jpg',
+    images:        ['site-assets-v2/images/events/talentgame-2025-1.jpg','site-assets-v2/images/events/talentgame-2025-2.jpg','site-assets-v2/images/events/talentgame-2025-3.jpg','site-assets-v2/images/events/talentgame-2025-4.jpg','site-assets-v2/images/events/talentgame-2025-5.jpg'],
     location_de:   'Cinestar Roter Turm, Chemnitz',
     location_en:   'Cinestar Roter Turm, Chemnitz',
     categories:    [{de:'Kooperation', en:'Partnership'}, {de:'Turnier', en:'Tournament'}],
@@ -146,8 +146,8 @@ var EVENTS = [
     date_en:       '06.09.2025',
     title_de:      'FC25 Community Turnier im CFC Stadion',
     title_en:      'FC25 Community Tournament at CFC Stadium',
-    img:           'assets/images/events/sporty-2025-1.jpg',
-    images:        ['assets/images/events/sporty-2025-1.jpg','assets/images/events/sporty-2025-2.png','assets/images/events/sporty-2025-3.png','assets/images/events/sporty-2025-4.png'],
+    img:           'site-assets-v2/images/events/sporty-2025-1.jpg',
+    images:        ['site-assets-v2/images/events/sporty-2025-1.jpg','site-assets-v2/images/events/sporty-2025-2.png','site-assets-v2/images/events/sporty-2025-3.png','site-assets-v2/images/events/sporty-2025-4.png'],
     location_de:   'CFC Stadion, Chemnitz',
     location_en:   'CFC Stadium, Chemnitz',
     categories:    [{de:'Community', en:'Community'}, {de:'Turnier', en:'Tournament'}],
@@ -188,8 +188,8 @@ var EVENTS = [
     date_en:       '07.09.2024',
     title_de:      'Demonstrationsevent eSport – Sporty 2024',
     title_en:      'eSport Demo Event – Sporty 2024',
-    img:           'assets/images/events/sporty-2024-1.jpg',
-    images:        ['assets/images/events/sporty-2024-1.jpg','assets/images/events/sporty-2024-2.jpg','assets/images/events/sporty-2024-3.jpg','assets/images/events/sporty-2024-4.jpg'],
+    img:           'site-assets-v2/images/events/sporty-2024-1.jpg',
+    images:        ['site-assets-v2/images/events/sporty-2024-1.jpg','site-assets-v2/images/events/sporty-2024-2.jpg','site-assets-v2/images/events/sporty-2024-3.jpg','site-assets-v2/images/events/sporty-2024-4.jpg'],
     location_de:   'CFC Stadion, Chemnitz',
     location_en:   'CFC Stadium, Chemnitz',
     categories:    [{de:'Community', en:'Community'}],
@@ -209,8 +209,8 @@ var EVENTS = [
     date_en:       '31.08.2024',
     title_de:      'TAG24 Talentgame 2024',
     title_en:      'TAG24 Talentgame 2024',
-    img:           'assets/images/events/talentgame-2024-1.jpg',
-    images:        ['assets/images/events/talentgame-2024-1.jpg','assets/images/events/talentgame-2024-2.jpg','assets/images/events/talentgame-2024-3.jpg','assets/images/events/talentgame-2024-4.jpg'],
+    img:           'site-assets-v2/images/events/talentgame-2024-1.jpg',
+    images:        ['site-assets-v2/images/events/talentgame-2024-1.jpg','site-assets-v2/images/events/talentgame-2024-2.jpg','site-assets-v2/images/events/talentgame-2024-3.jpg','site-assets-v2/images/events/talentgame-2024-4.jpg'],
     location_de:   'Cinestar Roter Turm, Chemnitz',
     location_en:   'Cinestar Roter Turm, Chemnitz',
     categories:    [{de:'Kooperation', en:'Partnership'}, {de:'Turnier', en:'Tournament'}],
@@ -230,8 +230,8 @@ var EVENTS = [
     date_en:       '21.–23.08.2024',
     title_de:      'WireHeadZ x Gamescom 2024',
     title_en:      'WireHeadZ x Gamescom 2024',
-    img:           'assets/images/events/gamescom-2024-1.jpg',
-    images:        ['assets/images/events/gamescom-2024-1.jpg','assets/images/events/gamescom-2024-2.jpg','assets/images/events/gamescom-2024-3.jpg','assets/images/events/gamescom-2024-4.jpg','assets/images/events/gamescom-2024-5.jpg'],
+    img:           'site-assets-v2/images/events/gamescom-2024-1.jpg',
+    images:        ['site-assets-v2/images/events/gamescom-2024-1.jpg','site-assets-v2/images/events/gamescom-2024-2.jpg','site-assets-v2/images/events/gamescom-2024-3.jpg','site-assets-v2/images/events/gamescom-2024-4.jpg','site-assets-v2/images/events/gamescom-2024-5.jpg'],
     location_de:   'Koelnmesse, Köln',
     location_en:   'Koelnmesse, Cologne',
     categories:    [{de:'Messe', en:'Expo'}],
@@ -251,8 +251,8 @@ var EVENTS = [
     date_en:       '11.08.2024',
     title_de:      'FC24 Community Turnier',
     title_en:      'FC24 Community Tournament',
-    img:           'assets/images/events/sommerkino-2024-1.jpg',
-    images:        ['assets/images/events/sommerkino-2024-1.jpg','assets/images/events/sommerkino-2024-2.jpg','assets/images/events/sommerkino-2024-3.jpg','assets/images/events/sommerkino-2024-4.jpg'],
+    img:           'site-assets-v2/images/events/sommerkino-2024-1.jpg',
+    images:        ['site-assets-v2/images/events/sommerkino-2024-1.jpg','site-assets-v2/images/events/sommerkino-2024-2.jpg','site-assets-v2/images/events/sommerkino-2024-3.jpg','site-assets-v2/images/events/sommerkino-2024-4.jpg'],
     location_de:   'Espitas Chillybeach, Zwickau',
     location_en:   'Espitas Chillybeach, Zwickau',
     categories:    [{de:'Community', en:'Community'}, {de:'Turnier', en:'Tournament'}],
@@ -719,7 +719,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var pre = isSubpage ? '../' : '';
     var logoItems = PARTNERS.map(function (p) {
       // Strip liegt immer auf dunklem Hintergrund → immer p.logo (= dunkle/weiße Variante)
-      var imgs = '<img src="' + pre + 'assets/logos/sponsors/' + p.logo + '" alt="' + p.alt + '" class="partner-logo" loading="lazy" />';
+      var imgs = '<img src="' + pre + 'site-assets-v2/logos/sponsors/' + p.logo + '" alt="' + p.alt + '" class="partner-logo" loading="lazy" />';
       return '<a href="' + p.url + '" target="_blank" rel="noopener" class="partner-logo-wrap" aria-label="' + p.alt + '">' + imgs + '</a>';
     }).join('');
     // 4× Logos → garantiert genug Breite für jeden Viewport; -25% = genau 1 Set weit
@@ -740,7 +740,7 @@ document.addEventListener('DOMContentLoaded', () => {
       /* Brand */
       '<div>' +
         '<a href="' + pre + 'index.html">' +
-          '<img src="' + pre + 'assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" class="footer__brand-logo" />' +
+          '<img src="' + pre + 'site-assets-v2/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" class="footer__brand-logo" />' +
         '</a>' +
         '<p class="footer__claim" data-de="Gaming. eSport. Forschung. An der WHZ." data-en="Gaming. eSport. Research. At WHZ." data-ls-de="Wir spielen. Wir treiben eSport. Wir forschen. Wir sind an der Hochschule in Zwickau." data-ls-en="We play. We do eSport. We do research. We are at the university in Zwickau.">' +
           'Gaming. eSport. Forschung. An der WHZ.' +
