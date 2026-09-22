@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt – WHZ GAMeS Hub</title>
-  <meta name="description" content="Schreib uns: Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage – alles vorausgefüllt in einem Schritt." />
+  <meta name="description" content="Schreib uns: Games Hub Member, Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage – alles vorausgefüllt in einem Schritt." />
 
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Kontakt – WHZ GAMeS Hub" />
@@ -107,6 +107,9 @@
             <button type="button" class="form-category-btn" data-typ="mitglied"
                     aria-pressed="false"
                     data-de="Vereinsmitglied" data-en="Club Membership">Vereinsmitglied</button>
+            <button type="button" class="form-category-btn" data-typ="games-hub-member"
+                    aria-pressed="false"
+                    data-de="Games Hub Member" data-en="Games Hub Member">Games Hub Member</button>
             <button type="button" class="form-category-btn" data-typ="partner"
                     aria-pressed="false"
                     data-de="Partnerschaft" data-en="Partnership">Partnerschaft</button>
@@ -456,6 +459,75 @@
             </div>
 
 
+            <!-- ---- Felder: Games Hub Member ---- -->
+            <div class="form-fields-group" data-typ="games-hub-member" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Interesse als Games Hub Member"
+                  data-en="Interest in Becoming a Games Hub Member">Interesse als Games Hub Member</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="gameshub-name">Name<span class="form-required">*</span></label>
+                    <input type="text" id="gameshub-name" name="name"
+                           autocomplete="name"
+                           data-placeholder-de="Vor- und Nachname"
+                           data-placeholder-en="First and last name"
+                           placeholder="Vor- und Nachname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="gameshub-email">E-Mail<span class="form-required">*</span></label>
+                    <input type="email" id="gameshub-email" name="email"
+                           autocomplete="email"
+                           data-placeholder-de="deine@email.de"
+                           data-placeholder-en="your@email.com"
+                           placeholder="deine@email.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="gameshub-rolle">
+                    <span data-de="Ich interessiere mich für" data-en="I am interested in">Ich interessiere mich für</span><span class="form-required">*</span>
+                  </label>
+                  <select id="gameshub-rolle" name="rolle">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ...">Bitte wählen ...</option>
+                    <option value="eSport-Caster" data-de="eSport-Caster" data-en="eSport Caster">eSport-Caster</option>
+                    <option value="eSport-Spieler" data-de="eSport-Spieler" data-en="eSport Player">eSport-Spieler</option>
+                    <option value="Gaming-Content-Creator" data-de="Gaming-Content-Creator" data-en="Gaming Content Creator">Gaming-Content-Creator</option>
+                    <option value="Andere Aufgabe" data-de="Andere Aufgabe im GAMeS Hub" data-en="Another role at the GAMeS Hub">Andere Aufgabe im GAMeS Hub</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="gameshub-studium">
+                    <span data-de="Studiengang / Fakultät" data-en="Degree Programme / Faculty">Studiengang / Fakultät</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <input type="text" id="gameshub-studium" name="studium"
+                         data-placeholder-de="z. B. Betriebswirtschaft, Wirtschaftswissenschaften"
+                         data-placeholder-en="e.g. Business Administration, Business and Economics"
+                         placeholder="z. B. Betriebswirtschaft, Wirtschaftswissenschaften" />
+                </div>
+
+                <div class="form-group">
+                  <label for="gameshub-nachricht">
+                    <span data-de="Erzähl uns kurz von dir" data-en="Tell us briefly about yourself">Erzähl uns kurz von dir</span><span class="form-optional">(optional)</span>
+                  </label>
+                  <textarea id="gameshub-nachricht" name="nachricht"
+                            data-placeholder-de="Was interessiert dich an der Rolle? Welche Erfahrungen oder Ideen bringst du mit?"
+                            data-placeholder-en="What interests you about the role? What experience or ideas would you bring?"
+                            placeholder="Was interessiert dich an der Rolle? Welche Erfahrungen oder Ideen bringst du mit?"></textarea>
+                </div>
+
+                <p class="form-hint"
+                   data-de="Die Mitarbeit ist ehrenamtlich. Eine mögliche ECTS-Anrechnung wird individuell geprüft und kann nicht garantiert werden."
+                   data-en="Participation is voluntary. Potential ECTS recognition is assessed individually and cannot be guaranteed."
+                   data-ls-de="Die Mitarbeit ist ehrenamtlich. Ob du ECTS bekommen kannst, muss geprüft werden."
+                   data-ls-en="Participation is voluntary. Whether you can receive ECTS credits must be assessed.">Die Mitarbeit ist ehrenamtlich. Eine mögliche ECTS-Anrechnung wird individuell geprüft und kann nicht garantiert werden.</p>
+
+              </div>
+            </div>
+
+
             <!-- ---- Felder: Allgemeine Anfrage ---- -->
             <div class="form-fields-group" data-typ="allgemein" hidden>
               <h3 class="form-section__heading"
@@ -572,6 +644,7 @@
     var artParam   = params.get('art')   || '';
     var spielParam = params.get('spiel') || '';
     var teamParam  = params.get('team')  || '';
+    var rolleParam = params.get('rolle') || '';
 
     // Normalisierung: URL-Wert → Select-Option-Wert
     var spielMap = {
@@ -588,7 +661,7 @@
       'neu':                'neu'
     };
 
-    var validTypes = ['spieler', 'mitglied', 'partner', 'recruiting', 'allgemein'];
+    var validTypes = ['spieler', 'mitglied', 'games-hub-member', 'partner', 'recruiting', 'allgemein'];
 
     // Mapping: URL-Wert -> Select-Option-Wert
     var artMap = {
@@ -598,6 +671,12 @@
       'sponsoring':    'Sponsoring',
       'recruiting':    'Recruiting / Talentgame',
       'soziales':      'Community & Soziales'
+    };
+
+    var rolleMap = {
+      'caster':  'eSport-Caster',
+      'spieler': 'eSport-Spieler',
+      'content': 'Gaming-Content-Creator'
     };
 
     // ---- Sprach-Sync für Platzhalter ----
@@ -672,6 +751,13 @@
         else if (teamParam === 'ev')   teamSel.value = 'Wireheadz Verein';
         if (evBox) evBox.style.display = teamSel.value === 'Wireheadz Verein' ? '' : 'none';
       }
+    }
+
+    // Games-Hub-Rolle vorausfüllen
+    if (rolleParam && startType === 'games-hub-member') {
+      var rolleSelect = document.getElementById('gameshub-rolle');
+      var mappedRolle = rolleMap[rolleParam] || rolleParam;
+      if (rolleSelect && mappedRolle) rolleSelect.value = mappedRolle;
     }
 
     // Kategorie-Buttons
@@ -799,6 +885,32 @@
           name
         ].join('\n');
 
+      } else if (typ === 'games-hub-member') {
+        var name      = val('gameshub-name');
+        var email     = val('gameshub-email');
+        var rolle     = val('gameshub-rolle');
+        var studium   = val('gameshub-studium');
+        var nachricht = val('gameshub-nachricht');
+
+        subject = 'Interesse als Games Hub Member – ' + rolle + ' – ' + name;
+        body = [
+          'Hallo GAMeS-Hub-Team,',
+          '',
+          'ich möchte mich ehrenamtlich als Games Hub Member engagieren.',
+          '',
+          '—— Meine Angaben ——',
+          block([
+            line('Name', name),
+            line('E-Mail', email),
+            line('Interesse an', rolle),
+            line('Studiengang / Fakultät', studium)
+          ]),
+          nachricht ? '\nÜber mich / meine Ideen:\n' + nachricht : '',
+          '',
+          'Mit freundlichen Grüßen',
+          name
+        ].join('\n');
+
       } else if (typ === 'partner') {
         var name   = val('partner-name');
         var email  = val('partner-email');
@@ -889,6 +1001,7 @@
     var required = {
       spieler:    ['spieler-team', 'spieler-name', 'spieler-email', 'spieler-spiel'],
       mitglied:   ['mitglied-name',   'mitglied-email'],
+      'games-hub-member': ['gameshub-name', 'gameshub-email', 'gameshub-rolle'],
       partner:    ['partner-name',    'partner-email',    'partner-org'],
       recruiting: ['recruiting-name', 'recruiting-email', 'recruiting-org'],
       allgemein:  ['allgemein-name',  'allgemein-email',  'allgemein-nachricht']

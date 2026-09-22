@@ -4585,6 +4585,215 @@ html[lang="de"] .lang-en { display: none; }
    MITMACHEN PAGE
    ============================================ */
 
+/* ---- Ersti Reel ---- */
+.ersti-reel-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 410px);
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.ersti-reel-layout .section-header { margin-bottom: 0; }
+
+.reel-embed {
+  position: relative;
+  width: 100%;
+  max-width: 410px;
+  aspect-ratio: 9 / 16;
+  justify-self: end;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  background: #0d1019;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-lg);
+}
+
+.reel-embed__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.45) saturate(0.85);
+  transform: scale(1.03);
+}
+
+.reel-embed__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(8,10,17,0.08), rgba(8,10,17,0.78));
+}
+
+.reel-embed__load {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reel-embed__play {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-wireheadz);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+  transition: transform 0.18s, background 0.18s;
+}
+
+.reel-embed__play svg { width: 28px; height: 28px; fill: currentColor; }
+.reel-embed__load:hover .reel-embed__play { transform: scale(1.08); }
+.reel-embed__load:focus-visible { outline: 2px solid #fff; outline-offset: 6px; border-radius: var(--radius-sm); }
+.reel-embed__overlay p { margin: 0; max-width: 28ch; font-size: var(--text-sm); color: rgba(255,255,255,0.78); }
+.reel-embed__overlay a { color: #fff; font-size: var(--text-sm); text-underline-offset: 3px; }
+.reel-embed iframe { width: 100%; height: 100%; border: 0; background: #fff; }
+
+/* ---- Open roles ---- */
+.hub-role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.hub-role-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.hub-role-card__icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius-md);
+  color: #fff;
+  background: var(--color-wireheadz);
+}
+
+.hub-role-card__icon svg { width: 23px; height: 23px; }
+.hub-role-card__eyebrow {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-wireheadz);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hub-role-card h3 { margin: 0 0 var(--space-sm); font-size: var(--text-h3); }
+.hub-role-card > p:not(.hub-role-card__eyebrow) { flex: 1; margin: 0 0 var(--space-xl); color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+.hub-role-card .btn { align-self: flex-start; }
+
+.ects-note {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+  margin-top: var(--space-xl);
+  padding: var(--space-xl);
+  border: 1px solid color-mix(in srgb, var(--color-ui-primary) 25%, var(--color-border));
+  border-left: 4px solid var(--color-ui-primary);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-ui-primary) 7%, var(--color-surface));
+}
+
+.ects-note__icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--color-ui-primary);
+}
+
+.ects-note__icon svg { width: 22px; height: 22px; }
+.ects-note h3 { margin: 0 0 var(--space-xs); font-size: var(--text-h4); }
+.ects-note p { margin: 0; color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+
+/* ---- Opening hours ---- */
+.hub-hours {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.hub-hours__intro h2 { margin: 0 0 var(--space-md); font-size: var(--text-h2); }
+.hub-hours__intro > p:last-child { margin: 0; color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+.hub-hours__cards { display: grid; gap: var(--space-md); }
+
+.hub-hours-card {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.hub-hours-card--primary {
+  color: #fff;
+  border-color: transparent;
+  background: var(--color-wireheadz);
+}
+
+.hub-hours-card__icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-md);
+  color: var(--color-wireheadz);
+  background: color-mix(in srgb, var(--color-wireheadz) 10%, var(--color-surface));
+}
+
+.hub-hours-card--primary .hub-hours-card__icon { color: #fff; background: rgba(255,255,255,0.16); }
+.hub-hours-card__icon svg { width: 23px; height: 23px; }
+.hub-hours-card__label { margin: 0 0 5px; font-size: var(--text-sm); font-weight: 700; letter-spacing: 0.035em; text-transform: uppercase; }
+.hub-hours-card__time { margin: 0 0 var(--space-xs); font-size: var(--text-h4); font-weight: 700; }
+.hub-hours-card p:last-child { margin: 0; color: var(--color-text-secondary); line-height: var(--leading-relaxed); }
+.hub-hours-card--primary p:last-child { color: rgba(255,255,255,0.82); }
+
+@media (max-width: 900px) {
+  .ersti-reel-layout,
+  .hub-hours { grid-template-columns: 1fr; }
+  .reel-embed { justify-self: center; }
+  .hub-role-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .ersti-reel-layout { gap: var(--space-xl); }
+  .reel-embed { max-width: min(100%, 360px); }
+  .hub-role-card,
+  .ects-note,
+  .hub-hours-card { padding: var(--space-lg); }
+  .ects-note,
+  .hub-hours-card { gap: var(--space-md); }
+}
+
 /* ---- Discord Feature ---- */
 .discord-feature {
   display: grid;
