@@ -645,19 +645,19 @@ a { color: inherit; text-decoration: none; }
   background-position: center;
 }
 .game-card--valorant .game-card__bg {
-  background-image: url('../site-assets-v2/images/shared/games/valorant.jpg'),
+  background-image: url('../assets/images/shared/games/valorant.jpg'),
                     linear-gradient(160deg, #FF4655 0%, #7b1a24 40%, #0F1923 100%);
 }
 .game-card--rocket-league .game-card__bg {
-  background-image: url('../site-assets-v2/images/shared/games/rocket-league.jpg'),
+  background-image: url('../assets/images/shared/games/rocket-league.jpg'),
                     linear-gradient(160deg, #F77F00 0%, #c45500 40%, #0a1a5c 100%);
 }
 .game-card--formula1 .game-card__bg {
-  background-image: url('../site-assets-v2/images/shared/games/formula1.jpg'),
+  background-image: url('../assets/images/shared/games/formula1.jpg'),
                     linear-gradient(160deg, #CC0000 0%, #7a0000 40%, #0d0d0d 100%);
 }
 .game-card--league-of-legends .game-card__bg {
-  background-image: url('../site-assets-v2/images/shared/games/league-of-legends.jpg'),
+  background-image: url('../assets/images/shared/games/league-of-legends.jpg'),
                     linear-gradient(160deg, #c89b3c 0%, #8a6914 40%, #0a0a14 100%);
 }
 
@@ -1185,16 +1185,6 @@ main { animation: pageIn 300ms ease both; }
   animation: pulseDot 2s ease-in-out infinite;
 }
 @keyframes pulseDot { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(1.5); opacity: 0.7; } }
-
-/* ---- Discord Copy Button ---- */
-.discord-copy-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-left: var(--space-sm);
-  white-space: nowrap;
-}
-.discord-copy-btn--success { color: #22c55e !important; border-color: #22c55e !important; }
 
 /* ---- Partner Card Hover ---- */
 .partner-card { transition: transform var(--duration-base), box-shadow var(--duration-base), border-color var(--duration-base); }

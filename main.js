@@ -41,8 +41,8 @@ var EVENTS = [
     isoDate:       '2026-06-19T18:00:00',
     title_de:      'Lange Nacht der Technik 2026',
     title_en:      'Long Night of Technology 2026',
-    img:           'site-assets-v2/images/events/lange-nacht-technik-2026-1.jpg',
-    images:        ['site-assets-v2/images/events/lange-nacht-technik-2026-1.jpg'],
+    img:           'assets/images/events/lange-nacht-technik-2026-1.jpg',
+    images:        ['assets/images/events/lange-nacht-technik-2026-1.jpg'],
     location_de:   'Westsächsische Hochschule Zwickau',
     location_en:   'West Saxon University of Applied Sciences Zwickau',
     categories:    [{de:'Forschung', en:'Research'}, {de:'Technologie', en:'Technology'}],
@@ -62,14 +62,14 @@ var EVENTS = [
     date_en:       '30.05.2026',
     title_de:      'Viele Wege Festival 2026',
     title_en:      'Viele Wege Festival 2026',
-    img:           'site-assets-v2/images/events/viele-wege-festival-2026-1.jpg',
-    images:        ['site-assets-v2/images/events/viele-wege-festival-2026-1.jpg', 'site-assets-v2/images/events/viele-wege-festival-2026-2.jpg'],
+    img:           'assets/images/events/viele-wege-festival-2026-1.jpg',
+    images:        ['assets/images/events/viele-wege-festival-2026-1.jpg', 'assets/images/events/viele-wege-festival-2026-2.jpg'],
     location_de:   'Innenstadt Zwickau',
     location_en:   'Zwickau City Centre',
     categories:    [{de:'Community', en:'Community'}],
-    desc_de:       'Der GAMeS Hub der WHZ präsentierte sich mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum und machte die Potenziale von Gaming für Bildung und Innovation erlebbar.',
+    desc_de:       'Das GAMeS Hub der WHZ präsentierte sich mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum und machte die Potenziale von Gaming für Bildung und Innovation erlebbar.',
     desc_en:       'GAMeS Hub WHZ presented interactive gaming and research activities to a wide audience, making the potential of gaming for education and innovation tangible.',
-    desc_ls_de:    'Der GAMeS Hub war beim Viele Wege Festival. Viele Menschen konnten Gaming ausprobieren. Wir haben gezeigt: Gaming hilft beim Lernen.',
+    desc_ls_de:    'Das GAMeS Hub war beim Viele Wege Festival. Viele Menschen konnten Gaming ausprobieren. Wir haben gezeigt: Gaming hilft beim Lernen.',
     desc_ls_en:    'The GAMeS Hub was at the Viele Wege Festival. Many people could try gaming. We showed: gaming helps with learning.',
     modal_desc_de: 'Beim Viele Wege Festival präsentierte sich das GAMeS Hub der WHZ mit interaktiven Gaming- und Forschungsangeboten einem breiten Publikum. Ziel war es, die Potenziale von Gaming für Bildung, Innovation und gesellschaftlichen Wandel erlebbar zu machen und mit Besucherinnen und Besuchern ins Gespräch zu kommen.',
     modal_desc_en: 'At the Viele Wege Festival, GAMeS Hub WHZ presented interactive gaming and research activities to a wide audience. The aim was to make the potential of gaming for education, innovation and social change tangible and to engage with visitors.',
@@ -83,8 +83,8 @@ var EVENTS = [
     date_en:       '15.03.2026',
     title_de:      'Hochschulinformationstag 2026',
     title_en:      'University Open Day 2026',
-    img:           'site-assets-v2/images/events/hochschulinformationstag-2026-1.jpg',
-    images:        ['site-assets-v2/images/events/hochschulinformationstag-2026-1.jpg', 'site-assets-v2/images/events/hochschulinformationstag-2026-2.jpg', 'site-assets-v2/images/events/hochschulinformationstag-2026-3.jpg'],
+    img:           'assets/images/events/hochschulinformationstag-2026-1.jpg',
+    images:        ['assets/images/events/hochschulinformationstag-2026-1.jpg', 'assets/images/events/hochschulinformationstag-2026-2.jpg', 'assets/images/events/hochschulinformationstag-2026-3.jpg'],
     location_de:   'Westsächsische Hochschule Zwickau',
     location_en:   'West Saxon University of Applied Sciences Zwickau',
     categories:    [{de:'Lehre', en:'Teaching'}, {de:'Forschung', en:'Research'}],
@@ -104,8 +104,8 @@ var EVENTS = [
     date_en:       '01.03.2025',
     title_de:      'AAA Esports Championship 2025',
     title_en:      'AAA Esports Championship 2025',
-    img:           'site-assets-v2/images/events/aaa2025-1.png',
-    images:        ['site-assets-v2/images/events/aaa2025-1.png','site-assets-v2/images/events/aaa2025-2.png','site-assets-v2/images/events/aaa2025-3.jpg','site-assets-v2/images/events/aaa2025-4.jpg'],
+    img:           'assets/images/events/aaa2025-1.png',
+    images:        ['assets/images/events/aaa2025-1.png','assets/images/events/aaa2025-2.png','assets/images/events/aaa2025-3.jpg','assets/images/events/aaa2025-4.jpg'],
     location_de:   'Mittweida',
     location_en:   'Mittweida',
     categories:    [{de:'Turnier', en:'Tournament'}, {de:'International', en:'International'}],
@@ -125,8 +125,8 @@ var EVENTS = [
     date_en:       '18.10.2025',
     title_de:      'TAG24 Talentgame 2025',
     title_en:      'TAG24 Talentgame 2025',
-    img:           'site-assets-v2/images/events/talentgame-2025-1.jpg',
-    images:        ['site-assets-v2/images/events/talentgame-2025-1.jpg','site-assets-v2/images/events/talentgame-2025-2.jpg','site-assets-v2/images/events/talentgame-2025-3.jpg','site-assets-v2/images/events/talentgame-2025-4.jpg','site-assets-v2/images/events/talentgame-2025-5.jpg'],
+    img:           'assets/images/events/talentgame-2025-1.jpg',
+    images:        ['assets/images/events/talentgame-2025-1.jpg','assets/images/events/talentgame-2025-2.jpg','assets/images/events/talentgame-2025-3.jpg','assets/images/events/talentgame-2025-4.jpg','assets/images/events/talentgame-2025-5.jpg'],
     location_de:   'Cinestar Roter Turm, Chemnitz',
     location_en:   'Cinestar Roter Turm, Chemnitz',
     categories:    [{de:'Kooperation', en:'Partnership'}, {de:'Turnier', en:'Tournament'}],
@@ -146,8 +146,8 @@ var EVENTS = [
     date_en:       '06.09.2025',
     title_de:      'FC25 Community Turnier im CFC Stadion',
     title_en:      'FC25 Community Tournament at CFC Stadium',
-    img:           'site-assets-v2/images/events/sporty-2025-1.jpg',
-    images:        ['site-assets-v2/images/events/sporty-2025-1.jpg','site-assets-v2/images/events/sporty-2025-2.png','site-assets-v2/images/events/sporty-2025-3.png','site-assets-v2/images/events/sporty-2025-4.png'],
+    img:           'assets/images/events/sporty-2025-1.jpg',
+    images:        ['assets/images/events/sporty-2025-1.jpg','assets/images/events/sporty-2025-2.png','assets/images/events/sporty-2025-3.png','assets/images/events/sporty-2025-4.png'],
     location_de:   'CFC Stadion, Chemnitz',
     location_en:   'CFC Stadium, Chemnitz',
     categories:    [{de:'Community', en:'Community'}, {de:'Turnier', en:'Tournament'}],
@@ -188,8 +188,8 @@ var EVENTS = [
     date_en:       '07.09.2024',
     title_de:      'Demonstrationsevent eSport – Sporty 2024',
     title_en:      'eSport Demo Event – Sporty 2024',
-    img:           'site-assets-v2/images/events/sporty-2024-1.jpg',
-    images:        ['site-assets-v2/images/events/sporty-2024-1.jpg','site-assets-v2/images/events/sporty-2024-2.jpg','site-assets-v2/images/events/sporty-2024-3.jpg','site-assets-v2/images/events/sporty-2024-4.jpg'],
+    img:           'assets/images/events/sporty-2024-1.jpg',
+    images:        ['assets/images/events/sporty-2024-1.jpg','assets/images/events/sporty-2024-2.jpg','assets/images/events/sporty-2024-3.jpg','assets/images/events/sporty-2024-4.jpg'],
     location_de:   'CFC Stadion, Chemnitz',
     location_en:   'CFC Stadium, Chemnitz',
     categories:    [{de:'Community', en:'Community'}],
@@ -209,8 +209,8 @@ var EVENTS = [
     date_en:       '31.08.2024',
     title_de:      'TAG24 Talentgame 2024',
     title_en:      'TAG24 Talentgame 2024',
-    img:           'site-assets-v2/images/events/talentgame-2024-1.jpg',
-    images:        ['site-assets-v2/images/events/talentgame-2024-1.jpg','site-assets-v2/images/events/talentgame-2024-2.jpg','site-assets-v2/images/events/talentgame-2024-3.jpg','site-assets-v2/images/events/talentgame-2024-4.jpg'],
+    img:           'assets/images/events/talentgame-2024-1.jpg',
+    images:        ['assets/images/events/talentgame-2024-1.jpg','assets/images/events/talentgame-2024-2.jpg','assets/images/events/talentgame-2024-3.jpg','assets/images/events/talentgame-2024-4.jpg'],
     location_de:   'Cinestar Roter Turm, Chemnitz',
     location_en:   'Cinestar Roter Turm, Chemnitz',
     categories:    [{de:'Kooperation', en:'Partnership'}, {de:'Turnier', en:'Tournament'}],
@@ -230,8 +230,8 @@ var EVENTS = [
     date_en:       '21.–23.08.2024',
     title_de:      'WireHeadZ x Gamescom 2024',
     title_en:      'WireHeadZ x Gamescom 2024',
-    img:           'site-assets-v2/images/events/gamescom-2024-1.jpg',
-    images:        ['site-assets-v2/images/events/gamescom-2024-1.jpg','site-assets-v2/images/events/gamescom-2024-2.jpg','site-assets-v2/images/events/gamescom-2024-3.jpg','site-assets-v2/images/events/gamescom-2024-4.jpg','site-assets-v2/images/events/gamescom-2024-5.jpg'],
+    img:           'assets/images/events/gamescom-2024-1.jpg',
+    images:        ['assets/images/events/gamescom-2024-1.jpg','assets/images/events/gamescom-2024-2.jpg','assets/images/events/gamescom-2024-3.jpg','assets/images/events/gamescom-2024-4.jpg','assets/images/events/gamescom-2024-5.jpg'],
     location_de:   'Koelnmesse, Köln',
     location_en:   'Koelnmesse, Cologne',
     categories:    [{de:'Messe', en:'Expo'}],
@@ -251,8 +251,8 @@ var EVENTS = [
     date_en:       '11.08.2024',
     title_de:      'FC24 Community Turnier',
     title_en:      'FC24 Community Tournament',
-    img:           'site-assets-v2/images/events/sommerkino-2024-1.jpg',
-    images:        ['site-assets-v2/images/events/sommerkino-2024-1.jpg','site-assets-v2/images/events/sommerkino-2024-2.jpg','site-assets-v2/images/events/sommerkino-2024-3.jpg','site-assets-v2/images/events/sommerkino-2024-4.jpg'],
+    img:           'assets/images/events/sommerkino-2024-1.jpg',
+    images:        ['assets/images/events/sommerkino-2024-1.jpg','assets/images/events/sommerkino-2024-2.jpg','assets/images/events/sommerkino-2024-3.jpg','assets/images/events/sommerkino-2024-4.jpg'],
     location_de:   'Espitas Chillybeach, Zwickau',
     location_en:   'Espitas Chillybeach, Zwickau',
     categories:    [{de:'Community', en:'Community'}, {de:'Turnier', en:'Tournament'}],
@@ -719,7 +719,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var pre = isSubpage ? '../' : '';
     var logoItems = PARTNERS.map(function (p) {
       // Strip liegt immer auf dunklem Hintergrund → immer p.logo (= dunkle/weiße Variante)
-      var imgs = '<img src="' + pre + 'site-assets-v2/logos/sponsors/' + p.logo + '" alt="' + p.alt + '" class="partner-logo" loading="lazy" />';
+      var imgs = '<img src="' + pre + 'assets/logos/sponsors/' + p.logo + '" alt="' + p.alt + '" class="partner-logo" loading="lazy" />';
       return '<a href="' + p.url + '" target="_blank" rel="noopener" class="partner-logo-wrap" aria-label="' + p.alt + '">' + imgs + '</a>';
     }).join('');
     // 4× Logos → garantiert genug Breite für jeden Viewport; -25% = genau 1 Set weit
@@ -740,7 +740,7 @@ document.addEventListener('DOMContentLoaded', () => {
       /* Brand */
       '<div>' +
         '<a href="' + pre + 'index.html">' +
-          '<img src="' + pre + 'site-assets-v2/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" class="footer__brand-logo" />' +
+          '<img src="' + pre + 'assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" class="footer__brand-logo" />' +
         '</a>' +
         '<p class="footer__claim" data-de="Gaming. eSport. Forschung. An der WHZ." data-en="Gaming. eSport. Research. At WHZ." data-ls-de="Wir spielen. Wir treiben eSport. Wir forschen. Wir sind an der Hochschule in Zwickau." data-ls-en="We play. We do eSport. We do research. We are at the university in Zwickau.">' +
           'Gaming. eSport. Forschung. An der WHZ.' +
@@ -749,7 +749,7 @@ document.addEventListener('DOMContentLoaded', () => {
           '<a href="https://www.instagram.com/whz_esports" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">' +
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>' +
           '</a>' +
-          '<a href="https://discord.gg/zs48PfpJJF" target="_blank" rel="noopener" class="footer__social-link" aria-label="Discord">' +
+          '<a href="https://discord.gg/jpEgusqb6N" target="_blank" rel="noopener" class="footer__social-link" aria-label="Discord">' +
             '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0 12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055 20.03 20.03 0 0 0 5.993 2.98.078.078 0 0 0 .084-.026c.462-.62.874-1.275 1.226-1.963.021-.04.001-.088-.041-.104a13.201 13.201 0 0 1-1.872-.878.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028 19.963 19.963 0 0 0 6.002-2.981.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028zM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38 0-1.312.956-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.956 2.38-2.157 2.38zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38 0-1.312.955-2.38 2.157-2.38 1.21 0 2.176 1.077 2.157 2.38 0 1.312-.946 2.38-2.157 2.38z"/></svg>' +
           '</a>' +
           '<a href="https://www.youtube.com/channel/UC2PGpb8SXPiudL2v7LtBuXw" target="_blank" rel="noopener" class="footer__social-link" aria-label="YouTube">' +
@@ -785,7 +785,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '<p class="footer__heading" data-de="Kontakt" data-en="Contact" data-ls-de="Kontakt" data-ls-en="Contact">Kontakt</p>' +
         '<ul class="footer__links">' +
           '<li><a href="mailto:esports@whz.de">esports@whz.de</a></li>' +
-          '<li><a href="https://discord.gg/zs48PfpJJF" target="_blank" rel="noopener" data-de="Discord beitreten" data-en="Join Discord" data-ls-de="Discord beitreten" data-ls-en="Join Discord">Discord beitreten</a></li>' +
+          '<li><a href="https://discord.gg/jpEgusqb6N" target="_blank" rel="noopener" data-de="Discord beitreten" data-en="Join Discord" data-ls-de="Discord beitreten" data-ls-en="Join Discord">Discord beitreten</a></li>' +
           '<li><a href="' + pre + 'kontakt.html" data-de="Kontaktformular" data-en="Contact Form" data-ls-de="Kontaktformular" data-ls-en="Contact Form">Kontaktformular</a></li>' +
         '</ul>' +
       '</nav>' +
@@ -813,8 +813,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* --- Events slide: 0 Events → entfernen | 1 → Einzelslide | n → Liste --- */
     (function () {
-      var evtSlide = document.querySelector('[data-slide="2"]');
-      var evtDot   = document.querySelector('.showcase__dot[data-target="2"]');
+      var eventBg = document.querySelector('.showcase__bg--event');
+      var evtSlide = eventBg ? eventBg.closest('.showcase__slide') : null;
+      var evtDot = null;
+      if (evtSlide) {
+        var eventIndex = Array.prototype.indexOf.call(evtSlide.parentNode.querySelectorAll('.showcase__slide'), evtSlide);
+        evtDot = document.querySelectorAll('.showcase__dot')[eventIndex];
+      }
       if (!evtSlide) return;
 
       /* Uhrzeit aus isoDate (z.B. ...T18:00) ziehen; Mitternacht = keine Zeit angegeben */
@@ -926,12 +931,7 @@ document.addEventListener('DOMContentLoaded', () => {
       dot.addEventListener('click', function () { goTo(parseInt(dot.getAttribute('data-target'), 10)); });
     });
 
-    /* --- Pause on hover --- */
     var section = document.getElementById('showcase');
-    if (section) {
-      section.addEventListener('mouseenter', function () { clearTimeout(timer); });
-      section.addEventListener('mouseleave', resetTimer);
-    }
 
     /* --- Swipe --- */
     var touchStartX = 0;
@@ -1659,38 +1659,16 @@ document.addEventListener('DOMContentLoaded', () => {
   (function () {
     /* Nur anzeigen wenn der Event-Slide noch existiert (sonst wurden Dots umnummeriert) */
     if (UPCOMING_EVENTS.length === 0) return;
-    var eventDot = document.querySelector('.showcase__dot[data-target="2"]');
+    var eventBg = document.querySelector('.showcase__bg--event');
+    var eventSlide = eventBg ? eventBg.closest('.showcase__slide') : null;
+    var eventIndex = eventSlide ? Array.prototype.indexOf.call(eventSlide.parentNode.querySelectorAll('.showcase__slide'), eventSlide) : -1;
+    var eventDot = eventIndex >= 0 ? document.querySelectorAll('.showcase__dot')[eventIndex] : null;
     if (!eventDot) return;
     var badge = document.createElement('span');
     badge.className = 'showcase__dot-badge';
     badge.setAttribute('aria-hidden', 'true');
     eventDot.style.position = 'relative';
     eventDot.appendChild(badge);
-  }());
-
-  /* ---- Discord Copy Button (mitmachen.html) ---- */
-  (function () {
-    if (!navigator.clipboard) return;
-    var target = document.querySelector('.discord-feature__cta-card a[href*="discord.gg"]');
-    if (!target) return;
-    var copyBtn = document.createElement('button');
-    copyBtn.className = 'btn btn--ghost discord-copy-btn';
-    copyBtn.setAttribute('aria-label', 'Discord-Einladungslink kopieren');
-    copyBtn.innerHTML =
-      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>' +
-      '<span>' + (currentLang === 'en' ? 'Copy link' : 'Link kopieren') + '</span>';
-    target.insertAdjacentElement('afterend', copyBtn);
-    copyBtn.addEventListener('click', function () {
-      navigator.clipboard.writeText('https://discord.gg/zs48PfpJJF').then(function () {
-        var span = copyBtn.querySelector('span');
-        span.textContent = currentLang === 'en' ? 'Copied!' : 'Kopiert!';
-        copyBtn.classList.add('discord-copy-btn--success');
-        setTimeout(function () {
-          span.textContent = currentLang === 'en' ? 'Copy link' : 'Link kopieren';
-          copyBtn.classList.remove('discord-copy-btn--success');
-        }, 2000);
-      });
-    });
   }());
 
   /* ---- Partner Card: "Website besuchen" Link ---- */
@@ -1739,14 +1717,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     update();
     window.addEventListener('scroll', update, { passive: true });
-  }());
-
-  /* ---- Showcase pause class for progress bar ---- */
-  (function () {
-    var section = document.getElementById('showcase');
-    if (!section) return;
-    section.addEventListener('mouseenter', function () { section.classList.add('showcase--paused'); });
-    section.addEventListener('mouseleave', function () { section.classList.remove('showcase--paused'); });
   }());
 
   /* ---- Dynamische Galerien — jede [data-gallery] liest images.json im Ordner ----
@@ -1920,6 +1890,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }());
 
+  /* ---- Orga-Teams: Detailansicht für die ausgewählte Card ---- */
+  (function () {
+    var section = document.getElementById('orga-teams');
+    var preview = document.getElementById('orga-team-preview');
+    if (!section || !preview) return;
+
+    var cards = section.querySelectorAll('.role-card');
+    var iconWrap = preview.querySelector('.orga-team-preview__icon');
+    var label = preview.querySelector('.orga-team-preview__label');
+    var title = preview.querySelector('h3');
+    var hint = preview.querySelector('.orga-team-preview__hint');
+    var list = preview.querySelector('.join-path-card__list');
+    var activeCard = null;
+
+    function show(card) {
+      activeCard = card;
+      cards.forEach(function (item) {
+        var selected = item === card;
+        item.classList.toggle('is-selected', selected);
+        item.setAttribute('aria-pressed', selected ? 'true' : 'false');
+      });
+
+      var icon = card.querySelector('.role-card__icon');
+      var cardTitle = card.querySelector('h3');
+      var cardList = card.querySelector('.join-path-card__list');
+      if (icon) {
+        var previewIcon = icon.cloneNode(true);
+        previewIcon.classList.remove('role-card__icon');
+        previewIcon.classList.add('orga-team-preview__glyph');
+        iconWrap.innerHTML = '';
+        iconWrap.appendChild(previewIcon);
+      }
+      if (cardTitle) title.textContent = cardTitle.textContent;
+      label.textContent = currentLang === 'en' ? 'Team in focus' : 'Team im Fokus';
+      hint.hidden = true;
+      list.hidden = false;
+      list.innerHTML = cardList ? cardList.innerHTML : '';
+    }
+
+    cards.forEach(function (card) {
+      card.addEventListener('click', function () { show(card); });
+      card.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(card); }
+      });
+    });
+
+    [langToggle, langToggleMobile].forEach(function (toggle) {
+      if (toggle) toggle.addEventListener('click', function () {
+        if (activeCard) requestAnimationFrame(function () { show(activeCard); });
+      });
+    });
+  }());
+
   /* ---- Sanfter Scroll-Parallax auf Subpage-Hero-Bildern (Tier 3) ----
      Bewusst NICHT auf der Index-Showcase: die hat bereits Slide- +
      Zoom-Animation; Parallax obendrauf würde unruhig wirken. */
@@ -1943,6 +1966,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
     window.addEventListener('resize', update, { passive: true });
     update();
+  }());
+
+  /* ---- Ersti@GAMeS Hub: Einschreibung vollständig in den Viewport scrollen ---- */
+  (function () {
+    var trigger = document.querySelector('[data-scroll-to-signup]');
+    var target = document.getElementById('orga-team-signup');
+    if (!trigger || !target) return;
+
+    trigger.addEventListener('click', function (event) {
+      event.preventDefault();
+      var targetHeight = target.offsetHeight;
+      var targetTop = window.scrollY + target.getBoundingClientRect().top;
+      var bottomOffset = Math.max(32, Math.round(window.innerHeight * 0.08));
+      var destination = targetTop - (window.innerHeight - targetHeight - bottomOffset);
+
+      window.scrollTo({ top: Math.max(0, destination), behavior: 'smooth' });
+      window.history.replaceState(null, '', '#orga-team-signup');
+    });
   }());
 
   /* ---- Interaktiver Cursor-Spot: Raster reagiert auf die Maus ---- */

@@ -1,3 +1,23 @@
 .DS_Store
 _preview/
 .vercel
+
+# Zugangsdaten und lokale Umgebungsvariablen
+.env
+.env.*
+!.env.example
+
+# Logs, Backups und temporäre Dateien
+*.log
+*.tmp
+*.bak
+*.backup
+*.old
+*.orig
+*.swp
+*.swo
+*~
+
+# Lokale Editor-Konfigurationen
+.idea/
+.vscode/

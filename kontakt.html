@@ -9,24 +9,24 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Kontakt – WHZ GAMeS Hub" />
   <meta property="og:description" content="Schreib uns: Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage." />
-  <meta property="og:image" content="https://whzesports.de/site-assets-v2/images/kontakt/hero.jpg" />
+  <meta property="og:image" content="https://whzesports.de/assets/images/kontakt/hero.jpg" />
   <meta property="og:image:width" content="1672" />
   <meta property="og:image:height" content="941" />
   <meta property="og:site_name" content="WHZ GAMeS Hub" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Kontakt – WHZ GAMeS Hub" />
   <meta name="twitter:description" content="Schreib uns: Bewerbung als Spieler, Vereinsmitgliedschaft, Partnerschaft oder allgemeine Anfrage." />
-  <meta name="twitter:image" content="https://whzesports.de/site-assets-v2/images/kontakt/hero.jpg" />
+  <meta name="twitter:image" content="https://whzesports.de/assets/images/kontakt/hero.jpg" />
 
   <link rel="canonical" href="https://whzesports.de/kontakt.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/lucide@1.50.0/dist/umd/lucide.js" integrity="sha256-F3iJPjsptYxkULp6pDthIlDUlhwH0xCi9FQDFYrlMNs=" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles/tokens.css?v=8" />
   <link rel="stylesheet" href="styles/components.css?v=8" />
-  <link rel="stylesheet" href="styles/layout.css?v=11" />
+  <link rel="stylesheet" href="styles/layout.css?v=16" />
 </head>
 <body>
 
@@ -37,7 +37,7 @@
     <div class="nav__inner">
 
       <a href="index.html" class="nav__logo" aria-label="WHZ GAMeS Hub – Startseite">
-        <img src="site-assets-v2/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
+        <img src="assets/logos/logo-games-hub.png" alt="WHZ GAMeS Hub" />
       </a>
 
       <nav aria-label="Hauptnavigation">
@@ -72,7 +72,7 @@
          HERO
          ============================================ -->
     <section class="page-hero page-hero--md" aria-label="Kontakt">
-      <img class="page-hero__bg" src="site-assets-v2/images/kontakt/hero.jpg" alt="" loading="eager">
+      <img class="page-hero__bg" src="assets/images/kontakt/hero.jpg" alt="" loading="eager">
       <div class="container page-hero__inner">
         <span class="page-hero__label"
               data-de="Schreib uns" data-en="Contact Us">Schreib uns</span>
@@ -113,6 +113,10 @@
             <button type="button" class="form-category-btn" data-typ="recruiting"
                     aria-pressed="false"
                     data-de="Recruiting / Talentgame" data-en="Recruiting / Talentgame">Recruiting / Talentgame</button>
+            <button type="button" class="form-category-btn" data-typ="orga"
+                    aria-pressed="false"
+                    data-de="Einschreibung Orga-Team" data-en="Organising Team Sign-up"
+                    data-ls-de="Orga-Team einschreiben" data-ls-en="Organising Team Sign-up">Einschreibung Orga-Team</button>
             <button type="button" class="form-category-btn" data-typ="allgemein"
                     aria-pressed="false"
                     data-de="Allgemeine Anfrage" data-en="General Enquiry">Allgemeine Anfrage</button>
@@ -456,6 +460,78 @@
             </div>
 
 
+            <!-- ---- Felder: Einschreibung Orga-Team ---- -->
+            <div class="form-fields-group" data-typ="orga" hidden>
+              <h3 class="form-section__heading"
+                  data-de="Einschreibung Orga-Team"
+                  data-en="Organising Team Sign-up"
+                  data-ls-de="Einschreibung Orga-Team"
+                  data-ls-en="Organising Team Sign-up">Einschreibung Orga-Team</h3>
+              <div class="form-fields-inner">
+
+                <div class="form-group">
+                  <label for="orga-team"><span data-de="Orga-Team" data-en="Organising Team" data-ls-de="Orga-Team" data-ls-en="Organising Team">Orga-Team</span><span class="form-required">*</span></label>
+                  <select id="orga-team" name="orga-team">
+                    <option value="" data-de="Bitte wählen ..." data-en="Please select ..." data-ls-de="Bitte wählen ..." data-ls-en="Please select ...">Bitte wählen ...</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Eventmanagement" data-de="Eventmanagement" data-en="Event Management" data-ls-de="Eventmanagement" data-ls-en="Event Management">Eventmanagement</option>
+                    <option value="IT">IT</option>
+                    <option value="eSport" data-de="eSport" data-en="eSports" data-ls-de="eSport" data-ls-en="eSports">eSport</option>
+                  </select>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="orga-vorname"><span data-de="Vorname" data-en="First Name" data-ls-de="Vorname" data-ls-en="First Name">Vorname</span><span class="form-required">*</span></label>
+                    <input type="text" id="orga-vorname" name="vorname" autocomplete="given-name"
+                           data-placeholder-de="Dein Vorname" data-placeholder-en="Your first name" placeholder="Dein Vorname" />
+                  </div>
+                  <div class="form-group">
+                    <label for="orga-nachname"><span data-de="Nachname" data-en="Last Name" data-ls-de="Nachname" data-ls-en="Last Name">Nachname</span><span class="form-required">*</span></label>
+                    <input type="text" id="orga-nachname" name="nachname" autocomplete="family-name"
+                           data-placeholder-de="Dein Nachname" data-placeholder-en="Your last name" placeholder="Dein Nachname" />
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="orga-studiengang"><span data-de="Studiengang" data-en="Degree Programme" data-ls-de="Studiengang" data-ls-en="Degree Programme">Studiengang</span><span class="form-required">*</span></label>
+                    <input type="text" id="orga-studiengang" name="studiengang" autocomplete="organization-title"
+                           data-placeholder-de="z. B. Angewandte Informatik" data-placeholder-en="e.g. Applied Computer Science" placeholder="z. B. Angewandte Informatik" />
+                  </div>
+                  <div class="form-group">
+                    <label for="orga-email"><span data-de="Uni-Mail" data-en="University Email" data-ls-de="Uni-Mail" data-ls-en="University Email">Uni-Mail</span><span class="form-required">*</span></label>
+                    <input type="email" id="orga-email" name="email" autocomplete="email"
+                           data-placeholder-de="vorname.nachname@fh-zwickau.de" data-placeholder-en="name@fh-zwickau.de" placeholder="vorname.nachname@fh-zwickau.de" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="orga-whatsapp"><span data-de="WhatsApp-Nummer (WHZ GAMeS Hub Community)" data-en="WhatsApp Number (WHZ GAMeS Hub Community)" data-ls-de="WhatsApp-Nummer (GAMeS Hub Community)" data-ls-en="WhatsApp Number (GAMeS Hub Community)">WhatsApp-Nummer (WHZ GAMeS Hub Community)</span><span class="form-required">*</span></label>
+                  <input type="tel" id="orga-whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel"
+                         data-placeholder-de="z. B. +49 170 1234567" data-placeholder-en="e.g. +49 170 1234567" placeholder="z. B. +49 170 1234567" />
+                </div>
+
+                <div class="form-group">
+                  <label for="orga-ueber-mich"><span data-de="Über mich" data-en="About Me" data-ls-de="Über mich" data-ls-en="About Me">Über mich</span><span class="form-optional" data-de="(optional)" data-en="(optional)" data-ls-de="(optional)" data-ls-en="(optional)">(optional)</span></label>
+                  <textarea id="orga-ueber-mich" name="ueber-mich"
+                            data-placeholder-de="Erzähl uns kurz, was dich interessiert und was du gern einbringen möchtest."
+                            data-placeholder-en="Briefly tell us what interests you and what you would like to contribute."
+                            placeholder="Erzähl uns kurz, was dich interessiert und was du gern einbringen möchtest."></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="orga-bemerkungen"><span data-de="Bemerkungen" data-en="Notes" data-ls-de="Bemerkungen" data-ls-en="Notes">Bemerkungen</span><span class="form-optional" data-de="(optional)" data-en="(optional)" data-ls-de="(optional)" data-ls-en="(optional)">(optional)</span></label>
+                  <textarea id="orga-bemerkungen" name="bemerkungen" style="min-height:80px;"
+                            data-placeholder-de="Weitere Informationen, Fragen oder Anmerkungen"
+                            data-placeholder-en="Additional information, questions or comments"
+                            placeholder="Weitere Informationen, Fragen oder Anmerkungen"></textarea>
+                </div>
+
+              </div>
+            </div>
+
+
             <!-- ---- Felder: Allgemeine Anfrage ---- -->
             <div class="form-fields-group" data-typ="allgemein" hidden>
               <h3 class="form-section__heading"
@@ -555,7 +631,7 @@
     <div class="footer__bottom" data-footer-bottom></div>
   </footer>
 
-  <script src="main.js?v=15"></script>
+  <script src="main.js?v=20"></script>
 
   <!-- ============================================
        KONTAKT-FORMULAR LOGIK
@@ -588,7 +664,7 @@
       'neu':                'neu'
     };
 
-    var validTypes = ['spieler', 'mitglied', 'partner', 'recruiting', 'allgemein'];
+    var validTypes = ['spieler', 'mitglied', 'partner', 'recruiting', 'orga', 'allgemein'];
 
     // Mapping: URL-Wert -> Select-Option-Wert
     var artMap = {
@@ -855,6 +931,39 @@
           org
         ].join('\n');
 
+      } else if (typ === 'orga') {
+        var team       = val('orga-team');
+        var vorname    = val('orga-vorname');
+        var nachname   = val('orga-nachname');
+        var name       = [vorname, nachname].filter(Boolean).join(' ');
+        var studiengang = val('orga-studiengang');
+        var email      = val('orga-email');
+        var whatsapp   = val('orga-whatsapp');
+        var info       = val('orga-ueber-mich');
+        var bem        = val('orga-bemerkungen');
+
+        subject = 'Einschreibung Orga-Team – ' + team + ' – ' + name;
+        body = [
+          'Hallo GAMeS-Hub-Team,',
+          '',
+          'ich möchte mich für ein Orga-Team im GAMeS Hub einschreiben.',
+          '',
+          '—— Meine Angaben ——',
+          block([
+            line('Orga-Team', team),
+            line('Vorname', vorname),
+            line('Nachname', nachname),
+            line('Studiengang', studiengang),
+            line('Uni-Mail', email),
+            line('WhatsApp-Nummer (WHZ GAMeS Hub Community)', whatsapp)
+          ]),
+          info ? '\nÜber mich:\n' + info : '',
+          bem ? '\n—— Bemerkungen ——\n' + bem : '',
+          '',
+          'Viele Grüße',
+          name
+        ].join('\n');
+
       } else { // allgemein
         var name      = val('allgemein-name');
         var email     = val('allgemein-email');
@@ -891,22 +1000,128 @@
       mitglied:   ['mitglied-name',   'mitglied-email'],
       partner:    ['partner-name',    'partner-email',    'partner-org'],
       recruiting: ['recruiting-name', 'recruiting-email', 'recruiting-org'],
+      orga:       ['orga-team', 'orga-vorname', 'orga-nachname', 'orga-studiengang', 'orga-email', 'orga-whatsapp'],
       allgemein:  ['allgemein-name',  'allgemein-email',  'allgemein-nachricht']
     };
 
+    var nameFields = [
+      'spieler-name', 'mitglied-name', 'partner-name', 'recruiting-name',
+      'allgemein-name', 'orga-vorname', 'orga-nachname'
+    ];
+
+    function validationText(type) {
+      var en = document.documentElement.lang === 'en';
+      var texts = {
+        required: en ? 'Please fill in this field.' : 'Bitte fülle dieses Feld aus.',
+        name:     en ? 'Please enter a name without numbers.' : 'Bitte gib einen Namen ohne Zahlen ein.',
+        email:    en ? 'Please enter a valid email address.' : 'Bitte gib eine gültige E-Mail-Adresse ein.',
+        whzEmail: en ? 'Please use your WHZ email in the format first.last.abc@whz.de.' : 'Bitte nutze deine WHZ-Mail im Format vorname.nachname.abc@whz.de.',
+        phone:    en ? 'Please enter a valid phone number.' : 'Bitte gib eine gültige Telefonnummer ein.'
+      };
+      return texts[type];
+    }
+
+    function clearFieldError(el) {
+      if (!el) return;
+      var group = el.closest('.form-group');
+      if (group) {
+        group.classList.remove('has-error');
+        var error = group.querySelector('.form-error');
+        if (error) error.remove();
+      }
+      el.removeAttribute('aria-invalid');
+      el.removeAttribute('aria-errormessage');
+    }
+
+    function setFieldError(el, type) {
+      if (!el) return;
+      clearFieldError(el);
+      var group = el.closest('.form-group');
+      if (!group) return;
+      var error = document.createElement('p');
+      error.className = 'form-error';
+      error.id = el.id + '-error';
+      error.setAttribute('role', 'alert');
+      error.textContent = validationText(type);
+      group.classList.add('has-error');
+      group.appendChild(error);
+      el.setAttribute('aria-invalid', 'true');
+      el.setAttribute('aria-errormessage', error.id);
+    }
+
+    function isActiveField(el) {
+      var fieldsGroup = el && el.closest('.form-fields-group');
+      return !!fieldsGroup && !fieldsGroup.hidden;
+    }
+
+    function isValidName(value) {
+      return /^[A-Za-zÀ-ÖØ-öø-ÿĀ-ž'’.-]+(?:[ -][A-Za-zÀ-ÖØ-öø-ÿĀ-ž'’.-]+)*$/.test(value);
+    }
+
+    function isValidWhzEmail(value) {
+      return /^[a-z]+(?:-[a-z]+)?\.[a-z]+(?:-[a-z]+)?\.[a-z]{3}@whz\.de$/i.test(value);
+    }
+
+    function normalisePhone(value) {
+      var compact = value.trim().replace(/[\s()./-]/g, '');
+      if (!compact || /[^\d+]/.test(compact) || (compact.match(/\+/g) || []).length > 1 || compact.indexOf('+') > 0) return null;
+
+      if (compact.indexOf('0049') === 0) compact = '+49' + compact.slice(4);
+      if (compact.indexOf('+49') === 0) compact = '+49' + compact.slice(3).replace(/^0+/, '');
+      if (/^49(?:0?1[5-7]\d{7,10})$/.test(compact)) compact = '+49' + compact.slice(2).replace(/^0+/, '');
+
+      if (compact.indexOf('+49') === 0) return /^\+491[5-7]\d{7,10}$/.test(compact) ? compact : null;
+      if (/^01[5-7]\d{7,10}$/.test(compact)) return compact;
+      if (/^\+[1-9]\d{7,14}$/.test(compact)) return compact;
+      return null;
+    }
+
     function validate(typ) {
-      document.querySelectorAll('.form-group.has-error').forEach(function (g) {
-        g.classList.remove('has-error');
+      document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(function (el) {
+        clearFieldError(el);
       });
       var fields = required[typ] || [];
       var ok = true;
       fields.forEach(function (id) {
         var el = document.getElementById(id);
         if (el && !el.value.trim()) {
-          el.closest('.form-group').classList.add('has-error');
+          setFieldError(el, 'required');
           ok = false;
         }
       });
+
+      nameFields.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (isActiveField(el) && el.value.trim() && !isValidName(el.value.trim())) {
+          setFieldError(el, 'name');
+          ok = false;
+        }
+      });
+
+      document.querySelectorAll('.form-group input[type="email"]').forEach(function (el) {
+        if (isActiveField(el) && el.value.trim() && !el.validity.valid) {
+          setFieldError(el, 'email');
+          ok = false;
+        }
+      });
+
+      if (typ === 'orga') {
+        var whzEmail = document.getElementById('orga-email');
+        var whatsapp = document.getElementById('orga-whatsapp');
+        if (whzEmail && whzEmail.value.trim() && !isValidWhzEmail(whzEmail.value.trim())) {
+          setFieldError(whzEmail, 'whzEmail');
+          ok = false;
+        }
+        if (whatsapp && whatsapp.value.trim()) {
+          var normalizedPhone = normalisePhone(whatsapp.value);
+          if (!normalizedPhone) {
+            setFieldError(whatsapp, 'phone');
+            ok = false;
+          } else {
+            whatsapp.value = normalizedPhone;
+          }
+        }
+      }
 
       // Zusatz: bei "Neues Spiel" das Freitextfeld prüfen
       if (typ === 'spieler') {
@@ -914,7 +1129,7 @@
         if (sp && sp.value === 'neu') {
           var neu = document.getElementById('spieler-spiel-neu');
           if (neu && !neu.value.trim()) {
-            neu.closest('.form-group').classList.add('has-error');
+            setFieldError(neu, 'required');
             ok = false;
           }
         }
@@ -927,13 +1142,22 @@
       return ok;
     }
 
-    // Fehler bei Eingabe entfernen
+    // Fehler bei Eingabe entfernen; Ziffern sind in Namensfeldern nicht erlaubt.
     document.querySelectorAll('.form-group input, .form-group select, .form-group textarea').forEach(function (el) {
       el.addEventListener('input', function () {
-        var grp = el.closest('.form-group');
-        if (grp) grp.classList.remove('has-error');
+        if (nameFields.indexOf(el.id) !== -1) el.value = el.value.replace(/[0-9]/g, '');
+        clearFieldError(el);
       });
     });
+
+    var whatsappField = document.getElementById('orga-whatsapp');
+    if (whatsappField) {
+      whatsappField.addEventListener('blur', function () {
+        if (!this.value.trim()) return;
+        var normalizedPhone = normalisePhone(this.value);
+        if (normalizedPhone) this.value = normalizedPhone;
+      });
+    }
 
     // ---- Absenden ----
     document.getElementById('kontakt-form').addEventListener('submit', function (e) {

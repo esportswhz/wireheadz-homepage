@@ -416,10 +416,6 @@ html[lang="de"] .lang-en { display: none; }
   animation: showcaseProgress 6s linear forwards;
   z-index: 10;
 }
-.showcase--paused .showcase__slide--active::after {
-  animation-play-state: paused;
-}
-
 /* Dots */
 .showcase__dots {
   position: absolute;
@@ -2917,7 +2913,7 @@ html[lang="de"] .lang-en { display: none; }
 /* ---- WireHeadZ Teambild rechts im Hero ---- */
 .wh-hero--wh {
   background:
-    url('../site-assets-v2/images/wireheadz/hero.jpg') right center / auto 100% no-repeat,
+    url('../assets/images/wireheadz/hero.jpg') right center / auto 100% no-repeat,
     linear-gradient(to right, var(--color-wireheadz) 0%, #000 55%);
   min-height: 620px;
 }
@@ -2927,7 +2923,7 @@ html[lang="de"] .lang-en { display: none; }
 /* ---- Wireheadz Verein: Vereinsbild rechts im Hero ---- */
 .wh-hero--ev {
   background:
-    url('../site-assets-v2/images/wireheadz-ev/hero.jpg') right center / auto 100% no-repeat,
+    url('../assets/images/wireheadz-ev/hero.jpg') right center / auto 100% no-repeat,
     linear-gradient(to right, var(--color-ev) 0%, #0e0a1a 55%);
   min-height: 620px;
 }
@@ -4486,6 +4482,13 @@ html[lang="de"] .lang-en { display: none; }
   color: #dc2626;
 }
 
+.form-error {
+  margin: 0;
+  color: #dc2626;
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 110px;
@@ -4588,15 +4591,19 @@ html[lang="de"] .lang-en { display: none; }
 /* ---- Discord Feature ---- */
 .discord-feature {
   display: grid;
-  grid-template-columns: 1fr 380px;
+  grid-template-columns: minmax(0, 1fr) minmax(560px, 0.92fr);
   gap: var(--space-3xl);
-  align-items: start;
+  align-items: center;
 }
 
 .discord-feature__text {
   display: flex;
   flex-direction: column;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+}
+
+.discord-feature__text .section-header {
+  margin-bottom: 0;
 }
 
 .discord-feature__desc {
@@ -4605,52 +4612,60 @@ html[lang="de"] .lang-en { display: none; }
   line-height: var(--leading-relaxed);
 }
 
-.discord-feature__channels {
+.discord-feature__cta-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-xs);
-}
-
-.discord-channel-tag {
-  display: flex;
-  align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-xs) var(--space-sm);
-  background: var(--color-surface);
-  border-radius: var(--radius-sm);
-  font-size: var(--text-sm);
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
-}
-
-.discord-channel-tag__hash {
-  color: var(--color-text-muted);
-  font-weight: 700;
-  font-size: 0.85em;
+  grid-template-columns: repeat(2, 250px);
+  justify-content: center;
+  gap: var(--space-md);
 }
 
 .discord-feature__cta-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background: #5865F2;
   border-radius: var(--radius-xl);
-  padding: var(--space-2xl) var(--space-xl);
+  padding: var(--space-lg);
   text-align: center;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: var(--space-md);
-  position: sticky;
-  top: calc(72px + var(--space-lg));
+}
+
+.discord-feature__cta-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(115deg, transparent 25%, rgba(255, 255, 255, 0.16) 50%, transparent 75%);
+  transform: translateX(-135%);
+  transition: transform 700ms var(--ease-out);
+  pointer-events: none;
+}
+
+.discord-feature__cta-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.discord-feature__cta-card:hover::after {
+  transform: translateX(135%);
+}
+
+.discord-feature__cta-card--whatsapp {
+  background: #25d366;
 }
 
 .discord-feature__cta-icon {
-  width: 56px;
-  height: 56px;
+  width: 48px;
+  height: 48px;
   color: rgba(255,255,255,0.9);
 }
 
 .discord-feature__cta-title {
-  font-size: var(--text-h3);
+  font-size: var(--text-h4);
   font-weight: 700;
   color: #fff;
   margin: 0;
@@ -4658,13 +4673,17 @@ html[lang="de"] .lang-en { display: none; }
 }
 
 .discord-feature__cta-stat {
-  font-size: var(--text-body);
+  font-size: var(--text-small);
   color: rgba(255,255,255,0.75);
   margin: 0;
 }
 
 .discord-feature__cta-card .btn--white {
+  align-self: stretch;
   width: 100%;
+  min-width: 0;
+  padding-inline: var(--space-sm);
+  font-size: var(--text-small);
   justify-content: center;
 }
 
@@ -4987,19 +5006,557 @@ html[lang="de"] .lang-en { display: none; }
   background: rgba(0,0,0,0.25);
 }
 
+/* ---- Ersti@GAMeS Hub ---- */
+.ersti-welcome {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  background: var(--color-ui-primary);
+}
+
+.ersti-welcome__bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ersti-welcome::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.8) 48%, rgba(15, 23, 42, 0.22) 100%);
+}
+
+.ersti-welcome__content {
+  max-width: 760px;
+}
+
+.ersti-welcome__label {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+  padding: 5px 10px;
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: var(--radius-full);
+  color: rgba(255,255,255,0.92);
+  font-size: var(--text-label);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ersti-welcome__title {
+  margin: 0 0 var(--space-md);
+  color: #fff;
+  font-size: clamp(2.75rem, 5.25vw, 4.75rem);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+}
+
+.ersti-welcome__text {
+  max-width: 700px;
+  margin: 0 0 var(--space-lg);
+  color: rgba(255,255,255,0.88);
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.ersti-welcome__highlights {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.ersti-welcome__highlights span {
+  padding: 8px 12px;
+  border: 1px solid rgba(255,255,255,0.22);
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: var(--text-body);
+  font-weight: var(--weight-medium);
+  text-align: center;
+}
+
+.ersti-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 0.65fr) minmax(0, 1fr);
+  gap: var(--space-2xl);
+  align-items: center;
+  max-width: 1040px;
+  margin: var(--space-2xl) auto 0;
+}
+
+.ersti-opening__flyer img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.ersti-opening__content h3,
+.ersti-instagram h3 {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text);
+  font-size: var(--text-h2);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-snug);
+}
+
+.ersti-opening__text {
+  margin: 0 0 var(--space-lg);
+  color: var(--color-text-secondary);
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.ersti-opening__details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.ersti-opening__details p {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--text-body);
+  font-weight: var(--weight-semibold);
+}
+
+.ersti-opening__details i {
+  width: 20px;
+  height: 20px;
+  color: var(--color-wireheadz);
+  flex-shrink: 0;
+}
+
+.ersti-instagram {
+  max-width: 560px;
+  margin: var(--space-2xl) auto 0;
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.ersti-instagram .section-header {
+  margin-bottom: var(--space-lg);
+}
+
+.ersti-instagram h3 {
+  font-size: var(--text-h3);
+}
+
+.ersti-instagram__embed {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ersti-instagram__embed .instagram-media {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 540px !important;
+  margin: 0 auto !important;
+}
+
+.ersti-instagram__fallback {
+  margin: var(--space-md) 0 0;
+  text-align: center;
+}
+
+.ersti-hub-usage {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.ersti-hub-usage .section-header {
+  margin-bottom: var(--space-lg);
+}
+
+.ersti-hub-usage .section-header h3 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-snug);
+}
+
+.ersti-hub-usage__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+.ersti-hub-hours {
+  justify-content: center;
+  background: var(--color-surface);
+}
+
+.ersti-hub-hours__time {
+  margin: 0;
+  color: var(--color-wireheadz);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+}
+
+.ersti-hub-rules .join-path-card__list li {
+  font-size: var(--text-small);
+  line-height: var(--leading-relaxed);
+}
+
+.ersti-hub-rules__legal {
+  margin: var(--space-md) 0 0;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-secondary);
+  font-size: var(--text-small);
+  line-height: var(--leading-relaxed);
+}
+
+.community-bridge {
+  padding: var(--space-xl) 0;
+  text-align: center;
+}
+
+.community-bridge .section-label {
+  margin-bottom: var(--space-xs);
+}
+
+.community-bridge h2 {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-text);
+  font-size: var(--text-h2);
+  font-weight: var(--weight-bold);
+}
+
+.community-bridge p:last-child {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  font-size: var(--text-body-lg);
+}
+
+.ersti-hub-rules__link {
+  color: var(--color-wireheadz);
+  font-size: var(--text-small);
+  font-weight: var(--weight-semibold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ersti-hub-rules__link:hover {
+  color: var(--color-wireheadz-hover);
+}
+
+#orga-teams .roles-grid {
+  gap: var(--space-lg);
+  margin-bottom: 0;
+}
+
+#orga-teams .role-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: 210px;
+  padding: var(--space-xl) var(--space-lg);
+  gap: var(--space-md);
+  border-top: 3px solid var(--color-wireheadz);
+  cursor: pointer;
+  transition: transform var(--duration-base) var(--ease-out), box-shadow var(--duration-base) var(--ease-out), border-color var(--duration-base) var(--ease-out);
+}
+
+#orga-teams .role-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  background: radial-gradient(circle at 100% 0, rgba(215, 38, 56, 0.18), transparent 58%);
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+#orga-teams .role-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+#orga-teams .role-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+#orga-teams .role-card:focus-visible {
+  outline: 3px solid rgba(215, 38, 56, 0.52);
+  outline-offset: 4px;
+}
+
+#orga-teams .role-card:hover::before {
+  opacity: 0.42;
+}
+
+#orga-teams .role-card.is-selected {
+  transform: translateY(-6px);
+  border-top-color: var(--color-wireheadz-hover);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.2);
+}
+
+#orga-teams .role-card.is-selected::before {
+  opacity: 1;
+}
+
+#orga-teams .role-card__icon {
+  display: block;
+  box-sizing: content-box;
+  padding: 10px;
+  border: 1px solid rgba(215, 38, 56, 0.28);
+  border-radius: var(--radius-md);
+  background: rgba(215, 38, 56, 0.1);
+  transition: transform var(--duration-base) var(--ease-out), background var(--duration-base) var(--ease-out), color var(--duration-base) var(--ease-out);
+}
+
+#orga-teams .role-card:hover .role-card__icon {
+  transform: translateY(-1px);
+}
+
+#orga-teams .role-card.is-selected .role-card__icon {
+  transform: translateY(-2px);
+  background: var(--color-wireheadz);
+  color: #fff;
+}
+
+#orga-teams .role-card h3 {
+  font-size: var(--text-h4);
+}
+
+#orga-teams .role-card__hint {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-small);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+#orga-teams .join-path-card__list li {
+  font-size: var(--text-body);
+}
+
+#orga-teams .role-card .join-path-card__list {
+  display: none;
+}
+
+.orga-team-preview {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: var(--space-lg);
+  align-items: start;
+  margin-top: var(--space-lg);
+  padding: var(--space-xl);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--color-surface), var(--color-hub-wireheadz-bg));
+  box-shadow: var(--shadow-sm);
+}
+
+.orga-team-preview__icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-lg);
+  background: var(--color-wireheadz);
+  color: #fff;
+}
+
+.orga-team-preview__glyph {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: currentColor;
+}
+
+.orga-team-preview__content h3 {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-text);
+  font-size: var(--text-h3);
+  font-weight: var(--weight-bold);
+}
+
+.orga-team-preview__label {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-wireheadz);
+  font-size: var(--text-label);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.orga-team-preview__hint {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-body);
+}
+
+.orga-team-preview .join-path-card__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--space-xl);
+  margin-top: var(--space-md);
+}
+
+.orga-team-preview .join-path-card__list li {
+  padding-block: var(--space-sm);
+}
+
+.orga-team-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+  text-align: center;
+  scroll-margin-top: calc(var(--nav-h, 64px) + var(--space-xl));
+}
+
+.orga-team-cta p {
+  max-width: 560px;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: var(--text-body);
+}
+
+.orga-team-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+}
+
+.orga-team-cta__actions .btn {
+  min-width: min(100%, 280px);
+  min-height: 62px;
+  padding-inline: var(--space-xl);
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-bold);
+  justify-content: center;
+}
+
+.orga-team-cta__actions .btn--primary {
+  border-color: var(--color-wireheadz);
+  background: linear-gradient(135deg, var(--color-wireheadz), var(--color-wireheadz-hover));
+  box-shadow: 0 12px 28px rgba(215, 38, 56, 0.34);
+}
+
+.orga-team-cta__actions .btn--primary:hover {
+  border-color: var(--color-wireheadz-hover);
+  background: linear-gradient(135deg, var(--color-wireheadz-hover), var(--color-wireheadz));
+  box-shadow: 0 16px 34px rgba(215, 38, 56, 0.42);
+  transform: translateY(-3px);
+}
+
 /* ---- Mitmachen Responsive ---- */
 @media (max-width: 1023px) {
   .discord-feature { grid-template-columns: 1fr; }
-  .discord-feature__cta-card { position: static; max-width: 480px; }
+  .discord-feature__cta-cards { max-width: 720px; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  .ersti-welcome { min-height: 440px; padding: var(--space-xl); }
+  .ersti-opening { gap: var(--space-xl); }
+  .orga-team-cta__actions { width: 100%; }
+
+  /* Auf Touch-Geräten sind die Details direkt in jeder Card sichtbar. */
+  .orga-team-preview { display: none; }
+  #orga-teams .role-card { cursor: default; }
+  #orga-teams .role-card .join-path-card__list { display: flex; }
+}
+
+@media (max-width: 760px) {
+  .ersti-hub-usage__grid { grid-template-columns: 1fr; }
+
+  #orga-teams .roles-grid {
+    display: flex;
+    gap: var(--space-md);
+    margin: 0 calc(-1 * var(--space-xs));
+    padding: var(--space-xs) var(--space-xs) var(--space-md);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--space-xs);
+    scrollbar-width: thin;
+  }
+
+  #orga-teams .role-card {
+    flex: 0 0 min(84vw, 360px);
+    min-height: 0;
+    scroll-snap-align: start;
+  }
+}
+
+@media (hover: none), (max-width: 1023px) {
+  #orga-teams .role-card__hint { display: none; }
+
+  #orga-teams .role-card .join-path-card__list {
+    display: flex;
+    max-height: none;
+    margin-top: var(--space-sm);
+    opacity: 1;
+    overflow: visible;
+    transform: none;
+  }
 }
 
 @media (max-width: 600px) {
   .join-paths { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .discord-feature__channels { grid-template-columns: 1fr; }
+  .discord-feature__cta-cards { grid-template-columns: 1fr; }
   .faq-item summary { padding: var(--space-md) var(--space-lg); }
   .faq-item__body { padding: var(--space-md) var(--space-lg); }
+  .ersti-welcome { min-height: 500px; padding: var(--space-lg); }
+  .ersti-welcome::before { background: linear-gradient(0deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.78) 74%, rgba(15, 23, 42, 0.3) 100%); }
+  .ersti-welcome__title { font-size: clamp(2.25rem, 11vw, 3.25rem); }
+  .ersti-welcome__text { font-size: var(--text-body); }
+  .ersti-welcome__highlights { grid-template-columns: 1fr; }
+  .ersti-welcome__highlights span { font-size: var(--text-small); }
+  .ersti-opening { grid-template-columns: 1fr; gap: var(--space-xl); }
+  .ersti-opening__flyer img { max-width: 360px; }
+  .ersti-opening__content h3 { font-size: var(--text-h3); }
+  .ersti-opening__text { font-size: var(--text-body); }
+  .ersti-instagram { margin-top: var(--space-xl); padding-top: var(--space-xl); }
+  .ersti-instagram h3 { font-size: var(--text-h4); }
+  .ersti-hub-usage { margin-top: var(--space-xl); padding-top: var(--space-xl); }
+  .ersti-hub-hours__time { font-size: var(--text-h4); }
+  .orga-team-cta__actions .btn { width: 100%; }
+  #orga-teams .roles-grid { padding-bottom: var(--space-lg); }
+  #orga-teams .role-card { min-height: 0; padding: var(--space-lg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #orga-teams .role-card,
+  #orga-teams .role-card::before,
+  #orga-teams .role-card__icon {
+    transition: none;
+    animation: none;
+  }
+
+  #orga-teams .role-card:hover,
+  #orga-teams .role-card.is-selected,
+  #orga-teams .role-card:hover .role-card__icon,
+  #orga-teams .role-card.is-selected .role-card__icon {
+    transform: none;
+  }
 }
 
 
