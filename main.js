@@ -950,7 +950,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = document.getElementById('theme-icon');
   const allThemeToggles = document.querySelectorAll('.nav__theme-toggle');
-  const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const savedTheme = localStorage.getItem('theme') || 'dark';
 
   document.documentElement.setAttribute('data-theme', savedTheme);
   updateThemeIcon(savedTheme);
