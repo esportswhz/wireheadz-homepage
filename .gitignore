@@ -21,3 +21,4 @@ _preview/
 # Lokale Editor-Konfigurationen
 .idea/
 .vscode/
+.env*
