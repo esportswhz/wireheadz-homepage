@@ -161,6 +161,16 @@
                 </div>
 
                 <div class="form-group">
+                  <label for="spieler-whatsapp">
+                    <span data-de="WhatsApp-Nummer (GAMeS Hub Community)" data-en="WhatsApp Number (GAMeS Hub Community)">WhatsApp-Nummer (GAMeS Hub Community)</span><span class="form-required">*</span>
+                  </label>
+                  <input type="tel" id="spieler-whatsapp" name="whatsapp" autocomplete="tel" inputmode="tel"
+                         data-placeholder-de="z. B. +49 151 12345678"
+                         data-placeholder-en="e.g. +49 151 12345678"
+                         placeholder="z. B. +49 151 12345678" />
+                </div>
+
+                <div class="form-group">
                   <label for="spieler-team">
                     <span data-de="Team" data-en="Team">Team</span><span class="form-required">*</span>
                   </label>
@@ -806,6 +816,7 @@
       if (typ === 'spieler') {
         var name    = val('spieler-name');
         var email   = val('spieler-email');
+        var whatsapp = val('spieler-whatsapp');
         var team    = val('spieler-team');
         var spRaw   = document.getElementById('spieler-spiel').value.trim();
         var isNeu   = spRaw === 'neu';
@@ -826,6 +837,7 @@
               line('Team', team),
               line('Name', name),
               line('E-Mail', email),
+              line('WhatsApp-Nummer (GAMeS Hub Community)', whatsapp),
               line('Vorgeschlagenes Spiel', spiel),
               line('Spielniveau / Rank', rank)
             ]),
@@ -847,6 +859,7 @@
               line('Team', team),
               line('Name', name),
               line('E-Mail', email),
+              line('WhatsApp-Nummer (GAMeS Hub Community)', whatsapp),
               line('Spieltitel', spiel),
               line('Spielniveau / Rank', rank)
             ]),
@@ -1003,7 +1016,7 @@
 
     // ---- Validierung ----
     var required = {
-      spieler:    ['spieler-team', 'spieler-name', 'spieler-email', 'spieler-spiel'],
+      spieler:    ['spieler-team', 'spieler-name', 'spieler-email', 'spieler-whatsapp', 'spieler-spiel'],
       mitglied:   ['mitglied-name',   'mitglied-email'],
       partner:    ['partner-name',    'partner-email',    'partner-org'],
       recruiting: ['recruiting-name', 'recruiting-email', 'recruiting-org'],
@@ -1114,11 +1127,14 @@
 
       if (typ === 'orga') {
         var whzEmail = document.getElementById('orga-email');
-        var whatsapp = document.getElementById('orga-whatsapp');
         if (whzEmail && whzEmail.value.trim() && !isValidWhzEmail(whzEmail.value.trim())) {
           setFieldError(whzEmail, 'whzEmail');
           ok = false;
         }
+      }
+
+      if (typ === 'orga' || typ === 'spieler') {
+        var whatsapp = document.getElementById(typ + '-whatsapp');
         if (whatsapp && whatsapp.value.trim()) {
           var normalizedPhone = normalisePhone(whatsapp.value);
           if (!normalizedPhone) {
@@ -1157,14 +1173,13 @@
       });
     });
 
-    var whatsappField = document.getElementById('orga-whatsapp');
-    if (whatsappField) {
+    document.querySelectorAll('#orga-whatsapp, #spieler-whatsapp').forEach(function (whatsappField) {
       whatsappField.addEventListener('blur', function () {
         if (!this.value.trim()) return;
         var normalizedPhone = normalisePhone(this.value);
         if (normalizedPhone) this.value = normalizedPhone;
       });
-    }
+    });
 
     // ---- Absenden ----
     document.getElementById('kontakt-form').addEventListener('submit', function (e) {
