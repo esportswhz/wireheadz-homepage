@@ -1035,7 +1035,7 @@
         required: en ? 'Please fill in this field.' : 'Bitte fülle dieses Feld aus.',
         name:     en ? 'Please enter a name without numbers.' : 'Bitte gib einen Namen ohne Zahlen ein.',
         email:    en ? 'Please enter a valid email address.' : 'Bitte gib eine gültige E-Mail-Adresse ein.',
-        whzEmail: en ? 'Please use your WHZ email in the format first.last.abc@whz.de.' : 'Bitte nutze deine WHZ-Mail im Format vorname.nachname.abc@whz.de.',
+        whzEmail: en ? 'Please use a valid WHZ email address ending in @whz.de.' : 'Bitte nutze eine gültige WHZ-Mail-Adresse mit der Endung @whz.de.',
         phone:    en ? 'Please enter a valid phone number.' : 'Bitte gib eine gültige Telefonnummer ein.'
       };
       return texts[type];
@@ -1079,7 +1079,7 @@
     }
 
     function isValidWhzEmail(value) {
-      return /^[a-z]+(?:-[a-z]+)?\.[a-z]+(?:-[a-z]+)?\.[a-z]{3}@whz\.de$/i.test(value);
+      return /^[^\s@]+@whz\.de$/i.test(value);
     }
 
     function normalisePhone(value) {
